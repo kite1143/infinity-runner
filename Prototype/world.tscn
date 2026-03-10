@@ -1,0 +1,62 @@
+[gd_scene format=3 uid="uid://cgjq1gu4kpg23"]
+
+[ext_resource type="PackedScene" uid="uid://beyrwfqtusi46" path="res://Player/character_knight.tscn" id="1_7l7g0"]
+[ext_resource type="Script" uid="uid://csjccrhj5wnx7" path="res://addons/phantom_camera/scripts/phantom_camera/phantom_camera_3d.gd" id="2_nemkc"]
+[ext_resource type="Script" uid="uid://8umksf8e80fw" path="res://addons/phantom_camera/scripts/resources/tween_resource.gd" id="3_oovto"]
+[ext_resource type="Script" uid="uid://b8hhnqsugykly" path="res://addons/phantom_camera/scripts/resources/camera_3d_resource.gd" id="4_oovto"]
+[ext_resource type="PackedScene" uid="uid://c7stl8t7alb8j" path="res://Assets/Dungeon/Dungeon_Remastered/floor_dirt_small_D.gltf" id="5_7tie6"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_7l7g0"]
+sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
+ground_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
+
+[sub_resource type="Sky" id="Sky_ohbh4"]
+sky_material = SubResource("ProceduralSkyMaterial_7l7g0")
+
+[sub_resource type="Environment" id="Environment_nemkc"]
+background_mode = 2
+sky = SubResource("Sky_ohbh4")
+tonemap_mode = 2
+glow_enabled = true
+
+[sub_resource type="Resource" id="Resource_7tie6"]
+script = ExtResource("3_oovto")
+
+[sub_resource type="Resource" id="Resource_83ce6"]
+script = ExtResource("4_oovto")
+metadata/_custom_type_script = "uid://b8hhnqsugykly"
+
+[node name="World" type="Node3D" unique_id=1991109631]
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=1807431876]
+transform = Transform3D(-0.8660254, -0.43301278, 0.24999999, 0.4428631, -0.4321904, 0.7855468, -0.23210418, 0.7910192, 0.5660532, 0, 0, 0)
+shadow_enabled = true
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1905773812]
+environment = SubResource("Environment_nemkc")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="." unique_id=1473560278]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.5, 0)
+use_collision = true
+size = Vector3(10, 1, 200)
+
+[node name="floor_dirt_small_D2" parent="CSGBox3D" unique_id=1999378787 instance=ExtResource("5_7tie6")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 100, 0, 0.5, 0)
+
+[node name="CharacterKnight" parent="." unique_id=864124633 instance=ExtResource("1_7l7g0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, 0)
+
+[node name="PhantomCamera3D" type="Node3D" parent="." unique_id=3134737 node_paths=PackedStringArray("follow_target")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, 0)
+top_level = true
+script = ExtResource("2_nemkc")
+follow_mode = 2
+follow_target = NodePath("../CharacterKnight")
+tween_resource = SubResource("Resource_7tie6")
+camera_3d_resource = SubResource("Resource_83ce6")
+align_transform_with_view = Callable()
+align_position_with_view = Callable()
+metadata/_custom_type_script = "uid://csjccrhj5wnx7"
+
+[node name="Camera3D" type="Camera3D" parent="PhantomCamera3D" unique_id=1371118197]
+transform = Transform3D(1, 0, 0, 0, 0.9314629, 0.36383656, 0, -0.36383656, 0.9314629, 0, 4.6816425, 3.5782447)
