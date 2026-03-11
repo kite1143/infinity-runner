@@ -11,11 +11,6 @@ func enter() -> void:
 	state_machine.animation_player.play(
 		'player_animations/Lie_Idle'
 	)
-	sit_timer.timeout.connect(
-		func():
-			state_machine.change_state(sit_up_state.name),
-			ConnectFlags.CONNECT_ONE_SHOT
-	)
 	sit_timer.start()
 
 func handle_input(event: InputEvent) -> void:
@@ -30,3 +25,7 @@ func handle_input(event: InputEvent) -> void:
 
 func exit() -> void:
 	sit_timer.stop()
+
+
+func _on_sit_timer_timeout() -> void:
+	state_machine.change_state(sit_up_state.name)
