@@ -1,7 +1,8 @@
 [gd_scene format=3 uid="uid://cgjq1gu4kpg23"]
 
 [ext_resource type="PackedScene" uid="uid://beyrwfqtusi46" path="res://Player/character_knight.tscn" id="1_7l7g0"]
-[ext_resource type="PackedScene" uid="uid://c7stl8t7alb8j" path="res://Assets/Dungeon/Dungeon_Remastered/floor_dirt_small_D.gltf" id="5_7tie6"]
+[ext_resource type="PackedScene" uid="uid://ctxvy82y0uok0" path="res://WorldBuilding/plain_chunk.tscn" id="2_ohbh4"]
+[ext_resource type="PackedScene" uid="uid://b6d516e3pvejm" path="res://Assets/Dungeon/Dungeon_Remastered/wall_arched.gltf" id="3_nemkc"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_7l7g0"]
 sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
@@ -25,15 +26,17 @@ shadow_enabled = true
 [node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1905773812]
 environment = SubResource("Environment_nemkc")
 
-[node name="CSGBox3D" type="CSGBox3D" parent="." unique_id=1473560278]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.5, 0)
-use_collision = true
-size = Vector3(10, 1, 200)
-
-[node name="floor_dirt_small_D2" parent="CSGBox3D" unique_id=1999378787 instance=ExtResource("5_7tie6")]
-transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 100, 0, 0.5, 0)
-
 [node name="CharacterKnight" parent="." unique_id=864124633 instance=ExtResource("1_7l7g0")]
 
 [node name="Camera3D" type="Camera3D" parent="CharacterKnight" unique_id=1371118197]
 transform = Transform3D(1, 0, 0, 0, 0.8936928, 0.4486796, 0, -0.4486796, 0.8936928, 0, 5.6413355, 4.4067626)
+
+[node name="PlainChunk" parent="." unique_id=1065648645 instance=ExtResource("2_ohbh4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1, 0)
+
+[node name="wall_arched2" parent="." unique_id=1805851771 instance=ExtResource("3_nemkc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.027421951, 0, -15.42692)
+
+[node name="StaticBody3D" parent="wall_arched2/wall_arched" parent_id_path=PackedInt32Array(1805851771, 1046068506) index="0" unique_id=2061207514 groups=["Enemy"]]
+
+[editable path="wall_arched2"]

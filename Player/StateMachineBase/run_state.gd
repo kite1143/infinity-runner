@@ -11,7 +11,7 @@ func enter() -> void:
 	state_machine.character_base.velocity = Vector3(
 		state_machine.character_base.velocity.x,
 		state_machine.character_base.velocity.y,
-		0
+		-10
 	)
 
 func handle_input(event: InputEvent) -> void:

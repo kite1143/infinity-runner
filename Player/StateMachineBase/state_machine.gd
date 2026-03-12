@@ -3,7 +3,7 @@ class_name StateMachine
 
 @export var initial_state: State
 @export var animation_player: AnimationPlayer
-@export var character_base: CharacterBody3D
+@export var character_base: Player
 
 var current_state: State
 var states: Dictionary = {}
@@ -17,16 +17,19 @@ func _ready() -> void:
 		change_state(initial_state.name.to_lower())
 
 func _process(delta: float) -> void:
-	if current_state:
-		current_state.update(delta)
+	if character_base.is_alive:
+		if current_state:
+			current_state.update(delta)
 
 func _physics_process(delta: float) -> void:
-	if current_state:
-		current_state.physic_update(delta)
+	if character_base.is_alive:
+		if current_state:
+			current_state.physic_update(delta)
 
 func _input(event: InputEvent) -> void:
-	if current_state:
-		current_state.handle_input(event)
+	if character_base.is_alive:
+		if current_state:
+			current_state.handle_input(event)
 
 func change_state(new_state_name: String) -> void:
 	if current_state:
@@ -35,5 +38,5 @@ func change_state(new_state_name: String) -> void:
 	current_state = states.get(new_state_name.to_lower())
 	
 	if current_state:
-		print('change to', current_state)
+		print('change to ', current_state)
 		current_state.enter()

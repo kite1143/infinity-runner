@@ -1,6 +1,9 @@
 extends CharacterBody3D
+class_name Player
 
 var target_lane_x: float = 0.0
+var is_alive: bool = true
+@onready var state_machine: StateMachine = $StateMachine
 
 func _physics_process(delta: float) -> void:
 	# Add the gravity.
@@ -10,6 +13,9 @@ func _physics_process(delta: float) -> void:
 	move_and_slide()
 
 func movement() -> void:
+	if not is_alive:
+		return
+	
 	if Input.is_action_just_pressed('dash_left') and target_lane_x > -3:
 		target_lane_x -= 3
 		start_dash_tween()
@@ -25,3 +31,10 @@ func start_dash_tween() -> void:
 		target_lane_x,
 		0.2
 	).set_trans(Tween.TRANS_SINE).set_ease(Tween.EASE_OUT)
+
+
+func _on_hurt_box_body_entered(body: Node3D) -> void:
+	if body.is_in_group('Enemy'):
+		print('Enemy collided')
+		state_machine.change_state('Death')
+		is_alive = false
