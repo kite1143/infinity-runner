@@ -16,9 +16,13 @@ func enter() -> void:
 
 func handle_input(event: InputEvent) -> void:
 	if Input.is_action_just_pressed("dash_left") and state_machine.character_base.target_lane_x > -3:
+		if state_machine.character_base.ray_cast_left.is_colliding():
+			return
 		state_machine.change_state(dash_left_state.name)
 	
 	if Input.is_action_just_pressed("dash_right") and state_machine.character_base.target_lane_x < 3:
+		if state_machine.character_base.ray_cast_right.is_colliding():
+			return
 		state_machine.change_state(dash_right_state.name)
 	
 	if Input.is_action_just_pressed('jump'):

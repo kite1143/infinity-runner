@@ -35,8 +35,10 @@ transform = Transform3D(1, 0, 0, 0, 0.8936928, 0.4486796, 0, -0.4486796, 0.89369
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1, 0)
 
 [node name="wall_arched2" parent="." unique_id=1805851771 instance=ExtResource("3_nemkc")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.027421951, 0, -15.42692)
 
-[node name="StaticBody3D" parent="wall_arched2/wall_arched" parent_id_path=PackedInt32Array(1805851771, 1046068506) index="0" unique_id=2061207514 groups=["Enemy"]]
+[node name="wall_arched" parent="wall_arched2" index="0" unique_id=1217613342]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 0, 0, -7.09341)
+
+[node name="StaticBody3D" parent="wall_arched2/wall_arched" index="0" unique_id=414618599 groups=["Enemy"]]
 
 [editable path="wall_arched2"]
