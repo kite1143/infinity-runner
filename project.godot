@@ -23,6 +23,11 @@ window/size/always_on_top=true
 window/size/window_width_override=360
 window/size/window_height_override=640
 
+[global_group]
+
+Obstacle=""
+Enemy=""
+
 [input]
 
 start_game={

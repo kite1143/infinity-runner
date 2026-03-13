@@ -3,6 +3,7 @@
 [ext_resource type="PackedScene" uid="uid://beyrwfqtusi46" path="res://Player/character_knight.tscn" id="1_7l7g0"]
 [ext_resource type="PackedScene" uid="uid://ctxvy82y0uok0" path="res://WorldBuilding/plain_chunk.tscn" id="2_ohbh4"]
 [ext_resource type="PackedScene" uid="uid://b6d516e3pvejm" path="res://Assets/Dungeon/Dungeon_Remastered/wall_arched.gltf" id="3_nemkc"]
+[ext_resource type="PackedScene" uid="uid://du0e42pktqyxa" path="res://WorldBuilding/Obstacle/swing_trap.tscn" id="3_oovto"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_7l7g0"]
 sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
@@ -32,13 +33,19 @@ environment = SubResource("Environment_nemkc")
 transform = Transform3D(1, 0, 0, 0, 0.8936928, 0.4486796, 0, -0.4486796, 0.8936928, 0, 5.6413355, 4.4067626)
 
 [node name="PlainChunk" parent="." unique_id=1065648645 instance=ExtResource("2_ohbh4")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1, -35)
 
-[node name="wall_arched2" parent="." unique_id=1805851771 instance=ExtResource("3_nemkc")]
+[node name="SwingTrap" parent="PlainChunk" unique_id=1017910804 instance=ExtResource("3_oovto")]
 
-[node name="wall_arched" parent="wall_arched2" index="0" unique_id=1217613342]
-transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 0, 0, -7.09341)
+[node name="Wall1" parent="." unique_id=1805851771 instance=ExtResource("3_nemkc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -12.190214)
 
-[node name="StaticBody3D" parent="wall_arched2/wall_arched" index="0" unique_id=414618599 groups=["Enemy"]]
+[node name="wall_arched" parent="Wall1" index="0" unique_id=531484776]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 0, 0, 0)
 
-[editable path="wall_arched2"]
+[node name="StaticBody3D" parent="Wall1/wall_arched" index="0" unique_id=848153240 groups=["Enemy"]]
+
+[node name="CollisionShape3D" parent="Wall1/wall_arched/StaticBody3D" index="0" unique_id=256245430]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.01756668, 0, 0.015057565)
+
+[editable path="Wall1"]

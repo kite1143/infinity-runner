@@ -2,6 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://dfthbvhjiblc1" path="res://Assets/Dungeon/Dungeon_Legacy/tileBrickB_large.gltf.glb" id="1_c2mcl"]
 [ext_resource type="PackedScene" uid="uid://y0l36sgqy436" path="res://Assets/Dungeon/Dungeon_Legacy/tileBrickA_large.gltf.glb" id="2_pf5rx"]
+[ext_resource type="PackedScene" uid="uid://bjortmq6vg1m7" path="res://Assets/Dungeon/Dungeon_Remastered/barrier.gltf" id="3_glclk"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_uq8bg"]
 resource_name = "Stone"
@@ -41,13 +42,13 @@ blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_7jaqh")
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_nemkc"]
-size = Vector3(9, 1, 54)
+size = Vector3(12, 1, 72)
 
 [node name="PlainChunk" type="StaticBody3D" unique_id=1065648645]
 collision_mask = 0
 
 [node name="ChunkAsset" parent="." unique_id=1765601705 instance=ExtResource("1_c2mcl")]
-transform = Transform3D(1.5, 0, 0, 0, 1, 0, 0, 0, 3, 0, 0, 0)
+transform = Transform3D(2, 0, 0, 0, 1, 0, 0, 0, 2, 0, 0, -18)
 
 [node name="tileBrickB_large2" type="MeshInstance3D" parent="ChunkAsset" unique_id=1551147927]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -6)
@@ -57,17 +58,70 @@ mesh = SubResource("ArrayMesh_gmg8j")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 6)
 mesh = SubResource("ArrayMesh_gmg8j")
 
+[node name="ChunkAsset2" parent="." unique_id=485180813 instance=ExtResource("1_c2mcl")]
+transform = Transform3D(2, 0, 0, 0, 1, 0, 0, 0, 2, 0, 0, 18)
+
+[node name="tileBrickB_large2" type="MeshInstance3D" parent="ChunkAsset2" unique_id=1640288278]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -6)
+mesh = SubResource("ArrayMesh_gmg8j")
+
+[node name="tileBrickB_large3" type="MeshInstance3D" parent="ChunkAsset2" unique_id=1391290198]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 6)
+mesh = SubResource("ArrayMesh_gmg8j")
+
+[node name="Decor" type="Node3D" parent="." unique_id=1573758811]
+
+[node name="tileBrickA_large_gltf" parent="Decor" unique_id=1100869668 instance=ExtResource("2_pf5rx")]
+transform = Transform3D(3, 0, 0, 0, 1, 0, 0, 0, 3, 0, -0.5, -9)
+
+[node name="tileBrickA_large_gltf2" parent="Decor" unique_id=1383764693 instance=ExtResource("2_pf5rx")]
+transform = Transform3D(3, 0, 0, 0, 1, 0, 0, 0, 3, 0, -0.5, -27)
+
+[node name="tileBrickA_large_gltf3" parent="Decor" unique_id=1607505743 instance=ExtResource("2_pf5rx")]
+transform = Transform3D(3, 0, 0, 0, 1, 0, 0, 0, 3, 0, -0.5, 9)
+
+[node name="tileBrickA_large_gltf4" parent="Decor" unique_id=1497944670 instance=ExtResource("2_pf5rx")]
+transform = Transform3D(3, 0, 0, 0, 1, 0, 0, 0, 3, 0, -0.5, 27)
+
+[node name="barrier15" parent="Decor" unique_id=1940764977 instance=ExtResource("3_glclk")]
+transform = Transform3D(-8.742278e-08, 0, 2, 0, 2, 0, -2, 0, -8.742278e-08, -7, 0.4, -16)
+
+[node name="barrier19" parent="Decor" unique_id=1153202406 instance=ExtResource("3_glclk")]
+transform = Transform3D(-8.742278e-08, 0, 2, 0, 2, 0, -2, 0, -8.742278e-08, -7, 0.4, -28)
+
+[node name="barrier16" parent="Decor" unique_id=323120196 instance=ExtResource("3_glclk")]
+transform = Transform3D(-8.742278e-08, 0, 2, 0, 2, 0, -2, 0, -8.742278e-08, -7, 0.4, -4)
+
+[node name="barrier17" parent="Decor" unique_id=557614436 instance=ExtResource("3_glclk")]
+transform = Transform3D(-8.742278e-08, 0, 2, 0, 2, 0, -2, 0, -8.742278e-08, -7, 0.4, 8)
+
+[node name="barrier18" parent="Decor" unique_id=1749241948 instance=ExtResource("3_glclk")]
+transform = Transform3D(-8.742278e-08, 0, 2, 0, 2, 0, -2, 0, -8.742278e-08, -7, 0.4, 20)
+
+[node name="barrier21" parent="Decor" unique_id=1251780473 instance=ExtResource("3_glclk")]
+transform = Transform3D(-8.742278e-08, 0, 2, 0, 2, 0, -2, 0, -8.742278e-08, -7, 0.4, 32)
+
+[node name="barrier20" parent="Decor" unique_id=467501665 instance=ExtResource("3_glclk")]
+transform = Transform3D(-8.742278e-08, 0, 2, 0, 2, 0, -2, 0, -8.742278e-08, 7, 0.4, -16)
+
+[node name="barrier22" parent="Decor" unique_id=1934089122 instance=ExtResource("3_glclk")]
+transform = Transform3D(-8.742278e-08, 0, 2, 0, 2, 0, -2, 0, -8.742278e-08, 7, 0.4, -28)
+
+[node name="barrier23" parent="Decor" unique_id=1604952980 instance=ExtResource("3_glclk")]
+transform = Transform3D(-8.742278e-08, 0, 2, 0, 2, 0, -2, 0, -8.742278e-08, 7, 0.4, -4)
+
+[node name="barrier24" parent="Decor" unique_id=406745298 instance=ExtResource("3_glclk")]
+transform = Transform3D(-8.742278e-08, 0, 2, 0, 2, 0, -2, 0, -8.742278e-08, 7, 0.4, 8)
+
+[node name="barrier25" parent="Decor" unique_id=2032176401 instance=ExtResource("3_glclk")]
+transform = Transform3D(-8.742278e-08, 0, 2, 0, 2, 0, -2, 0, -8.742278e-08, 7, 0.4, 20)
+
+[node name="barrier26" parent="Decor" unique_id=171185456 instance=ExtResource("3_glclk")]
+transform = Transform3D(-8.742278e-08, 0, 2, 0, 2, 0, -2, 0, -8.742278e-08, 7, 0.4, 32)
+
 [node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1017580168]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1.0000001, 0, 0.5, 0)
 shape = SubResource("BoxShape3D_nemkc")
 
-[node name="tileBrickA_large_gltf" parent="." unique_id=1100869668 instance=ExtResource("2_pf5rx")]
-transform = Transform3D(3, 0, 0, 0, 1, 0, 0, 0, 3, 0, -0.5, 0)
-
-[node name="tileBrickA_large_gltf2" parent="." unique_id=1383764693 instance=ExtResource("2_pf5rx")]
-transform = Transform3D(3, 0, 0, 0, 1, 0, 0, 0, 3, 0, -0.5, -18)
-
-[node name="tileBrickA_large_gltf3" parent="." unique_id=1607505743 instance=ExtResource("2_pf5rx")]
-transform = Transform3D(3, 0, 0, 0, 1, 0, 0, 0, 3, 0, -0.5, 18)
-
 [editable path="ChunkAsset"]
+[editable path="ChunkAsset2"]
