@@ -1,0 +1,30 @@
+[gd_scene format=3 uid="uid://4656nk0evcq"]
+
+[ext_resource type="PackedScene" uid="uid://d4mtp78vgjxt2" path="res://Assets/Dungeon/Dungeon_Legacy/barrel.gltf.glb" id="1_sw4x4"]
+[ext_resource type="Script" uid="uid://c1r41e6fqpix3" path="res://WorldBuilding/Obstacle/barrel.gd" id="1_vqqgh"]
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_sgtyu"]
+friction = 0.5
+bounce = 0.2
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_slq2w"]
+height = 0.8691406
+
+[node name="Barrel" type="RigidBody3D" unique_id=911393487 groups=["Obstacle"]]
+collision_layer = 8
+mass = 30.0
+physics_material_override = SubResource("PhysicsMaterial_sgtyu")
+freeze = true
+script = ExtResource("1_vqqgh")
+
+[node name="barrel_gltf" parent="." unique_id=51662738 instance=ExtResource("1_sw4x4")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0, 0)
+
+[node name="barrel" parent="barrel_gltf" index="0" unique_id=773388666]
+transform = Transform3D(-4.371139e-08, 1, 0, -1, -4.371139e-08, 0, 0, 0, 1, 0, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1664137402]
+transform = Transform3D(-8.742278e-08, -2, 0, 2, -8.742278e-08, 0, 0, 0, 2, 0.2129674, 0, 0)
+shape = SubResource("CylinderShape3D_slq2w")
+
+[editable path="barrel_gltf"]

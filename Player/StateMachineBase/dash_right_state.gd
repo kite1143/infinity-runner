@@ -7,5 +7,8 @@ class_name DashRightState
 func enter() -> void:
 	state_machine.animation_player.play('player_animations/Dodge_Right')
 	await state_machine.animation_player.animation_finished
+	
+	if not state_machine.character_base.is_alive:
+		return
 	state_machine.change_state(run_state.name)
 	

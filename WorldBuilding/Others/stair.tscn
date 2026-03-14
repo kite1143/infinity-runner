@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://bly7b488qqpmm"]
+
+[ext_resource type="PackedScene" uid="uid://b53bf60h86kdx" path="res://Assets/Dungeon/Dungeon_Legacy/stairs.gltf.glb" id="1_6ybwk"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_q05n7"]
+points = PackedVector3Array(-1.3, 0, -3, 1.3, 0, -3, -1.3, 4.5, -3, 1.3, 4.5, -3, -1.3, 0, 3, 1.3, 0, 3)
+
+[node name="Stair" type="Node3D" unique_id=822857029]
+
+[node name="Stair" parent="." unique_id=1556069698 instance=ExtResource("1_6ybwk")]
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Stair" unique_id=1726869558]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Stair/StaticBody3D" unique_id=703291446]
+shape = SubResource("ConvexPolygonShape3D_q05n7")
+debug_color = Color(0.940861, 0.24519998, 0, 0.41960785)
+
+[editable path="Stair"]

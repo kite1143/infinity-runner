@@ -15,6 +15,9 @@ func enter() -> void:
 
 func update(delta: float) -> void:
 	if state_machine.character_base.velocity.y == 0:
+		if not state_machine.character_base.is_alive:
+			return
+		
 		if not is_going_to_sit:
 			state_machine.change_state(run_state.name)
 		else:

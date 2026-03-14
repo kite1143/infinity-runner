@@ -17,7 +17,7 @@ script = ExtResource("1_v4dfq")
 [node name="wall_open_scaffold2" parent="." unique_id=1399060473 instance=ExtResource("1_047c0")]
 transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0, 0)
 
-[node name="wall_open_scaffold" parent="wall_open_scaffold2" index="0" unique_id=252723369]
+[node name="wall_open_scaffold" parent="wall_open_scaffold2" index="0" unique_id=23801739]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.07724249, -0.035845757, 0.020845413)
 
 [node name="StaticBody3D" type="StaticBody3D" parent="wall_open_scaffold2/wall_open_scaffold" index="0" unique_id=425576354 groups=["Obstacle"]]

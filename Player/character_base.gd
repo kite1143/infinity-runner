@@ -15,7 +15,9 @@ func _physics_process(delta: float) -> void:
 	if not is_on_floor():
 		velocity += get_gravity() * 3 * delta
 	movement()
-	move_and_slide()
+	
+	if is_alive:
+		move_and_slide()
 
 func movement() -> void:
 	if not is_alive:
@@ -44,6 +46,14 @@ func start_dash_tween() -> void:
 
 func _on_hurt_box_body_entered(body: Node3D) -> void:
 	if body.is_in_group('Enemy') or body.is_in_group('Obstacle'):
-		print('Enemy/Obstacle collided')
+		if not is_alive:
+			return
+		state_machine.change_state('Death')
+		is_alive = false
+
+func _on_hurt_box_area_entered(area: Area3D) -> void:
+	if area.is_in_group('Enemy') or area.is_in_group('Obstacle'):
+		if not is_alive:
+			return
 		state_machine.change_state('Death')
 		is_alive = false

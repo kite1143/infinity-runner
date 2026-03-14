@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://b4ki4l3o3bo74"]
+
+[ext_resource type="PackedScene" uid="uid://q2o3ogearh4n" path="res://Assets/Dungeon/Dungeon_Remastered/floor_tile_big_spikes.gltf" id="1_oj838"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_oj838"]
+size = Vector3(2.5, 2, 2.5)
+
+[node name="Spike" unique_id=530678059 instance=ExtResource("1_oj838")]
+
+[node name="HitBox" type="Area3D" parent="floor_tile_big_spikes" parent_id_path=PackedInt32Array(1140471938) index="1" unique_id=586417516 groups=["Obstacle"]]
+collision_layer = 8
+collision_mask = 0
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="floor_tile_big_spikes/HitBox" index="0" unique_id=1642620743]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+shape = SubResource("BoxShape3D_oj838")
