@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://b4ki4l3o3bo74"]
 
-[ext_resource type="PackedScene" uid="uid://q2o3ogearh4n" path="res://Assets/Dungeon/Dungeon_Remastered/floor_tile_big_spikes.gltf" id="1_oj838"]
+[ext_resource type="PackedScene" uid="uid://q2o3ogearh4n" path="res://Assets/WorldBuiding/Dungeon/Dungeon_Remastered/floor_tile_big_spikes.gltf" id="1_oj838"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_oj838"]
 size = Vector3(2.5, 2, 2.5)

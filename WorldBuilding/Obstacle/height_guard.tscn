@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://c8vlbcrvd7gcw"]
 
-[ext_resource type="PackedScene" uid="uid://c1oevhsteth8r" path="res://Assets/Dungeon/Tiny_Platformer/arrowtrapbig_001.fbx" id="1_y1sk0"]
-[ext_resource type="PackedScene" uid="uid://d2dm1lhtopovd" path="res://Assets/Dungeon/Tiny_Platformer/trap.fbx" id="2_cdnp7"]
+[ext_resource type="PackedScene" uid="uid://c1oevhsteth8r" path="res://Assets/WorldBuiding/Dungeon/Tiny_Platformer/arrowtrapbig_001.fbx" id="1_y1sk0"]
+[ext_resource type="PackedScene" uid="uid://d2dm1lhtopovd" path="res://Assets/WorldBuiding/Dungeon/Tiny_Platformer/trap.fbx" id="2_cdnp7"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_y1sk0"]
 size = Vector3(1, 2, 1)

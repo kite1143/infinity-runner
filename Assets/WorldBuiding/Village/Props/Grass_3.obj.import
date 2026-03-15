@@ -1,0 +1,25 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://b30itoq8o4k3x"
+path="res://.godot/imported/Grass_3.obj-3b3633fac4bd17eca1da03a032ae66f9.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Grass_3.obj-3b3633fac4bd17eca1da03a032ae66f9.mesh"]
+
+source_file="res://Assets/WorldBuiding/Village/Props/Grass_3.obj"
+dest_files=["res://.godot/imported/Grass_3.obj-3b3633fac4bd17eca1da03a032ae66f9.mesh", "res://.godot/imported/Grass_3.obj-3b3633fac4bd17eca1da03a032ae66f9.mesh"]
+
+[params]
+
+generate_tangents=true
+generate_lods=true
+generate_shadow_mesh=true
+generate_lightmap_uv2=false
+generate_lightmap_uv2_texel_size=0.2
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+force_disable_mesh_compression=false

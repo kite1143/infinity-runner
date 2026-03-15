@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://dwf03lu223hlv"]
 
 [ext_resource type="Script" uid="uid://baq70r3sordqv" path="res://WorldBuilding/Obstacle/swing_hammer.gd" id="1_bo5oh"]
-[ext_resource type="PackedScene" uid="uid://ctscu7p5deiky" path="res://Assets/Dungeon/Tiny_Platformer/hammerbig_001.fbx" id="1_iy4rp"]
+[ext_resource type="PackedScene" uid="uid://ctscu7p5deiky" path="res://Assets/WorldBuiding/Dungeon/Tiny_Platformer/hammerbig_001.fbx" id="1_iy4rp"]
 
 [sub_resource type="CylinderShape3D" id="CylinderShape3D_bo5oh"]
 height = 0.4013672

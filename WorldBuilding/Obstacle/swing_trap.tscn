@@ -1,9 +1,9 @@
 [gd_scene format=3 uid="uid://du0e42pktqyxa"]
 
-[ext_resource type="PackedScene" uid="uid://b8sj74raaaw7e" path="res://Assets/Dungeon/Dungeon_Remastered/wall_open_scaffold.gltf" id="1_047c0"]
+[ext_resource type="PackedScene" uid="uid://b8sj74raaaw7e" path="res://Assets/WorldBuiding/Dungeon/Dungeon_Remastered/wall_open_scaffold.gltf" id="1_047c0"]
 [ext_resource type="Script" uid="uid://dx7dkxihuwk00" path="res://WorldBuilding/Obstacle/swing_trap.gd" id="1_v4dfq"]
-[ext_resource type="PackedScene" uid="uid://bfngisdjfb10c" path="res://Assets/Dungeon/Dungeon_Legacy/axeDouble_rare.gltf.glb" id="2_v4dfq"]
-[ext_resource type="PackedScene" uid="uid://bjortmq6vg1m7" path="res://Assets/Dungeon/Dungeon_Remastered/barrier.gltf" id="3_nqubn"]
+[ext_resource type="PackedScene" uid="uid://bfngisdjfb10c" path="res://Assets/WorldBuiding/Dungeon/Dungeon_Legacy/axeDouble_rare.gltf.glb" id="2_v4dfq"]
+[ext_resource type="PackedScene" uid="uid://bjortmq6vg1m7" path="res://Assets/WorldBuiding/Dungeon/Dungeon_Remastered/barrier.gltf" id="3_nqubn"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_v4dfq"]
 size = Vector3(0.5, 4, 1)

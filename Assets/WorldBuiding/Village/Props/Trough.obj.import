@@ -1,0 +1,25 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://d3g71kr5gets2"
+path="res://.godot/imported/Trough.obj-c731575edd24ad298f92350f4275eafe.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Trough.obj-c731575edd24ad298f92350f4275eafe.mesh"]
+
+source_file="res://Assets/WorldBuiding/Village/Props/Trough.obj"
+dest_files=["res://.godot/imported/Trough.obj-c731575edd24ad298f92350f4275eafe.mesh", "res://.godot/imported/Trough.obj-c731575edd24ad298f92350f4275eafe.mesh"]
+
+[params]
+
+generate_tangents=true
+generate_lods=true
+generate_shadow_mesh=true
+generate_lightmap_uv2=false
+generate_lightmap_uv2_texel_size=0.2
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+force_disable_mesh_compression=false

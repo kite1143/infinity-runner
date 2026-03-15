@@ -1,0 +1,25 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://cejt4dyubj22o"
+path="res://.godot/imported/DriedFishes-Hang.obj-34c1f3a83fb1fe1f3ee68f48b718524d.mesh"
+
+[deps]
+
+files=["res://.godot/imported/DriedFishes-Hang.obj-34c1f3a83fb1fe1f3ee68f48b718524d.mesh"]
+
+source_file="res://Assets/WorldBuiding/Village/Props/DriedFishes-Hang.obj"
+dest_files=["res://.godot/imported/DriedFishes-Hang.obj-34c1f3a83fb1fe1f3ee68f48b718524d.mesh", "res://.godot/imported/DriedFishes-Hang.obj-34c1f3a83fb1fe1f3ee68f48b718524d.mesh"]
+
+[params]
+
+generate_tangents=true
+generate_lods=true
+generate_shadow_mesh=true
+generate_lightmap_uv2=false
+generate_lightmap_uv2_texel_size=0.2
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+force_disable_mesh_compression=false

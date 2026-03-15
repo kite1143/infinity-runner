@@ -1,8 +1,8 @@
 [gd_scene format=4 uid="uid://ctxvy82y0uok0"]
 
-[ext_resource type="PackedScene" uid="uid://dfthbvhjiblc1" path="res://Assets/Dungeon/Dungeon_Legacy/tileBrickB_large.gltf.glb" id="1_c2mcl"]
-[ext_resource type="PackedScene" uid="uid://y0l36sgqy436" path="res://Assets/Dungeon/Dungeon_Legacy/tileBrickA_large.gltf.glb" id="2_pf5rx"]
-[ext_resource type="PackedScene" uid="uid://bjortmq6vg1m7" path="res://Assets/Dungeon/Dungeon_Remastered/barrier.gltf" id="3_glclk"]
+[ext_resource type="PackedScene" uid="uid://dfthbvhjiblc1" path="res://Assets/WorldBuiding/Dungeon/Dungeon_Legacy/tileBrickB_large.gltf.glb" id="1_c2mcl"]
+[ext_resource type="PackedScene" uid="uid://y0l36sgqy436" path="res://Assets/WorldBuiding/Dungeon/Dungeon_Legacy/tileBrickA_large.gltf.glb" id="2_pf5rx"]
+[ext_resource type="PackedScene" uid="uid://bjortmq6vg1m7" path="res://Assets/WorldBuiding/Dungeon/Dungeon_Remastered/barrier.gltf" id="3_glclk"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_uq8bg"]
 resource_name = "Stone"

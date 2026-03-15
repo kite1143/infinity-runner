@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://bnly466rjl44c"]
 
-[ext_resource type="PackedScene" uid="uid://b2vh0q2pxi0dt" path="res://Assets/Dungeon/Dungeon_Remastered/wall.gltf" id="1_hqb7l"]
+[ext_resource type="PackedScene" uid="uid://b2vh0q2pxi0dt" path="res://Assets/WorldBuiding/Dungeon/Dungeon_Remastered/wall.gltf" id="1_hqb7l"]
 
 [node name="Wall" type="Node3D" unique_id=2109028999]
 

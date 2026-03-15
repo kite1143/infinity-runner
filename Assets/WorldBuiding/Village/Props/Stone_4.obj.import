@@ -1,0 +1,25 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://t4je40e7fmnr"
+path="res://.godot/imported/Stone_4.obj-0c6fa1e1f39d4a90358e51e0e037eb49.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Stone_4.obj-0c6fa1e1f39d4a90358e51e0e037eb49.mesh"]
+
+source_file="res://Assets/WorldBuiding/Village/Props/Stone_4.obj"
+dest_files=["res://.godot/imported/Stone_4.obj-0c6fa1e1f39d4a90358e51e0e037eb49.mesh", "res://.godot/imported/Stone_4.obj-0c6fa1e1f39d4a90358e51e0e037eb49.mesh"]
+
+[params]
+
+generate_tangents=true
+generate_lods=true
+generate_shadow_mesh=true
+generate_lightmap_uv2=false
+generate_lightmap_uv2_texel_size=0.2
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+force_disable_mesh_compression=false

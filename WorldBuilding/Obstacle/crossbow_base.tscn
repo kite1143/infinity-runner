@@ -1,9 +1,9 @@
 [gd_scene format=3 uid="uid://c3skjww4g4fc1"]
 
-[ext_resource type="PackedScene" uid="uid://dc07mr44csjqh" path="res://Assets/Dungeon/Dungeon_Legacy/weaponRack.gltf.glb" id="1_klpbn"]
+[ext_resource type="PackedScene" uid="uid://dc07mr44csjqh" path="res://Assets/WorldBuiding/Dungeon/Dungeon_Legacy/weaponRack.gltf.glb" id="1_klpbn"]
 [ext_resource type="Script" uid="uid://bbuf5abwjm0oy" path="res://WorldBuilding/Obstacle/crossbow_base.gd" id="1_r1w02"]
-[ext_resource type="PackedScene" uid="uid://xf1scaroobq2" path="res://Assets/Dungeon/Dungeon_Legacy/crossbow_uncommon.gltf.glb" id="2_r1w02"]
-[ext_resource type="PackedScene" uid="uid://btpw33rli7ocm" path="res://Assets/Dungeon/Dungeon_Legacy/arrow.gltf.glb" id="3_px7eb"]
+[ext_resource type="PackedScene" uid="uid://xf1scaroobq2" path="res://Assets/WorldBuiding/Dungeon/Dungeon_Legacy/crossbow_uncommon.gltf.glb" id="2_r1w02"]
+[ext_resource type="PackedScene" uid="uid://btpw33rli7ocm" path="res://Assets/WorldBuiding/Dungeon/Dungeon_Legacy/arrow.gltf.glb" id="3_px7eb"]
 [ext_resource type="Script" uid="uid://cokcbn2uqedis" path="res://WorldBuilding/Obstacle/bullet.gd" id="5_px7eb"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_r1w02"]

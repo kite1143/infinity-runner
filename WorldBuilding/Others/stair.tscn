@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://bly7b488qqpmm"]
 
-[ext_resource type="PackedScene" uid="uid://b53bf60h86kdx" path="res://Assets/Dungeon/Dungeon_Legacy/stairs.gltf.glb" id="1_6ybwk"]
+[ext_resource type="PackedScene" uid="uid://b53bf60h86kdx" path="res://Assets/WorldBuiding/Dungeon/Dungeon_Legacy/stairs.gltf.glb" id="1_6ybwk"]
 
 [sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_q05n7"]
 points = PackedVector3Array(-1.3, 0, -3, 1.3, 0, -3, -1.3, 4.5, -3, 1.3, 4.5, -3, -1.3, 0, 3, 1.3, 0, 3)

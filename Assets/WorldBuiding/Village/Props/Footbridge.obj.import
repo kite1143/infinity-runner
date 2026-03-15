@@ -1,0 +1,25 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://1208m8ght8up"
+path="res://.godot/imported/Footbridge.obj-9af3458496a584b5bd01b17b08755e11.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Footbridge.obj-9af3458496a584b5bd01b17b08755e11.mesh"]
+
+source_file="res://Assets/WorldBuiding/Village/Props/Footbridge.obj"
+dest_files=["res://.godot/imported/Footbridge.obj-9af3458496a584b5bd01b17b08755e11.mesh", "res://.godot/imported/Footbridge.obj-9af3458496a584b5bd01b17b08755e11.mesh"]
+
+[params]
+
+generate_tangents=true
+generate_lods=true
+generate_shadow_mesh=true
+generate_lightmap_uv2=false
+generate_lightmap_uv2_texel_size=0.2
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+force_disable_mesh_compression=false

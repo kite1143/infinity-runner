@@ -1,0 +1,25 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://68mkii7127or"
+path="res://.godot/imported/WallTorch_2.obj-cdb680e47ea6ee2c264109a2c8135aff.mesh"
+
+[deps]
+
+files=["res://.godot/imported/WallTorch_2.obj-cdb680e47ea6ee2c264109a2c8135aff.mesh"]
+
+source_file="res://Assets/WorldBuiding/Village/Props/WallTorch_2.obj"
+dest_files=["res://.godot/imported/WallTorch_2.obj-cdb680e47ea6ee2c264109a2c8135aff.mesh", "res://.godot/imported/WallTorch_2.obj-cdb680e47ea6ee2c264109a2c8135aff.mesh"]
+
+[params]
+
+generate_tangents=true
+generate_lods=true
+generate_shadow_mesh=true
+generate_lightmap_uv2=false
+generate_lightmap_uv2_texel_size=0.2
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+force_disable_mesh_compression=false

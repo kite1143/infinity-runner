@@ -1,0 +1,25 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://berrbnc52pwc8"
+path="res://.godot/imported/Building_2_Wall_On_2.obj-d9e8e1ed5317a90cd6ea46f443996beb.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Building_2_Wall_On_2.obj-d9e8e1ed5317a90cd6ea46f443996beb.mesh"]
+
+source_file="res://Assets/WorldBuiding/Village/Props/Building_2_Wall_On_2.obj"
+dest_files=["res://.godot/imported/Building_2_Wall_On_2.obj-d9e8e1ed5317a90cd6ea46f443996beb.mesh", "res://.godot/imported/Building_2_Wall_On_2.obj-d9e8e1ed5317a90cd6ea46f443996beb.mesh"]
+
+[params]
+
+generate_tangents=true
+generate_lods=true
+generate_shadow_mesh=true
+generate_lightmap_uv2=false
+generate_lightmap_uv2_texel_size=0.2
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+force_disable_mesh_compression=false
