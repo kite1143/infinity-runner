@@ -11,6 +11,9 @@
 [ext_resource type="PackedScene" uid="uid://4656nk0evcq" path="res://WorldBuilding/Obstacle/barrel.tscn" id="9_sgtyu"]
 [ext_resource type="PackedScene" uid="uid://bly7b488qqpmm" path="res://WorldBuilding/Others/stair.tscn" id="10_sgtyu"]
 [ext_resource type="PackedScene" uid="uid://d3q3uealwl55v" path="res://WorldBuilding/Enemies/runner_skeleton.tscn" id="11_slq2w"]
+[ext_resource type="PackedScene" uid="uid://cd0ypqtndsfsd" path="res://WorldBuilding/Obstacle/wooden_cart.tscn" id="12_ickic"]
+[ext_resource type="PackedScene" uid="uid://dqs6km1kfy11e" path="res://WorldBuilding/Obstacle/wooden_spike.tscn" id="13_dxfox"]
+[ext_resource type="PackedScene" uid="uid://cncscunb7a62t" path="res://WorldBuilding/Enemies/skeleton_horse.tscn" id="14_ev63e"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_7l7g0"]
 sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
@@ -33,6 +36,9 @@ size = Vector3(3.5, 5, 6)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_slq2w"]
 size = Vector3(3.5, 5, 6)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_6ro0x"]
+size = Vector3(3.1577148, 1, 7.474304)
 
 [node name="World" type="Node3D" unique_id=1991109631]
 
@@ -57,7 +63,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1, -35)
 transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, 2, 1, -20.11195)
 
 [node name="Spike" parent="PlainChunk" unique_id=1551125833 instance=ExtResource("5_7tie6")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.08264828, 1, 23.019194)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.08264828, 1, -13.038971)
 
 [node name="CrossbowBase" parent="PlainChunk" unique_id=639564116 node_paths=PackedStringArray("trigger_area") instance=ExtResource("6_83ce6")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0.95000005, -23.874191)
@@ -80,7 +86,7 @@ transform = Transform3D(-6.556708e-08, 0, -1.5, 0, 1.5, 0, 1.5, 0, -6.556708e-08
 transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, 0, 2.0302424, -6.448456)
 
 [node name="Barrel" parent="PlainChunk" unique_id=911393487 node_paths=PackedStringArray("trigger_range") instance=ExtResource("9_sgtyu")]
-transform = Transform3D(0.99999386, -0.0009795096, 0.0033708455, 0.000980612, 0.99999946, -0.0003262559, -0.003370525, 0.0003295509, 0.9999943, 3.7010937, 6.4427032, 13.422773)
+transform = Transform3D(0.99999386, -0.0009795096, 0.0033708455, 0.000980612, 0.99999946, -0.0003262559, -0.003370525, 0.0003295509, 0.9999943, 3.7010937, 6.4427032, -15.577225)
 trigger_range = NodePath("Area3D")
 
 [node name="Area3D" type="Area3D" parent="PlainChunk/Barrel" unique_id=285383677]
@@ -90,20 +96,19 @@ collision_layer = 0
 collision_mask = 2
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="PlainChunk/Barrel/Area3D" unique_id=1375610350]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.8570628, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.8570628, -32.26535)
 shape = SubResource("BoxShape3D_sgtyu")
 debug_color = Color(0.93161, 2.887845e-05, 0.65410405, 0.41960785)
 
 [node name="Stair" parent="PlainChunk" unique_id=822857029 instance=ExtResource("10_sgtyu")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 1, 15)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 1, -14)
 
 [node name="RunnerSkeleton" parent="PlainChunk" unique_id=458598348 node_paths=PackedStringArray("trigger_range") instance=ExtResource("11_slq2w")]
-transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, -4, 0.99999976, 9.700081)
+transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, -4, 0.99999976, -29.221924)
 trigger_range = NodePath("Area3D")
 
 [node name="Area3D" type="Area3D" parent="PlainChunk/RunnerSkeleton" unique_id=176927571]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.335623, 0.3744135, -9.577227)
-top_level = true
+transform = Transform3D(0.6666667, 0, 0, 0, 0.6666667, 0, 0, 0, 0.6666667, -0.22374845, 0.24960916, 10.481795)
 collision_layer = 0
 collision_mask = 2
 
@@ -111,3 +116,23 @@ collision_mask = 2
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.8570628, 0)
 shape = SubResource("BoxShape3D_slq2w")
 debug_color = Color(0.93161, 2.887845e-05, 0.65410405, 0.41960785)
+
+[node name="WoodenCart" parent="PlainChunk" unique_id=248248571 instance=ExtResource("12_ickic")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.9512405, 0.99999905, 2.1685753)
+
+[node name="WoodenSpike" parent="." unique_id=2048444026 instance=ExtResource("13_dxfox")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -65.21762)
+
+[node name="SkeletonHorse" parent="." unique_id=1841971769 node_paths=PackedStringArray("trigger_area") instance=ExtResource("14_ev63e")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -1.1488993, 2.6464462e-05, -26.755463)
+trigger_area = NodePath("Area3D")
+
+[node name="Area3D" type="Area3D" parent="SkeletonHorse" unique_id=710763015]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -4.4514337, 2.6464462e-05, -21.085531)
+top_level = true
+collision_layer = 0
+collision_mask = 2
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="SkeletonHorse/Area3D" unique_id=1796033589]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16.293028, 0, 3.2371504)
+shape = SubResource("BoxShape3D_6ro0x")

@@ -1,0 +1,26 @@
+[gd_scene format=3 uid="uid://dqs6km1kfy11e"]
+
+[ext_resource type="Texture2D" uid="uid://dcrr0whdfwrsy" path="res://Assets/WorldBuiding/Village/Props/Village pixel-64x64.jpg" id="1_mu87o"]
+[ext_resource type="ArrayMesh" uid="uid://u435ut85lprb" path="res://Assets/WorldBuiding/Village/Props/Spikes_3.obj" id="2_aj7rn"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_6ro0x"]
+albedo_texture = ExtResource("1_mu87o")
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ev63e"]
+size = Vector3(2.3747559, 2.0019531, 1.6968994)
+
+[node name="WoodenSpike" type="Node3D" unique_id=2048444026]
+
+[node name="Mesh" type="MeshInstance3D" parent="." unique_id=499737219]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0, 0)
+material_override = SubResource("StandardMaterial3D_6ro0x")
+mesh = ExtResource("2_aj7rn")
+
+[node name="Area3D" type="Area3D" parent="." unique_id=2123456114 groups=["Obstacle"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.015266418, 0)
+collision_layer = 8
+collision_mask = 0
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D" unique_id=1178860811]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.0009766, 0.20843506)
+shape = SubResource("BoxShape3D_ev63e")

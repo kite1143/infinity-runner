@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://cncscunb7a62t"]
+
+[ext_resource type="Script" uid="uid://bn1we3rygvpi4" path="res://WorldBuilding/Enemies/skeleton_horse.gd" id="1_dccfi"]
+[ext_resource type="PackedScene" uid="uid://bwhxi8xe5hrh8" path="res://WorldBuilding/Enemies/mini_skeleton.tscn" id="1_gcex5"]
+
+[node name="SkeletonHorse" type="Node3D" unique_id=1841971769]
+script = ExtResource("1_dccfi")
+
+[node name="Skeletons" type="Node3D" parent="." unique_id=1858510457]
+
+[node name="MiniSkeleton" parent="Skeletons" unique_id=458598348 instance=ExtResource("1_gcex5")]
+
+[node name="MiniSkeleton2" parent="Skeletons" unique_id=886344607 instance=ExtResource("1_gcex5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -2)
+walking_way = "Walking_B"
+
+[node name="MiniSkeleton3" parent="Skeletons" unique_id=950683438 instance=ExtResource("1_gcex5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -4)
+walking_way = "Walking_C"

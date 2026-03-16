@@ -1,0 +1,32 @@
+[gd_scene format=3 uid="uid://cd0ypqtndsfsd"]
+
+[ext_resource type="Texture2D" uid="uid://dcrr0whdfwrsy" path="res://Assets/WorldBuiding/Village/Props/Village pixel-64x64.jpg" id="1_ayonh"]
+[ext_resource type="ArrayMesh" uid="uid://b5wy0o34uu03l" path="res://Assets/WorldBuiding/Village/Props/Wheelbarrow.obj" id="2_2mv6a"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_xtfyd"]
+albedo_texture = ExtResource("1_ayonh")
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_xgpvp"]
+size = Vector3(6.11557, 2.5408936, 1.8291016)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_fia5c"]
+size = Vector3(2.6956663, 0.5441208, 2.1816406)
+
+[node name="WoodenCart" type="Node3D" unique_id=248248571]
+
+[node name="Wheelbarrow" type="MeshInstance3D" parent="." unique_id=398122888]
+transform = Transform3D(-1.3113416e-07, 0, 3, 0, 3, 0, -3, 0, -1.3113416e-07, 0, 0, 0)
+material_override = SubResource("StandardMaterial3D_xtfyd")
+mesh = ExtResource("2_2mv6a")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="." unique_id=1571718001 groups=["Obstacle"]]
+collision_layer = 8
+collision_mask = 0
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" unique_id=908693659]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.6324921, 1.2704468, 0)
+shape = SubResource("BoxShape3D_xgpvp")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="StaticBody3D" unique_id=1582159643]
+transform = Transform3D(0.9883164, -0.15241665, 0, 0.15241665, 0.9883164, 0, 0, 0, 1, 5.982005, 2.4360607, 0)
+shape = SubResource("BoxShape3D_fia5c")
