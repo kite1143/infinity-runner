@@ -2,8 +2,8 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cfri054tyj31q"
-path.s3tc="res://.godot/imported/Grass_04-128x128.png-b7fc090e03ee14566f228d69fb1b9b72.s3tc.ctex"
+uid="uid://cfcldl2dl4htr"
+path.s3tc="res://.godot/imported/coast_sand_rocks_02_nor_gl_1k.png-2b4699e0ee4805454261e22ed25ff975.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://Assets/WorldBuiding/Textures/Grass/Grass_04-128x128.png"
-dest_files=["res://.godot/imported/Grass_04-128x128.png-b7fc090e03ee14566f228d69fb1b9b72.s3tc.ctex"]
+source_file="res://Assets/WorldBuiding/Textures/CoastSand/coast_sand_rocks_02_nor_gl_1k.png"
+dest_files=["res://.godot/imported/coast_sand_rocks_02_nor_gl_1k.png-2b4699e0ee4805454261e22ed25ff975.s3tc.ctex"]
 
 [params]
 
@@ -22,12 +22,12 @@ compress/lossy_quality=0.7
 compress/uastc_level=0
 compress/rdo_quality_loss=0.0
 compress/hdr_compression=1
-compress/normal_map=0
+compress/normal_map=1
 compress/channel_pack=0
 mipmaps/generate=true
 mipmaps/limit=-1
-roughness/mode=0
-roughness/src_normal=""
+roughness/mode=1
+roughness/src_normal="res://Assets/WorldBuiding/Textures/CoastSand/coast_sand_rocks_02_nor_gl_1k.png"
 process/channel_remap/red=0
 process/channel_remap/green=1
 process/channel_remap/blue=2

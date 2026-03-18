@@ -3,6 +3,9 @@
 [ext_resource type="PackedScene" uid="uid://dfthbvhjiblc1" path="res://Assets/WorldBuiding/Dungeon/Dungeon_Legacy/tileBrickB_large.gltf.glb" id="1_c2mcl"]
 [ext_resource type="PackedScene" uid="uid://y0l36sgqy436" path="res://Assets/WorldBuiding/Dungeon/Dungeon_Legacy/tileBrickA_large.gltf.glb" id="2_pf5rx"]
 [ext_resource type="PackedScene" uid="uid://bjortmq6vg1m7" path="res://Assets/WorldBuiding/Dungeon/Dungeon_Remastered/barrier.gltf" id="3_glclk"]
+[ext_resource type="Texture2D" uid="uid://cgpu7jwfb55d4" path="res://Assets/WorldBuiding/Textures/CoastSand/coast_sand_rocks_02_diff_1k.png" id="4_omh3s"]
+[ext_resource type="Texture2D" uid="uid://cfcldl2dl4htr" path="res://Assets/WorldBuiding/Textures/CoastSand/coast_sand_rocks_02_nor_gl_1k.png" id="5_7dr3v"]
+[ext_resource type="Texture2D" uid="uid://dr6on41boxsad" path="res://Assets/WorldBuiding/Textures/CoastSand/coast_sand_rocks_02_rough_1k.png" id="6_2tx10"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_uq8bg"]
 resource_name = "Stone"
@@ -43,6 +46,16 @@ shadow_mesh = SubResource("ArrayMesh_7jaqh")
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_nemkc"]
 size = Vector3(12, 1, 72)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_w0sno"]
+albedo_texture = ExtResource("4_omh3s")
+roughness_texture = ExtResource("6_2tx10")
+normal_scale = 6.81
+normal_texture = ExtResource("5_7dr3v")
+uv1_scale = Vector3(20, 20, 20)
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_glclk"]
+size = Vector2(50, 72)
 
 [node name="PlainChunk" type="StaticBody3D" unique_id=1065648645]
 collision_mask = 0
@@ -122,6 +135,10 @@ transform = Transform3D(-8.742278e-08, 0, 2, 0, 2, 0, -2, 0, -8.742278e-08, 7, 0
 [node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1017580168]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1.0000001, 0, 0.5, 0)
 shape = SubResource("BoxShape3D_nemkc")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=497838200]
+material_override = SubResource("StandardMaterial3D_w0sno")
+mesh = SubResource("PlaneMesh_glclk")
 
 [editable path="ChunkAsset"]
 [editable path="ChunkAsset2"]
