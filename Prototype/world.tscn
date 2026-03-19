@@ -15,6 +15,7 @@
 [ext_resource type="PackedScene" uid="uid://dqs6km1kfy11e" path="res://WorldBuilding/Obstacle/wooden_spike.tscn" id="13_dxfox"]
 [ext_resource type="PackedScene" uid="uid://cncscunb7a62t" path="res://WorldBuilding/Enemies/skeleton_horse.tscn" id="14_ev63e"]
 [ext_resource type="PackedScene" uid="uid://b3al6bgj8vx8c" path="res://WorldBuilding/Chunks/chunk_02.tscn" id="15_6ro0x"]
+[ext_resource type="PackedScene" uid="uid://56gxpidagx8r" path="res://WorldBuilding/Chunks/chunk_03.tscn" id="16_a0osc"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_7l7g0"]
 sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
@@ -140,3 +141,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16.293024, 0, -76.95548)
 shape = SubResource("BoxShape3D_6ro0x")
 
 [node name="Chunk_02" parent="." unique_id=177310566 instance=ExtResource("15_6ro0x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 79.50075, 0, 0)
+
+[node name="Chunk_03" parent="." unique_id=1759083980 instance=ExtResource("16_a0osc")]
