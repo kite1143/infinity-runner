@@ -407,7 +407,7 @@ mesh = ExtResource("25_8jsre")
 [node name="Obstacles" type="Node3D" parent="." unique_id=1123995955]
 
 [node name="SwingHammer" parent="Obstacles" unique_id=2022641976 instance=ExtResource("26_8sge5")]
-transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, 0.07433578, 2.0302424, 20.011734)
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, 0.07433578, 2.0302424, 18.436949)
 
 [node name="HeightGuard" parent="Obstacles" unique_id=1614223894 instance=ExtResource("27_qjp6c")]
 transform = Transform3D(-6.556708e-08, 0, -1.5, 0, 1.5, 0, 1.5, 0, -6.556708e-08, -3.9052863, 1, 7.86736)
