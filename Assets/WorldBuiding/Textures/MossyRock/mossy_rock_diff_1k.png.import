@@ -2,8 +2,8 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://x4vnpse86hg1"
-path.s3tc="res://.godot/imported/Bricks_12-128x128.png-0a386a0728b0caf9e32f74df336702d7.s3tc.ctex"
+uid="uid://ct1rkcfdcwqlk"
+path.s3tc="res://.godot/imported/mossy_rock_diff_1k.png-26022bc2885712e63186dba702cbc5a7.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://Assets/WorldBuiding/Textures/Bricks/Bricks_12-128x128.png"
-dest_files=["res://.godot/imported/Bricks_12-128x128.png-0a386a0728b0caf9e32f74df336702d7.s3tc.ctex"]
+source_file="res://Assets/WorldBuiding/Textures/MossyRock/mossy_rock_diff_1k.png"
+dest_files=["res://.godot/imported/mossy_rock_diff_1k.png-26022bc2885712e63186dba702cbc5a7.s3tc.ctex"]
 
 [params]
 
