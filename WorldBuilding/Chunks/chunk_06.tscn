@@ -1,0 +1,562 @@
+[gd_scene format=3 uid="uid://du3in3omxbym6"]
+
+[ext_resource type="PackedScene" uid="uid://ctxvy82y0uok0" path="res://WorldBuilding/plain_chunk.tscn" id="1_mve46"]
+[ext_resource type="Texture2D" uid="uid://ct1rkcfdcwqlk" path="res://Assets/WorldBuiding/Textures/MossyRock/mossy_rock_diff_1k.png" id="5_x2r7t"]
+[ext_resource type="Texture2D" uid="uid://cw3xdopao3qac" path="res://Assets/WorldBuiding/Textures/MossyRock/mossy_rock_nor_gl_1k.png" id="6_f57cs"]
+[ext_resource type="Texture2D" uid="uid://ce1q7u3fvg75u" path="res://Assets/WorldBuiding/Textures/MossyRock/mossy_rock_rough_1k.png" id="7_ks0la"]
+[ext_resource type="PackedScene" uid="uid://b2vh0q2pxi0dt" path="res://Assets/WorldBuiding/Dungeon/Dungeon_Remastered/wall.gltf" id="8_aje1u"]
+[ext_resource type="Texture2D" uid="uid://cgpu7jwfb55d4" path="res://Assets/WorldBuiding/Textures/CoastSand/coast_sand_rocks_02_diff_1k.png" id="8_diq3w"]
+[ext_resource type="Texture2D" uid="uid://cfcldl2dl4htr" path="res://Assets/WorldBuiding/Textures/CoastSand/coast_sand_rocks_02_nor_gl_1k.png" id="9_yp2gb"]
+[ext_resource type="Texture2D" uid="uid://dr6on41boxsad" path="res://Assets/WorldBuiding/Textures/CoastSand/coast_sand_rocks_02_rough_1k.png" id="10_6qay8"]
+[ext_resource type="PackedScene" uid="uid://q2o3ogearh4n" path="res://Assets/WorldBuiding/Dungeon/Dungeon_Remastered/floor_tile_big_spikes.gltf" id="11_en513"]
+[ext_resource type="Texture2D" uid="uid://dcrr0whdfwrsy" path="res://Assets/WorldBuiding/Village/Props/Village pixel-64x64.jpg" id="12_ndoo2"]
+[ext_resource type="ArrayMesh" uid="uid://lrdyr7m0rmj" path="res://Assets/WorldBuiding/Village/Props/Barn_Wood.obj" id="13_520ao"]
+[ext_resource type="ArrayMesh" uid="uid://dhfdcsrhl8i74" path="res://Assets/WorldBuiding/Village/Props/Windmill.obj" id="14_whd3n"]
+[ext_resource type="ArrayMesh" uid="uid://wuitsv4gckt" path="res://Assets/WorldBuiding/Village/Props/Tree_4.obj" id="15_lcnug"]
+[ext_resource type="ArrayMesh" uid="uid://de4h76cqtq3mc" path="res://Assets/WorldBuiding/Village/Props/Building_2_Wall_Off_1.obj" id="16_hnqa6"]
+[ext_resource type="ArrayMesh" uid="uid://biixgnq2x3s4p" path="res://Assets/WorldBuiding/Village/Props/Rock_4.obj" id="17_5hxsa"]
+[ext_resource type="ArrayMesh" uid="uid://b5wy0o34uu03l" path="res://Assets/WorldBuiding/Village/Props/Wheelbarrow.obj" id="18_oi38o"]
+[ext_resource type="ArrayMesh" uid="uid://dmcthhrkq3qe3" path="res://Assets/WorldBuiding/Village/Props/Field_M.obj" id="19_k1s24"]
+[ext_resource type="ArrayMesh" uid="uid://cijcy7mntpbpe" path="res://Assets/WorldBuiding/Village/Props/Stall.obj" id="20_wdt0u"]
+[ext_resource type="ArrayMesh" uid="uid://bt26656rc83oi" path="res://Assets/WorldBuiding/Village/Props/Rock_Formation.obj" id="21_hqli7"]
+[ext_resource type="ArrayMesh" uid="uid://dusc6pklj6m3o" path="res://Assets/WorldBuiding/Village/Props/ScareCrow.obj" id="22_l2jnt"]
+[ext_resource type="ArrayMesh" uid="uid://bbmdix331f600" path="res://Assets/WorldBuiding/Village/Props/Building_1_Wall_Off.obj" id="23_fucb5"]
+[ext_resource type="ArrayMesh" uid="uid://bfn86bsk653mr" path="res://Assets/WorldBuiding/Village/Props/Tree_1.obj" id="24_obltm"]
+[ext_resource type="ArrayMesh" uid="uid://h3dux8aq2cqp" path="res://Assets/WorldBuiding/Village/Props/Tree_2.obj" id="25_6n4hj"]
+[ext_resource type="ArrayMesh" uid="uid://clbm02x72xxtb" path="res://Assets/WorldBuiding/Village/Props/Tree_5.obj" id="26_7nq4a"]
+[ext_resource type="ArrayMesh" uid="uid://bsm5u5gf4o45e" path="res://Assets/WorldBuiding/Village/Props/Tree_6.obj" id="27_uqe00"]
+[ext_resource type="ArrayMesh" uid="uid://vbmg1p3swnyj" path="res://Assets/WorldBuiding/Village/Props/Fence_1_4.obj" id="28_m20v7"]
+[ext_resource type="ArrayMesh" uid="uid://b8lavc8jvgovb" path="res://Assets/WorldBuiding/Village/Props/Stable.obj" id="29_i6nn7"]
+[ext_resource type="PackedScene" uid="uid://b7sdugcg8hb0y" path="res://Assets/WorldBuiding/Dungeon/Dungeon_Remastered/wall_corner.gltf" id="30_mve46"]
+[ext_resource type="ArrayMesh" uid="uid://b0bcd3dq723x8" path="res://Assets/WorldBuiding/Village/Props/Field_L.obj" id="30_vx1gb"]
+[ext_resource type="ArrayMesh" uid="uid://b5gmurmb3mhfj" path="res://Assets/WorldBuiding/Village/Props/Flag_Totem.obj" id="31_sr1w6"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_6g2mq"]
+albedo_texture = ExtResource("5_x2r7t")
+roughness_texture = ExtResource("7_ks0la")
+emission_energy_multiplier = 4.05
+normal_enabled = true
+normal_scale = 1.36
+normal_texture = ExtResource("6_f57cs")
+uv1_scale = Vector3(2, 20, 0.5)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_suftu"]
+albedo_texture = ExtResource("8_diq3w")
+roughness_texture = ExtResource("10_6qay8")
+normal_scale = 6.81
+normal_texture = ExtResource("9_yp2gb")
+uv1_scale = Vector3(20, 20, 20)
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_s6wev"]
+size = Vector2(25, 72)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_n2xfk"]
+size = Vector3(12, 2, 72)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_qd7vp"]
+albedo_texture = ExtResource("12_ndoo2")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_jt4ae"]
+albedo_texture = ExtResource("12_ndoo2")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_c0lis"]
+albedo_texture = ExtResource("12_ndoo2")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_yyp2c"]
+albedo_texture = ExtResource("12_ndoo2")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_3voce"]
+albedo_texture = ExtResource("12_ndoo2")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_fdjoo"]
+albedo_texture = ExtResource("12_ndoo2")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_0anft"]
+albedo_texture = ExtResource("12_ndoo2")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_fa3rc"]
+albedo_texture = ExtResource("12_ndoo2")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_bsin7"]
+albedo_texture = ExtResource("12_ndoo2")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_r337q"]
+albedo_texture = ExtResource("12_ndoo2")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_jqp4y"]
+albedo_texture = ExtResource("12_ndoo2")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_is7sk"]
+albedo_texture = ExtResource("12_ndoo2")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_q5ldt"]
+albedo_texture = ExtResource("12_ndoo2")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_a5c2b"]
+albedo_texture = ExtResource("12_ndoo2")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_brxq0"]
+albedo_texture = ExtResource("12_ndoo2")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ecda8"]
+albedo_texture = ExtResource("12_ndoo2")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_r786r"]
+albedo_texture = ExtResource("12_ndoo2")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_13yx0"]
+albedo_texture = ExtResource("12_ndoo2")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_m42os"]
+albedo_texture = ExtResource("12_ndoo2")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_qrhou"]
+albedo_texture = ExtResource("12_ndoo2")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_aqhrq"]
+albedo_texture = ExtResource("12_ndoo2")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_kjs8s"]
+albedo_texture = ExtResource("12_ndoo2")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_smem7"]
+albedo_texture = ExtResource("12_ndoo2")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_1ryuo"]
+albedo_texture = ExtResource("12_ndoo2")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_jvyha"]
+albedo_texture = ExtResource("12_ndoo2")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_tktbl"]
+albedo_texture = ExtResource("12_ndoo2")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_cn877"]
+albedo_texture = ExtResource("12_ndoo2")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_d2sea"]
+albedo_texture = ExtResource("12_ndoo2")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_tjpvw"]
+albedo_texture = ExtResource("12_ndoo2")
+
+[node name="Chunk_06" type="Node3D" unique_id=177310566]
+
+[node name="Map" type="Node3D" parent="." unique_id=1327333073]
+
+[node name="PlainChunk" parent="Map" unique_id=1065648645 instance=ExtResource("1_mve46")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0020189285, -7.999961, -0.051403046)
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Map" unique_id=110554438]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -17.985, -4.01, 0)
+material_override = SubResource("StandardMaterial3D_6g2mq")
+size = Vector3(18, 8, 72)
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="Map" unique_id=1385273519]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 1, -4, -36)
+material_override = SubResource("StandardMaterial3D_6g2mq")
+size = Vector3(0.1, 8, 36)
+
+[node name="CSGBox3D4" type="CSGBox3D" parent="Map" unique_id=702039924]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 0, -4, 36)
+material_override = SubResource("StandardMaterial3D_6g2mq")
+size = Vector3(0.1, 8, 36)
+
+[node name="CSGBox3D3" type="CSGBox3D" parent="Map" unique_id=1462013046]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18.015, -4.1, 0)
+material_override = SubResource("StandardMaterial3D_6g2mq")
+size = Vector3(18, 8, 72)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Map" unique_id=2038925749]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21.35458, 0, 0)
+material_override = SubResource("StandardMaterial3D_suftu")
+mesh = SubResource("PlaneMesh_s6wev")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="Map" unique_id=374775668]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20.64542, 0, 0)
+material_override = SubResource("StandardMaterial3D_suftu")
+mesh = SubResource("PlaneMesh_s6wev")
+
+[node name="wall2" parent="Map" unique_id=582845379 instance=ExtResource("8_aje1u")]
+transform = Transform3D(-1.75, 0, -1.5298986e-07, 0, 1.75, 0, 1.5298986e-07, 0, -1.75, -1.5, -7, 29)
+
+[node name="wall15" parent="Map" unique_id=2107918304 instance=ExtResource("8_aje1u")]
+transform = Transform3D(-1.75, 0, -1.5298986e-07, 0, 1.75, 0, 1.5298986e-07, 0, -1.75, -1.5, -7, 30.5)
+
+[node name="wall16" parent="Map" unique_id=150207891 instance=ExtResource("8_aje1u")]
+transform = Transform3D(-1.75, 0, -1.5298986e-07, 0, 1.75, 0, 1.5298986e-07, 0, -1.75, -1.49, -7, 32)
+
+[node name="wall18" parent="Map" unique_id=410105257 instance=ExtResource("8_aje1u")]
+transform = Transform3D(-1.75, 0, -1.5298986e-07, 0, 1.75, 0, 1.5298986e-07, 0, -1.75, -1.5, -7, 33.5)
+
+[node name="wall19" parent="Map" unique_id=1650586922 instance=ExtResource("8_aje1u")]
+transform = Transform3D(-1.75, 0, -1.5298986e-07, 0, 1.75, 0, 1.5298986e-07, 0, -1.75, -1.5, -7, 35)
+
+[node name="wall3" parent="Map" unique_id=1257950126 instance=ExtResource("8_aje1u")]
+transform = Transform3D(-7.649493e-08, 0, 1.75, 0, 1.75, 0, -1.75, 0, -7.649493e-08, -4, -7, 25.688)
+
+[node name="wall5" parent="Map" unique_id=194089118 instance=ExtResource("8_aje1u")]
+transform = Transform3D(-7.649493e-08, 0, 1.75, 0, 1.75, 0, -1.75, 0, -7.649493e-08, 4, -7, 12.688)
+
+[node name="wall12" parent="Map" unique_id=594931371 instance=ExtResource("8_aje1u")]
+transform = Transform3D(-7.649493e-08, 0, 1.75, 0, 1.75, 0, -1.75, 0, -7.649493e-08, -4, -7, 7.6879997)
+
+[node name="wall13" parent="Map" unique_id=527607797 instance=ExtResource("8_aje1u")]
+transform = Transform3D(-7.649493e-08, 0, 1.75, 0, 1.75, 0, -1.75, 0, -7.649493e-08, -4, -7, 0.6879997)
+
+[node name="wall14" parent="Map" unique_id=498269390 instance=ExtResource("8_aje1u")]
+transform = Transform3D(-7.649493e-08, 0, 1.75, 0, 1.75, 0, -1.75, 0, -7.649493e-08, -4, -7, -6.3120003)
+
+[node name="wall6" parent="Map" unique_id=1579230914 instance=ExtResource("8_aje1u")]
+transform = Transform3D(-7.649493e-08, 0, 1.75, 0, 1.75, 0, -1.75, 0, -7.649493e-08, 4, -7, 5.6879997)
+
+[node name="wall7" parent="Map" unique_id=239135231 instance=ExtResource("8_aje1u")]
+transform = Transform3D(-7.649493e-08, 0, 1.75, 0, 1.75, 0, -1.75, 0, -7.649493e-08, 4, -7, -8.312)
+
+[node name="wall8" parent="Map" unique_id=593454583 instance=ExtResource("8_aje1u")]
+transform = Transform3D(-7.649493e-08, 0, 1.75, 0, 1.75, 0, -1.75, 0, -7.649493e-08, 4, -7, -15.312)
+
+[node name="wall9" parent="Map" unique_id=138910777 instance=ExtResource("8_aje1u")]
+transform = Transform3D(-7.649493e-08, 0, 1.75, 0, 1.75, 0, -1.75, 0, -7.649493e-08, -4, -7, -25.312)
+
+[node name="wall10" parent="Map" unique_id=843444979 instance=ExtResource("8_aje1u")]
+transform = Transform3D(-7.649493e-08, 0, 1.75, 0, 1.75, 0, -1.75, 0, -7.649493e-08, -4, -7, -32.312)
+
+[node name="wall4" parent="Map" unique_id=988696055 instance=ExtResource("8_aje1u")]
+transform = Transform3D(1.75, 0, 0, 0, 1.75, 0, 0, 0, 1.75, 0, -7, 19)
+
+[node name="wall11" parent="Map" unique_id=1469655773 instance=ExtResource("8_aje1u")]
+transform = Transform3D(-1.75, 0, 1.5298986e-07, 0, 1.75, 0, -1.5298986e-07, 0, -1.75, 0, -7, -19)
+
+[node name="Obstacles" type="Node3D" parent="." unique_id=1123995955]
+
+[node name="floor_tile_big_spikes2" parent="Obstacles" unique_id=477883700 instance=ExtResource("11_en513")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -7, 10)
+
+[node name="floor_tile_big_spikes3" parent="Obstacles" unique_id=947630368 instance=ExtResource("11_en513")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, -7, 10)
+
+[node name="floor_tile_big_spikes4" parent="Obstacles" unique_id=846104878 instance=ExtResource("11_en513")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, -7, 10)
+
+[node name="floor_tile_big_spikes5" parent="Obstacles" unique_id=1635339713 instance=ExtResource("11_en513")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -7, 14)
+
+[node name="floor_tile_big_spikes6" parent="Obstacles" unique_id=1685929198 instance=ExtResource("11_en513")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, -7, 14)
+
+[node name="floor_tile_big_spikes7" parent="Obstacles" unique_id=2067509648 instance=ExtResource("11_en513")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, -7, 14)
+
+[node name="floor_tile_big_spikes8" parent="Obstacles" unique_id=250664384 instance=ExtResource("11_en513")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -7, 18)
+
+[node name="floor_tile_big_spikes9" parent="Obstacles" unique_id=774787510 instance=ExtResource("11_en513")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, -7, 18)
+
+[node name="floor_tile_big_spikes10" parent="Obstacles" unique_id=735749935 instance=ExtResource("11_en513")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, -7, 18)
+
+[node name="floor_tile_big_spikes11" parent="Obstacles" unique_id=155997568 instance=ExtResource("11_en513")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -7, 22)
+
+[node name="floor_tile_big_spikes12" parent="Obstacles" unique_id=1183651952 instance=ExtResource("11_en513")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, -7, 22)
+
+[node name="floor_tile_big_spikes13" parent="Obstacles" unique_id=2083327107 instance=ExtResource("11_en513")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, -7, 22)
+
+[node name="floor_tile_big_spikes14" parent="Obstacles" unique_id=942304620 instance=ExtResource("11_en513")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -7, 26)
+
+[node name="floor_tile_big_spikes15" parent="Obstacles" unique_id=397749350 instance=ExtResource("11_en513")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, -7, 26)
+
+[node name="floor_tile_big_spikes16" parent="Obstacles" unique_id=1425226226 instance=ExtResource("11_en513")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, -7, 26)
+
+[node name="floor_tile_big_spikes17" parent="Obstacles" unique_id=971031697 instance=ExtResource("11_en513")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -7, 30)
+
+[node name="floor_tile_big_spikes18" parent="Obstacles" unique_id=1872388090 instance=ExtResource("11_en513")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, -7, 30)
+
+[node name="floor_tile_big_spikes19" parent="Obstacles" unique_id=1329720725 instance=ExtResource("11_en513")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, -7, 30)
+
+[node name="floor_tile_big_spikes20" parent="Obstacles" unique_id=1489024328 instance=ExtResource("11_en513")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -7, 34)
+
+[node name="floor_tile_big_spikes21" parent="Obstacles" unique_id=1164504910 instance=ExtResource("11_en513")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, -7, 34)
+
+[node name="floor_tile_big_spikes22" parent="Obstacles" unique_id=525716981 instance=ExtResource("11_en513")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, -7, 34)
+
+[node name="floor_tile_big_spikes23" parent="Obstacles" unique_id=812706139 instance=ExtResource("11_en513")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -7, 6)
+
+[node name="floor_tile_big_spikes24" parent="Obstacles" unique_id=699886964 instance=ExtResource("11_en513")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, -7, 6)
+
+[node name="floor_tile_big_spikes25" parent="Obstacles" unique_id=436322632 instance=ExtResource("11_en513")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, -7, 6)
+
+[node name="floor_tile_big_spikes26" parent="Obstacles" unique_id=1559871371 instance=ExtResource("11_en513")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -7, 2)
+
+[node name="floor_tile_big_spikes27" parent="Obstacles" unique_id=487276005 instance=ExtResource("11_en513")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, -7, 2)
+
+[node name="floor_tile_big_spikes28" parent="Obstacles" unique_id=273809813 instance=ExtResource("11_en513")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, -7, 2)
+
+[node name="floor_tile_big_spikes29" parent="Obstacles" unique_id=1626499568 instance=ExtResource("11_en513")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -7, -26)
+
+[node name="floor_tile_big_spikes30" parent="Obstacles" unique_id=1883884657 instance=ExtResource("11_en513")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, -7, -26)
+
+[node name="floor_tile_big_spikes31" parent="Obstacles" unique_id=1545257541 instance=ExtResource("11_en513")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, -7, -26)
+
+[node name="floor_tile_big_spikes32" parent="Obstacles" unique_id=159608056 instance=ExtResource("11_en513")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -7, -22)
+
+[node name="floor_tile_big_spikes33" parent="Obstacles" unique_id=1303105065 instance=ExtResource("11_en513")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, -7, -22)
+
+[node name="floor_tile_big_spikes34" parent="Obstacles" unique_id=1363606837 instance=ExtResource("11_en513")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, -7, -22)
+
+[node name="floor_tile_big_spikes35" parent="Obstacles" unique_id=1469388568 instance=ExtResource("11_en513")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -7, -18)
+
+[node name="floor_tile_big_spikes36" parent="Obstacles" unique_id=547892313 instance=ExtResource("11_en513")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, -7, -18)
+
+[node name="floor_tile_big_spikes37" parent="Obstacles" unique_id=1737514543 instance=ExtResource("11_en513")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, -7, -18)
+
+[node name="floor_tile_big_spikes38" parent="Obstacles" unique_id=388261112 instance=ExtResource("11_en513")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -7, -14)
+
+[node name="floor_tile_big_spikes39" parent="Obstacles" unique_id=487024532 instance=ExtResource("11_en513")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, -7, -14)
+
+[node name="floor_tile_big_spikes40" parent="Obstacles" unique_id=1706853297 instance=ExtResource("11_en513")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, -7, -14)
+
+[node name="floor_tile_big_spikes41" parent="Obstacles" unique_id=1403599673 instance=ExtResource("11_en513")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -7, -10)
+
+[node name="floor_tile_big_spikes42" parent="Obstacles" unique_id=599546202 instance=ExtResource("11_en513")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, -7, -10)
+
+[node name="floor_tile_big_spikes43" parent="Obstacles" unique_id=1866570830 instance=ExtResource("11_en513")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, -7, -10)
+
+[node name="floor_tile_big_spikes44" parent="Obstacles" unique_id=1026763266 instance=ExtResource("11_en513")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -7, -6)
+
+[node name="floor_tile_big_spikes45" parent="Obstacles" unique_id=65365713 instance=ExtResource("11_en513")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, -7, -6)
+
+[node name="floor_tile_big_spikes46" parent="Obstacles" unique_id=2044142038 instance=ExtResource("11_en513")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, -7, -6)
+
+[node name="floor_tile_big_spikes47" parent="Obstacles" unique_id=406452844 instance=ExtResource("11_en513")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -7, -2)
+
+[node name="floor_tile_big_spikes48" parent="Obstacles" unique_id=338080655 instance=ExtResource("11_en513")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, -7, -2)
+
+[node name="floor_tile_big_spikes49" parent="Obstacles" unique_id=1578039933 instance=ExtResource("11_en513")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, -7, -2)
+
+[node name="floor_tile_big_spikes50" parent="Obstacles" unique_id=1751250819 instance=ExtResource("11_en513")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -7, -30)
+
+[node name="floor_tile_big_spikes51" parent="Obstacles" unique_id=1771249111 instance=ExtResource("11_en513")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, -7, -30)
+
+[node name="floor_tile_big_spikes52" parent="Obstacles" unique_id=1095502855 instance=ExtResource("11_en513")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, -7, -30)
+
+[node name="floor_tile_big_spikes53" parent="Obstacles" unique_id=614290749 instance=ExtResource("11_en513")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -7, -34)
+
+[node name="floor_tile_big_spikes54" parent="Obstacles" unique_id=1379934856 instance=ExtResource("11_en513")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, -7, -34)
+
+[node name="floor_tile_big_spikes55" parent="Obstacles" unique_id=398578849 instance=ExtResource("11_en513")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, -7, -34)
+
+[node name="HitBox" type="Area3D" parent="Obstacles" unique_id=1430440770 groups=["Obstacle"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -7, 0)
+collision_layer = 8
+collision_mask = 0
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Obstacles/HitBox" unique_id=404407698]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+shape = SubResource("BoxShape3D_n2xfk")
+
+[node name="Decorations" type="Node3D" parent="." unique_id=1145386765]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 2, 0, 0.0130729675)
+
+[node name="BarnWood" type="MeshInstance3D" parent="Decorations" unique_id=1123809851]
+transform = Transform3D(-1.3113416e-07, 0, 3, 0, 3, 0, -3, 0, -1.3113416e-07, -14.166473, 4.7683716e-07, 30.328781)
+material_override = SubResource("StandardMaterial3D_qd7vp")
+mesh = ExtResource("13_520ao")
+
+[node name="Windmill" type="MeshInstance3D" parent="Decorations" unique_id=1496853444]
+transform = Transform3D(-0.79291797, 0, 1.8361048, 0, 2, 0, -1.8361048, 0, -0.79291797, -27.964571, 0, 30.427834)
+material_override = SubResource("StandardMaterial3D_jt4ae")
+mesh = ExtResource("14_whd3n")
+
+[node name="Tree4" type="MeshInstance3D" parent="Decorations" unique_id=866365963]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -12.346875, 0, 19.902298)
+material_override = SubResource("StandardMaterial3D_c0lis")
+mesh = ExtResource("15_lcnug")
+
+[node name="Tree5" type="MeshInstance3D" parent="Decorations" unique_id=1494113805]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -14.346875, 0, 15.001749)
+material_override = SubResource("StandardMaterial3D_yyp2c")
+mesh = ExtResource("15_lcnug")
+
+[node name="Tree6" type="MeshInstance3D" parent="Decorations" unique_id=1849490047]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -10.094514, 0, 12.195559)
+material_override = SubResource("StandardMaterial3D_3voce")
+mesh = ExtResource("15_lcnug")
+
+[node name="Building2WallOff1" type="MeshInstance3D" parent="Decorations" unique_id=1202420567]
+transform = Transform3D(-1.6826633, 0, 1.0810387, 0, 2, 0, -1.0810387, 0, -1.6826633, -23.44798, 0, 9.785711)
+material_override = SubResource("StandardMaterial3D_fdjoo")
+mesh = ExtResource("16_hnqa6")
+
+[node name="Rock4" type="MeshInstance3D" parent="Decorations" unique_id=970723007]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.075096, 0, 3.3498151)
+material_override = SubResource("StandardMaterial3D_0anft")
+mesh = ExtResource("17_5hxsa")
+
+[node name="Rock5" type="MeshInstance3D" parent="Decorations" unique_id=1706825180]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -19.996504, 0, -7.4026885)
+material_override = SubResource("StandardMaterial3D_fa3rc")
+mesh = ExtResource("17_5hxsa")
+
+[node name="Rock6" type="MeshInstance3D" parent="Decorations" unique_id=218575463]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22.563547, 1.9073486e-06, -2.394888)
+material_override = SubResource("StandardMaterial3D_bsin7")
+mesh = ExtResource("17_5hxsa")
+
+[node name="Wheelbarrow" type="MeshInstance3D" parent="Decorations" unique_id=1368954046]
+transform = Transform3D(2.0704885, 0, 2.1709623, 0, 3, 0, -2.1709623, 0, 2.0704885, -14.210587, 0, -9.080664)
+material_override = SubResource("StandardMaterial3D_r337q")
+mesh = ExtResource("18_oi38o")
+
+[node name="FieldM" type="MeshInstance3D" parent="Decorations" unique_id=1512495271]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13.09424, 0, -18.574942)
+material_override = SubResource("StandardMaterial3D_jqp4y")
+mesh = ExtResource("19_k1s24")
+
+[node name="FieldM2" type="MeshInstance3D" parent="Decorations" unique_id=2112486035]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20.036623, 0, -18.574942)
+material_override = SubResource("StandardMaterial3D_is7sk")
+mesh = ExtResource("19_k1s24")
+
+[node name="Stall" type="MeshInstance3D" parent="Decorations" unique_id=2012877020]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -15.965817, 0, -31.86028)
+material_override = SubResource("StandardMaterial3D_q5ldt")
+mesh = ExtResource("20_wdt0u")
+
+[node name="RockFormation" type="MeshInstance3D" parent="Decorations" unique_id=1420794934]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -26.064028, 0, -13.783403)
+material_override = SubResource("StandardMaterial3D_a5c2b")
+mesh = ExtResource("21_hqli7")
+
+[node name="ScareCrow" type="MeshInstance3D" parent="Decorations" unique_id=160421143]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -16.59476, 0, -18.416721)
+material_override = SubResource("StandardMaterial3D_brxq0")
+mesh = ExtResource("22_l2jnt")
+
+[node name="Building1WallOff" type="MeshInstance3D" parent="Decorations" unique_id=6533665]
+transform = Transform3D(-1.7267557, 0, -1.0091157, 0, 2, 0, 1.0091157, 0, -1.7267557, 25.501514, 0, 19.84137)
+material_override = SubResource("StandardMaterial3D_ecda8")
+mesh = ExtResource("23_fucb5")
+
+[node name="Tree1" type="MeshInstance3D" parent="Decorations" unique_id=152865261]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 11.805012, 9.536743e-07, 24.462933)
+material_override = SubResource("StandardMaterial3D_r786r")
+mesh = ExtResource("24_obltm")
+
+[node name="Tree2" type="MeshInstance3D" parent="Decorations" unique_id=359526755]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 17.359016, 0, 27.516808)
+material_override = SubResource("StandardMaterial3D_13yx0")
+mesh = ExtResource("25_6n4hj")
+
+[node name="Tree7" type="MeshInstance3D" parent="Decorations" unique_id=970426097]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 11.709621, 0, 29.751091)
+material_override = SubResource("StandardMaterial3D_m42os")
+mesh = ExtResource("26_7nq4a")
+
+[node name="Tree8" type="MeshInstance3D" parent="Decorations" unique_id=535690589]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 17.346138, 0, 34.152885)
+material_override = SubResource("StandardMaterial3D_qrhou")
+mesh = ExtResource("27_uqe00")
+
+[node name="Fence14" type="MeshInstance3D" parent="Decorations" unique_id=1214286997]
+transform = Transform3D(-1.3113416e-07, 0, -3, 0, 3, 0, 3, 0, -1.3113416e-07, 24.091629, 9.536743e-07, -3.2200923)
+material_override = SubResource("StandardMaterial3D_aqhrq")
+mesh = ExtResource("28_m20v7")
+
+[node name="Fence15" type="MeshInstance3D" parent="Decorations" unique_id=636756186]
+transform = Transform3D(-1.3113416e-07, 0, -3, 0, 3, 0, 3, 0, -1.3113416e-07, 24.091629, 9.536743e-07, -6.8498073)
+material_override = SubResource("StandardMaterial3D_kjs8s")
+mesh = ExtResource("28_m20v7")
+
+[node name="Fence16" type="MeshInstance3D" parent="Decorations" unique_id=671224329]
+transform = Transform3D(-1.3113416e-07, 0, -3, 0, 3, 0, 3, 0, -1.3113416e-07, 24.091629, 9.536743e-07, -10.923891)
+material_override = SubResource("StandardMaterial3D_smem7")
+mesh = ExtResource("28_m20v7")
+
+[node name="Fence17" type="MeshInstance3D" parent="Decorations" unique_id=193694109]
+transform = Transform3D(-1.3113416e-07, 0, -3, 0, 3, 0, 3, 0, -1.3113416e-07, 24.091629, 9.536743e-07, -14.553607)
+material_override = SubResource("StandardMaterial3D_1ryuo")
+mesh = ExtResource("28_m20v7")
+
+[node name="Fence18" type="MeshInstance3D" parent="Decorations" unique_id=1055209870]
+transform = Transform3D(-1.3113416e-07, 0, -3, 0, 3, 0, 3, 0, -1.3113416e-07, 24.091629, 9.536743e-07, -18.462364)
+material_override = SubResource("StandardMaterial3D_jvyha")
+mesh = ExtResource("28_m20v7")
+
+[node name="Fence19" type="MeshInstance3D" parent="Decorations" unique_id=1154756212]
+transform = Transform3D(-1.3113416e-07, 0, -3, 0, 3, 0, 3, 0, -1.3113416e-07, 24.091629, 9.536743e-07, -22.09208)
+material_override = SubResource("StandardMaterial3D_tktbl")
+mesh = ExtResource("28_m20v7")
+
+[node name="Stable" type="MeshInstance3D" parent="Decorations" unique_id=1998969897]
+transform = Transform3D(-0.30911046, 0, -1.9759682, 0, 2, 0, 1.9759682, 0, -0.30911046, 17.181341, 0, -25.450123)
+material_override = SubResource("StandardMaterial3D_cn877")
+mesh = ExtResource("29_i6nn7")
+
+[node name="FieldL" type="MeshInstance3D" parent="Decorations" unique_id=1577943457]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15.623896, 0, -5.3457737)
+material_override = SubResource("StandardMaterial3D_d2sea")
+mesh = ExtResource("30_vx1gb")
+
+[node name="FlagTotem" type="MeshInstance3D" parent="Decorations" unique_id=152288829]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 11.902752, 0, 2.3939667)
+material_override = SubResource("StandardMaterial3D_tjpvw")
+mesh = ExtResource("31_sr1w6")
+
+[node name="wall_corner2" parent="." unique_id=567566753 instance=ExtResource("30_mve46")]
+transform = Transform3D(-7.649493e-08, 0, 1.75, 0, 1.75, 0, -1.75, 0, -7.649493e-08, -4, -7, 19)
+
+[node name="wall_corner3" parent="." unique_id=1850692785 instance=ExtResource("30_mve46")]
+transform = Transform3D(-7.649493e-08, 0, -1.75, 0, 1.75, 0, 1.75, 0, -7.649493e-08, 4, -7, 19)
+
+[node name="wall_corner4" parent="." unique_id=1612139464 instance=ExtResource("30_mve46")]
+transform = Transform3D(1.75, 0, 0, 0, 1.75, 0, 0, 0, 1.75, 4, -7, -19)
+
+[node name="wall_corner5" parent="." unique_id=1845454047 instance=ExtResource("30_mve46")]
+transform = Transform3D(-1.75, 0, 1.5298988e-07, 0, 1.75, 0, -1.5298988e-07, 0, -1.75, -4, -7, -19)
