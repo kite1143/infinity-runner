@@ -1803,6 +1803,8 @@ _data = {
 &"Walking_C": SubResource("Animation_xxbf6")
 }
 
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_hq04u"]
+
 [node name="MiniSkeleton" type="Node3D" unique_id=458598348]
 script = ExtResource("1_hq04u")
 walking_way = "Walking_A"
@@ -1886,5 +1888,13 @@ bone_idx = 22
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Skeleton_Minion" unique_id=344394953]
 libraries/ = SubResource("AnimationLibrary_tl0dk")
 autoplay = &"Idle_B"
+
+[node name="StaticBody3D" type="StaticBody3D" parent="." unique_id=387720482 groups=["Enemy"]]
+collision_layer = 4
+collision_mask = 0
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" unique_id=2059476657]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+shape = SubResource("CapsuleShape3D_hq04u")
 
 [editable path="Skeleton_Minion"]
