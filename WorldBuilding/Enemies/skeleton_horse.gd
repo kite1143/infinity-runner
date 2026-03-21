@@ -2,6 +2,8 @@ extends Node3D
 
 @export var trigger_area: Area3D
 @export var speed: float = 5
+@export var direction: float = 1.0
+
 @onready var skeletons: Node3D = $Skeletons
 
 var is_walking: bool = false
@@ -13,7 +15,7 @@ func _ready() -> void:
 
 func _process(delta: float) -> void:
 	if is_walking:
-		global_position.x += speed * delta
+		global_position.x += speed * delta * direction
 
 func player_trigger(body: Player) -> void:
 	for child in skeletons.get_children():
