@@ -415,63 +415,62 @@ mesh = ExtResource("25_23nrf")
 
 [node name="Obstacles" type="Node3D" parent="." unique_id=1123995955]
 
-[node name="SwingTrap" parent="." unique_id=1017910804 instance=ExtResource("26_6ioh4")]
+[node name="SwingTrap" parent="Obstacles" unique_id=1017910804 instance=ExtResource("26_6ioh4")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.4709816, 1.0716915, 21.921606)
 swing_deg = 45.0
 
-[node name="SkeletonHorse2" parent="." unique_id=1841971769 node_paths=PackedStringArray("trigger_area") instance=ExtResource("27_aadu5")]
+[node name="SkeletonHorse2" parent="Obstacles" unique_id=1841971769 node_paths=PackedStringArray("trigger_area") instance=ExtResource("27_aadu5")]
 transform = Transform3D(-6.556708e-08, 0, -1.5, 0, 1.5, 0, 1.5, 0, -6.556708e-08, 7.649091, 1.0000303, -10.212283)
-trigger_area = NodePath("../Area3D")
+trigger_area = NodePath("../SkeletonTrigger")
 direction = -1.0
 
-[node name="SkeletonHorse" parent="." unique_id=908845142 node_paths=PackedStringArray("trigger_area") instance=ExtResource("27_aadu5")]
+[node name="SkeletonHorse" parent="Obstacles" unique_id=908845142 node_paths=PackedStringArray("trigger_area") instance=ExtResource("27_aadu5")]
 transform = Transform3D(-6.556708e-08, 0, 1.5, 0, 1.5, 0, -1.5, 0, -6.556708e-08, -4.35091, 1.0000303, 2.7877178)
-trigger_area = NodePath("../Area3D")
+trigger_area = NodePath("../SkeletonTrigger")
 
-[node name="Area3D" type="Area3D" parent="." unique_id=234990538]
+[node name="SkeletonTrigger" type="Area3D" parent="Obstacles" unique_id=234990538]
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 0, 0, 0)
-top_level = true
 collision_layer = 0
 collision_mask = 2
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D" unique_id=648294214]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Obstacles/SkeletonTrigger" unique_id=648294214]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20, 4.3394165, -8.742278e-07)
 shape = SubResource("BoxShape3D_aadu5")
 debug_color = Color(0.9729381, 0, 0.44087246, 0.41960785)
 
-[node name="HeightGuard" parent="." unique_id=1614223894 instance=ExtResource("28_rb3sn")]
+[node name="HeightGuard" parent="Obstacles" unique_id=1614223894 instance=ExtResource("28_rb3sn")]
 transform = Transform3D(-6.5567086e-08, 0, 1.5000001, 0, 1.5000002, 0, -1.5000001, 0, -6.5567086e-08, 4.1126328, 1, -13.839744)
 
-[node name="HeightGuard2" parent="." unique_id=897454628 instance=ExtResource("28_rb3sn")]
+[node name="HeightGuard2" parent="Obstacles" unique_id=897454628 instance=ExtResource("28_rb3sn")]
 transform = Transform3D(1.9670125e-07, 0, -1.5000001, 0, 1.5000005, 0, 1.5000001, 0, 1.9670125e-07, -3.8873672, 1, 6.4599)
 
-[node name="Stair" parent="." unique_id=822857029 instance=ExtResource("29_fvi2m")]
+[node name="Stair" parent="Obstacles" unique_id=822857029 instance=ExtResource("29_fvi2m")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.19863594, 1, -30.697906)
 
-[node name="Barrel" parent="Stair" unique_id=911393487 node_paths=PackedStringArray("trigger_range") instance=ExtResource("30_epmjw")]
+[node name="Barrel" parent="Obstacles/Stair" unique_id=911393487 node_paths=PackedStringArray("trigger_range") instance=ExtResource("30_epmjw")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.055524945, 5.4602995, -2.0403395)
 trigger_range = NodePath("../../BarrelTriggerArea")
 
-[node name="Stair2" parent="." unique_id=1305234015 instance=ExtResource("29_fvi2m")]
+[node name="Stair2" parent="Obstacles" unique_id=1305234015 instance=ExtResource("29_fvi2m")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.801364, 1, -30.697906)
 
-[node name="Barrel" parent="Stair2" unique_id=1760432075 node_paths=PackedStringArray("trigger_range") instance=ExtResource("30_epmjw")]
+[node name="Barrel" parent="Obstacles/Stair2" unique_id=1760432075 node_paths=PackedStringArray("trigger_range") instance=ExtResource("30_epmjw")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.055524945, 5.4602995, -2.0403395)
 trigger_range = NodePath("../../BarrelTriggerArea")
 
-[node name="Stair3" parent="." unique_id=1805025179 instance=ExtResource("29_fvi2m")]
+[node name="Stair3" parent="Obstacles" unique_id=1805025179 instance=ExtResource("29_fvi2m")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.198636, 1, -30.697906)
 
-[node name="Barrel" parent="Stair3" unique_id=836009214 node_paths=PackedStringArray("trigger_range") instance=ExtResource("30_epmjw")]
+[node name="Barrel" parent="Obstacles/Stair3" unique_id=836009214 node_paths=PackedStringArray("trigger_range") instance=ExtResource("30_epmjw")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.055524945, 5.4602995, -2.0403395)
 trigger_range = NodePath("../../BarrelTriggerArea")
 
-[node name="BarrelTriggerArea" type="Area3D" parent="." unique_id=1053028044]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.14311099, 6.4602995, -17.736378)
+[node name="BarrelTriggerArea" type="Area3D" parent="Obstacles" unique_id=1053028044]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.14311099, 7.4602995, -17.736378)
 collision_layer = 0
 collision_mask = 2
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="BarrelTriggerArea" unique_id=537720274]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Obstacles/BarrelTriggerArea" unique_id=537720274]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0011223555, -3.3917994, 13.624996)
 shape = SubResource("BoxShape3D_5d1tt")
 debug_color = Color(0.9519618, 4.3317677e-06, 0.5634809, 0.41960785)

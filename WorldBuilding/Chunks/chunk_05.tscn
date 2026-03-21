@@ -45,15 +45,15 @@ normal_scale = 1.36
 normal_texture = ExtResource("24_t41rk")
 uv1_scale = Vector3(2, 20, 0.5)
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_suftu"]
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_p1oh1"]
 albedo_texture = ExtResource("26_6g2mq")
 roughness_texture = ExtResource("28_n2xfk")
 normal_scale = 6.81
 normal_texture = ExtResource("27_p1oh1")
-uv1_scale = Vector3(20, 20, 20)
+uv1_scale = Vector3(20, 36, 20)
 
-[sub_resource type="PlaneMesh" id="PlaneMesh_s6wev"]
-size = Vector2(25, 72)
+[sub_resource type="PlaneMesh" id="PlaneMesh_n2xfk"]
+size = Vector2(20, 72)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_n2xfk"]
 size = Vector3(12, 2, 72)
@@ -150,15 +150,15 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18.015, -4.1, 0)
 material_override = SubResource("StandardMaterial3D_6g2mq")
 size = Vector3(18, 8, 72)
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="Map" unique_id=2038925749]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21.35458, 0, 0)
-material_override = SubResource("StandardMaterial3D_suftu")
-mesh = SubResource("PlaneMesh_s6wev")
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Map" unique_id=2045937791]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 19, 0, 0)
+material_override = SubResource("StandardMaterial3D_p1oh1")
+mesh = SubResource("PlaneMesh_n2xfk")
 
-[node name="MeshInstance3D2" type="MeshInstance3D" parent="Map" unique_id=374775668]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20.64542, 0, 0)
-material_override = SubResource("StandardMaterial3D_suftu")
-mesh = SubResource("PlaneMesh_s6wev")
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="Map" unique_id=1547130901]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -19, 0, 0)
+material_override = SubResource("StandardMaterial3D_p1oh1")
+mesh = SubResource("PlaneMesh_n2xfk")
 
 [node name="Decorations" type="Node3D" parent="." unique_id=1376295557]
 

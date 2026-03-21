@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://cgjq1gu4kpg23"]
 
 [ext_resource type="PackedScene" uid="uid://beyrwfqtusi46" path="res://Player/character_knight.tscn" id="1_7l7g0"]
+[ext_resource type="PackedScene" uid="uid://cmhcvlq3icd40" path="res://WorldBuilding/Chunks/chunk_08.tscn" id="7_lm0e8"]
 [ext_resource type="PackedScene" uid="uid://b3al6bgj8vx8c" path="res://WorldBuilding/Chunks/chunk_02.tscn" id="15_6ro0x"]
 [ext_resource type="PackedScene" uid="uid://56gxpidagx8r" path="res://WorldBuilding/Chunks/chunk_03.tscn" id="16_a0osc"]
 [ext_resource type="PackedScene" uid="uid://c8r83ip5elxgm" path="res://WorldBuilding/Chunks/chunk_05.tscn" id="17_pqur3"]
@@ -48,3 +49,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -154.00037, 0.13799667, -0.04
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -72)
 
 [node name="Chunk_07" parent="." unique_id=1733546917 instance=ExtResource("19_5dv7l")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -224, 0, 0)
+
+[node name="Chunk_08" parent="." unique_id=355728776 instance=ExtResource("7_lm0e8")]
