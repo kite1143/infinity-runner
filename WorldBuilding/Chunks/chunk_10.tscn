@@ -1,0 +1,639 @@
+[gd_scene format=3 uid="uid://4ugxefdufgfo"]
+
+[ext_resource type="PackedScene" uid="uid://ctxvy82y0uok0" path="res://WorldBuilding/plain_chunk.tscn" id="1_7p5xe"]
+[ext_resource type="Texture2D" uid="uid://dcrr0whdfwrsy" path="res://Assets/WorldBuiding/Village/Props/Village pixel-64x64.jpg" id="2_tr47y"]
+[ext_resource type="ArrayMesh" uid="uid://u435ut85lprb" path="res://Assets/WorldBuiding/Village/Props/Spikes_3.obj" id="3_4c1n1"]
+[ext_resource type="ArrayMesh" uid="uid://c2mstvdwk07si" path="res://Assets/WorldBuiding/Village/Props/Fireplace.obj" id="4_mis4v"]
+[ext_resource type="ArrayMesh" uid="uid://d18md0oxufjcx" path="res://Assets/WorldBuiding/Village/Props/Hay_2.obj" id="5_hhhni"]
+[ext_resource type="ArrayMesh" uid="uid://usxinuy2jys6" path="res://Assets/WorldBuiding/Village/Props/Rock_3.obj" id="6_30e22"]
+[ext_resource type="ArrayMesh" uid="uid://ccruw2fdx84kw" path="res://Assets/WorldBuiding/Village/Props/Rock_2.obj" id="7_5d0gq"]
+[ext_resource type="ArrayMesh" uid="uid://bxq2ccwlgnvjx" path="res://Assets/WorldBuiding/Village/Props/Hay_1.obj" id="8_emt15"]
+[ext_resource type="ArrayMesh" uid="uid://vbmg1p3swnyj" path="res://Assets/WorldBuiding/Village/Props/Fence_1_4.obj" id="9_qa1qo"]
+[ext_resource type="PackedScene" uid="uid://cq8hbx5sph3ki" path="res://Assets/WorldBuiding/Village/Medieval_Pack/glb_export/smithy.glb" id="10_6lte6"]
+[ext_resource type="PackedScene" uid="uid://va0onrfyw6oe" path="res://Assets/WorldBuiding/Village/Medieval_Pack/glb_export/mineral_barrel.glb" id="11_q0k58"]
+[ext_resource type="PackedScene" uid="uid://c31txm46kv5v" path="res://Assets/WorldBuiding/Village/Medieval_Pack/glb_export/minecart_full.glb" id="12_cgbev"]
+[ext_resource type="PackedScene" uid="uid://d107jgakjr6cx" path="res://Assets/WorldBuiding/Village/Medieval_Pack/glb_export/minecart_empty.glb" id="13_ifbd1"]
+[ext_resource type="PackedScene" uid="uid://4i35gk4x3oqn" path="res://Assets/WorldBuiding/Village/Medieval_Pack/glb_export/box_2.glb" id="14_le2op"]
+[ext_resource type="ArrayMesh" uid="uid://dr3g05ujceykk" path="res://Assets/WorldBuiding/Village/Props/Building_2_Wall_On_1.obj" id="15_donti"]
+[ext_resource type="ArrayMesh" uid="uid://bfn86bsk653mr" path="res://Assets/WorldBuiding/Village/Props/Tree_1.obj" id="16_bd1px"]
+[ext_resource type="ArrayMesh" uid="uid://h3dux8aq2cqp" path="res://Assets/WorldBuiding/Village/Props/Tree_2.obj" id="17_y7hqh"]
+[ext_resource type="ArrayMesh" uid="uid://bnn110grh5y2g" path="res://Assets/WorldBuiding/Village/Props/Tree_3.obj" id="18_x3cx3"]
+[ext_resource type="ArrayMesh" uid="uid://wuitsv4gckt" path="res://Assets/WorldBuiding/Village/Props/Tree_4.obj" id="19_2jemu"]
+[ext_resource type="ArrayMesh" uid="uid://clbm02x72xxtb" path="res://Assets/WorldBuiding/Village/Props/Tree_5.obj" id="20_c5cow"]
+[ext_resource type="ArrayMesh" uid="uid://bsm5u5gf4o45e" path="res://Assets/WorldBuiding/Village/Props/Tree_6.obj" id="21_338xo"]
+[ext_resource type="ArrayMesh" uid="uid://13nw1k36th3p" path="res://Assets/WorldBuiding/Village/Props/Stone_2.obj" id="22_1v00y"]
+[ext_resource type="ArrayMesh" uid="uid://d15612ecvijxc" path="res://Assets/WorldBuiding/Village/Props/TreeTrunk_4.obj" id="23_2qcsk"]
+[ext_resource type="ArrayMesh" uid="uid://byvrrqcvvo1qn" path="res://Assets/WorldBuiding/Village/Props/Tree_Trunk_2.obj" id="24_0vw2h"]
+[ext_resource type="ArrayMesh" uid="uid://de4h76cqtq3mc" path="res://Assets/WorldBuiding/Village/Props/Building_2_Wall_Off_1.obj" id="25_uoft1"]
+[ext_resource type="ArrayMesh" uid="uid://berrbnc52pwc8" path="res://Assets/WorldBuiding/Village/Props/Building_2_Wall_On_2.obj" id="26_43cfs"]
+[ext_resource type="ArrayMesh" uid="uid://glil1jpfk0xa" path="res://Assets/WorldBuiding/Village/Props/TreeFlag.obj" id="27_ojjlw"]
+[ext_resource type="ArrayMesh" uid="uid://b5wy0o34uu03l" path="res://Assets/WorldBuiding/Village/Props/Wheelbarrow.obj" id="28_ppmer"]
+[ext_resource type="PackedScene" uid="uid://d3q3uealwl55v" path="res://WorldBuilding/Enemies/runner_skeleton.tscn" id="29_hhhni"]
+[ext_resource type="PackedScene" uid="uid://c3skjww4g4fc1" path="res://WorldBuilding/Obstacle/crossbow_base.tscn" id="30_30e22"]
+[ext_resource type="PackedScene" uid="uid://dqs6km1kfy11e" path="res://WorldBuilding/Obstacle/wooden_spike.tscn" id="31_5d0gq"]
+[ext_resource type="PackedScene" uid="uid://bnly466rjl44c" path="res://WorldBuilding/Obstacle/wall.tscn" id="32_emt15"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_nr64s"]
+albedo_texture = ExtResource("2_tr47y")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_in6wv"]
+albedo_texture = ExtResource("2_tr47y")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_tyu3d"]
+albedo_texture = ExtResource("2_tr47y")
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_hhhni"]
+size = Vector3(3.1577148, 7.574768, 11.893555)
+
+[node name="Chunk_10" type="Node3D" unique_id=177310566]
+
+[node name="PlainChunk" parent="." unique_id=1065648645 instance=ExtResource("1_7p5xe")]
+
+[node name="Decorations" type="Node3D" parent="." unique_id=1376295557]
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 0, 0, 0)
+
+[node name="Spikes3" type="MeshInstance3D" parent="Decorations" unique_id=1826013913]
+transform = Transform3D(-3, 0, 2.6226832e-07, 0, 3, 0, -2.6226832e-07, 0, -3, 22.838501, 0, -34.125366)
+material_override = SubResource("StandardMaterial3D_nr64s")
+mesh = ExtResource("3_4c1n1")
+
+[node name="Spikes4" type="MeshInstance3D" parent="Decorations" unique_id=1851242119]
+transform = Transform3D(-3, 0, 2.6226832e-07, 0, 3, 0, -2.6226832e-07, 0, -3, 18.838501, 0, -34.125366)
+material_override = SubResource("StandardMaterial3D_nr64s")
+mesh = ExtResource("3_4c1n1")
+
+[node name="Spikes5" type="MeshInstance3D" parent="Decorations" unique_id=1006822319]
+transform = Transform3D(-3, 0, 2.6226832e-07, 0, 3, 0, -2.6226832e-07, 0, -3, 14.838502, 0, -34.125366)
+material_override = SubResource("StandardMaterial3D_nr64s")
+mesh = ExtResource("3_4c1n1")
+
+[node name="Spikes6" type="MeshInstance3D" parent="Decorations" unique_id=1605732986]
+transform = Transform3D(-3, 0, 2.6226832e-07, 0, 3, 0, -2.6226832e-07, 0, -3, 10.838502, 0, -34.125366)
+material_override = SubResource("StandardMaterial3D_nr64s")
+mesh = ExtResource("3_4c1n1")
+
+[node name="Fireplace" type="MeshInstance3D" parent="Decorations" unique_id=1393728143]
+transform = Transform3D(-3, 0, 2.6226832e-07, 0, 3, 0, -2.6226832e-07, 0, -3, 15.825416, 0, -0.998476)
+material_override = SubResource("StandardMaterial3D_nr64s")
+mesh = ExtResource("4_mis4v")
+
+[node name="Hay2" type="MeshInstance3D" parent="Decorations" unique_id=22266017]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 22.929493, 1.9073486e-06, -29.701374)
+material_override = SubResource("StandardMaterial3D_nr64s")
+mesh = ExtResource("5_hhhni")
+
+[node name="Hay3" type="MeshInstance3D" parent="Decorations" unique_id=1209171188]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 22.929493, 1.9073486e-06, -23.701374)
+material_override = SubResource("StandardMaterial3D_nr64s")
+mesh = ExtResource("5_hhhni")
+
+[node name="Hay4" type="MeshInstance3D" parent="Decorations" unique_id=287820224]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 22.929493, 3.000002, -27.701374)
+material_override = SubResource("StandardMaterial3D_nr64s")
+mesh = ExtResource("5_hhhni")
+
+[node name="Hay5" type="MeshInstance3D" parent="Decorations" unique_id=1459401909]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 20.01306, -0.9999981, -28.682362)
+material_override = SubResource("StandardMaterial3D_nr64s")
+mesh = ExtResource("5_hhhni")
+
+[node name="Hay6" type="MeshInstance3D" parent="Decorations" unique_id=2067469568]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 20.01306, -0.9999981, -24.682362)
+material_override = SubResource("StandardMaterial3D_nr64s")
+mesh = ExtResource("5_hhhni")
+
+[node name="Hay7" type="MeshInstance3D" parent="Decorations" unique_id=1353089230]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 25.849686, -0.9999981, -28.845062)
+material_override = SubResource("StandardMaterial3D_nr64s")
+mesh = ExtResource("5_hhhni")
+
+[node name="Rock3" type="MeshInstance3D" parent="Decorations" unique_id=764717756]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 28.92049, 0, -31.395027)
+material_override = SubResource("StandardMaterial3D_nr64s")
+mesh = ExtResource("6_30e22")
+
+[node name="Rock2" type="MeshInstance3D" parent="Decorations" unique_id=544576405]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 28.705849, 0, -23.124777)
+material_override = SubResource("StandardMaterial3D_nr64s")
+mesh = ExtResource("7_5d0gq")
+
+[node name="Hay1" type="MeshInstance3D" parent="Decorations" unique_id=353881869]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 12.442953, 0, -30.299946)
+material_override = SubResource("StandardMaterial3D_nr64s")
+mesh = ExtResource("8_emt15")
+
+[node name="Hay8" type="MeshInstance3D" parent="Decorations" unique_id=762504008]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 12.442953, 0, -26.299946)
+material_override = SubResource("StandardMaterial3D_nr64s")
+mesh = ExtResource("8_emt15")
+
+[node name="Hay9" type="MeshInstance3D" parent="Decorations" unique_id=1926131302]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 12.442953, 0, -22.299946)
+material_override = SubResource("StandardMaterial3D_nr64s")
+mesh = ExtResource("8_emt15")
+
+[node name="Hay10" type="MeshInstance3D" parent="Decorations" unique_id=200649936]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 16.442953, 0, -24.299946)
+material_override = SubResource("StandardMaterial3D_nr64s")
+mesh = ExtResource("8_emt15")
+
+[node name="Hay11" type="MeshInstance3D" parent="Decorations" unique_id=1446710373]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 16.442953, 0, -28.299946)
+material_override = SubResource("StandardMaterial3D_nr64s")
+mesh = ExtResource("8_emt15")
+
+[node name="Fence14" type="MeshInstance3D" parent="Decorations" unique_id=1551722108]
+transform = Transform3D(-1.7484555e-07, 0, 4, 0, 4, 0, -4, 0, -1.7484555e-07, 24.16892, 0, -14.381301)
+material_override = SubResource("StandardMaterial3D_nr64s")
+mesh = ExtResource("9_qa1qo")
+
+[node name="Fence15" type="MeshInstance3D" parent="Decorations" unique_id=1906419371]
+transform = Transform3D(-1.7484555e-07, 0, 4, 0, 4, 0, -4, 0, -1.7484555e-07, 24.16892, 0, -8.381301)
+material_override = SubResource("StandardMaterial3D_nr64s")
+mesh = ExtResource("9_qa1qo")
+
+[node name="Fence16" type="MeshInstance3D" parent="Decorations" unique_id=578305205]
+transform = Transform3D(-1.7484555e-07, 0, 4, 0, 4, 0, -4, 0, -1.7484555e-07, 24.16892, 0, -2.381301)
+material_override = SubResource("StandardMaterial3D_nr64s")
+mesh = ExtResource("9_qa1qo")
+
+[node name="Fence17" type="MeshInstance3D" parent="Decorations" unique_id=676252316]
+transform = Transform3D(-1.7484555e-07, 0, 4, 0, 4, 0, -4, 0, -1.7484555e-07, 24.16892, 0, 3.618699)
+material_override = SubResource("StandardMaterial3D_nr64s")
+mesh = ExtResource("9_qa1qo")
+
+[node name="Fence18" type="MeshInstance3D" parent="Decorations" unique_id=1751280876]
+transform = Transform3D(-1.7484555e-07, 0, 4, 0, 4, 0, -4, 0, -1.7484555e-07, 24.16892, 0, 9.618699)
+material_override = SubResource("StandardMaterial3D_nr64s")
+mesh = ExtResource("9_qa1qo")
+
+[node name="Fence19" type="MeshInstance3D" parent="Decorations" unique_id=1326741303]
+transform = Transform3D(-1.7484555e-07, 0, 4, 0, 4, 0, -4, 0, -1.7484555e-07, 24.16892, 0, 15.618699)
+material_override = SubResource("StandardMaterial3D_nr64s")
+mesh = ExtResource("9_qa1qo")
+
+[node name="Fence20" type="MeshInstance3D" parent="Decorations" unique_id=930137331]
+transform = Transform3D(-1.7484555e-07, 0, 4, 0, 4, 0, -4, 0, -1.7484555e-07, 24.16892, 0, 21.618698)
+material_override = SubResource("StandardMaterial3D_nr64s")
+mesh = ExtResource("9_qa1qo")
+
+[node name="smithy" parent="Decorations" unique_id=615414921 instance=ExtResource("10_6lte6")]
+transform = Transform3D(-1.4570091, -5.820406, 2.54418e-07, 0, -2.6226832e-07, -6, 5.820406, -1.4570091, 6.368789e-08, 19.577835, 0, 25.183535)
+
+[node name="mineral_barrel" parent="Decorations" unique_id=1913568672 instance=ExtResource("11_q0k58")]
+transform = Transform3D(0.5740483, -4.9669375, 2.1711173e-07, 0, -2.1855695e-07, -5, 4.9669375, 0.5740483, -2.5092445e-08, 21.30294, 9.536743e-07, 3.3541121)
+
+[node name="mineral_barrel2" parent="Decorations" unique_id=100206732 instance=ExtResource("11_q0k58")]
+transform = Transform3D(-3.1062417, -3.9180684, 1.7126422e-07, -2.2057634e-15, -2.1855693e-07, -4.9999995, 3.9180684, -3.1062417, 1.3577814e-07, 20.376564, 0, 7.212612)
+
+[node name="minecart_full" parent="Decorations" unique_id=382473542 instance=ExtResource("12_cgbev")]
+transform = Transform3D(-2.6177745, 4.2599597, -1.862088e-07, 7.561171e-21, -2.1855696e-07, -5, -4.2599597, -2.6177745, 1.1442656e-07, 11.075978, 0, 15.272171)
+
+[node name="minecart_full2" parent="Decorations" unique_id=1342551555 instance=ExtResource("12_cgbev")]
+transform = Transform3D(1.7811618, 4.671987, -2.0421906e-07, 7.380775e-21, -2.1855696e-07, -5, -4.671987, 1.7811618, -7.785706e-08, 11.3794775, 0, 23.6004)
+
+[node name="minecart_empty" parent="Decorations" unique_id=233084286 instance=ExtResource("13_ifbd1")]
+transform = Transform3D(3.3110075, 3.746629, -1.6377038e-07, 7.126361e-21, -2.1855696e-07, -5, -3.746629, 3.3110075, -1.4472876e-07, 10.797434, 0, 19.739891)
+
+[node name="box_2" parent="Decorations" unique_id=1044701193 instance=ExtResource("14_le2op")]
+transform = Transform3D(1.1765515, 4.8596015, -2.1241993e-07, 0, -2.1855695e-07, -5, -4.8596015, 1.1765515, -5.14287e-08, 13.811586, 0, 8.678284)
+
+[node name="box_3" parent="Decorations" unique_id=1402369111 instance=ExtResource("14_le2op")]
+transform = Transform3D(1.1765515, 4.8596015, -2.1241993e-07, 0, -2.1855695e-07, -5, -4.8596015, 1.1765515, -5.14287e-08, 11.588326, 0, 5.346696)
+
+[node name="box_4" parent="Decorations" unique_id=578699822 instance=ExtResource("14_le2op")]
+transform = Transform3D(1.1765515, 4.8596015, -2.1241993e-07, 0, -2.1855695e-07, -5, -4.8596015, 1.1765515, -5.14287e-08, 10.827709, 0, 10.84906)
+
+[node name="Building2WallOn1" type="MeshInstance3D" parent="Decorations" unique_id=1017675418]
+transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, 16.275524, -9.536743e-07, -11.937953)
+material_override = SubResource("StandardMaterial3D_nr64s")
+mesh = ExtResource("15_donti")
+
+[node name="Tree1" type="MeshInstance3D" parent="Decorations" unique_id=127947236]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -10.147703, 0, -25.406977)
+material_override = SubResource("StandardMaterial3D_in6wv")
+mesh = ExtResource("16_bd1px")
+
+[node name="Tree8" type="MeshInstance3D" parent="Decorations" unique_id=345074725]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -10.479432, 0, -34.200283)
+material_override = SubResource("StandardMaterial3D_in6wv")
+mesh = ExtResource("16_bd1px")
+
+[node name="Tree7" type="MeshInstance3D" parent="Decorations" unique_id=1741419851]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -15.407951, 0, -29.928818)
+material_override = SubResource("StandardMaterial3D_in6wv")
+mesh = ExtResource("16_bd1px")
+
+[node name="Tree2" type="MeshInstance3D" parent="Decorations" unique_id=1187837903]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -11.438122, 0, -30.237356)
+material_override = SubResource("StandardMaterial3D_in6wv")
+mesh = ExtResource("17_y7hqh")
+
+[node name="Tree34" type="MeshInstance3D" parent="Decorations" unique_id=1900365965]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -24.02906, 0, -7.773342)
+material_override = SubResource("StandardMaterial3D_in6wv")
+mesh = ExtResource("17_y7hqh")
+
+[node name="Tree12" type="MeshInstance3D" parent="Decorations" unique_id=1068630523]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -18.295021, 0, -22.470812)
+material_override = SubResource("StandardMaterial3D_in6wv")
+mesh = ExtResource("17_y7hqh")
+
+[node name="Tree35" type="MeshInstance3D" parent="Decorations" unique_id=1274031669]
+transform = Transform3D(1.8278143, 0, -0.8118466, 0, 2, 0, 0.8118466, 0, 1.8278143, -23.786224, 0, -4.0004025)
+material_override = SubResource("StandardMaterial3D_in6wv")
+mesh = ExtResource("17_y7hqh")
+
+[node name="Tree33" type="MeshInstance3D" parent="Decorations" unique_id=514745048]
+transform = Transform3D(1.9251755, 0, 0.5419401, 0, 2, 0, -0.5419401, 0, 1.9251755, -23.897156, 0, -11.710272)
+material_override = SubResource("StandardMaterial3D_in6wv")
+mesh = ExtResource("17_y7hqh")
+
+[node name="Tree3" type="MeshInstance3D" parent="Decorations" unique_id=1971320066]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -17.719788, 0, -26.21219)
+material_override = SubResource("StandardMaterial3D_in6wv")
+mesh = ExtResource("18_x3cx3")
+
+[node name="Tree31" type="MeshInstance3D" parent="Decorations" unique_id=1981569063]
+transform = Transform3D(1.5152211, 0, 1.3054137, 0, 2, 0, -1.3054137, 0, 1.5152211, -23.707207, 0, -19.506279)
+material_override = SubResource("StandardMaterial3D_in6wv")
+mesh = ExtResource("18_x3cx3")
+
+[node name="Tree37" type="MeshInstance3D" parent="Decorations" unique_id=104580056]
+transform = Transform3D(1.5152211, 0, 1.3054137, 0, 2, 0, -1.3054137, 0, 1.5152211, -26.689291, 0, -13.394276)
+material_override = SubResource("StandardMaterial3D_in6wv")
+mesh = ExtResource("18_x3cx3")
+
+[node name="Tree38" type="MeshInstance3D" parent="Decorations" unique_id=419984620]
+transform = Transform3D(1.5152211, 0, 1.3054137, 0, 2, 0, -1.3054137, 0, 1.5152211, -25.723322, 0, -9.945844)
+material_override = SubResource("StandardMaterial3D_in6wv")
+mesh = ExtResource("18_x3cx3")
+
+[node name="Tree39" type="MeshInstance3D" parent="Decorations" unique_id=910790560]
+transform = Transform3D(1.5152211, 0, 1.3054137, 0, 2, 0, -1.3054137, 0, 1.5152211, -25.996328, 0, -5.9933386)
+material_override = SubResource("StandardMaterial3D_in6wv")
+mesh = ExtResource("18_x3cx3")
+
+[node name="Tree40" type="MeshInstance3D" parent="Decorations" unique_id=808289507]
+transform = Transform3D(1.5152211, 0, 1.3054137, 0, 2, 0, -1.3054137, 0, 1.5152211, -25.373407, 0, -2.0103574)
+material_override = SubResource("StandardMaterial3D_in6wv")
+mesh = ExtResource("18_x3cx3")
+
+[node name="Tree41" type="MeshInstance3D" parent="Decorations" unique_id=1736003628]
+transform = Transform3D(1.5152211, 0, 1.3054137, 0, 2, 0, -1.3054137, 0, 1.5152211, -24.767582, 0, 3.3690867)
+material_override = SubResource("StandardMaterial3D_in6wv")
+mesh = ExtResource("18_x3cx3")
+
+[node name="Tree42" type="MeshInstance3D" parent="Decorations" unique_id=1834649176]
+transform = Transform3D(1.5152211, 0, 1.3054137, 0, 2, 0, -1.3054137, 0, 1.5152211, -25.475134, 0, 8.526648)
+material_override = SubResource("StandardMaterial3D_in6wv")
+mesh = ExtResource("18_x3cx3")
+
+[node name="Tree43" type="MeshInstance3D" parent="Decorations" unique_id=1944127463]
+transform = Transform3D(1.5152211, 0, 1.3054137, 0, 2, 0, -1.3054137, 0, 1.5152211, -26.11742, 0, 17.119207)
+material_override = SubResource("StandardMaterial3D_in6wv")
+mesh = ExtResource("18_x3cx3")
+
+[node name="Tree44" type="MeshInstance3D" parent="Decorations" unique_id=1530834851]
+transform = Transform3D(1.5152211, 0, 1.3054137, 0, 2, 0, -1.3054137, 0, 1.5152211, -24.813026, 0, 22.074606)
+material_override = SubResource("StandardMaterial3D_in6wv")
+mesh = ExtResource("18_x3cx3")
+
+[node name="Tree45" type="MeshInstance3D" parent="Decorations" unique_id=1301099003]
+transform = Transform3D(0.75761056, 0, 0.65270686, 0, 1, 0, -0.65270686, 0, 0.75761056, -27.755089, 0, 19.055632)
+material_override = SubResource("StandardMaterial3D_in6wv")
+mesh = ExtResource("18_x3cx3")
+
+[node name="Tree46" type="MeshInstance3D" parent="Decorations" unique_id=573644190]
+transform = Transform3D(0.75761056, 0, 0.65270686, 0, 1, 0, -0.65270686, 0, 0.75761056, -25.468489, 4.7683716e-07, 12.844701)
+material_override = SubResource("StandardMaterial3D_in6wv")
+mesh = ExtResource("18_x3cx3")
+
+[node name="Tree47" type="MeshInstance3D" parent="Decorations" unique_id=1643966394]
+transform = Transform3D(0.75761056, 0, 0.65270686, 0, 1, 0, -0.65270686, 0, 0.75761056, -25.52204, 4.7683716e-07, 5.8449054)
+material_override = SubResource("StandardMaterial3D_in6wv")
+mesh = ExtResource("18_x3cx3")
+
+[node name="Tree48" type="MeshInstance3D" parent="Decorations" unique_id=309199991]
+transform = Transform3D(0.75761056, 0, 0.65270686, 0, 1, 0, -0.65270686, 0, 0.75761056, -24.94915, 4.7683716e-07, 0.4038086)
+material_override = SubResource("StandardMaterial3D_in6wv")
+mesh = ExtResource("18_x3cx3")
+
+[node name="Tree49" type="MeshInstance3D" parent="Decorations" unique_id=1910823216]
+transform = Transform3D(0.75761056, 0, 0.65270686, 0, 1, 0, -0.65270686, 0, 0.75761056, -25.413273, 4.7683716e-07, -5.350103)
+material_override = SubResource("StandardMaterial3D_in6wv")
+mesh = ExtResource("18_x3cx3")
+
+[node name="Tree50" type="MeshInstance3D" parent="Decorations" unique_id=1176843218]
+transform = Transform3D(0.75761056, 0, 0.65270686, 0, 1, 0, -0.65270686, 0, 0.75761056, -26.242348, 4.7683716e-07, -8.503641)
+material_override = SubResource("StandardMaterial3D_in6wv")
+mesh = ExtResource("18_x3cx3")
+
+[node name="Tree51" type="MeshInstance3D" parent="Decorations" unique_id=1675827414]
+transform = Transform3D(0.75761056, 0, 0.65270686, 0, 1, 0, -0.65270686, 0, 0.75761056, -24.782322, 9.536743e-07, -13.400773)
+material_override = SubResource("StandardMaterial3D_in6wv")
+mesh = ExtResource("18_x3cx3")
+
+[node name="Tree52" type="MeshInstance3D" parent="Decorations" unique_id=1721326042]
+transform = Transform3D(0.75761056, 0, 0.65270686, 0, 1, 0, -0.65270686, 0, 0.75761056, -24.709656, 9.536743e-07, -17.743279)
+material_override = SubResource("StandardMaterial3D_in6wv")
+mesh = ExtResource("18_x3cx3")
+
+[node name="Tree11" type="MeshInstance3D" parent="Decorations" unique_id=1619011]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -22.369802, 0, -23.46586)
+material_override = SubResource("StandardMaterial3D_in6wv")
+mesh = ExtResource("18_x3cx3")
+
+[node name="Tree4" type="MeshInstance3D" parent="Decorations" unique_id=1287423615]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -15.520182, 9.536743e-07, -34.079803)
+material_override = SubResource("StandardMaterial3D_in6wv")
+mesh = ExtResource("19_2jemu")
+
+[node name="Tree5" type="MeshInstance3D" parent="Decorations" unique_id=489842831]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -20.02776, 0, -29.888552)
+material_override = SubResource("StandardMaterial3D_in6wv")
+mesh = ExtResource("20_c5cow")
+
+[node name="Tree9" type="MeshInstance3D" parent="Decorations" unique_id=2028293487]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -13.761515, 0, -24.839798)
+material_override = SubResource("StandardMaterial3D_in6wv")
+mesh = ExtResource("20_c5cow")
+
+[node name="Tree36" type="MeshInstance3D" parent="Decorations" unique_id=388078717]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -22.35885, 0, -0.76725006)
+material_override = SubResource("StandardMaterial3D_in6wv")
+mesh = ExtResource("20_c5cow")
+
+[node name="Tree32" type="MeshInstance3D" parent="Decorations" unique_id=111331577]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -23.967386, 0, -15.909659)
+material_override = SubResource("StandardMaterial3D_in6wv")
+mesh = ExtResource("20_c5cow")
+
+[node name="Tree10" type="MeshInstance3D" parent="Decorations" unique_id=2012696119]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -21.906174, 0, -26.87379)
+material_override = SubResource("StandardMaterial3D_in6wv")
+mesh = ExtResource("20_c5cow")
+
+[node name="Tree6" type="MeshInstance3D" parent="Decorations" unique_id=2141759064]
+transform = Transform3D(1.9999975, 0, 0.0031764978, 0, 2, 0, -0.0031764978, 0, 1.9999975, -20.924982, 0, -34.105484)
+material_override = SubResource("StandardMaterial3D_in6wv")
+mesh = ExtResource("21_338xo")
+
+[node name="Tree13" type="MeshInstance3D" parent="Decorations" unique_id=230903409]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -11.643179, 0, 33.1615)
+material_override = SubResource("StandardMaterial3D_in6wv")
+mesh = ExtResource("16_bd1px")
+
+[node name="Tree14" type="MeshInstance3D" parent="Decorations" unique_id=1623424387]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -11.974908, 0, 24.368195)
+material_override = SubResource("StandardMaterial3D_in6wv")
+mesh = ExtResource("16_bd1px")
+
+[node name="Tree26" type="MeshInstance3D" parent="Decorations" unique_id=259293544]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -19.631054, 0, 20.99188)
+material_override = SubResource("StandardMaterial3D_in6wv")
+mesh = ExtResource("16_bd1px")
+
+[node name="Tree15" type="MeshInstance3D" parent="Decorations" unique_id=335278644]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -16.903427, 0, 28.63966)
+material_override = SubResource("StandardMaterial3D_in6wv")
+mesh = ExtResource("16_bd1px")
+
+[node name="Tree16" type="MeshInstance3D" parent="Decorations" unique_id=1690432879]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -12.933598, 0, 28.331121)
+material_override = SubResource("StandardMaterial3D_in6wv")
+mesh = ExtResource("17_y7hqh")
+
+[node name="Tree28" type="MeshInstance3D" parent="Decorations" unique_id=1145441072]
+transform = Transform3D(1.530135, 0, 1.2879001, 0, 2, 0, -1.2879001, 0, 1.530135, -24.441605, 0, 10.926451)
+material_override = SubResource("StandardMaterial3D_in6wv")
+mesh = ExtResource("17_y7hqh")
+
+[node name="Tree17" type="MeshInstance3D" parent="Decorations" unique_id=175384228]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -19.790497, 0, 36.097664)
+material_override = SubResource("StandardMaterial3D_in6wv")
+mesh = ExtResource("17_y7hqh")
+
+[node name="Tree18" type="MeshInstance3D" parent="Decorations" unique_id=1454029691]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -19.215263, 0, 32.356285)
+material_override = SubResource("StandardMaterial3D_in6wv")
+mesh = ExtResource("18_x3cx3")
+
+[node name="Tree29" type="MeshInstance3D" parent="Decorations" unique_id=1013486156]
+transform = Transform3D(1.9391131, 0, -0.4897349, 0, 2, 0, 0.4897349, 0, 1.9391131, -23.780422, 0, 6.7248154)
+material_override = SubResource("StandardMaterial3D_in6wv")
+mesh = ExtResource("18_x3cx3")
+
+[node name="Tree19" type="MeshInstance3D" parent="Decorations" unique_id=323632028]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -23.86528, 0, 35.102615)
+material_override = SubResource("StandardMaterial3D_in6wv")
+mesh = ExtResource("18_x3cx3")
+
+[node name="Tree20" type="MeshInstance3D" parent="Decorations" unique_id=1901309976]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -17.01566, 9.536743e-07, 24.488674)
+material_override = SubResource("StandardMaterial3D_in6wv")
+mesh = ExtResource("19_2jemu")
+
+[node name="Tree27" type="MeshInstance3D" parent="Decorations" unique_id=989743617]
+transform = Transform3D(1.6167198, 0, -1.1773771, 0, 2, 0, 1.1773771, 0, 1.6167198, -24.053612, 9.536743e-07, 14.835264)
+material_override = SubResource("StandardMaterial3D_in6wv")
+mesh = ExtResource("19_2jemu")
+
+[node name="Tree21" type="MeshInstance3D" parent="Decorations" unique_id=25787412]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -21.523235, 0, 28.679926)
+material_override = SubResource("StandardMaterial3D_in6wv")
+mesh = ExtResource("20_c5cow")
+
+[node name="Tree22" type="MeshInstance3D" parent="Decorations" unique_id=194190413]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -15.256991, 0, 33.72868)
+material_override = SubResource("StandardMaterial3D_in6wv")
+mesh = ExtResource("20_c5cow")
+
+[node name="Tree23" type="MeshInstance3D" parent="Decorations" unique_id=453106495]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -23.40165, 0, 31.694687)
+material_override = SubResource("StandardMaterial3D_in6wv")
+mesh = ExtResource("20_c5cow")
+
+[node name="Tree30" type="MeshInstance3D" parent="Decorations" unique_id=794460449]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -23.591862, 0, 2.4966927)
+material_override = SubResource("StandardMaterial3D_in6wv")
+mesh = ExtResource("20_c5cow")
+
+[node name="Tree24" type="MeshInstance3D" parent="Decorations" unique_id=321829774]
+transform = Transform3D(1.9999975, 0, 0.0031764978, 0, 2, 0, -0.0031764978, 0, 1.9999975, -22.42046, 0, 24.462994)
+material_override = SubResource("StandardMaterial3D_in6wv")
+mesh = ExtResource("21_338xo")
+
+[node name="Tree25" type="MeshInstance3D" parent="Decorations" unique_id=1949645044]
+transform = Transform3D(1.9999975, 0, 0.0031764978, 0, 2, 0, -0.0031764978, 0, 1.9999975, -23.981098, 0, 19.661177)
+material_override = SubResource("StandardMaterial3D_in6wv")
+mesh = ExtResource("21_338xo")
+
+[node name="Rock4" type="MeshInstance3D" parent="Decorations" unique_id=1508579993]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -24.587534, 0, -21.393486)
+material_override = SubResource("StandardMaterial3D_in6wv")
+mesh = ExtResource("6_30e22")
+
+[node name="Rock5" type="MeshInstance3D" parent="Decorations" unique_id=1269239746]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -27.071445, 0, -9.108953)
+material_override = SubResource("StandardMaterial3D_in6wv")
+mesh = ExtResource("6_30e22")
+
+[node name="Rock6" type="MeshInstance3D" parent="Decorations" unique_id=1986148806]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -26.245996, 0, 1.5690355)
+material_override = SubResource("StandardMaterial3D_in6wv")
+mesh = ExtResource("6_30e22")
+
+[node name="Rock7" type="MeshInstance3D" parent="Decorations" unique_id=932860079]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -26.733877, 0, 20.770977)
+material_override = SubResource("StandardMaterial3D_in6wv")
+mesh = ExtResource("6_30e22")
+
+[node name="Rock8" type="MeshInstance3D" parent="Decorations" unique_id=1025793801]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -26.237364, 0, 12.849802)
+material_override = SubResource("StandardMaterial3D_in6wv")
+mesh = ExtResource("6_30e22")
+
+[node name="Stone2" type="MeshInstance3D" parent="Decorations" unique_id=849822429]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -26.61076, 1.9073486e-06, -4.9661636)
+material_override = SubResource("StandardMaterial3D_in6wv")
+mesh = ExtResource("22_1v00y")
+
+[node name="Stone3" type="MeshInstance3D" parent="Decorations" unique_id=1964573288]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -24.931183, 1.9073486e-06, 8.360708)
+material_override = SubResource("StandardMaterial3D_in6wv")
+mesh = ExtResource("22_1v00y")
+
+[node name="Stone4" type="MeshInstance3D" parent="Decorations" unique_id=1266424234]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -24.413483, 1.9073486e-06, -13.426775)
+material_override = SubResource("StandardMaterial3D_in6wv")
+mesh = ExtResource("22_1v00y")
+
+[node name="Stone5" type="MeshInstance3D" parent="Decorations" unique_id=550126260]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -25.48589, 1.9073486e-06, -16.865356)
+material_override = SubResource("StandardMaterial3D_in6wv")
+mesh = ExtResource("22_1v00y")
+
+[node name="TreeTrunk4" type="MeshInstance3D" parent="Decorations" unique_id=436730559]
+transform = Transform3D(-0.77645713, 0, 2.8977776, 0, 3, 0, -2.8977776, 0, -0.77645713, -11.37924, 0, -19.116074)
+material_override = SubResource("StandardMaterial3D_in6wv")
+mesh = ExtResource("23_2qcsk")
+
+[node name="TreeTrunk2" type="MeshInstance3D" parent="Decorations" unique_id=589994318]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -15.975502, -9.536743e-07, 15.834014)
+material_override = SubResource("StandardMaterial3D_in6wv")
+mesh = ExtResource("24_0vw2h")
+
+[node name="TreeTrunk3" type="MeshInstance3D" parent="Decorations" unique_id=1419957290]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -15.975502, -9.536743e-07, 5.834014)
+material_override = SubResource("StandardMaterial3D_in6wv")
+mesh = ExtResource("24_0vw2h")
+
+[node name="TreeTrunk5" type="MeshInstance3D" parent="Decorations" unique_id=1438809782]
+transform = Transform3D(-8.742278e-08, 0, -2, 0, 2, 0, 2, 0, -8.742278e-08, -10.975502, -9.536743e-07, 10.834014)
+material_override = SubResource("StandardMaterial3D_in6wv")
+mesh = ExtResource("24_0vw2h")
+
+[node name="TreeTrunk6" type="MeshInstance3D" parent="Decorations" unique_id=467720796]
+transform = Transform3D(-8.742278e-08, 0, -2, 0, 2, 0, 2, 0, -8.742278e-08, -21.546524, -9.536743e-07, 10.834014)
+material_override = SubResource("StandardMaterial3D_in6wv")
+mesh = ExtResource("24_0vw2h")
+
+[node name="Fireplace2" type="MeshInstance3D" parent="Decorations" unique_id=801661774]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -16.065697, 0, 10.5198345)
+material_override = SubResource("StandardMaterial3D_in6wv")
+mesh = ExtResource("4_mis4v")
+
+[node name="Building2WallOff1" type="MeshInstance3D" parent="Decorations" unique_id=1501274072]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -15.163006, 0, -1.5407293)
+material_override = SubResource("StandardMaterial3D_in6wv")
+mesh = ExtResource("25_uoft1")
+
+[node name="Building2WallOn2" type="MeshInstance3D" parent="Decorations" unique_id=1125280374]
+transform = Transform3D(1.3113416e-07, 0, 1, 0, 1, 0, -1, 0, 1.3113416e-07, -14.971887, 0, -10.258006)
+material_override = SubResource("StandardMaterial3D_in6wv")
+mesh = ExtResource("26_43cfs")
+
+[node name="TreeFlag" type="MeshInstance3D" parent="Decorations" unique_id=2126420352]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18.96606, 0, -15.942068)
+material_override = SubResource("StandardMaterial3D_tyu3d")
+mesh = ExtResource("27_ojjlw")
+
+[node name="Wheelbarrow" type="MeshInstance3D" parent="Decorations" unique_id=355459449]
+transform = Transform3D(1.7320508, 0, 1, 0, 2, 0, -1, 0, 1.7320508, -14.908937, 0, -19.200752)
+material_override = SubResource("StandardMaterial3D_tyu3d")
+mesh = ExtResource("28_ppmer")
+
+[node name="Obstacles" type="Node3D" parent="." unique_id=1123995955]
+
+[node name="RunnerSkeleton" parent="." unique_id=458598348 node_paths=PackedStringArray("trigger_range") instance=ExtResource("29_hhhni")]
+transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, -3.067442, 1.0000398, 1.6798363)
+trigger_range = NodePath("../SkeletonTrigger")
+
+[node name="RunnerSkeleton2" parent="." unique_id=1729367437 node_paths=PackedStringArray("trigger_range") instance=ExtResource("29_hhhni")]
+transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, 3.932558, 1.0000398, 1.6798363)
+trigger_range = NodePath("../SkeletonTrigger")
+
+[node name="RunnerSkeleton3" parent="." unique_id=1557515575 node_paths=PackedStringArray("trigger_range") instance=ExtResource("29_hhhni")]
+transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, 3.932558, 1.0000398, -10.320164)
+trigger_range = NodePath("../SkeletonTrigger2")
+
+[node name="RunnerSkeleton4" parent="." unique_id=1408378675 node_paths=PackedStringArray("trigger_range") instance=ExtResource("29_hhhni")]
+transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, -0.06744194, 1.0000398, -10.320164)
+trigger_range = NodePath("../SkeletonTrigger2")
+
+[node name="RunnerSkeleton5" parent="." unique_id=547603832 node_paths=PackedStringArray("trigger_range") instance=ExtResource("29_hhhni")]
+transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, -0.06744194, 1.0000398, -22.320164)
+trigger_range = NodePath("../SkeletonTrigger3")
+
+[node name="RunnerSkeleton6" parent="." unique_id=15790256 node_paths=PackedStringArray("trigger_range") instance=ExtResource("29_hhhni")]
+transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, -4.067442, 1.0000398, -22.320164)
+trigger_range = NodePath("../SkeletonTrigger3")
+
+[node name="RunnerSkeleton7" parent="." unique_id=681075409 node_paths=PackedStringArray("trigger_range") instance=ExtResource("29_hhhni")]
+transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, -0.06744194, 1.0000398, -34.320164)
+trigger_range = NodePath("../SkeletonTrigger3")
+
+[node name="CrossbowBase" parent="." unique_id=639564116 node_paths=PackedStringArray("trigger_area") instance=ExtResource("30_30e22")]
+transform = Transform3D(1.25, 0, 0, 0, 1.25, 0, 0, 0, 1.25, -3.8958063, 1.0036501, -33.69809)
+trigger_area = NodePath("../SkeletonTrigger3")
+
+[node name="CrossbowBase2" parent="." unique_id=333946529 node_paths=PackedStringArray("trigger_area") instance=ExtResource("30_30e22")]
+transform = Transform3D(1.25, 0, 0, 0, 1.25, 0, 0, 0, 1.25, 4.1041937, 1.0036501, -33.69809)
+trigger_area = NodePath("../SkeletonTrigger3")
+
+[node name="WoodenSpike" parent="." unique_id=2048444026 instance=ExtResource("31_5d0gq")]
+transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, -3.9760337, 1.0152674, -9.950253)
+
+[node name="WoodenSpike2" parent="." unique_id=1136740807 instance=ExtResource("31_5d0gq")]
+transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, 4.0239663, 1.0152674, -21.950253)
+
+[node name="Wall2" parent="." unique_id=807248881 instance=ExtResource("32_emt15")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 22)
+
+[node name="SkeletonTrigger" type="Area3D" parent="." unique_id=503428196]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 0, 5, 21)
+collision_layer = 0
+collision_mask = 2
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="SkeletonTrigger" unique_id=2120916263]
+shape = SubResource("BoxShape3D_hhhni")
+debug_color = Color(0.9729381, 0, 0.44087246, 0.41960785)
+
+[node name="SkeletonTrigger2" type="Area3D" parent="." unique_id=1566770346]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 0, 5, 8)
+collision_layer = 0
+collision_mask = 2
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="SkeletonTrigger2" unique_id=1566967324]
+shape = SubResource("BoxShape3D_hhhni")
+debug_color = Color(0.9729381, 0, 0.44087246, 0.41960785)
+
+[node name="SkeletonTrigger3" type="Area3D" parent="." unique_id=1113117462]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 0, 5, -8)
+collision_layer = 0
+collision_mask = 2
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="SkeletonTrigger3" unique_id=620456382]
+shape = SubResource("BoxShape3D_hhhni")
+debug_color = Color(0.9729381, 0, 0.44087246, 0.41960785)
