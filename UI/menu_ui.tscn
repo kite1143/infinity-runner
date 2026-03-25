@@ -1,0 +1,297 @@
+[gd_scene format=3 uid="uid://bgftmfx1ccgfk"]
+
+[ext_resource type="Texture2D" uid="uid://b6nxnvhsxxnam" path="res://Assets/UI/Sprite sheet for Basic Pack.png" id="1_gaeo4"]
+[ext_resource type="Texture2D" uid="uid://ci2elvk3l2kuh" path="res://Assets/UI/Setting menu.png" id="2_bh1w4"]
+[ext_resource type="FontFile" uid="uid://lqfb54ubtaap" path="res://Assets/UI/Font/pixelFont-7-8x14-sproutLands.ttf" id="3_rfjxj"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gaeo4"]
+atlas = ExtResource("1_gaeo4")
+region = Rect2(640, 64, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bh1w4"]
+atlas = ExtResource("1_gaeo4")
+region = Rect2(672, 64, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yms21"]
+atlas = ExtResource("1_gaeo4")
+region = Rect2(704, 160, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ej7b3"]
+atlas = ExtResource("1_gaeo4")
+region = Rect2(736, 160, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rfjxj"]
+atlas = ExtResource("1_gaeo4")
+region = Rect2(160, 208, 96, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jjnuu"]
+atlas = ExtResource("1_gaeo4")
+region = Rect2(256, 208, 96, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mpbuw"]
+atlas = ExtResource("1_gaeo4")
+region = Rect2(768, 96, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pxhdq"]
+atlas = ExtResource("1_gaeo4")
+region = Rect2(800, 96, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ba2g5"]
+atlas = ExtResource("1_gaeo4")
+region = Rect2(704, 64, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_r3j2o"]
+atlas = ExtResource("1_gaeo4")
+region = Rect2(736, 64, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_p6sgn"]
+atlas = ExtResource("2_bh1w4")
+region = Rect2(0, 0, 128, 144)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_afsyh"]
+atlas = ExtResource("1_gaeo4")
+region = Rect2(832, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mtdg5"]
+atlas = ExtResource("1_gaeo4")
+region = Rect2(864, 0, 32, 32)
+
+[sub_resource type="LabelSettings" id="LabelSettings_jjnuu"]
+font = ExtResource("3_rfjxj")
+font_size = 56
+font_color = Color(0, 0, 0, 1)
+
+[sub_resource type="DPITexture" id="DPITexture_bh1w4"]
+_source = "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\"><circle cx=\"8\" cy=\"8\" r=\"7\" fill=\"#fefefe\" fill-opacity=\".75\"/></svg>
+"
+base_scale = 4.0
+
+[sub_resource type="DPITexture" id="DPITexture_rfjxj"]
+_source = "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\"><circle cx=\"8\" cy=\"8\" r=\"7\" fill=\"#fefefe\"/></svg>
+"
+base_scale = 4.0
+
+[sub_resource type="DPITexture" id="DPITexture_jjnuu"]
+_source = "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\"><circle cx=\"8\" cy=\"8\" r=\"7\" fill=\"#fefefe\" fill-opacity=\".37\"/></svg>
+"
+base_scale = 4.0
+
+[sub_resource type="DPITexture" id="DPITexture_mpbuw"]
+_source = "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"4\" height=\"8\"><path fill=\"#fff\" fill-opacity=\".25\" d=\"M1 0h2v16H1z\"/></svg>
+"
+base_scale = 4.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_bh1w4"]
+content_margin_top = 32.0
+content_margin_bottom = 32.0
+corner_radius_top_left = 32
+corner_radius_top_right = 32
+corner_radius_bottom_right = 32
+corner_radius_bottom_left = 32
+expand_margin_left = 32.0
+expand_margin_right = 32.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_rfjxj"]
+content_margin_top = 32.0
+content_margin_bottom = 32.0
+bg_color = Color(0.042903952, 0.61673456, 0.9176093, 1)
+corner_radius_top_left = 32
+corner_radius_top_right = 32
+corner_radius_bottom_right = 32
+corner_radius_bottom_left = 32
+expand_margin_left = 32.0
+expand_margin_right = 32.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_jjnuu"]
+content_margin_top = 32.0
+content_margin_bottom = 32.0
+bg_color = Color(3.465414e-06, 0.4705987, 0.61341256, 1)
+corner_radius_top_left = 32
+corner_radius_top_right = 32
+corner_radius_bottom_right = 32
+corner_radius_bottom_left = 32
+expand_margin_left = 32.0
+expand_margin_right = 32.0
+
+[node name="MenuUI" type="CanvasLayer" unique_id=1489769155]
+
+[node name="MarginContainer" type="MarginContainer" parent="." unique_id=1577104755]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 20
+theme_override_constants/margin_right = 20
+theme_override_constants/margin_bottom = 20
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer" unique_id=598030245]
+layout_mode = 2
+size_flags_horizontal = 8
+size_flags_vertical = 0
+
+[node name="SettingButton" type="TextureButton" parent="MarginContainer/VBoxContainer" unique_id=291613365]
+custom_minimum_size = Vector2(240, 240)
+layout_mode = 2
+size_flags_horizontal = 8
+size_flags_vertical = 0
+texture_normal = SubResource("AtlasTexture_gaeo4")
+texture_pressed = SubResource("AtlasTexture_bh1w4")
+stretch_mode = 5
+
+[node name="RuleButton" type="TextureButton" parent="MarginContainer/VBoxContainer" unique_id=999579502]
+custom_minimum_size = Vector2(240, 240)
+layout_mode = 2
+size_flags_horizontal = 8
+size_flags_vertical = 0
+texture_normal = SubResource("AtlasTexture_yms21")
+texture_pressed = SubResource("AtlasTexture_ej7b3")
+stretch_mode = 5
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer" unique_id=1421325161]
+layout_mode = 2
+size_flags_vertical = 8
+
+[node name="StartButton" type="TextureButton" parent="MarginContainer/HBoxContainer" unique_id=1626781236]
+custom_minimum_size = Vector2(720, 240)
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 4
+texture_normal = SubResource("AtlasTexture_rfjxj")
+texture_pressed = SubResource("AtlasTexture_jjnuu")
+stretch_mode = 5
+
+[node name="ShopButton" type="TextureButton" parent="MarginContainer/HBoxContainer" unique_id=863043921]
+custom_minimum_size = Vector2(256, 256)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture_normal = SubResource("AtlasTexture_mpbuw")
+texture_pressed = SubResource("AtlasTexture_pxhdq")
+stretch_mode = 5
+
+[node name="RuleButton2" type="TextureButton" parent="MarginContainer" unique_id=1135758683]
+custom_minimum_size = Vector2(240, 240)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+texture_normal = SubResource("AtlasTexture_ba2g5")
+texture_pressed = SubResource("AtlasTexture_r3j2o")
+stretch_mode = 5
+
+[node name="SettingWindow" type="Control" parent="MarginContainer" unique_id=793119470]
+visible = false
+layout_mode = 2
+
+[node name="Panel" type="Panel" parent="MarginContainer/SettingWindow" unique_id=1932875444]
+custom_minimum_size = Vector2(700, 1000)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureRect" type="TextureRect" parent="MarginContainer/SettingWindow/Panel" unique_id=1737394928]
+custom_minimum_size = Vector2(1200, 1200)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = SubResource("AtlasTexture_p6sgn")
+stretch_mode = 5
+
+[node name="SettingButton" type="TextureButton" parent="MarginContainer/SettingWindow/Panel/TextureRect" unique_id=1941987714]
+custom_minimum_size = Vector2(240, 240)
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -120.0
+offset_top = -347.0
+offset_right = 120.0
+offset_bottom = -107.0
+grow_horizontal = 2
+grow_vertical = 0
+size_flags_horizontal = 8
+size_flags_vertical = 0
+texture_normal = SubResource("AtlasTexture_afsyh")
+texture_pressed = SubResource("AtlasTexture_mtdg5")
+stretch_mode = 5
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/SettingWindow/Panel" unique_id=1337990666]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -350.0
+offset_top = -210.0
+offset_right = 350.0
+offset_bottom = 262.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 30
+
+[node name="Label" type="Label" parent="MarginContainer/SettingWindow/Panel/VBoxContainer" unique_id=1125080407]
+layout_mode = 2
+text = "MASTER VOLUME"
+label_settings = SubResource("LabelSettings_jjnuu")
+
+[node name="MasterVolumeSlider" type="HSlider" parent="MarginContainer/SettingWindow/Panel/VBoxContainer" unique_id=1182136991]
+custom_minimum_size = Vector2(700, 50)
+layout_mode = 2
+theme_override_constants/center_grabber = 1
+theme_override_icons/grabber = SubResource("DPITexture_bh1w4")
+theme_override_icons/grabber_highlight = SubResource("DPITexture_rfjxj")
+theme_override_icons/grabber_disabled = SubResource("DPITexture_jjnuu")
+theme_override_icons/tick = SubResource("DPITexture_mpbuw")
+theme_override_styles/slider = SubResource("StyleBoxFlat_bh1w4")
+theme_override_styles/grabber_area = SubResource("StyleBoxFlat_rfjxj")
+theme_override_styles/grabber_area_highlight = SubResource("StyleBoxFlat_jjnuu")
+
+[node name="Label2" type="Label" parent="MarginContainer/SettingWindow/Panel/VBoxContainer" unique_id=1955669618]
+layout_mode = 2
+text = "MUSIC VOLUME"
+label_settings = SubResource("LabelSettings_jjnuu")
+
+[node name="MusicVolumeSlider" type="HSlider" parent="MarginContainer/SettingWindow/Panel/VBoxContainer" unique_id=5870116]
+custom_minimum_size = Vector2(700, 50)
+layout_mode = 2
+theme_override_constants/center_grabber = 1
+theme_override_icons/grabber = SubResource("DPITexture_bh1w4")
+theme_override_icons/grabber_highlight = SubResource("DPITexture_rfjxj")
+theme_override_icons/grabber_disabled = SubResource("DPITexture_jjnuu")
+theme_override_icons/tick = SubResource("DPITexture_mpbuw")
+theme_override_styles/slider = SubResource("StyleBoxFlat_bh1w4")
+theme_override_styles/grabber_area = SubResource("StyleBoxFlat_rfjxj")
+theme_override_styles/grabber_area_highlight = SubResource("StyleBoxFlat_jjnuu")
+
+[node name="Label3" type="Label" parent="MarginContainer/SettingWindow/Panel/VBoxContainer" unique_id=721360570]
+layout_mode = 2
+text = "SFX VOLUME"
+label_settings = SubResource("LabelSettings_jjnuu")
+
+[node name="SFXVolumeSlider" type="HSlider" parent="MarginContainer/SettingWindow/Panel/VBoxContainer" unique_id=907481388]
+custom_minimum_size = Vector2(700, 50)
+layout_mode = 2
+theme_override_constants/center_grabber = 1
+theme_override_icons/grabber = SubResource("DPITexture_bh1w4")
+theme_override_icons/grabber_highlight = SubResource("DPITexture_rfjxj")
+theme_override_icons/grabber_disabled = SubResource("DPITexture_jjnuu")
+theme_override_icons/tick = SubResource("DPITexture_mpbuw")
+theme_override_styles/slider = SubResource("StyleBoxFlat_bh1w4")
+theme_override_styles/grabber_area = SubResource("StyleBoxFlat_rfjxj")
+theme_override_styles/grabber_area_highlight = SubResource("StyleBoxFlat_jjnuu")

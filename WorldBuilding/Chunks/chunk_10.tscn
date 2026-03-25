@@ -566,74 +566,74 @@ mesh = ExtResource("28_ppmer")
 
 [node name="Obstacles" type="Node3D" parent="." unique_id=1123995955]
 
-[node name="RunnerSkeleton" parent="." unique_id=458598348 node_paths=PackedStringArray("trigger_range") instance=ExtResource("29_hhhni")]
+[node name="RunnerSkeleton" parent="Obstacles" unique_id=458598348 node_paths=PackedStringArray("trigger_range") instance=ExtResource("29_hhhni")]
 transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, -3.067442, 1.0000398, 1.6798363)
 trigger_range = NodePath("../SkeletonTrigger")
 
-[node name="RunnerSkeleton2" parent="." unique_id=1729367437 node_paths=PackedStringArray("trigger_range") instance=ExtResource("29_hhhni")]
+[node name="RunnerSkeleton2" parent="Obstacles" unique_id=1729367437 node_paths=PackedStringArray("trigger_range") instance=ExtResource("29_hhhni")]
 transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, 3.932558, 1.0000398, 1.6798363)
 trigger_range = NodePath("../SkeletonTrigger")
 
-[node name="RunnerSkeleton3" parent="." unique_id=1557515575 node_paths=PackedStringArray("trigger_range") instance=ExtResource("29_hhhni")]
+[node name="RunnerSkeleton3" parent="Obstacles" unique_id=1557515575 node_paths=PackedStringArray("trigger_range") instance=ExtResource("29_hhhni")]
 transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, 3.932558, 1.0000398, -10.320164)
 trigger_range = NodePath("../SkeletonTrigger2")
 
-[node name="RunnerSkeleton4" parent="." unique_id=1408378675 node_paths=PackedStringArray("trigger_range") instance=ExtResource("29_hhhni")]
+[node name="RunnerSkeleton4" parent="Obstacles" unique_id=1408378675 node_paths=PackedStringArray("trigger_range") instance=ExtResource("29_hhhni")]
 transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, -0.06744194, 1.0000398, -10.320164)
 trigger_range = NodePath("../SkeletonTrigger2")
 
-[node name="RunnerSkeleton5" parent="." unique_id=547603832 node_paths=PackedStringArray("trigger_range") instance=ExtResource("29_hhhni")]
+[node name="RunnerSkeleton5" parent="Obstacles" unique_id=547603832 node_paths=PackedStringArray("trigger_range") instance=ExtResource("29_hhhni")]
 transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, -0.06744194, 1.0000398, -22.320164)
 trigger_range = NodePath("../SkeletonTrigger3")
 
-[node name="RunnerSkeleton6" parent="." unique_id=15790256 node_paths=PackedStringArray("trigger_range") instance=ExtResource("29_hhhni")]
+[node name="RunnerSkeleton6" parent="Obstacles" unique_id=15790256 node_paths=PackedStringArray("trigger_range") instance=ExtResource("29_hhhni")]
 transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, -4.067442, 1.0000398, -22.320164)
 trigger_range = NodePath("../SkeletonTrigger3")
 
-[node name="RunnerSkeleton7" parent="." unique_id=681075409 node_paths=PackedStringArray("trigger_range") instance=ExtResource("29_hhhni")]
+[node name="RunnerSkeleton7" parent="Obstacles" unique_id=681075409 node_paths=PackedStringArray("trigger_range") instance=ExtResource("29_hhhni")]
 transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, -0.06744194, 1.0000398, -34.320164)
 trigger_range = NodePath("../SkeletonTrigger3")
 
-[node name="CrossbowBase" parent="." unique_id=639564116 node_paths=PackedStringArray("trigger_area") instance=ExtResource("30_30e22")]
+[node name="CrossbowBase" parent="Obstacles" unique_id=639564116 node_paths=PackedStringArray("trigger_area") instance=ExtResource("30_30e22")]
 transform = Transform3D(1.25, 0, 0, 0, 1.25, 0, 0, 0, 1.25, -3.8958063, 1.0036501, -33.69809)
 trigger_area = NodePath("../SkeletonTrigger3")
 
-[node name="CrossbowBase2" parent="." unique_id=333946529 node_paths=PackedStringArray("trigger_area") instance=ExtResource("30_30e22")]
+[node name="CrossbowBase2" parent="Obstacles" unique_id=333946529 node_paths=PackedStringArray("trigger_area") instance=ExtResource("30_30e22")]
 transform = Transform3D(1.25, 0, 0, 0, 1.25, 0, 0, 0, 1.25, 4.1041937, 1.0036501, -33.69809)
 trigger_area = NodePath("../SkeletonTrigger3")
 
-[node name="WoodenSpike" parent="." unique_id=2048444026 instance=ExtResource("31_5d0gq")]
+[node name="WoodenSpike" parent="Obstacles" unique_id=2048444026 instance=ExtResource("31_5d0gq")]
 transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, -3.9760337, 1.0152674, -9.950253)
 
-[node name="WoodenSpike2" parent="." unique_id=1136740807 instance=ExtResource("31_5d0gq")]
+[node name="WoodenSpike2" parent="Obstacles" unique_id=1136740807 instance=ExtResource("31_5d0gq")]
 transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, 4.0239663, 1.0152674, -21.950253)
 
-[node name="Wall2" parent="." unique_id=807248881 instance=ExtResource("32_emt15")]
+[node name="Wall2" parent="Obstacles" unique_id=807248881 instance=ExtResource("32_emt15")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 22)
 
-[node name="SkeletonTrigger" type="Area3D" parent="." unique_id=503428196]
+[node name="SkeletonTrigger" type="Area3D" parent="Obstacles" unique_id=503428196]
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 0, 5, 21)
 collision_layer = 0
 collision_mask = 2
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="SkeletonTrigger" unique_id=2120916263]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Obstacles/SkeletonTrigger" unique_id=2120916263]
 shape = SubResource("BoxShape3D_hhhni")
 debug_color = Color(0.9729381, 0, 0.44087246, 0.41960785)
 
-[node name="SkeletonTrigger2" type="Area3D" parent="." unique_id=1566770346]
+[node name="SkeletonTrigger2" type="Area3D" parent="Obstacles" unique_id=1566770346]
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 0, 5, 8)
 collision_layer = 0
 collision_mask = 2
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="SkeletonTrigger2" unique_id=1566967324]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Obstacles/SkeletonTrigger2" unique_id=1566967324]
 shape = SubResource("BoxShape3D_hhhni")
 debug_color = Color(0.9729381, 0, 0.44087246, 0.41960785)
 
-[node name="SkeletonTrigger3" type="Area3D" parent="." unique_id=1113117462]
+[node name="SkeletonTrigger3" type="Area3D" parent="Obstacles" unique_id=1113117462]
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 0, 5, -8)
 collision_layer = 0
 collision_mask = 2
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="SkeletonTrigger3" unique_id=620456382]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Obstacles/SkeletonTrigger3" unique_id=620456382]
 shape = SubResource("BoxShape3D_hhhni")
 debug_color = Color(0.9729381, 0, 0.44087246, 0.41960785)
