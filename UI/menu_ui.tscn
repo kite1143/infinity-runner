@@ -113,6 +113,21 @@ corner_radius_bottom_left = 32
 expand_margin_left = 32.0
 expand_margin_right = 32.0
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_fdnyd"]
+atlas = ExtResource("2_bh1w4")
+region = Rect2(128, 0, 128, 144)
+
+[sub_resource type="LabelSettings" id="LabelSettings_018j1"]
+font = ExtResource("3_rfjxj")
+font_size = 96
+outline_size = 4
+shadow_size = 0
+
+[sub_resource type="LabelSettings" id="LabelSettings_rfjxj"]
+font = ExtResource("3_rfjxj")
+font_size = 56
+font_color = Color(0, 0, 0, 1)
+
 [node name="MenuUI" type="CanvasLayer" unique_id=1489769155]
 
 [node name="MarginContainer" type="MarginContainer" parent="." unique_id=1577104755]
@@ -295,3 +310,95 @@ theme_override_icons/tick = SubResource("DPITexture_mpbuw")
 theme_override_styles/slider = SubResource("StyleBoxFlat_bh1w4")
 theme_override_styles/grabber_area = SubResource("StyleBoxFlat_rfjxj")
 theme_override_styles/grabber_area_highlight = SubResource("StyleBoxFlat_jjnuu")
+
+[node name="GuideWindow" type="Control" parent="MarginContainer" unique_id=568533469]
+visible = false
+layout_mode = 2
+
+[node name="Panel" type="Panel" parent="MarginContainer/GuideWindow" unique_id=969137452]
+custom_minimum_size = Vector2(700, 1000)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureRect" type="TextureRect" parent="MarginContainer/GuideWindow/Panel" unique_id=1437678188]
+custom_minimum_size = Vector2(1200, 1200)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = SubResource("AtlasTexture_fdnyd")
+stretch_mode = 5
+
+[node name="SettingButton" type="TextureButton" parent="MarginContainer/GuideWindow/Panel/TextureRect" unique_id=2045027710]
+custom_minimum_size = Vector2(240, 240)
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -120.0
+offset_top = -347.0
+offset_right = 120.0
+offset_bottom = -107.0
+grow_horizontal = 2
+grow_vertical = 0
+size_flags_horizontal = 8
+size_flags_vertical = 0
+texture_normal = SubResource("AtlasTexture_afsyh")
+texture_pressed = SubResource("AtlasTexture_mtdg5")
+stretch_mode = 5
+
+[node name="Label" type="Label" parent="MarginContainer/GuideWindow/Panel/TextureRect" unique_id=872731566]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -193.0
+offset_top = 160.0
+offset_right = 193.0
+offset_bottom = 235.0
+grow_horizontal = 2
+text = "GUIDE"
+label_settings = SubResource("LabelSettings_018j1")
+horizontal_alignment = 1
+
+[node name="Label2" type="Label" parent="MarginContainer/GuideWindow/Panel/TextureRect" unique_id=825701607]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -306.75
+offset_top = -302.5
+offset_right = 306.75
+offset_bottom = 258.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "CHANGE LANE: 
+- LEFT and RIGHT
+
+JUMP: 
+- UP
+
+SCORE:
+- DISTANCE + SCORE * 2
+
+CHARACTERS:
+- COLLECT COIN TO BUY
+"
+label_settings = SubResource("LabelSettings_rfjxj")
+autowrap_mode = 3
