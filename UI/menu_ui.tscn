@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://bgftmfx1ccgfk"]
 
 [ext_resource type="Texture2D" uid="uid://b6nxnvhsxxnam" path="res://Assets/UI/Sprite sheet for Basic Pack.png" id="1_gaeo4"]
+[ext_resource type="Script" uid="uid://6qr3yo47gw15" path="res://UI/menu_ui.gd" id="1_jjnuu"]
 [ext_resource type="Texture2D" uid="uid://ci2elvk3l2kuh" path="res://Assets/UI/Setting menu.png" id="2_bh1w4"]
 [ext_resource type="FontFile" uid="uid://lqfb54ubtaap" path="res://Assets/UI/Font/pixelFont-7-8x14-sproutLands.ttf" id="3_rfjxj"]
 
@@ -129,6 +130,7 @@ font_size = 56
 font_color = Color(0, 0, 0, 1)
 
 [node name="MenuUI" type="CanvasLayer" unique_id=1489769155]
+script = ExtResource("1_jjnuu")
 
 [node name="MarginContainer" type="MarginContainer" parent="." unique_id=1577104755]
 anchors_preset = 15
@@ -225,7 +227,7 @@ grow_vertical = 2
 texture = SubResource("AtlasTexture_p6sgn")
 stretch_mode = 5
 
-[node name="SettingButton" type="TextureButton" parent="MarginContainer/SettingWindow/Panel/TextureRect" unique_id=1941987714]
+[node name="TurnOffSettingButton" type="TextureButton" parent="MarginContainer/SettingWindow/Panel/TextureRect" unique_id=1941987714]
 custom_minimum_size = Vector2(240, 240)
 layout_mode = 1
 anchors_preset = 7
@@ -341,7 +343,7 @@ grow_vertical = 2
 texture = SubResource("AtlasTexture_fdnyd")
 stretch_mode = 5
 
-[node name="SettingButton" type="TextureButton" parent="MarginContainer/GuideWindow/Panel/TextureRect" unique_id=2045027710]
+[node name="TurnOffGuideButton" type="TextureButton" parent="MarginContainer/GuideWindow/Panel/TextureRect" unique_id=2045027710]
 custom_minimum_size = Vector2(240, 240)
 layout_mode = 1
 anchors_preset = 7
@@ -390,15 +392,19 @@ grow_horizontal = 2
 grow_vertical = 2
 text = "CHANGE LANE: 
 - LEFT and RIGHT
-
 JUMP: 
 - UP
-
+SLIDE:
+-DOWN
 SCORE:
 - DISTANCE + SCORE * 2
-
 CHARACTERS:
 - COLLECT COIN TO BUY
 "
 label_settings = SubResource("LabelSettings_rfjxj")
 autowrap_mode = 3
+
+[connection signal="pressed" from="MarginContainer/VBoxContainer/SettingButton" to="." method="_on_setting_button_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/RuleButton" to="." method="_on_rule_button_pressed"]
+[connection signal="pressed" from="MarginContainer/SettingWindow/Panel/TextureRect/TurnOffSettingButton" to="." method="_on_turn_off_setting_button_pressed"]
+[connection signal="pressed" from="MarginContainer/GuideWindow/Panel/TextureRect/TurnOffGuideButton" to="." method="_on_turn_off_guide_button_pressed"]
