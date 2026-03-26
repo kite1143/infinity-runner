@@ -1,0 +1,135 @@
+[gd_scene format=3 uid="uid://bvrlxpab3o0xd"]
+
+[ext_resource type="Texture2D" uid="uid://ci2elvk3l2kuh" path="res://Assets/UI/Setting menu.png" id="1_83p1l"]
+[ext_resource type="FontFile" uid="uid://lqfb54ubtaap" path="res://Assets/UI/Font/pixelFont-7-8x14-sproutLands.ttf" id="2_scul4"]
+[ext_resource type="Texture2D" uid="uid://b6nxnvhsxxnam" path="res://Assets/UI/Sprite sheet for Basic Pack.png" id="3_p7fyp"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ihwy4"]
+atlas = ExtResource("1_83p1l")
+region = Rect2(128, 0, 128, 144)
+
+[sub_resource type="LabelSettings" id="LabelSettings_fs1d4"]
+font = ExtResource("2_scul4")
+font_size = 96
+outline_size = 4
+shadow_size = 0
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ujwd2"]
+atlas = ExtResource("3_p7fyp")
+region = Rect2(704, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_llh85"]
+atlas = ExtResource("3_p7fyp")
+region = Rect2(736, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_iwucp"]
+atlas = ExtResource("3_p7fyp")
+region = Rect2(704, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mxwq6"]
+atlas = ExtResource("3_p7fyp")
+region = Rect2(736, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ffyd2"]
+atlas = ExtResource("3_p7fyp")
+region = Rect2(768, 64, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xvnf3"]
+atlas = ExtResource("3_p7fyp")
+region = Rect2(800, 64, 32, 32)
+
+[node name="PauseWindow" type="CanvasLayer" unique_id=545819349]
+
+[node name="GuideWindow" type="Control" parent="." unique_id=799449914]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Panel" type="Panel" parent="GuideWindow" unique_id=1272011974]
+custom_minimum_size = Vector2(700, 1000)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureRect" type="TextureRect" parent="GuideWindow/Panel" unique_id=288768100]
+custom_minimum_size = Vector2(1000, 800)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -500.0
+offset_top = -400.0
+offset_right = 500.0
+offset_bottom = 400.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = SubResource("AtlasTexture_ihwy4")
+stretch_mode = 5
+
+[node name="Label" type="Label" parent="GuideWindow/Panel/TextureRect" unique_id=1208878436]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -251.0
+offset_top = 160.0
+offset_right = 251.0
+offset_bottom = 235.0
+grow_horizontal = 2
+text = "PAUSE MENU"
+label_settings = SubResource("LabelSettings_fs1d4")
+horizontal_alignment = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="GuideWindow/Panel/TextureRect" unique_id=886536075]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -242.0
+offset_top = -152.0
+offset_right = 242.0
+offset_bottom = 332.0
+grow_horizontal = 2
+grow_vertical = 2
+alignment = 1
+
+[node name="HBoxContainer" type="HBoxContainer" parent="GuideWindow/Panel/TextureRect/VBoxContainer" unique_id=493176408]
+layout_mode = 2
+alignment = 1
+
+[node name="ContinueButton2" type="TextureButton" parent="GuideWindow/Panel/TextureRect/VBoxContainer/HBoxContainer" unique_id=1918657399]
+custom_minimum_size = Vector2(208, 208)
+layout_mode = 2
+size_flags_horizontal = 8
+size_flags_vertical = 0
+texture_normal = SubResource("AtlasTexture_ujwd2")
+texture_pressed = SubResource("AtlasTexture_llh85")
+stretch_mode = 5
+
+[node name="ContinueButton3" type="TextureButton" parent="GuideWindow/Panel/TextureRect/VBoxContainer/HBoxContainer" unique_id=1649998174]
+custom_minimum_size = Vector2(208, 208)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture_normal = SubResource("AtlasTexture_iwucp")
+texture_pressed = SubResource("AtlasTexture_mxwq6")
+stretch_mode = 5
+
+[node name="MenuButton" type="TextureButton" parent="GuideWindow/Panel/TextureRect/VBoxContainer" unique_id=327872618]
+custom_minimum_size = Vector2(208, 208)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 0
+texture_normal = SubResource("AtlasTexture_ffyd2")
+texture_pressed = SubResource("AtlasTexture_xvnf3")
+stretch_mode = 5
