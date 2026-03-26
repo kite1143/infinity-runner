@@ -1,8 +1,33 @@
-[gd_scene format=3 uid="uid://bvrlxpab3o0xd"]
+[gd_scene format=3 uid="uid://5on33m4llp21"]
 
 [ext_resource type="Texture2D" uid="uid://ci2elvk3l2kuh" path="res://Assets/UI/Setting menu.png" id="1_83p1l"]
 [ext_resource type="FontFile" uid="uid://lqfb54ubtaap" path="res://Assets/UI/Font/pixelFont-7-8x14-sproutLands.ttf" id="2_scul4"]
 [ext_resource type="Texture2D" uid="uid://b6nxnvhsxxnam" path="res://Assets/UI/Sprite sheet for Basic Pack.png" id="3_p7fyp"]
+[ext_resource type="Texture2D" uid="uid://chpb1k7tnabth" path="res://Assets/UI/UI Settings Buttons.png" id="5_p7fyp"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_p7fyp"]
+font = ExtResource("2_scul4")
+font_size = 80
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_scul4"]
+atlas = ExtResource("5_p7fyp")
+region = Rect2(0, 80, 32, 32)
+
+[sub_resource type="LabelSettings" id="LabelSettings_ihwy4"]
+font = ExtResource("2_scul4")
+font_size = 80
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_p7fyp"]
+atlas = ExtResource("5_p7fyp")
+region = Rect2(32, 80, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fs1d4"]
+atlas = ExtResource("3_p7fyp")
+region = Rect2(512, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_baams"]
+atlas = ExtResource("3_p7fyp")
+region = Rect2(544, 32, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ihwy4"]
 atlas = ExtResource("1_83p1l")
@@ -16,19 +41,19 @@ shadow_size = 0
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ujwd2"]
 atlas = ExtResource("3_p7fyp")
-region = Rect2(704, 32, 32, 32)
+region = Rect2(576, 32, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_llh85"]
 atlas = ExtResource("3_p7fyp")
-region = Rect2(736, 32, 32, 32)
+region = Rect2(608, 32, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_iwucp"]
 atlas = ExtResource("3_p7fyp")
-region = Rect2(704, 32, 32, 32)
+region = Rect2(640, 32, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_mxwq6"]
 atlas = ExtResource("3_p7fyp")
-region = Rect2(736, 32, 32, 32)
+region = Rect2(672, 32, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ffyd2"]
 atlas = ExtResource("3_p7fyp")
@@ -38,9 +63,81 @@ region = Rect2(768, 64, 32, 32)
 atlas = ExtResource("3_p7fyp")
 region = Rect2(800, 64, 32, 32)
 
-[node name="PauseWindow" type="CanvasLayer" unique_id=545819349]
+[node name="GameplayUI" type="CanvasLayer" unique_id=545819349]
 
-[node name="GuideWindow" type="Control" parent="." unique_id=799449914]
+[node name="MarginContainer" type="MarginContainer" parent="." unique_id=799668317]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+theme_override_constants/margin_left = 50
+theme_override_constants/margin_top = 50
+theme_override_constants/margin_right = 50
+theme_override_constants/margin_bottom = 50
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer" unique_id=952119955]
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+theme_override_constants/separation = 40
+
+[node name="ScoreLabel" type="Label" parent="MarginContainer/VBoxContainer" unique_id=398663762]
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+text = "SCORE: 0000"
+label_settings = SubResource("LabelSettings_p7fyp")
+
+[node name="HBoxContainer3" type="HBoxContainer" parent="MarginContainer/VBoxContainer" unique_id=1094903858]
+layout_mode = 2
+theme_override_constants/separation = 50
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/VBoxContainer/HBoxContainer3" unique_id=146566840]
+layout_mode = 2
+alignment = 1
+
+[node name="CoinTexture" type="TextureRect" parent="MarginContainer/VBoxContainer/HBoxContainer3/VBoxContainer" unique_id=1777873819]
+custom_minimum_size = Vector2(160, 160)
+layout_mode = 2
+texture = SubResource("AtlasTexture_scul4")
+
+[node name="CoinLabel" type="Label" parent="MarginContainer/VBoxContainer/HBoxContainer3/VBoxContainer" unique_id=2048831430]
+layout_mode = 2
+text = "X20"
+label_settings = SubResource("LabelSettings_ihwy4")
+horizontal_alignment = 1
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="MarginContainer/VBoxContainer/HBoxContainer3" unique_id=278025975]
+layout_mode = 2
+alignment = 1
+
+[node name="EnergyTexture" type="TextureRect" parent="MarginContainer/VBoxContainer/HBoxContainer3/VBoxContainer2" unique_id=2059071473]
+custom_minimum_size = Vector2(160, 160)
+layout_mode = 2
+texture = SubResource("AtlasTexture_p7fyp")
+
+[node name="EnergyLabel" type="Label" parent="MarginContainer/VBoxContainer/HBoxContainer3/VBoxContainer2" unique_id=1538877139]
+layout_mode = 2
+text = "0/3"
+label_settings = SubResource("LabelSettings_ihwy4")
+horizontal_alignment = 1
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="MarginContainer/VBoxContainer" unique_id=212693988]
+layout_mode = 2
+
+[node name="PauseButton" type="TextureButton" parent="MarginContainer" unique_id=548141915]
+custom_minimum_size = Vector2(240, 240)
+layout_mode = 2
+size_flags_horizontal = 8
+size_flags_vertical = 0
+texture_normal = SubResource("AtlasTexture_fs1d4")
+texture_pressed = SubResource("AtlasTexture_baams")
+stretch_mode = 5
+
+[node name="PauseMenu" type="Control" parent="." unique_id=799449914]
+visible = false
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -48,7 +145,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="Panel" type="Panel" parent="GuideWindow" unique_id=1272011974]
+[node name="Panel" type="Panel" parent="PauseMenu" unique_id=1272011974]
 custom_minimum_size = Vector2(700, 1000)
 layout_mode = 1
 anchors_preset = 15
@@ -57,8 +154,8 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="TextureRect" type="TextureRect" parent="GuideWindow/Panel" unique_id=288768100]
-custom_minimum_size = Vector2(1000, 800)
+[node name="TextureRect" type="TextureRect" parent="PauseMenu/Panel" unique_id=288768100]
+custom_minimum_size = Vector2(1200, 1000)
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -74,7 +171,7 @@ grow_vertical = 2
 texture = SubResource("AtlasTexture_ihwy4")
 stretch_mode = 5
 
-[node name="Label" type="Label" parent="GuideWindow/Panel/TextureRect" unique_id=1208878436]
+[node name="Label" type="Label" parent="PauseMenu/Panel/TextureRect" unique_id=1208878436]
 layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
@@ -88,7 +185,7 @@ text = "PAUSE MENU"
 label_settings = SubResource("LabelSettings_fs1d4")
 horizontal_alignment = 1
 
-[node name="VBoxContainer" type="VBoxContainer" parent="GuideWindow/Panel/TextureRect" unique_id=886536075]
+[node name="VBoxContainer" type="VBoxContainer" parent="PauseMenu/Panel/TextureRect" unique_id=886536075]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -103,12 +200,12 @@ grow_horizontal = 2
 grow_vertical = 2
 alignment = 1
 
-[node name="HBoxContainer" type="HBoxContainer" parent="GuideWindow/Panel/TextureRect/VBoxContainer" unique_id=493176408]
+[node name="HBoxContainer" type="HBoxContainer" parent="PauseMenu/Panel/TextureRect/VBoxContainer" unique_id=493176408]
 layout_mode = 2
 alignment = 1
 
-[node name="ContinueButton2" type="TextureButton" parent="GuideWindow/Panel/TextureRect/VBoxContainer/HBoxContainer" unique_id=1918657399]
-custom_minimum_size = Vector2(208, 208)
+[node name="ContinueButton" type="TextureButton" parent="PauseMenu/Panel/TextureRect/VBoxContainer/HBoxContainer" unique_id=1918657399]
+custom_minimum_size = Vector2(240, 240)
 layout_mode = 2
 size_flags_horizontal = 8
 size_flags_vertical = 0
@@ -116,8 +213,8 @@ texture_normal = SubResource("AtlasTexture_ujwd2")
 texture_pressed = SubResource("AtlasTexture_llh85")
 stretch_mode = 5
 
-[node name="ContinueButton3" type="TextureButton" parent="GuideWindow/Panel/TextureRect/VBoxContainer/HBoxContainer" unique_id=1649998174]
-custom_minimum_size = Vector2(208, 208)
+[node name="ResetButton" type="TextureButton" parent="PauseMenu/Panel/TextureRect/VBoxContainer/HBoxContainer" unique_id=1649998174]
+custom_minimum_size = Vector2(240, 240)
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
@@ -125,8 +222,8 @@ texture_normal = SubResource("AtlasTexture_iwucp")
 texture_pressed = SubResource("AtlasTexture_mxwq6")
 stretch_mode = 5
 
-[node name="MenuButton" type="TextureButton" parent="GuideWindow/Panel/TextureRect/VBoxContainer" unique_id=327872618]
-custom_minimum_size = Vector2(208, 208)
+[node name="MenuButton" type="TextureButton" parent="PauseMenu/Panel/TextureRect/VBoxContainer" unique_id=327872618]
+custom_minimum_size = Vector2(240, 240)
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 0
