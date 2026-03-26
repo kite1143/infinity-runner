@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://d4apnappeitwk"]
+
+[ext_resource type="Script" uid="uid://jpa51210up0d" path="res://WorldBuilding/Collectable/coin.gd" id="1_bj2ke"]
+[ext_resource type="PackedScene" uid="uid://402l8yyuefni" path="res://Assets/WorldBuiding/PlatformerPacks/Coin/Coin_A.gltf" id="1_dwswx"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_dwswx"]
+radius = 0.7
+
+[node name="Coin" type="Area3D" unique_id=2055043096]
+transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, 0, 0, 0)
+collision_layer = 0
+collision_mask = 2
+script = ExtResource("1_bj2ke")
+
+[node name="Coin_A2" parent="." unique_id=1287258540 instance=ExtResource("1_dwswx")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=955074448]
+shape = SubResource("SphereShape3D_dwswx")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

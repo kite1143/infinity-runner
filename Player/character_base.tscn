@@ -106,7 +106,7 @@ height = 1.0
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_5ge3a"]
 
-[node name="CharacterBase" type="CharacterBody3D" unique_id=437658251]
+[node name="CharacterBase" type="CharacterBody3D" unique_id=437658251 groups=["Player"]]
 collision_layer = 2
 collision_mask = 9
 script = ExtResource("1_tjx4p")
