@@ -33,7 +33,7 @@ region = Rect2(544, 32, 32, 32)
 atlas = ExtResource("1_83p1l")
 region = Rect2(128, 0, 128, 144)
 
-[sub_resource type="LabelSettings" id="LabelSettings_fs1d4"]
+[sub_resource type="LabelSettings" id="LabelSettings_scul4"]
 font = ExtResource("2_scul4")
 font_size = 96
 outline_size = 4
@@ -182,7 +182,7 @@ offset_right = 251.0
 offset_bottom = 235.0
 grow_horizontal = 2
 text = "PAUSE MENU"
-label_settings = SubResource("LabelSettings_fs1d4")
+label_settings = SubResource("LabelSettings_scul4")
 horizontal_alignment = 1
 
 [node name="VBoxContainer" type="VBoxContainer" parent="PauseMenu/Panel/TextureRect" unique_id=886536075]
