@@ -1,0 +1,176 @@
+[gd_scene format=3 uid="uid://x186p1h6aawl"]
+
+[ext_resource type="Script" uid="uid://4nr87kx3x3to" path="res://Prototype/test_shop.gd" id="1_wyfwb"]
+[ext_resource type="Texture2D" uid="uid://ci2elvk3l2kuh" path="res://Assets/UI/Setting menu.png" id="2_23y7k"]
+[ext_resource type="FontFile" uid="uid://lqfb54ubtaap" path="res://Assets/UI/Font/pixelFont-7-8x14-sproutLands.ttf" id="3_svth0"]
+[ext_resource type="Texture2D" uid="uid://b6nxnvhsxxnam" path="res://Assets/UI/Sprite sheet for Basic Pack.png" id="4_svth0"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_riea4"]
+atlas = ExtResource("2_23y7k")
+region = Rect2(128, 0, 128, 144)
+
+[sub_resource type="LabelSettings" id="LabelSettings_rvt57"]
+font = ExtResource("3_svth0")
+font_size = 192
+outline_size = 4
+shadow_size = 0
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rvt57"]
+atlas = ExtResource("4_svth0")
+region = Rect2(576, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_p6v8l"]
+atlas = ExtResource("4_svth0")
+region = Rect2(608, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_n8be6"]
+atlas = ExtResource("4_svth0")
+region = Rect2(0, 0, 96, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dk3w0"]
+atlas = ExtResource("4_svth0")
+region = Rect2(0, 32, 96, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_uwiih"]
+atlas = ExtResource("4_svth0")
+region = Rect2(0, 64, 96, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_svth0"]
+atlas = ExtResource("4_svth0")
+region = Rect2(768, 64, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ckcpj"]
+atlas = ExtResource("4_svth0")
+region = Rect2(800, 64, 32, 32)
+
+[node name="Shop" type="Control" unique_id=950487830]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_wyfwb")
+
+[node name="Panel" type="Panel" parent="." unique_id=2079372470]
+custom_minimum_size = Vector2(700, 1000)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureRect" type="TextureRect" parent="Panel" unique_id=938824160]
+custom_minimum_size = Vector2(1200, 2000)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -500.0
+offset_top = -400.0
+offset_right = 500.0
+offset_bottom = 400.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = SubResource("AtlasTexture_riea4")
+
+[node name="Label" type="Label" parent="Panel/TextureRect" unique_id=1723086025]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -320.0
+offset_top = 250.0
+offset_right = 320.0
+offset_bottom = 400.00012
+grow_horizontal = 2
+text = "SHOP"
+label_settings = SubResource("LabelSettings_rvt57")
+horizontal_alignment = 1
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Panel" unique_id=350081030]
+custom_minimum_size = Vector2(800, 0)
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -400.0
+offset_top = -390.0
+offset_right = 400.0
+offset_bottom = -150.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="LeftButton" type="TextureButton" parent="Panel/HBoxContainer" unique_id=82640434]
+custom_minimum_size = Vector2(192, 192)
+layout_mode = 2
+size_flags_horizontal = 0
+texture_normal = SubResource("AtlasTexture_rvt57")
+texture_pressed = SubResource("AtlasTexture_p6v8l")
+stretch_mode = 5
+
+[node name="ChooseButton" type="TextureButton" parent="Panel/HBoxContainer" unique_id=423966394]
+custom_minimum_size = Vector2(528, 240)
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 4
+texture_normal = SubResource("AtlasTexture_n8be6")
+texture_pressed = SubResource("AtlasTexture_dk3w0")
+texture_disabled = SubResource("AtlasTexture_uwiih")
+stretch_mode = 5
+
+[node name="RightButton" type="TextureButton" parent="Panel/HBoxContainer" unique_id=753853444]
+custom_minimum_size = Vector2(192, 192)
+layout_mode = 2
+size_flags_horizontal = 0
+texture_normal = SubResource("AtlasTexture_rvt57")
+texture_pressed = SubResource("AtlasTexture_p6v8l")
+stretch_mode = 5
+flip_h = true
+
+[node name="ShopContainer" type="CenterContainer" parent="Panel" unique_id=1153521313]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Card1" type="ColorRect" parent="Panel/ShopContainer" unique_id=1593277867]
+custom_minimum_size = Vector2(700, 1000)
+layout_mode = 2
+
+[node name="Card2" type="ColorRect" parent="Panel/ShopContainer" unique_id=1221279838]
+visible = false
+custom_minimum_size = Vector2(700, 1000)
+layout_mode = 2
+color = Color(0.84670806, 0.40501797, 0.8885292, 1)
+
+[node name="Card3" type="ColorRect" parent="Panel/ShopContainer" unique_id=1962787953]
+visible = false
+custom_minimum_size = Vector2(700, 1000)
+layout_mode = 2
+color = Color(4.428029e-06, 0.6914449, 0.8323837, 1)
+
+[node name="MenuButton" type="TextureButton" parent="." unique_id=983427246]
+custom_minimum_size = Vector2(240, 240)
+layout_mode = 0
+offset_left = 70.0
+offset_top = 170.0
+offset_right = 310.0
+offset_bottom = 410.0
+size_flags_horizontal = 4
+size_flags_vertical = 0
+texture_normal = SubResource("AtlasTexture_svth0")
+texture_pressed = SubResource("AtlasTexture_ckcpj")
+stretch_mode = 5
+
+[connection signal="pressed" from="Panel/HBoxContainer/LeftButton" to="." method="_on_left_button_pressed"]
+[connection signal="pressed" from="Panel/HBoxContainer/RightButton" to="." method="_on_right_button_pressed"]
