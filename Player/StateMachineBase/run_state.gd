@@ -14,7 +14,7 @@ func enter() -> void:
 		-10
 	)
 
-func handle_input(event: InputEvent) -> void:
+func handle_input(_event: InputEvent) -> void:
 	if Input.is_action_just_pressed("dash_left") and state_machine.character_base.target_lane_x > -3:
 		if state_machine.character_base.ray_cast_left.is_colliding():
 			return

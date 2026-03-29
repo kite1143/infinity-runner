@@ -8,4 +8,6 @@ func _ready() -> void:
 		trigger_range.body_entered.connect(trigger_barrel)
 
 func trigger_barrel(body: Player) -> void:
+	if body is not Player:
+		return
 	freeze = false

@@ -20,7 +20,7 @@
 [ext_resource type="PackedScene" uid="uid://dr5q572qnbm1b" path="res://WorldBuilding/Decors/mage_decor.tscn" id="19_sgj32"]
 [ext_resource type="PackedScene" uid="uid://dfunwg58xm2aw" path="res://WorldBuilding/Decors/barbarian_decor.tscn" id="20_7poud"]
 [ext_resource type="PackedScene" uid="uid://hr6e6ru52tw6" path="res://Assets/WorldBuiding/Dungeon/Dungeon_Legacy/plateHalf.gltf.glb" id="21_nrvsj"]
-[ext_resource type="PackedScene" uid="uid://bgftmfx1ccgfk" path="res://UI/menu_ui.tscn" id="21_prghj"]
+[ext_resource type="PackedScene" uid="uid://bgftmfx1ccgfk" path="res://Scenes/menu_ui.tscn" id="21_prghj"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_64u68"]
 sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)

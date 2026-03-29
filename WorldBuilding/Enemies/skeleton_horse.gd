@@ -18,6 +18,9 @@ func _process(delta: float) -> void:
 		global_position.x += speed * delta * direction
 
 func player_trigger(body: Player) -> void:
+	if body is not Player:
+		return
+	
 	for child in skeletons.get_children():
 		child.start_walking()
 	is_walking = true

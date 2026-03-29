@@ -1,0 +1,49 @@
+[gd_scene format=3 uid="uid://o6kowkwhaxx6"]
+
+[ext_resource type="PackedScene" uid="uid://beyrwfqtusi46" path="res://Player/character_knight.tscn" id="1_l756w"]
+[ext_resource type="Script" uid="uid://c1a13ogw58e6y" path="res://Scenes/chunk_generator.gd" id="2_0e3vx"]
+[ext_resource type="PackedScene" uid="uid://ctxvy82y0uok0" path="res://WorldBuilding/plain_chunk.tscn" id="2_pu3va"]
+[ext_resource type="PackedScene" uid="uid://b3s28pce81bii" path="res://WorldBuilding/Chunks/chunk_01.tscn" id="3_c78sm"]
+[ext_resource type="PackedScene" uid="uid://b3al6bgj8vx8c" path="res://WorldBuilding/Chunks/chunk_02.tscn" id="4_i47ox"]
+[ext_resource type="PackedScene" uid="uid://56gxpidagx8r" path="res://WorldBuilding/Chunks/chunk_03.tscn" id="5_sftma"]
+[ext_resource type="PackedScene" uid="uid://c2sqkiqn805dw" path="res://WorldBuilding/Chunks/chunk_04.tscn" id="6_erobn"]
+[ext_resource type="PackedScene" uid="uid://c8r83ip5elxgm" path="res://WorldBuilding/Chunks/chunk_05.tscn" id="7_vc13p"]
+[ext_resource type="PackedScene" uid="uid://du3in3omxbym6" path="res://WorldBuilding/Chunks/chunk_06.tscn" id="8_gpk8t"]
+[ext_resource type="PackedScene" uid="uid://cyytenmo5rqjc" path="res://WorldBuilding/Chunks/chunk_07.tscn" id="9_hm1wn"]
+[ext_resource type="PackedScene" uid="uid://cmhcvlq3icd40" path="res://WorldBuilding/Chunks/chunk_08.tscn" id="10_ry2jr"]
+[ext_resource type="PackedScene" uid="uid://diici4yx6hlwx" path="res://WorldBuilding/Chunks/chunk_09.tscn" id="11_qnvbm"]
+[ext_resource type="PackedScene" uid="uid://4ugxefdufgfo" path="res://WorldBuilding/Chunks/chunk_10.tscn" id="12_vvhy6"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_pu3va"]
+sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
+ground_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
+
+[sub_resource type="Sky" id="Sky_0e3vx"]
+sky_material = SubResource("ProceduralSkyMaterial_pu3va")
+
+[sub_resource type="Environment" id="Environment_6j5ir"]
+background_mode = 2
+sky = SubResource("Sky_0e3vx")
+tonemap_mode = 2
+glow_enabled = true
+
+[node name="MainGame" type="Node3D" unique_id=2046238683]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=941775768]
+environment = SubResource("Environment_6j5ir")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=1455712862]
+transform = Transform3D(-0.8660254, -0.43301278, 0.25, 0, 0.49999997, 0.86602545, -0.50000006, 0.75, -0.43301266, 0, 0, 0)
+shadow_enabled = true
+
+[node name="ChunkGenerator" type="Node3D" parent="." unique_id=1379643063]
+script = ExtResource("2_0e3vx")
+list_chunks = Array[PackedScene]([ExtResource("3_c78sm"), ExtResource("4_i47ox"), ExtResource("5_sftma"), ExtResource("6_erobn"), ExtResource("7_vc13p"), ExtResource("8_gpk8t"), ExtResource("9_hm1wn"), ExtResource("10_ry2jr"), ExtResource("11_qnvbm"), ExtResource("12_vvhy6")])
+
+[node name="PlainChunk" parent="ChunkGenerator" unique_id=1065648645 instance=ExtResource("2_pu3va")]
+
+[node name="CharacterKnight" parent="." unique_id=864124633 instance=ExtResource("1_l756w")]
+transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, 0, 0.9999999, 0)
+
+[node name="Camera3D" type="Camera3D" parent="CharacterKnight" unique_id=1927915211]
+transform = Transform3D(1, 0, 0, 0, 0.8936928, 0.4486796, 0, -0.4486796, 0.8936928, 0, 5.6413355, 4.4067626)

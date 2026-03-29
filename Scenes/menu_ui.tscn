@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://bgftmfx1ccgfk"]
 
 [ext_resource type="Texture2D" uid="uid://b6nxnvhsxxnam" path="res://Assets/UI/Sprite sheet for Basic Pack.png" id="1_gaeo4"]
-[ext_resource type="Script" uid="uid://6qr3yo47gw15" path="res://UI/menu_ui.gd" id="1_jjnuu"]
+[ext_resource type="Script" uid="uid://6qr3yo47gw15" path="res://Scenes/menu_ui.gd" id="1_jjnuu"]
 [ext_resource type="Texture2D" uid="uid://ci2elvk3l2kuh" path="res://Assets/UI/Setting menu.png" id="2_bh1w4"]
 [ext_resource type="FontFile" uid="uid://lqfb54ubtaap" path="res://Assets/UI/Font/pixelFont-7-8x14-sproutLands.ttf" id="3_rfjxj"]
 

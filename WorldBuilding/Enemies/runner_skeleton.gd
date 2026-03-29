@@ -17,5 +17,7 @@ func _process(delta: float) -> void:
 		global_position.z += delta * speed
 
 func player_entered(body: Player) -> void:
+	if body is not Player:
+		return
 	is_running = true
 	animation_player.play("Running_HoldingRifle")

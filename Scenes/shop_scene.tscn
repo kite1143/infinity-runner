@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://dtiytl8gcfhc8"]
 
 [ext_resource type="PackedScene" uid="uid://ctxvy82y0uok0" path="res://WorldBuilding/plain_chunk.tscn" id="1_jgwuq"]
-[ext_resource type="Script" uid="uid://bxjdjvbtuujlw" path="res://UI/shop_scene.gd" id="1_qstkq"]
+[ext_resource type="Script" uid="uid://bxjdjvbtuujlw" path="res://Scenes/shop_scene.gd" id="1_qstkq"]
 [ext_resource type="Texture2D" uid="uid://dcrr0whdfwrsy" path="res://Assets/WorldBuiding/Village/Props/Village pixel-64x64.jpg" id="2_c6m55"]
 [ext_resource type="ArrayMesh" uid="uid://bnn110grh5y2g" path="res://Assets/WorldBuiding/Village/Props/Tree_3.obj" id="3_t7leq"]
 [ext_resource type="ArrayMesh" uid="uid://clbm02x72xxtb" path="res://Assets/WorldBuiding/Village/Props/Tree_5.obj" id="4_qstkq"]
@@ -20,7 +20,7 @@
 [ext_resource type="PackedScene" uid="uid://bqhbmigck0m00" path="res://WorldBuilding/Decors/mage_decor_shop.tscn" id="20_c6m55"]
 [ext_resource type="PackedScene" uid="uid://dfunwg58xm2aw" path="res://WorldBuilding/Decors/barbarian_decor.tscn" id="20_l5txh"]
 [ext_resource type="Texture2D" uid="uid://b6nxnvhsxxnam" path="res://Assets/UI/Sprite sheet for Basic Pack.png" id="21_c6m55"]
-[ext_resource type="PackedScene" uid="uid://3b3p5s6wic47" path="res://UI/card.tscn" id="22_t7leq"]
+[ext_resource type="PackedScene" uid="uid://3b3p5s6wic47" path="res://Scenes/card.tscn" id="22_t7leq"]
 [ext_resource type="Texture2D" uid="uid://chpb1k7tnabth" path="res://Assets/UI/UI Settings Buttons.png" id="23_a76bd"]
 [ext_resource type="FontFile" uid="uid://lqfb54ubtaap" path="res://Assets/UI/Font/pixelFont-7-8x14-sproutLands.ttf" id="24_n6on3"]
 

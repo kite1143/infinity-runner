@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://3b3p5s6wic47"]
 
-[ext_resource type="Script" uid="uid://bmbiukee0kxf7" path="res://UI/card.gd" id="1_d460q"]
+[ext_resource type="Script" uid="uid://bmbiukee0kxf7" path="res://Scenes/card.gd" id="1_d460q"]
 [ext_resource type="FontFile" uid="uid://dpkf7he6alh7n" path="res://Assets/UI/Font/Kenney Future Narrow.ttf" id="1_gjfx2"]
 [ext_resource type="Texture2D" uid="uid://b6nxnvhsxxnam" path="res://Assets/UI/Sprite sheet for Basic Pack.png" id="2_d460q"]
 

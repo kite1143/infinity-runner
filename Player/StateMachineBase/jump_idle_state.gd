@@ -13,7 +13,7 @@ func enter() -> void:
 		'player_animations/Jump_Idle'
 	)
 
-func update(delta: float) -> void:
+func update(_delta: float) -> void:
 	if state_machine.character_base.velocity.y == 0:
 		if not state_machine.character_base.is_alive:
 			return
@@ -23,7 +23,7 @@ func update(delta: float) -> void:
 		else:
 			state_machine.change_state(sit_down_state.name)
 
-func handle_input(event: InputEvent) -> void:
+func handle_input(_event: InputEvent) -> void:
 	if Input.is_action_just_pressed('sit'):
 		is_going_to_sit = true
 		state_machine.character_base.velocity.y = -30

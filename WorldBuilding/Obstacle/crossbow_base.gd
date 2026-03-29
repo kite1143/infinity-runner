@@ -8,5 +8,7 @@ func _ready() -> void:
 		trigger_area.body_entered.connect(trigger_crossbow)
 
 func trigger_crossbow(body: Player) -> void:
+	if body is not Player:
+		return
 	if not arrow.is_active:
 		arrow.is_active = true

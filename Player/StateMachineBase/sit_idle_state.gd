@@ -13,7 +13,7 @@ func enter() -> void:
 	)
 	sit_timer.start()
 
-func handle_input(event: InputEvent) -> void:
+func handle_input(_event: InputEvent) -> void:
 	if Input.is_action_just_pressed("sit"):
 		sit_timer.start()
 	

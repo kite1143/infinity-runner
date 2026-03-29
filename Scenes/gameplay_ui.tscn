@@ -1,66 +1,66 @@
 [gd_scene format=3 uid="uid://5on33m4llp21"]
 
-[ext_resource type="Texture2D" uid="uid://ci2elvk3l2kuh" path="res://Assets/UI/Setting menu.png" id="1_83p1l"]
-[ext_resource type="FontFile" uid="uid://lqfb54ubtaap" path="res://Assets/UI/Font/pixelFont-7-8x14-sproutLands.ttf" id="2_scul4"]
-[ext_resource type="Texture2D" uid="uid://b6nxnvhsxxnam" path="res://Assets/UI/Sprite sheet for Basic Pack.png" id="3_p7fyp"]
-[ext_resource type="Texture2D" uid="uid://chpb1k7tnabth" path="res://Assets/UI/UI Settings Buttons.png" id="5_p7fyp"]
+[ext_resource type="FontFile" uid="uid://lqfb54ubtaap" path="res://Assets/UI/Font/pixelFont-7-8x14-sproutLands.ttf" id="1_jmrml"]
+[ext_resource type="Texture2D" uid="uid://chpb1k7tnabth" path="res://Assets/UI/UI Settings Buttons.png" id="2_jpgws"]
+[ext_resource type="Texture2D" uid="uid://b6nxnvhsxxnam" path="res://Assets/UI/Sprite sheet for Basic Pack.png" id="3_1j2ro"]
+[ext_resource type="Texture2D" uid="uid://ci2elvk3l2kuh" path="res://Assets/UI/Setting menu.png" id="4_rw8eu"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_p7fyp"]
-font = ExtResource("2_scul4")
+font = ExtResource("1_jmrml")
 font_size = 80
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_scul4"]
-atlas = ExtResource("5_p7fyp")
+atlas = ExtResource("2_jpgws")
 region = Rect2(0, 80, 32, 32)
 
 [sub_resource type="LabelSettings" id="LabelSettings_ihwy4"]
-font = ExtResource("2_scul4")
+font = ExtResource("1_jmrml")
 font_size = 80
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_p7fyp"]
-atlas = ExtResource("5_p7fyp")
+atlas = ExtResource("2_jpgws")
 region = Rect2(32, 80, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_fs1d4"]
-atlas = ExtResource("3_p7fyp")
+atlas = ExtResource("3_1j2ro")
 region = Rect2(512, 32, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_baams"]
-atlas = ExtResource("3_p7fyp")
+atlas = ExtResource("3_1j2ro")
 region = Rect2(544, 32, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ihwy4"]
-atlas = ExtResource("1_83p1l")
+atlas = ExtResource("4_rw8eu")
 region = Rect2(128, 0, 128, 144)
 
 [sub_resource type="LabelSettings" id="LabelSettings_scul4"]
-font = ExtResource("2_scul4")
+font = ExtResource("1_jmrml")
 font_size = 96
 outline_size = 4
 shadow_size = 0
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ujwd2"]
-atlas = ExtResource("3_p7fyp")
+atlas = ExtResource("3_1j2ro")
 region = Rect2(576, 32, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_llh85"]
-atlas = ExtResource("3_p7fyp")
+atlas = ExtResource("3_1j2ro")
 region = Rect2(608, 32, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_iwucp"]
-atlas = ExtResource("3_p7fyp")
+atlas = ExtResource("3_1j2ro")
 region = Rect2(640, 32, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_mxwq6"]
-atlas = ExtResource("3_p7fyp")
+atlas = ExtResource("3_1j2ro")
 region = Rect2(672, 32, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ffyd2"]
-atlas = ExtResource("3_p7fyp")
+atlas = ExtResource("3_1j2ro")
 region = Rect2(768, 64, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_xvnf3"]
-atlas = ExtResource("3_p7fyp")
+atlas = ExtResource("3_1j2ro")
 region = Rect2(800, 64, 32, 32)
 
 [node name="GameplayUI" type="CanvasLayer" unique_id=545819349]
