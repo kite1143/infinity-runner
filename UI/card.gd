@@ -4,6 +4,7 @@ class_name Card
 @export var char_name: String
 @export var base_speed: float = 20.0
 @export var skill_detail: String
+@export var price_to_buy: int = 1000
 @export var model_link: Node3D
 
 @onready var name_label: Label = $VBoxContainer/NameLabel
@@ -17,3 +18,4 @@ func _ready() -> void:
 	name_label.text = char_name
 	speed_label.text = str(base_speed)
 	skill_label.text = skill_detail
+	price_label.text = str(price_to_buy)
