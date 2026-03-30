@@ -321,14 +321,15 @@ sit_down_state = NodePath("../SitDown")
 script = ExtResource("11_b7q2a")
 sit_idle_state = NodePath("../SitIdle")
 
-[node name="SitIdle" type="Node" parent="StateMachine" unique_id=553453632 node_paths=PackedStringArray("sit_up_state", "dash_left_state", "dash_right_state")]
+[node name="SitIdle" type="Node" parent="StateMachine" unique_id=553453632 node_paths=PackedStringArray("sit_up_state", "dash_left_state", "dash_right_state", "jump_state")]
 script = ExtResource("12_nrw4a")
 sit_up_state = NodePath("../SitUp")
 dash_left_state = NodePath("../DashLeft")
 dash_right_state = NodePath("../DashRight")
+jump_state = NodePath("../JumpIdle")
 
 [node name="SitTimer" type="Timer" parent="StateMachine/SitIdle" unique_id=1140386436]
-wait_time = 0.25
+wait_time = 0.5
 one_shot = true
 
 [node name="SitUp" type="Node" parent="StateMachine" unique_id=511511057 node_paths=PackedStringArray("run_state")]

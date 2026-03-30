@@ -151,7 +151,7 @@ label_settings = ExtResource("4_xh8v8")
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="Label2" type="Label" parent="Panel/TextureRect/VBoxContainer2" unique_id=1458026250]
+[node name="ScoreLabel" type="Label" parent="Panel/TextureRect/VBoxContainer2" unique_id=1458026250]
 layout_mode = 2
 size_flags_vertical = 6
 text = "000000"
@@ -294,4 +294,5 @@ stretch_mode = 5
 [connection signal="pressed" from="Panel/TextureRect/VBoxContainer/HBoxContainer/ContinueButton" to="." method="_on_continue_button_pressed"]
 [connection signal="pressed" from="Panel/TextureRect/VBoxContainer/HBoxContainer/ResetButton" to="." method="_on_reset_button_pressed"]
 [connection signal="pressed" from="Panel/TextureRect/VBoxContainer/HBoxContainer/MenuButton" to="." method="_on_menu_button_pressed"]
+[connection signal="pressed" from="WatchAdContainer/MarginContainer/VBoxContainer/ButtonContainer/AcceptButton" to="." method="_on_accept_button_pressed"]
 [connection signal="pressed" from="WatchAdContainer/MarginContainer/VBoxContainer/ButtonContainer/CancelButton" to="." method="_on_cancel_button_pressed"]

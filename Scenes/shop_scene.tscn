@@ -368,7 +368,7 @@ base_speed = 30.0
 skill_detail = "Higher Jump"
 model_link = NodePath("../../../../BarbarianDecorShop")
 
-[node name="MageCard" parent="UI/ShopUI/ShopContainer" unique_id=1228849090 node_paths=PackedStringArray("model_link") instance=ExtResource("22_t7leq")]
+[node name="MageCard" parent="UI/ShopUI/ShopContainer" unique_id=25268001 node_paths=PackedStringArray("model_link") instance=ExtResource("22_t7leq")]
 visible = false
 layout_mode = 2
 char_name = "Meg"

@@ -4,6 +4,7 @@ class_name SitIdleState
 @export var sit_up_state: SitUpState
 @export var dash_left_state: DashLeftState
 @export var dash_right_state: DashRightState
+@export var jump_state: JumpIdleState
 
 @onready var sit_timer: Timer = $SitTimer
 
@@ -25,7 +26,6 @@ func handle_input(_event: InputEvent) -> void:
 
 func exit() -> void:
 	sit_timer.stop()
-
 
 func _on_sit_timer_timeout() -> void:
 	state_machine.change_state(sit_up_state.name)

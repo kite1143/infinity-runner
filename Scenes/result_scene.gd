@@ -1,9 +1,15 @@
 extends Control
 
 @onready var watch_ad_container: PanelContainer = $WatchAdContainer
+@onready var score_label: Label = $Panel/TextureRect/VBoxContainer2/ScoreLabel
+@onready var coin_label: Label = $Panel/TextureRect/VBoxContainer2/HBoxContainer/CoinLabel
+
+func _ready() -> void:
+	score_label.text = '%.2f' % GameManager.score
+	coin_label.text = 'X%d' % GameManager.coin
 
 func _on_reset_button_pressed() -> void:
-	SceneTransition.change_to_game_play()
+	GameManager.start_new_game()
 
 func _on_menu_button_pressed() -> void:
 	SceneTransition.change_to_menu_scene()
@@ -13,3 +19,6 @@ func _on_continue_button_pressed() -> void:
 
 func _on_cancel_button_pressed() -> void:
 	watch_ad_container.hide()
+
+func _on_accept_button_pressed() -> void:
+	GameManager.continue_game()
