@@ -13,6 +13,7 @@
 [ext_resource type="PackedScene" uid="uid://cmhcvlq3icd40" path="res://WorldBuilding/Chunks/chunk_08.tscn" id="10_ry2jr"]
 [ext_resource type="PackedScene" uid="uid://diici4yx6hlwx" path="res://WorldBuilding/Chunks/chunk_09.tscn" id="11_qnvbm"]
 [ext_resource type="PackedScene" uid="uid://4ugxefdufgfo" path="res://WorldBuilding/Chunks/chunk_10.tscn" id="12_vvhy6"]
+[ext_resource type="PackedScene" uid="uid://5on33m4llp21" path="res://Scenes/gameplay_ui.tscn" id="14_i47ox"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_pu3va"]
 sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
@@ -46,4 +47,6 @@ list_chunks = Array[PackedScene]([ExtResource("3_c78sm"), ExtResource("4_i47ox")
 transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, 0, 0.9999999, 0)
 
 [node name="Camera3D" type="Camera3D" parent="CharacterKnight" unique_id=1927915211]
-transform = Transform3D(1, 0, 0, 0, 0.8936928, 0.4486796, 0, -0.4486796, 0.8936928, 0, 5.6413355, 4.4067626)
+transform = Transform3D(0.6666667, 0, 0, 0, 0.6613146, 0.08430575, 0, -0.08430575, 0.6613146, 0, 3.8544908, 4.4067626)
+
+[node name="GameplayUI" parent="." unique_id=545819349 instance=ExtResource("14_i47ox")]

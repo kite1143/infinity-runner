@@ -339,6 +339,7 @@ texture_pressed = SubResource("AtlasTexture_5hixt")
 stretch_mode = 5
 
 [node name="ShopContainer" type="PanelContainer" parent="UI/ShopUI" unique_id=609258408]
+unique_name_in_owner = true
 custom_minimum_size = Vector2(500, 700)
 layout_mode = 1
 anchors_preset = 4
@@ -375,5 +376,6 @@ base_speed = 30.0
 skill_detail = "Higher Jump"
 model_link = NodePath("../../../../BarbarianDecorShop")
 
+[connection signal="pressed" from="UI/ShopUI/MarginContainer/MenuButton" to="." method="_on_menu_button_pressed"]
 [connection signal="pressed" from="UI/ShopUI/MarginContainer/HBoxContainer/LeftButton" to="." method="_on_left_button_pressed"]
 [connection signal="pressed" from="UI/ShopUI/MarginContainer/HBoxContainer/RightButton" to="." method="_on_right_button_pressed"]

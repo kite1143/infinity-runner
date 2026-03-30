@@ -189,6 +189,7 @@ texture_pressed = SubResource("AtlasTexture_pxhdq")
 stretch_mode = 5
 
 [node name="RuleButton2" type="TextureButton" parent="MarginContainer" unique_id=1135758683]
+visible = false
 custom_minimum_size = Vector2(240, 240)
 layout_mode = 2
 size_flags_horizontal = 0
@@ -406,5 +407,7 @@ autowrap_mode = 3
 
 [connection signal="pressed" from="MarginContainer/VBoxContainer/SettingButton" to="." method="_on_setting_button_pressed"]
 [connection signal="pressed" from="MarginContainer/VBoxContainer/RuleButton" to="." method="_on_rule_button_pressed"]
+[connection signal="pressed" from="MarginContainer/HBoxContainer/StartButton" to="." method="_on_start_button_pressed"]
+[connection signal="pressed" from="MarginContainer/HBoxContainer/ShopButton" to="." method="_on_shop_button_pressed"]
 [connection signal="pressed" from="MarginContainer/SettingWindow/Panel/TextureRect/TurnOffSettingButton" to="." method="_on_turn_off_setting_button_pressed"]
 [connection signal="pressed" from="MarginContainer/GuideWindow/Panel/TextureRect/TurnOffGuideButton" to="." method="_on_turn_off_guide_button_pressed"]

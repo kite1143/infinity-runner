@@ -18,7 +18,7 @@ func _ready() -> void:
 	
 	print(z_pos_to_generate)
 
-func _process(delta: float) -> void:
+func _process(_delta: float) -> void:
 	var second_chunk_child : Node3D = self.get_child(1)
 	if player.global_position.z < second_chunk_child.global_position.z:
 		generate_next_chunk()

@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://5on33m4llp21"]
 
 [ext_resource type="FontFile" uid="uid://lqfb54ubtaap" path="res://Assets/UI/Font/pixelFont-7-8x14-sproutLands.ttf" id="1_jmrml"]
+[ext_resource type="Script" uid="uid://esu47uvakm27" path="res://Scenes/gameplay_ui.gd" id="1_m24ka"]
 [ext_resource type="Texture2D" uid="uid://chpb1k7tnabth" path="res://Assets/UI/UI Settings Buttons.png" id="2_jpgws"]
 [ext_resource type="Texture2D" uid="uid://b6nxnvhsxxnam" path="res://Assets/UI/Sprite sheet for Basic Pack.png" id="3_1j2ro"]
 [ext_resource type="Texture2D" uid="uid://ci2elvk3l2kuh" path="res://Assets/UI/Setting menu.png" id="4_rw8eu"]
@@ -64,6 +65,7 @@ atlas = ExtResource("3_1j2ro")
 region = Rect2(800, 64, 32, 32)
 
 [node name="GameplayUI" type="CanvasLayer" unique_id=545819349]
+script = ExtResource("1_m24ka")
 
 [node name="MarginContainer" type="MarginContainer" parent="." unique_id=799668317]
 anchors_preset = 15
@@ -137,6 +139,8 @@ texture_pressed = SubResource("AtlasTexture_baams")
 stretch_mode = 5
 
 [node name="PauseMenu" type="Control" parent="." unique_id=799449914]
+unique_name_in_owner = true
+process_mode = 3
 visible = false
 layout_mode = 3
 anchors_preset = 15
@@ -230,3 +234,8 @@ size_flags_vertical = 0
 texture_normal = SubResource("AtlasTexture_ffyd2")
 texture_pressed = SubResource("AtlasTexture_xvnf3")
 stretch_mode = 5
+
+[connection signal="pressed" from="MarginContainer/PauseButton" to="." method="_on_pause_button_pressed"]
+[connection signal="pressed" from="PauseMenu/Panel/TextureRect/VBoxContainer/HBoxContainer/ContinueButton" to="." method="_on_continue_button_pressed"]
+[connection signal="pressed" from="PauseMenu/Panel/TextureRect/VBoxContainer/HBoxContainer/ResetButton" to="." method="_on_reset_button_pressed"]
+[connection signal="pressed" from="PauseMenu/Panel/TextureRect/VBoxContainer/MenuButton" to="." method="_on_menu_button_pressed"]

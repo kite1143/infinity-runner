@@ -1,194 +1,179 @@
-[gd_scene format=3 uid="uid://d11dn1mhduirp"]
+[gd_scene format=3 uid="uid://q3b27jg0bp2d"]
 
-[ext_resource type="Texture2D" uid="uid://ci2elvk3l2kuh" path="res://Assets/UI/Setting menu.png" id="1_n74uu"]
-[ext_resource type="FontFile" uid="uid://lqfb54ubtaap" path="res://Assets/UI/Font/pixelFont-7-8x14-sproutLands.ttf" id="2_icff7"]
-[ext_resource type="LabelSettings" uid="uid://cs2dpw60ionwe" path="res://Resources/label_128.tres" id="3_1346o"]
-[ext_resource type="FontFile" uid="uid://dpkf7he6alh7n" path="res://Assets/UI/Font/Kenney Future Narrow.ttf" id="3_icff7"]
-[ext_resource type="Texture2D" uid="uid://b6nxnvhsxxnam" path="res://Assets/UI/Sprite sheet for Basic Pack.png" id="3_x1ovu"]
-[ext_resource type="Texture2D" uid="uid://chpb1k7tnabth" path="res://Assets/UI/UI Settings Buttons.png" id="4_x1ovu"]
+[ext_resource type="PackedScene" uid="uid://ctxvy82y0uok0" path="res://WorldBuilding/plain_chunk.tscn" id="2_ogypk"]
+[ext_resource type="Texture2D" uid="uid://dcrr0whdfwrsy" path="res://Assets/WorldBuiding/Village/Props/Village pixel-64x64.jpg" id="3_uaqq1"]
+[ext_resource type="ArrayMesh" uid="uid://bnn110grh5y2g" path="res://Assets/WorldBuiding/Village/Props/Tree_3.obj" id="4_jqv1b"]
+[ext_resource type="ArrayMesh" uid="uid://bfn86bsk653mr" path="res://Assets/WorldBuiding/Village/Props/Tree_1.obj" id="5_0h888"]
+[ext_resource type="ArrayMesh" uid="uid://h3dux8aq2cqp" path="res://Assets/WorldBuiding/Village/Props/Tree_2.obj" id="6_1kbvg"]
+[ext_resource type="ArrayMesh" uid="uid://wuitsv4gckt" path="res://Assets/WorldBuiding/Village/Props/Tree_4.obj" id="7_83v64"]
+[ext_resource type="ArrayMesh" uid="uid://clbm02x72xxtb" path="res://Assets/WorldBuiding/Village/Props/Tree_5.obj" id="8_lgfdr"]
+[ext_resource type="ArrayMesh" uid="uid://bsm5u5gf4o45e" path="res://Assets/WorldBuiding/Village/Props/Tree_6.obj" id="9_pfvn3"]
+[ext_resource type="ArrayMesh" uid="uid://usxinuy2jys6" path="res://Assets/WorldBuiding/Village/Props/Rock_3.obj" id="10_omf3y"]
+[ext_resource type="ArrayMesh" uid="uid://13nw1k36th3p" path="res://Assets/WorldBuiding/Village/Props/Stone_2.obj" id="11_7mssp"]
+[ext_resource type="ArrayMesh" uid="uid://byvrrqcvvo1qn" path="res://Assets/WorldBuiding/Village/Props/Tree_Trunk_2.obj" id="12_vjwsh"]
+[ext_resource type="ArrayMesh" uid="uid://c2mstvdwk07si" path="res://Assets/WorldBuiding/Village/Props/Fireplace.obj" id="13_pmmej"]
+[ext_resource type="PackedScene" uid="uid://crb7b2ap5nl0i" path="res://Assets/VFXs/Scenes/3d_fire.tscn" id="14_jl1ug"]
+[ext_resource type="PackedScene" uid="uid://biwvu88lrumh1" path="res://Assets/WorldBuiding/Dungeon/Dungeon_Legacy/plateFull.gltf.glb" id="15_6vvlu"]
+[ext_resource type="ArrayMesh" uid="uid://bt26656rc83oi" path="res://Assets/WorldBuiding/Village/Props/Rock_Formation.obj" id="16_bulvd"]
+[ext_resource type="PackedScene" uid="uid://d11dn1mhduirp" path="res://Scenes/result_ui.tscn" id="17_ogypk"]
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_ihwy4"]
-atlas = ExtResource("1_n74uu")
-region = Rect2(128, 0, 128, 144)
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_64u68"]
+sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
+ground_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
 
-[sub_resource type="LabelSettings" id="LabelSettings_fs1d4"]
-font = ExtResource("2_icff7")
-font_size = 192
-outline_size = 4
-shadow_size = 0
+[sub_resource type="Sky" id="Sky_sgj32"]
+sky_material = SubResource("ProceduralSkyMaterial_64u68")
 
-[sub_resource type="LabelSettings" id="LabelSettings_x1ovu"]
-font = ExtResource("3_icff7")
-font_size = 80
-font_color = Color(0, 0, 0, 1)
+[sub_resource type="Environment" id="Environment_7poud"]
+background_mode = 2
+sky = SubResource("Sky_sgj32")
+tonemap_mode = 2
+glow_enabled = true
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_1346o"]
-atlas = ExtResource("4_x1ovu")
-region = Rect2(0, 80, 32, 32)
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_in6wv"]
+albedo_texture = ExtResource("3_uaqq1")
 
-[sub_resource type="LabelSettings" id="LabelSettings_rtcxn"]
-font = ExtResource("2_icff7")
-font_size = 128
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_sgj32"]
+albedo_texture = ExtResource("3_uaqq1")
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_ujwd2"]
-atlas = ExtResource("3_x1ovu")
-region = Rect2(576, 32, 32, 32)
+[node name="ResultScene" type="Node3D" unique_id=177310566]
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_llh85"]
-atlas = ExtResource("3_x1ovu")
-region = Rect2(608, 32, 32, 32)
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=2072958219]
+environment = SubResource("Environment_7poud")
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_iwucp"]
-atlas = ExtResource("3_x1ovu")
-region = Rect2(640, 32, 32, 32)
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=1520443708]
+transform = Transform3D(-0.8660254, -0.43301278, 0.25, 0, 0.49999997, 0.86602545, -0.50000006, 0.75, -0.43301266, 0, 0, 0)
+light_color = Color(0.45840502, 0.45840508, 0.45840502, 1)
+shadow_enabled = true
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_mxwq6"]
-atlas = ExtResource("3_x1ovu")
-region = Rect2(672, 32, 32, 32)
+[node name="PlainChunk" parent="." unique_id=1065648645 instance=ExtResource("2_ogypk")]
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_ffyd2"]
-atlas = ExtResource("3_x1ovu")
-region = Rect2(768, 64, 32, 32)
+[node name="Decorations" type="Node3D" parent="." unique_id=1376295557]
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_xvnf3"]
-atlas = ExtResource("3_x1ovu")
-region = Rect2(800, 64, 32, 32)
+[node name="Tree41" type="MeshInstance3D" parent="Decorations" unique_id=1736003628]
+transform = Transform3D(1.5152211, 0, 1.3054137, 0, 2, 0, -1.3054137, 0, 1.5152211, -24.767582, 0, 3.3690867)
+material_override = SubResource("StandardMaterial3D_in6wv")
+mesh = ExtResource("4_jqv1b")
 
-[node name="ResultScene" type="Control" unique_id=206804457]
-layout_mode = 3
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
+[node name="Tree42" type="MeshInstance3D" parent="Decorations" unique_id=1834649176]
+transform = Transform3D(1.5152211, 0, 1.3054137, 0, 2, 0, -1.3054137, 0, 1.5152211, -25.475134, 0, 8.526648)
+material_override = SubResource("StandardMaterial3D_in6wv")
+mesh = ExtResource("4_jqv1b")
 
-[node name="Panel" type="Panel" parent="." unique_id=504245330]
-custom_minimum_size = Vector2(700, 1000)
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
+[node name="Tree43" type="MeshInstance3D" parent="Decorations" unique_id=1944127463]
+transform = Transform3D(1.5152211, 0, 1.3054137, 0, 2, 0, -1.3054137, 0, 1.5152211, -26.11742, 0, 17.119207)
+material_override = SubResource("StandardMaterial3D_in6wv")
+mesh = ExtResource("4_jqv1b")
 
-[node name="TextureRect" type="TextureRect" parent="Panel" unique_id=482732994]
-custom_minimum_size = Vector2(1300, 1300)
-layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -500.0
-offset_top = -400.0
-offset_right = 500.0
-offset_bottom = 400.0
-grow_horizontal = 2
-grow_vertical = 2
-texture = SubResource("AtlasTexture_ihwy4")
-stretch_mode = 5
+[node name="Tree44" type="MeshInstance3D" parent="Decorations" unique_id=1530834851]
+transform = Transform3D(1.5152211, 0, 1.3054137, 0, 2, 0, -1.3054137, 0, 1.5152211, -24.813026, 0, 22.074606)
+material_override = SubResource("StandardMaterial3D_in6wv")
+mesh = ExtResource("4_jqv1b")
 
-[node name="Label" type="Label" parent="Panel/TextureRect" unique_id=2044066670]
-layout_mode = 1
-anchors_preset = 5
-anchor_left = 0.5
-anchor_right = 0.5
-offset_left = -320.0
-offset_top = 150.0
-offset_right = 320.0
-offset_bottom = 300.0
-grow_horizontal = 2
-text = "RESULT"
-label_settings = SubResource("LabelSettings_fs1d4")
-horizontal_alignment = 1
+[node name="Tree45" type="MeshInstance3D" parent="Decorations" unique_id=1301099003]
+transform = Transform3D(0.75761056, 0, 0.65270686, 0, 1, 0, -0.65270686, 0, 0.75761056, -27.755089, 0, 19.055632)
+material_override = SubResource("StandardMaterial3D_in6wv")
+mesh = ExtResource("4_jqv1b")
 
-[node name="VBoxContainer2" type="VBoxContainer" parent="Panel/TextureRect" unique_id=889482857]
-custom_minimum_size = Vector2(800, 500)
-layout_mode = 1
-anchors_preset = 5
-anchor_left = 0.5
-anchor_right = 0.5
-offset_left = -400.0
-offset_top = 350.0
-offset_right = 400.0
-offset_bottom = 850.0
-grow_horizontal = 2
+[node name="Tree46" type="MeshInstance3D" parent="Decorations" unique_id=573644190]
+transform = Transform3D(0.75761056, 0, 0.65270686, 0, 1, 0, -0.65270686, 0, 0.75761056, -25.468489, 4.7683716e-07, 12.844701)
+material_override = SubResource("StandardMaterial3D_in6wv")
+mesh = ExtResource("4_jqv1b")
 
-[node name="Label" type="Label" parent="Panel/TextureRect/VBoxContainer2" unique_id=879140253]
-layout_mode = 2
-size_flags_vertical = 6
-text = "SCORE"
-label_settings = ExtResource("3_1346o")
-horizontal_alignment = 1
-vertical_alignment = 1
+[node name="Tree47" type="MeshInstance3D" parent="Decorations" unique_id=1643966394]
+transform = Transform3D(0.75761056, 0, 0.65270686, 0, 1, 0, -0.65270686, 0, 0.75761056, -25.52204, 4.7683716e-07, 5.8449054)
+material_override = SubResource("StandardMaterial3D_in6wv")
+mesh = ExtResource("4_jqv1b")
 
-[node name="Label2" type="Label" parent="Panel/TextureRect/VBoxContainer2" unique_id=1458026250]
-layout_mode = 2
-size_flags_vertical = 6
-text = "000000"
-label_settings = SubResource("LabelSettings_x1ovu")
-horizontal_alignment = 1
-vertical_alignment = 1
+[node name="Tree26" type="MeshInstance3D" parent="Decorations" unique_id=259293544]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -19.631054, 0, 20.99188)
+material_override = SubResource("StandardMaterial3D_in6wv")
+mesh = ExtResource("5_0h888")
 
-[node name="HBoxContainer" type="HBoxContainer" parent="Panel/TextureRect/VBoxContainer2" unique_id=1590147079]
-layout_mode = 2
-alignment = 1
+[node name="Tree28" type="MeshInstance3D" parent="Decorations" unique_id=1145441072]
+transform = Transform3D(1.530135, 0, 1.2879001, 0, 2, 0, -1.2879001, 0, 1.530135, -24.441605, 0, 10.926451)
+material_override = SubResource("StandardMaterial3D_in6wv")
+mesh = ExtResource("6_1kbvg")
 
-[node name="CoinTexture" type="TextureRect" parent="Panel/TextureRect/VBoxContainer2/HBoxContainer" unique_id=1375799456]
-custom_minimum_size = Vector2(240, 240)
-layout_mode = 2
-texture = SubResource("AtlasTexture_1346o")
+[node name="Tree29" type="MeshInstance3D" parent="Decorations" unique_id=1013486156]
+transform = Transform3D(1.9391131, 0, -0.4897349, 0, 2, 0, 0.4897349, 0, 1.9391131, -23.780422, 0, 6.7248154)
+material_override = SubResource("StandardMaterial3D_in6wv")
+mesh = ExtResource("4_jqv1b")
 
-[node name="CoinLabel" type="Label" parent="Panel/TextureRect/VBoxContainer2/HBoxContainer" unique_id=1554007512]
-custom_minimum_size = Vector2(240, 240)
-layout_mode = 2
-text = "X20"
-label_settings = SubResource("LabelSettings_rtcxn")
-horizontal_alignment = 1
-vertical_alignment = 1
+[node name="Tree20" type="MeshInstance3D" parent="Decorations" unique_id=1901309976]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -17.01566, 9.536743e-07, 24.488674)
+material_override = SubResource("StandardMaterial3D_in6wv")
+mesh = ExtResource("7_83v64")
 
-[node name="VBoxContainer" type="VBoxContainer" parent="Panel/TextureRect" unique_id=1255531612]
-layout_mode = 1
-anchors_preset = 7
-anchor_left = 0.5
-anchor_top = 1.0
-anchor_right = 0.5
-anchor_bottom = 1.0
-offset_left = -484.0
-offset_top = -500.0
-offset_right = 484.0
-offset_bottom = -15.99939
-grow_horizontal = 2
-grow_vertical = 0
-alignment = 1
+[node name="Tree27" type="MeshInstance3D" parent="Decorations" unique_id=989743617]
+transform = Transform3D(1.6167198, 0, -1.1773771, 0, 2, 0, 1.1773771, 0, 1.6167198, -24.053612, 9.536743e-07, 14.835264)
+material_override = SubResource("StandardMaterial3D_in6wv")
+mesh = ExtResource("7_83v64")
 
-[node name="HBoxContainer" type="HBoxContainer" parent="Panel/TextureRect/VBoxContainer" unique_id=1154575415]
-layout_mode = 2
-alignment = 1
+[node name="Tree30" type="MeshInstance3D" parent="Decorations" unique_id=794460449]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -23.591862, 0, 2.4966927)
+material_override = SubResource("StandardMaterial3D_in6wv")
+mesh = ExtResource("8_lgfdr")
 
-[node name="ContinueButton" type="TextureButton" parent="Panel/TextureRect/VBoxContainer/HBoxContainer" unique_id=1042386536]
-custom_minimum_size = Vector2(320, 320)
-layout_mode = 2
-size_flags_horizontal = 8
-size_flags_vertical = 0
-texture_normal = SubResource("AtlasTexture_ujwd2")
-texture_pressed = SubResource("AtlasTexture_llh85")
-stretch_mode = 5
+[node name="Tree25" type="MeshInstance3D" parent="Decorations" unique_id=1949645044]
+transform = Transform3D(1.9999975, 0, 0.0031764978, 0, 2, 0, -0.0031764978, 0, 1.9999975, -23.981098, 0, 19.661177)
+material_override = SubResource("StandardMaterial3D_in6wv")
+mesh = ExtResource("9_pfvn3")
 
-[node name="ResetButton" type="TextureButton" parent="Panel/TextureRect/VBoxContainer/HBoxContainer" unique_id=2009673125]
-custom_minimum_size = Vector2(320, 320)
-layout_mode = 2
-size_flags_horizontal = 4
-size_flags_vertical = 4
-texture_normal = SubResource("AtlasTexture_iwucp")
-texture_pressed = SubResource("AtlasTexture_mxwq6")
-stretch_mode = 5
+[node name="Rock6" type="MeshInstance3D" parent="Decorations" unique_id=1986148806]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -26.245996, 0, 1.5690355)
+material_override = SubResource("StandardMaterial3D_in6wv")
+mesh = ExtResource("10_omf3y")
 
-[node name="MenuButton" type="TextureButton" parent="Panel/TextureRect/VBoxContainer/HBoxContainer" unique_id=1748407040]
-custom_minimum_size = Vector2(320, 320)
-layout_mode = 2
-size_flags_horizontal = 4
-size_flags_vertical = 0
-texture_normal = SubResource("AtlasTexture_ffyd2")
-texture_pressed = SubResource("AtlasTexture_xvnf3")
-stretch_mode = 5
+[node name="Rock7" type="MeshInstance3D" parent="Decorations" unique_id=932860079]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -26.733877, 0, 20.770977)
+material_override = SubResource("StandardMaterial3D_in6wv")
+mesh = ExtResource("10_omf3y")
+
+[node name="Rock8" type="MeshInstance3D" parent="Decorations" unique_id=1025793801]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -26.237364, 0, 12.849802)
+material_override = SubResource("StandardMaterial3D_in6wv")
+mesh = ExtResource("10_omf3y")
+
+[node name="Stone3" type="MeshInstance3D" parent="Decorations" unique_id=1964573288]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -24.931183, 1.9073486e-06, 8.360708)
+material_override = SubResource("StandardMaterial3D_in6wv")
+mesh = ExtResource("11_7mssp")
+
+[node name="TreeTrunk3" type="MeshInstance3D" parent="Decorations" unique_id=1419957290]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -15.975502, -9.536743e-07, 5.834014)
+material_override = SubResource("StandardMaterial3D_in6wv")
+mesh = ExtResource("12_vjwsh")
+
+[node name="TreeTrunk6" type="MeshInstance3D" parent="Decorations" unique_id=467720796]
+transform = Transform3D(-8.742278e-08, 0, -2, 0, 2, 0, 2, 0, -8.742278e-08, -21.546524, -9.536743e-07, 10.834014)
+material_override = SubResource("StandardMaterial3D_in6wv")
+mesh = ExtResource("12_vjwsh")
+
+[node name="Fireplace2" type="MeshInstance3D" parent="Decorations" unique_id=801661774]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -16.065697, 0, 10.5198345)
+material_override = SubResource("StandardMaterial3D_in6wv")
+mesh = ExtResource("13_pmmej")
+
+[node name="3DFire" parent="Decorations" unique_id=754537937 instance=ExtResource("14_jl1ug")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 0.4, 0, -1, 0, -4.371139e-08, -16.0465, 0.123194575, 10.51483)
+
+[node name="plateFull_gltf2" parent="Decorations" unique_id=745569243 instance=ExtResource("15_6vvlu")]
+transform = Transform3D(2.5, 0, 0, 0, 5, 0, 0, 0, 2.5, -16.06112, 0.7272067, 10.494494)
+
+[node name="RockFormation" type="MeshInstance3D" parent="Decorations" unique_id=57596783]
+transform = Transform3D(0.07121886, 0, -0.9974607, 0, 1, 0, 0.9974607, 0, 0.07121886, -31.587513, 0, 23.06033)
+material_override = SubResource("StandardMaterial3D_sgj32")
+mesh = ExtResource("16_bulvd")
+
+[node name="Camera3D" type="Camera3D" parent="." unique_id=2015052531]
+transform = Transform3D(-0.42560285, -0.17247167, 0.88832194, -0.016085684, 0.9829556, 0.18313843, -0.90476716, 0.06365496, -0.421123, -11.588034, 3.8299222, 8.561259)
+
+[node name="OmniLight3D" type="OmniLight3D" parent="." unique_id=597747884]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16.10133, 3.6560953, 10.5594015)
+light_color = Color(0.99861795, 0.61515045, 0.48689127, 1)
+light_energy = 13.044
+light_size = 0.668
+omni_range = 13.178664
+
+[node name="ResultUI" parent="." unique_id=206804457 instance=ExtResource("17_ogypk")]
