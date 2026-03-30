@@ -360,14 +360,6 @@ char_name = "Knig"
 skill_detail = "Coin Magnet"
 model_link = NodePath("../../../../KnightDecorShop")
 
-[node name="MageCard" parent="UI/ShopUI/ShopContainer" unique_id=1228849090 node_paths=PackedStringArray("model_link") instance=ExtResource("22_t7leq")]
-visible = false
-layout_mode = 2
-char_name = "Meg"
-base_speed = 25.0
-skill_detail = "Flying"
-model_link = NodePath("../../../../MageDecorShop")
-
 [node name="BarbarianCard" parent="UI/ShopUI/ShopContainer" unique_id=74179962 node_paths=PackedStringArray("model_link") instance=ExtResource("22_t7leq")]
 visible = false
 layout_mode = 2
@@ -375,6 +367,14 @@ char_name = "Barian"
 base_speed = 30.0
 skill_detail = "Higher Jump"
 model_link = NodePath("../../../../BarbarianDecorShop")
+
+[node name="MageCard" parent="UI/ShopUI/ShopContainer" unique_id=1228849090 node_paths=PackedStringArray("model_link") instance=ExtResource("22_t7leq")]
+visible = false
+layout_mode = 2
+char_name = "Meg"
+base_speed = 25.0
+skill_detail = "Flying"
+model_link = NodePath("../../../../MageDecorShop")
 
 [connection signal="pressed" from="UI/ShopUI/MarginContainer/MenuButton" to="." method="_on_menu_button_pressed"]
 [connection signal="pressed" from="UI/ShopUI/MarginContainer/HBoxContainer/LeftButton" to="." method="_on_left_button_pressed"]

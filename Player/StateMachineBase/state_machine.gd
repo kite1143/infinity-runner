@@ -32,6 +32,9 @@ func _input(event: InputEvent) -> void:
 			current_state.handle_input(event)
 
 func change_state(new_state_name: String) -> void:
+	if not character_base.is_alive:
+		return
+	
 	if current_state:
 		current_state.exit()
 	

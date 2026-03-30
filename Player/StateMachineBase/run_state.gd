@@ -25,7 +25,7 @@ func handle_input(_event: InputEvent) -> void:
 			return
 		state_machine.change_state(dash_right_state.name)
 	
-	if Input.is_action_just_pressed('jump'):
+	if Input.is_action_just_pressed('jump') and state_machine.character_base.is_on_floor():
 		state_machine.change_state(jump_state.name)
 	
 	if Input.is_action_just_pressed("sit"):

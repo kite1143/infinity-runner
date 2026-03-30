@@ -24,10 +24,11 @@
 [ext_resource type="PackedScene" uid="uid://4656nk0evcq" path="res://WorldBuilding/Obstacle/barrel.tscn" id="22_5anwo"]
 [ext_resource type="PackedScene" uid="uid://bnly466rjl44c" path="res://WorldBuilding/Obstacle/wall.tscn" id="24_s0d5t"]
 [ext_resource type="PackedScene" uid="uid://cd0ypqtndsfsd" path="res://WorldBuilding/Obstacle/wooden_cart.tscn" id="25_o6i2n"]
+[ext_resource type="PackedScene" uid="uid://d4apnappeitwk" path="res://WorldBuilding/Collectable/coin.tscn" id="26_uxg5g"]
 [ext_resource type="PackedScene" uid="uid://du0e42pktqyxa" path="res://WorldBuilding/Obstacle/swing_trap.tscn" id="32_7rlii"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_i0bpw"]
-size = Vector3(11.31543, 4.3271484, 3.7302246)
+size = Vector3(11.31543, 7.113159, 3.7302246)
 
 [node name="Chunk_04" type="Node3D" unique_id=177310566]
 
@@ -276,16 +277,15 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.19863594, 1, 7.302093)
 
 [node name="Barrel" parent="Obstacles/Stair" unique_id=911393487 node_paths=PackedStringArray("trigger_range") instance=ExtResource("22_5anwo")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.055524945, 5.4602995, -2.0403395)
-trigger_range = NodePath("TriggerArea")
+trigger_range = NodePath("../TriggerArea")
 
-[node name="TriggerArea" type="Area3D" parent="Obstacles/Stair/Barrel" unique_id=1335944267]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.14311099, 6.4602995, 2.8721728)
-top_level = true
+[node name="TriggerArea" type="Area3D" parent="Obstacles/Stair" unique_id=1335944267]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.055524945, 5.4602995, -4.42992)
 collision_layer = 0
 collision_mask = 2
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Obstacles/Stair/Barrel/TriggerArea" unique_id=727371459]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0011223555, -3.3917994, 13.624996)
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Obstacles/Stair/TriggerArea" unique_id=727371459]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0011223555, -1.7063136, 13.624996)
 shape = SubResource("BoxShape3D_i0bpw")
 debug_color = Color(0.9519618, 4.3317677e-06, 0.5634809, 0.41960785)
 
@@ -300,3 +300,53 @@ transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, -2.5370734, 0.99999714,
 
 [node name="WoodenCart2" parent="Obstacles" unique_id=312068141 instance=ExtResource("25_o6i2n")]
 transform = Transform3D(0.99997294, 0, -0.0073653758, 0, 1, 0, 0.0073653758, 0, 0.99997294, -2.6313274, 1.0521669, 21.8319)
+
+[node name="Collections" type="Node3D" parent="." unique_id=1849228989]
+
+[node name="Coin" parent="Collections" unique_id=2055043096 instance=ExtResource("26_uxg5g")]
+transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, 4, 2, 31)
+
+[node name="Coin2" parent="Collections" unique_id=1151478374 instance=ExtResource("26_uxg5g")]
+transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, 4, 2, 29)
+
+[node name="Coin3" parent="Collections" unique_id=219623942 instance=ExtResource("26_uxg5g")]
+transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, 4, 2, 27)
+
+[node name="Coin4" parent="Collections" unique_id=137713987 instance=ExtResource("26_uxg5g")]
+transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, 4, 2, 25)
+
+[node name="Coin5" parent="Collections" unique_id=2001310705 instance=ExtResource("26_uxg5g")]
+transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, -3.5087361, 2.9246817, -17.827894)
+
+[node name="Coin6" parent="Collections" unique_id=1034633292 instance=ExtResource("26_uxg5g")]
+transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, -3.5087361, 2.9246817, -19.827894)
+
+[node name="Coin7" parent="Collections" unique_id=265714704 instance=ExtResource("26_uxg5g")]
+transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, -3.5087361, 2.9246817, -21.827894)
+
+[node name="Coin8" parent="Collections" unique_id=526035629 instance=ExtResource("26_uxg5g")]
+transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, -3.5087361, 2.9246817, -23.827894)
+
+[node name="Coin9" parent="Collections" unique_id=1394322998 instance=ExtResource("26_uxg5g")]
+transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, 3.8580163, 2, -5.305584)
+
+[node name="Coin10" parent="Collections" unique_id=247888504 instance=ExtResource("26_uxg5g")]
+transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, 3.8580163, 2, -7.305584)
+
+[node name="Coin11" parent="Collections" unique_id=186610073 instance=ExtResource("26_uxg5g")]
+transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, 3.8580163, 2, -9.305584)
+
+[node name="Coin12" parent="Collections" unique_id=835678482 instance=ExtResource("26_uxg5g")]
+transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, 3.8580163, 2, -11.305584)
+
+[node name="Coin13" parent="Collections" unique_id=1832331206 instance=ExtResource("26_uxg5g")]
+transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, 0.23627186, 2, -28.470627)
+
+[node name="Coin14" parent="Collections" unique_id=18937148 instance=ExtResource("26_uxg5g")]
+transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, 0.23627186, 2, -30.470627)
+
+[node name="Coin15" parent="Collections" unique_id=2024714304 instance=ExtResource("26_uxg5g")]
+transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, 0.23627186, 2, -32.470627)
+
+[node name="Coin16" parent="Collections" unique_id=928035501 instance=ExtResource("26_uxg5g")]
+transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, 0.23627186, 2, -34.470627)

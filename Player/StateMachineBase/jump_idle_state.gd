@@ -8,7 +8,7 @@ var is_going_to_sit: bool = false
 
 func enter() -> void:
 	is_going_to_sit = false
-	state_machine.character_base.velocity.y = 20
+	state_machine.character_base.velocity.y = 15
 	state_machine.animation_player.play(
 		'player_animations/Jump_Idle'
 	)

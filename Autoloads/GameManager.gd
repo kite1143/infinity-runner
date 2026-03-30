@@ -3,7 +3,7 @@ extends Node
 var score = 0
 var coin = 0
 
-func start_game() -> void:
+func start_new_game() -> void:
 	pass
 
 func continue_game() -> void:
