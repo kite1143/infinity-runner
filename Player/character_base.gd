@@ -2,6 +2,8 @@ extends CharacterBody3D
 class_name Player
 
 @export var lane_size : float = 4.0
+@export var speed: float = 10.0
+@export var jump_force: float = 15.0
 
 @onready var state_machine: StateMachine = $StateMachine
 @onready var ray_cast_left: RayCast3D = $RayCastLeft

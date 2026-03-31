@@ -39,6 +39,7 @@ enabled=PackedStringArray("res://addons/scene_manager/plugin.cfg")
 Obstacle=""
 Enemy=""
 Player=""
+Collectable=""
 
 [input]
 
@@ -75,6 +76,7 @@ sit={
 3d_physics/layer_3="Enemy"
 3d_physics/layer_4="Obstacle"
 3d_physics/layer_5="PowerUp"
+3d_physics/layer_6="Collectable"
 
 [physics]
 

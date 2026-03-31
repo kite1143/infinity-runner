@@ -1,5 +1,8 @@
 extends Node
 
+signal magnet_active
+signal potion_active
+
 var score = 0
 var coin = 0
 var energy = 0

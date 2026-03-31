@@ -8,11 +8,7 @@ class_name RunState
 
 func enter() -> void:
 	state_machine.animation_player.play('player_animations/Running_B')
-	state_machine.character_base.velocity = Vector3(
-		state_machine.character_base.velocity.x,
-		state_machine.character_base.velocity.y,
-		-10
-	)
+	state_machine.character_base.velocity.z = -state_machine.character_base.speed
 
 func handle_input(_event: InputEvent) -> void:
 	if Input.is_action_just_pressed("dash_left") and state_machine.character_base.target_lane_x > -3:

@@ -7,6 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://d4apnappeitwk" path="res://WorldBuilding/Collectable/coin.tscn" id="10_sgtyu"]
 [ext_resource type="PackedScene" uid="uid://bc26eoey4hjak" path="res://WorldBuilding/Collectable/energy.tscn" id="11_slq2w"]
 [ext_resource type="PackedScene" uid="uid://b3s28pce81bii" path="res://WorldBuilding/Chunks/chunk_01.tscn" id="12_ickic"]
+[ext_resource type="PackedScene" uid="uid://vu3aeg1th81w" path="res://WorldBuilding/Collectable/magnet.tscn" id="13_dxfox"]
 [ext_resource type="PackedScene" uid="uid://b3al6bgj8vx8c" path="res://WorldBuilding/Chunks/chunk_02.tscn" id="15_6ro0x"]
 [ext_resource type="PackedScene" uid="uid://56gxpidagx8r" path="res://WorldBuilding/Chunks/chunk_03.tscn" id="16_a0osc"]
 [ext_resource type="PackedScene" uid="uid://c8r83ip5elxgm" path="res://WorldBuilding/Chunks/chunk_05.tscn" id="17_pqur3"]
@@ -71,7 +72,10 @@ transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, -3.522164, 2.0980403, 1
 transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, -3.522164, 2.0980403, 17.960545)
 
 [node name="Energy" parent="." unique_id=1747299952 instance=ExtResource("11_slq2w")]
-transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, -4, 2, 22)
+transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, 4.395611, 2, 22)
 
 [node name="Chunk_01" parent="." unique_id=494493538 instance=ExtResource("12_ickic")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 223)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -72)
+
+[node name="Magnet" parent="." unique_id=1502154215 instance=ExtResource("13_dxfox")]
+transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, -3.5860143, 2.4999995, 22)

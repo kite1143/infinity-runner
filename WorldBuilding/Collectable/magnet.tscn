@@ -1,0 +1,42 @@
+[gd_scene format=3 uid="uid://vu3aeg1th81w"]
+
+[ext_resource type="Script" uid="uid://bvnk0214r5dx8" path="res://WorldBuilding/Collectable/magnet.gd" id="1_o8h1x"]
+[ext_resource type="PackedScene" uid="uid://b5tuxd15vagcw" path="res://Assets/Tools/FBX/magnet.fbx" id="2_o8h1x"]
+[ext_resource type="Texture2D" uid="uid://ruhracoum7vt" path="res://Assets/Tools/FBX/props_base_color.png" id="3_v3wsh"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_dwswx"]
+radius = 1.0
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_wq5rh"]
+albedo_texture = ExtResource("3_v3wsh")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_v4cm3"]
+transparency = 1
+albedo_color = Color(0.42745098, 0.6, 1, 0.29803923)
+
+[sub_resource type="SphereMesh" id="SphereMesh_f2l4a"]
+material = SubResource("StandardMaterial3D_v4cm3")
+radius = 1.0
+height = 2.0
+
+[node name="Magnet" type="Area3D" unique_id=2055043096]
+transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, 0, 0, 0)
+collision_layer = 0
+collision_mask = 2
+script = ExtResource("1_o8h1x")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=955074448]
+shape = SubResource("SphereShape3D_dwswx")
+
+[node name="magnet" parent="." unique_id=2132515282 instance=ExtResource("2_o8h1x")]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 0, 0, 0.2)
+
+[node name="magnet" parent="magnet" index="0" unique_id=25101585]
+material_override = SubResource("StandardMaterial3D_wq5rh")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=230047325]
+mesh = SubResource("SphereMesh_f2l4a")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+
+[editable path="magnet"]

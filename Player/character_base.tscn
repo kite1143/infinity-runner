@@ -11,7 +11,10 @@
 [ext_resource type="Script" uid="uid://bg35dgoor5urb" path="res://Player/StateMachineBase/sit_down_state.gd" id="11_b7q2a"]
 [ext_resource type="Script" uid="uid://cqa67c2ib2nlc" path="res://Player/StateMachineBase/death_state.gd" id="12_5ge3a"]
 [ext_resource type="Script" uid="uid://l5ys6eqgmc08" path="res://Player/StateMachineBase/sit_idle_state.gd" id="12_nrw4a"]
+[ext_resource type="PackedScene" uid="uid://bcqg0ye6x1j5f" path="res://Player/magnet_ability_component.tscn" id="13_jur0o"]
 [ext_resource type="Script" uid="uid://bngdw5dkjicfq" path="res://Player/StateMachineBase/sit_up_state.gd" id="13_nwp1g"]
+[ext_resource type="PackedScene" uid="uid://b5tuxd15vagcw" path="res://Assets/Tools/FBX/magnet.fbx" id="14_5xxrg"]
+[ext_resource type="Texture2D" uid="uid://ruhracoum7vt" path="res://Assets/Tools/FBX/props_base_color.png" id="15_1abxf"]
 
 [sub_resource type="Animation" id="Animation_jur0o"]
 length = 0.001
@@ -105,6 +108,12 @@ radius = 0.3
 height = 1.0
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_5ge3a"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_jur0o"]
+size = Vector3(12, 5, 3)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_c3pyg"]
+albedo_texture = ExtResource("15_1abxf")
 
 [node name="CharacterBase" type="CharacterBody3D" unique_id=437658251 groups=["Player"]]
 collision_layer = 2
@@ -359,6 +368,22 @@ target_position = Vector3(4, 0, 0)
 collision_mask = 8
 collide_with_areas = true
 
+[node name="MagnetAbilityComponent" parent="." unique_id=501586568 node_paths=PackedStringArray("player") instance=ExtResource("13_jur0o")]
+player = NodePath("..")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MagnetAbilityComponent" unique_id=1065951678]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.5, -1)
+shape = SubResource("BoxShape3D_jur0o")
+debug_color = Color(0.5056636, 0.4260699, 1, 0.41960785)
+
+[node name="magnet" parent="MagnetAbilityComponent" unique_id=2132515282 instance=ExtResource("14_5xxrg")]
+transform = Transform3D(0.5, 0, 0, 0, -2.1855694e-08, 0.5, 0, -0.5, -2.1855694e-08, 0, 3, 0.1)
+
+[node name="magnet" parent="MagnetAbilityComponent/magnet" index="0" unique_id=25101585]
+material_override = SubResource("StandardMaterial3D_c3pyg")
+
 [connection signal="timeout" from="StateMachine/SitIdle/SitTimer" to="StateMachine/SitIdle" method="_on_sit_timer_timeout"]
 [connection signal="area_entered" from="HurtBox" to="." method="_on_hurt_box_area_entered"]
 [connection signal="body_entered" from="HurtBox" to="." method="_on_hurt_box_body_entered"]
+
+[editable path="MagnetAbilityComponent/magnet"]

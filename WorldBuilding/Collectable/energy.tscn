@@ -4,7 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://drxgwapyr3gah" path="res://Assets/WorldBuiding/PlatformerPacks/Energy/power_blue.gltf" id="1_noro2"]
 
 [sub_resource type="SphereShape3D" id="SphereShape3D_dwswx"]
-radius = 0.7
+radius = 1.0
 
 [node name="Energy" type="Area3D" unique_id=2055043096]
 transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, 0, 0, 0)
