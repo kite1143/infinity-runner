@@ -11,10 +11,11 @@
 [ext_resource type="Script" uid="uid://bg35dgoor5urb" path="res://Player/StateMachineBase/sit_down_state.gd" id="11_b7q2a"]
 [ext_resource type="Script" uid="uid://cqa67c2ib2nlc" path="res://Player/StateMachineBase/death_state.gd" id="12_5ge3a"]
 [ext_resource type="Script" uid="uid://l5ys6eqgmc08" path="res://Player/StateMachineBase/sit_idle_state.gd" id="12_nrw4a"]
-[ext_resource type="PackedScene" uid="uid://bcqg0ye6x1j5f" path="res://Player/magnet_ability_component.tscn" id="13_jur0o"]
+[ext_resource type="PackedScene" uid="uid://bcqg0ye6x1j5f" path="res://Player/Components/magnet_ability_component.tscn" id="13_jur0o"]
 [ext_resource type="Script" uid="uid://bngdw5dkjicfq" path="res://Player/StateMachineBase/sit_up_state.gd" id="13_nwp1g"]
 [ext_resource type="PackedScene" uid="uid://b5tuxd15vagcw" path="res://Assets/Tools/FBX/magnet.fbx" id="14_5xxrg"]
 [ext_resource type="Texture2D" uid="uid://ruhracoum7vt" path="res://Assets/Tools/FBX/props_base_color.png" id="15_1abxf"]
+[ext_resource type="PackedScene" uid="uid://bekirjfe2gnt3" path="res://Player/Components/boost_potion_component.tscn" id="16_c3pyg"]
 
 [sub_resource type="Animation" id="Animation_jur0o"]
 length = 0.001
@@ -369,6 +370,7 @@ collision_mask = 8
 collide_with_areas = true
 
 [node name="MagnetAbilityComponent" parent="." unique_id=501586568 node_paths=PackedStringArray("player") instance=ExtResource("13_jur0o")]
+visible = false
 player = NodePath("..")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="MagnetAbilityComponent" unique_id=1065951678]
@@ -379,8 +381,10 @@ debug_color = Color(0.5056636, 0.4260699, 1, 0.41960785)
 [node name="magnet" parent="MagnetAbilityComponent" unique_id=2132515282 instance=ExtResource("14_5xxrg")]
 transform = Transform3D(0.5, 0, 0, 0, -2.1855694e-08, 0.5, 0, -0.5, -2.1855694e-08, 0, 3, 0.1)
 
-[node name="magnet" parent="MagnetAbilityComponent/magnet" index="0" unique_id=25101585]
+[node name="magnet" parent="MagnetAbilityComponent/magnet" index="0" unique_id=881398968]
 material_override = SubResource("StandardMaterial3D_c3pyg")
+
+[node name="BoostPotionComponent" parent="." unique_id=879080522 instance=ExtResource("16_c3pyg")]
 
 [connection signal="timeout" from="StateMachine/SitIdle/SitTimer" to="StateMachine/SitIdle" method="_on_sit_timer_timeout"]
 [connection signal="area_entered" from="HurtBox" to="." method="_on_hurt_box_area_entered"]

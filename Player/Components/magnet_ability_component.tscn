@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://bcqg0ye6x1j5f"]
 
-[ext_resource type="Script" uid="uid://fevtjty0c2er" path="res://Player/magnet_ability_component.gd" id="1_j3uqv"]
+[ext_resource type="Script" uid="uid://fevtjty0c2er" path="res://Player/Components/magnet_ability_component.gd" id="1_j3uqv"]
 
 [node name="MagnetAbilityComponent" type="Area3D" unique_id=501586568]
 collision_layer = 0

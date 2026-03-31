@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://bekirjfe2gnt3"]
+
+[ext_resource type="Script" uid="uid://clsledtk65qbq" path="res://Player/Components/boost_potion_component.gd" id="1_1dhkv"]
+
+[node name="BoostPotionComponent" type="Node3D" unique_id=879080522]
+script = ExtResource("1_1dhkv")
+
+[node name="DurationTimer" type="Timer" parent="." unique_id=224319012]
+wait_time = 7.0
+
+[connection signal="timeout" from="DurationTimer" to="." method="_on_duration_timer_timeout"]

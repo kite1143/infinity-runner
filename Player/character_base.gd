@@ -1,16 +1,31 @@
 extends CharacterBody3D
 class_name Player
 
+
 @export var lane_size : float = 4.0
-@export var speed: float = 10.0
-@export var jump_force: float = 15.0
+@export var base_speed: float = 10.0
+@export var base_jump_force: float = 15.0
 
 @onready var state_machine: StateMachine = $StateMachine
 @onready var ray_cast_left: RayCast3D = $RayCastLeft
 @onready var ray_cast_right: RayCast3D = $RayCastRight
+@onready var boost_potion_component: BoostComponent = $BoostPotionComponent
 
 var target_lane_x: float = 0.0
 var is_alive: bool = true
+var boost_number: float = 1.0
+var speed: float
+var jump_force: float
+
+func _ready() -> void:
+	speed = base_speed
+	jump_force = base_jump_force
+	boost_potion_component.start_boost.connect(start_physic_boost)
+	boost_potion_component.end_boost.connect(end_physic_boost)
+
+func _process(delta: float) -> void:
+	speed = base_speed * boost_number
+	jump_force = base_jump_force * boost_number
 
 func _physics_process(delta: float) -> void:
 	# Add the gravity.
@@ -59,3 +74,9 @@ func _on_hurt_box_area_entered(area: Area3D) -> void:
 			return
 		state_machine.change_state('Death')
 		is_alive = false
+
+func start_physic_boost() -> void:
+	boost_number = 1.5
+
+func end_physic_boost() -> void:
+	boost_number = 1.0
