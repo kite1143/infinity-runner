@@ -652,19 +652,19 @@ transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, 0.18367124, 2, -15)
 transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, 0.18367124, 2, -17)
 
 [node name="Coin13" parent="Collections" unique_id=1979215831 instance=ExtResource("31_bmiqr")]
-transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, 0.0799036, 5, -25.755098)
+transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, -3.9200964, 2.5, -25.755098)
 
 [node name="Coin14" parent="Collections" unique_id=1911414031 instance=ExtResource("31_bmiqr")]
-transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, 0.0799036, 7, -27.755098)
+transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, -3.9200964, 2.5, -27.755098)
 
 [node name="Coin15" parent="Collections" unique_id=1802265585 instance=ExtResource("31_bmiqr")]
-transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, 0.0799036, 8, -29.755098)
+transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, -3.9200964, 2.5, -29.755098)
 
 [node name="Coin16" parent="Collections" unique_id=154007332 instance=ExtResource("31_bmiqr")]
-transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, 0.0799036, 8, -31.755096)
+transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, -3.9200964, 2.5, -31.755096)
 
 [node name="Coin17" parent="Collections" unique_id=1665977177 instance=ExtResource("31_bmiqr")]
-transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, 0.0799036, 7, -33.755096)
+transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, -3.9200964, 2.4999998, -33.421135)
 
 [node name="Coin18" parent="Collections" unique_id=171537161 instance=ExtResource("31_bmiqr")]
-transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, 0.0799036, 5, -34.755096)
+transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, -3.9200964, 2.5, -34.755096)

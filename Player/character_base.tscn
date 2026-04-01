@@ -16,6 +16,10 @@
 [ext_resource type="PackedScene" uid="uid://b5tuxd15vagcw" path="res://Assets/Tools/FBX/magnet.fbx" id="14_5xxrg"]
 [ext_resource type="Texture2D" uid="uid://ruhracoum7vt" path="res://Assets/Tools/FBX/props_base_color.png" id="15_1abxf"]
 [ext_resource type="PackedScene" uid="uid://bekirjfe2gnt3" path="res://Player/Components/boost_potion_component.tscn" id="16_c3pyg"]
+[ext_resource type="PackedScene" uid="uid://crb7b2ap5nl0i" path="res://Assets/VFXs/Scenes/3d_fire.tscn" id="17_b7q2a"]
+[ext_resource type="Shader" uid="uid://dx4pcaue3d7yi" path="res://Assets/VFXs/Shaders/ToonFire.gdshader" id="18_nrw4a"]
+[ext_resource type="PackedScene" uid="uid://bpw0l6brw5dil" path="res://Player/Components/shield_component.tscn" id="19_nrw4a"]
+[ext_resource type="PackedScene" uid="uid://t1rqww6tmua6" path="res://Assets/WorldBuiding/Dungeon/Dungeon_Legacy/shield_common.gltf.glb" id="20_nwp1g"]
 
 [sub_resource type="Animation" id="Animation_jur0o"]
 length = 0.001
@@ -111,10 +115,31 @@ height = 1.0
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_5ge3a"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_jur0o"]
-size = Vector3(12, 5, 3)
+size = Vector3(16, 9, 3)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_c3pyg"]
 albedo_texture = ExtResource("15_1abxf")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_nwp1g"]
+render_priority = 0
+shader = ExtResource("18_nrw4a")
+shader_parameter/top_radius = 1.3670000649325
+shader_parameter/bottom_radius = 0.422000020045
+shader_parameter/center_radius = 1.1850000562875
+shader_parameter/center_position = 0.5170000245575
+shader_parameter/cylinder_height = 1.9350000919125
+shader_parameter/bottom_curve = 0.41
+shader_parameter/_vibrate_amplitude = 0.0
+shader_parameter/_vibrate_frequency = 150.0
+shader_parameter/_speed = 1.0
+shader_parameter/_scale = 1.0
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_4hgro"]
+rings = 48
+cap_top = false
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_4hgro"]
+size = Vector3(2, 2, 1)
 
 [node name="CharacterBase" type="CharacterBody3D" unique_id=437658251 groups=["Player"]]
 collision_layer = 2
@@ -374,17 +399,34 @@ visible = false
 player = NodePath("..")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="MagnetAbilityComponent" unique_id=1065951678]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.5, -1)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, -1)
 shape = SubResource("BoxShape3D_jur0o")
 debug_color = Color(0.5056636, 0.4260699, 1, 0.41960785)
 
 [node name="magnet" parent="MagnetAbilityComponent" unique_id=2132515282 instance=ExtResource("14_5xxrg")]
 transform = Transform3D(0.5, 0, 0, 0, -2.1855694e-08, 0.5, 0, -0.5, -2.1855694e-08, 0, 3, 0.1)
 
-[node name="magnet" parent="MagnetAbilityComponent/magnet" index="0" unique_id=881398968]
+[node name="magnet" parent="MagnetAbilityComponent/magnet" index="0" unique_id=25101585]
 material_override = SubResource("StandardMaterial3D_c3pyg")
 
 [node name="BoostPotionComponent" parent="." unique_id=879080522 instance=ExtResource("16_c3pyg")]
+visible = false
+
+[node name="3DFire" parent="BoostPotionComponent" unique_id=1430528611 instance=ExtResource("17_b7q2a")]
+transform = Transform3D(-2.1855694e-08, 0, 0.5, 0, 0.5, 0, -0.5, 0, -2.1855694e-08, 0, 0, 0)
+material_override = SubResource("ShaderMaterial_nwp1g")
+mesh = SubResource("CylinderMesh_4hgro")
+
+[node name="ShieldComponent" parent="." unique_id=1338661970 instance=ExtResource("19_nrw4a")]
+visible = false
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="ShieldComponent" unique_id=620827737]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.5, -1)
+shape = SubResource("BoxShape3D_4hgro")
+debug_color = Color(0.8214866, 0.0017554248, 0.9645836, 0.41960785)
+
+[node name="shield_common_gltf" parent="ShieldComponent" unique_id=2124203305 instance=ExtResource("20_nwp1g")]
+transform = Transform3D(-2, 0, -1.7484555e-07, 0, 2, 0, 1.7484555e-07, 0, -2, 0, 0.7, -0.5)
 
 [connection signal="timeout" from="StateMachine/SitIdle/SitTimer" to="StateMachine/SitIdle" method="_on_sit_timer_timeout"]
 [connection signal="area_entered" from="HurtBox" to="." method="_on_hurt_box_area_entered"]

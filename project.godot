@@ -21,6 +21,10 @@ SceneManager="*uid://j20v4cg7v8m1"
 SceneTransition="*uid://biyqq2dfrpicg"
 GameManager="*uid://bwvbs6c10suct"
 
+[debug]
+
+settings/stdout/print_fps=true
+
 [display]
 
 window/size/viewport_width=1080
@@ -29,6 +33,10 @@ window/size/always_on_top=true
 window/size/window_width_override=360
 window/size/window_height_override=640
 window/stretch/mode="canvas_items"
+
+[editor]
+
+movie_writer/disable_vsync=true
 
 [editor_plugins]
 

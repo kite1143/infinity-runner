@@ -334,7 +334,4 @@ mesh = SubResource("ArrayMesh_u177h")
 skin = SubResource("Skin_4kbdq")
 skeleton = NodePath("..")
 
-[node name="MagnetAbilityComponent" parent="." index="7" unique_id=501586568]
-visible = false
-
 [editable path="MagnetAbilityComponent/magnet"]

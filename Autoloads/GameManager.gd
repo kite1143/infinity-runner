@@ -2,6 +2,7 @@ extends Node
 
 signal magnet_active
 signal potion_active
+signal shield_active
 
 var score = 0
 var coin = 0

@@ -8,20 +8,14 @@ func _ready() -> void:
 	is_active = false
 	GameManager.magnet_active.connect(trigger)
 
-func _on_area_entered(area: Area3D) -> void:
+func _on_area_entered(area: Coin) -> void:
 	if not is_active:
 		return
 	
-	if not area.is_in_group('Collectable'):
+	if not area.is_in_group('Collectable') or not area is Coin:
 		return
 	
-	var tween: Tween = create_tween()
-	tween.tween_property(
-		area,
-		'global_position',
-		player.global_position,
-		0.2
-	)
+	area.is_magneted = true
 
 func trigger() -> void:
 	self.show()

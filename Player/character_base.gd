@@ -1,7 +1,6 @@
 extends CharacterBody3D
 class_name Player
 
-
 @export var lane_size : float = 4.0
 @export var base_speed: float = 10.0
 @export var base_jump_force: float = 15.0
@@ -10,6 +9,7 @@ class_name Player
 @onready var ray_cast_left: RayCast3D = $RayCastLeft
 @onready var ray_cast_right: RayCast3D = $RayCastRight
 @onready var boost_potion_component: BoostComponent = $BoostPotionComponent
+@onready var shield_component: ShieldComponent = $ShieldComponent
 
 var target_lane_x: float = 0.0
 var is_alive: bool = true
@@ -76,7 +76,13 @@ func _on_hurt_box_area_entered(area: Area3D) -> void:
 		is_alive = false
 
 func start_physic_boost() -> void:
-	boost_number = 1.5
+	boost_number = boost_potion_component.boost_number
+	speed = base_speed * boost_number
+	jump_force = base_jump_force * boost_number
+	velocity.z = -speed
+	boost_potion_component.show()
 
 func end_physic_boost() -> void:
 	boost_number = 1.0
+	velocity.z = -speed
+	boost_potion_component.hide()

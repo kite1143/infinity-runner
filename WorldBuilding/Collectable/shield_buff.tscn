@@ -1,0 +1,33 @@
+[gd_scene format=3 uid="uid://dvtp15ykdomwb"]
+
+[ext_resource type="Script" uid="uid://bimintvwqxnjg" path="res://WorldBuilding/Collectable/shield_buff.gd" id="1_yp86u"]
+[ext_resource type="PackedScene" uid="uid://t1rqww6tmua6" path="res://Assets/WorldBuiding/Dungeon/Dungeon_Legacy/shield_common.gltf.glb" id="2_uilkh"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_dwswx"]
+radius = 1.0
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_v4cm3"]
+transparency = 1
+albedo_color = Color(0.33333334, 0.61960787, 1, 0.19215687)
+
+[sub_resource type="SphereMesh" id="SphereMesh_f2l4a"]
+material = SubResource("StandardMaterial3D_v4cm3")
+radius = 1.0
+height = 2.0
+
+[node name="ShieldBuff" type="Area3D" unique_id=2055043096]
+transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, 0, 0, 0)
+collision_layer = 0
+collision_mask = 2
+script = ExtResource("1_yp86u")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=955074448]
+shape = SubResource("SphereShape3D_dwswx")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=230047325]
+mesh = SubResource("SphereMesh_f2l4a")
+
+[node name="shield_common_gltf" parent="." unique_id=2124203305 instance=ExtResource("2_uilkh")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0, 0)
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

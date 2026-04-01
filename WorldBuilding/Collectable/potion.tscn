@@ -9,7 +9,7 @@ radius = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_v4cm3"]
 transparency = 1
-albedo_color = Color(0.42745098, 0.6, 1, 0.29803923)
+albedo_color = Color(0.33333334, 0.61960787, 1, 0.19215687)
 
 [sub_resource type="SphereMesh" id="SphereMesh_f2l4a"]
 material = SubResource("StandardMaterial3D_v4cm3")
@@ -34,13 +34,13 @@ mesh = SubResource("SphereMesh_f2l4a")
 [node name="bottlePotionMana" parent="." unique_id=924435150 instance=ExtResource("2_huqgn")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.5, 0)
 
-[node name="liquid" parent="bottlePotionMana/bottlePotionMana" parent_id_path=PackedInt32Array(924435150, 2020815452) index="0" unique_id=1691685060]
+[node name="liquid" parent="bottlePotionMana/bottlePotionMana" parent_id_path=PackedInt32Array(924435150, 1807261539) index="0" unique_id=1947851496]
 material_override = SubResource("StandardMaterial3D_7vtyr")
 
-[node name="cork" parent="bottlePotionMana/bottlePotionMana" parent_id_path=PackedInt32Array(924435150, 2020815452) index="1" unique_id=1537928260]
+[node name="cork" parent="bottlePotionMana/bottlePotionMana" parent_id_path=PackedInt32Array(924435150, 1807261539) index="1" unique_id=1914361517]
 material_override = SubResource("StandardMaterial3D_7vtyr")
 
-[node name="bottle" parent="bottlePotionMana/bottlePotionMana" parent_id_path=PackedInt32Array(924435150, 2020815452) index="2" unique_id=296849368]
+[node name="bottle" parent="bottlePotionMana/bottlePotionMana" parent_id_path=PackedInt32Array(924435150, 1807261539) index="2" unique_id=1201547024]
 material_override = SubResource("StandardMaterial3D_7vtyr")
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
