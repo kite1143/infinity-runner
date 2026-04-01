@@ -25,6 +25,8 @@
 [ext_resource type="PackedScene" uid="uid://bnly466rjl44c" path="res://WorldBuilding/Obstacle/wall.tscn" id="24_s0d5t"]
 [ext_resource type="PackedScene" uid="uid://cd0ypqtndsfsd" path="res://WorldBuilding/Obstacle/wooden_cart.tscn" id="25_o6i2n"]
 [ext_resource type="PackedScene" uid="uid://d4apnappeitwk" path="res://WorldBuilding/Collectable/coin.tscn" id="26_uxg5g"]
+[ext_resource type="PackedScene" uid="uid://bc26eoey4hjak" path="res://WorldBuilding/Collectable/energy.tscn" id="27_5anwo"]
+[ext_resource type="PackedScene" uid="uid://bapcwmxjrwf6h" path="res://WorldBuilding/Collectable/powerups.tscn" id="28_s0d5t"]
 [ext_resource type="PackedScene" uid="uid://du0e42pktqyxa" path="res://WorldBuilding/Obstacle/swing_trap.tscn" id="32_7rlii"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_i0bpw"]
@@ -350,3 +352,9 @@ transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, 0.23627186, 2, -32.4706
 
 [node name="Coin16" parent="Collections" unique_id=928035501 instance=ExtResource("26_uxg5g")]
 transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, 0.23627186, 2, -34.470627)
+
+[node name="Energy" parent="Collections" unique_id=1179363671 instance=ExtResource("27_5anwo")]
+transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, -4, 2, -2)
+
+[node name="Powerups" parent="Collections" unique_id=298143017 instance=ExtResource("28_s0d5t")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 2.5, 2)

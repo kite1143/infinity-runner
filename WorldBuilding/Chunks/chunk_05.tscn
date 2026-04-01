@@ -30,6 +30,8 @@
 [ext_resource type="Texture2D" uid="uid://dr6on41boxsad" path="res://Assets/WorldBuiding/Textures/CoastSand/coast_sand_rocks_02_rough_1k.png" id="28_n2xfk"]
 [ext_resource type="PackedScene" uid="uid://q2o3ogearh4n" path="res://Assets/WorldBuiding/Dungeon/Dungeon_Remastered/floor_tile_big_spikes.gltf" id="29_p1oh1"]
 [ext_resource type="PackedScene" uid="uid://d4apnappeitwk" path="res://WorldBuilding/Collectable/coin.tscn" id="30_n2xfk"]
+[ext_resource type="PackedScene" uid="uid://bc26eoey4hjak" path="res://WorldBuilding/Collectable/energy.tscn" id="31_suftu"]
+[ext_resource type="PackedScene" uid="uid://bapcwmxjrwf6h" path="res://WorldBuilding/Collectable/powerups.tscn" id="32_s6wev"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_6g2mq"]
 size = Vector3(3.9970703, 4.1641846, 2.0458984)
@@ -610,3 +612,9 @@ transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, 0.18367124, 2, -33.2533
 
 [node name="Coin22" parent="Collections" unique_id=494549381 instance=ExtResource("30_n2xfk")]
 transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, 0.18367124, 2, -35.253353)
+
+[node name="Energy" parent="Collections" unique_id=599108947 instance=ExtResource("31_suftu")]
+transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, 4, 2, 31)
+
+[node name="Powerups" parent="Collections" unique_id=298143017 instance=ExtResource("32_s6wev")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 2.5, 31)

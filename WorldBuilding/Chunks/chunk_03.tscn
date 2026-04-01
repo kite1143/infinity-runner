@@ -34,6 +34,8 @@
 [ext_resource type="PackedScene" uid="uid://du0e42pktqyxa" path="res://WorldBuilding/Obstacle/swing_trap.tscn" id="32_m511t"]
 [ext_resource type="PackedScene" uid="uid://dwf03lu223hlv" path="res://WorldBuilding/Obstacle/swing_hammer.tscn" id="33_wurmk"]
 [ext_resource type="PackedScene" uid="uid://d4apnappeitwk" path="res://WorldBuilding/Collectable/coin.tscn" id="34_2lsed"]
+[ext_resource type="PackedScene" uid="uid://bc26eoey4hjak" path="res://WorldBuilding/Collectable/energy.tscn" id="35_44byw"]
+[ext_resource type="PackedScene" uid="uid://bapcwmxjrwf6h" path="res://WorldBuilding/Collectable/powerups.tscn" id="36_f77fr"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_hsjxl"]
 albedo_texture = ExtResource("2_itsq1")
@@ -486,3 +488,9 @@ transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, 0.183671, 2, -34)
 
 [node name="Coin22" parent="Collections" unique_id=1017720324 instance=ExtResource("34_2lsed")]
 transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, 0.183671, 2, -36)
+
+[node name="Energy" parent="Collections" unique_id=1583322141 instance=ExtResource("35_44byw")]
+transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, -4, 2, -2)
+
+[node name="Powerups" parent="Collections" unique_id=298143017 instance=ExtResource("36_f77fr")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 2.5, -2)

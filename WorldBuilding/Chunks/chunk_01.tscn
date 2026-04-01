@@ -25,7 +25,8 @@
 [ext_resource type="PackedScene" uid="uid://bnly466rjl44c" path="res://WorldBuilding/Obstacle/wall.tscn" id="23_gm12i"]
 [ext_resource type="PackedScene" uid="uid://cd0ypqtndsfsd" path="res://WorldBuilding/Obstacle/wooden_cart.tscn" id="24_6bcod"]
 [ext_resource type="PackedScene" uid="uid://d4apnappeitwk" path="res://WorldBuilding/Collectable/coin.tscn" id="25_6bcod"]
-[ext_resource type="PackedScene" uid="uid://vu3aeg1th81w" path="res://WorldBuilding/Collectable/magnet.tscn" id="26_84yme"]
+[ext_resource type="PackedScene" uid="uid://bc26eoey4hjak" path="res://WorldBuilding/Collectable/energy.tscn" id="27_31s4t"]
+[ext_resource type="PackedScene" uid="uid://bapcwmxjrwf6h" path="res://WorldBuilding/Collectable/powerups.tscn" id="27_kr6md"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_6k2q5"]
 albedo_texture = ExtResource("2_yt6ko")
@@ -359,5 +360,8 @@ transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, -3.9200964, 4, -34.7550
 [node name="Coin18" parent="Collections" unique_id=2017800249 instance=ExtResource("25_6bcod")]
 transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, -3.9200964, 2, -35.755096)
 
-[node name="Magnet" parent="Collections" unique_id=1408713916 instance=ExtResource("26_84yme")]
-transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, 0, 2.5412502, 16)
+[node name="Energy" parent="Collections" unique_id=550415091 instance=ExtResource("27_31s4t")]
+transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, 0, 2, 0)
+
+[node name="Powerups" parent="Collections" unique_id=298143017 instance=ExtResource("27_kr6md")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 2.5, 16)

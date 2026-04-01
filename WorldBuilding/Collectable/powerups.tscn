@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://bapcwmxjrwf6h"]
+
+[ext_resource type="PackedScene" uid="uid://vu3aeg1th81w" path="res://WorldBuilding/Collectable/magnet.tscn" id="1_20fvq"]
+[ext_resource type="Script" uid="uid://cf6x3lu7qp7ec" path="res://WorldBuilding/Collectable/powerups.gd" id="1_pdqun"]
+[ext_resource type="PackedScene" uid="uid://cnn5eq4j58tp2" path="res://WorldBuilding/Collectable/potion.tscn" id="2_pdqun"]
+[ext_resource type="PackedScene" uid="uid://dvtp15ykdomwb" path="res://WorldBuilding/Collectable/shield_buff.tscn" id="3_r1x4c"]
+
+[node name="Powerups" type="Node3D" unique_id=298143017]
+script = ExtResource("1_pdqun")
+
+[node name="Magnet" parent="." unique_id=2055043096 instance=ExtResource("1_20fvq")]
+
+[node name="Potion" parent="." unique_id=1421530793 instance=ExtResource("2_pdqun")]
+
+[node name="ShieldBuff" parent="." unique_id=781925819 instance=ExtResource("3_r1x4c")]

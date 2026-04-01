@@ -4,11 +4,14 @@ signal magnet_active
 signal potion_active
 signal shield_active
 
-var score = 0
-var coin = 0
-var energy = 0
-var time_scale = 1.0
-var total_energy = 9
+var score: float = 0.0
+var coin: int = 0
+var energy:int = 0:
+	set(value):
+		energy = min(value, total_energy)
+
+var time_scale: float = 1.0
+var total_energy: int = 5
 
 func start_new_game() -> void:
 	reset_vars()

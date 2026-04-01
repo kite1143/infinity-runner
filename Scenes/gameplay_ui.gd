@@ -8,6 +8,7 @@ extends CanvasLayer
 func _process(delta: float) -> void:
 	score_label.text = "%.2f" % GameManager.score
 	coin_label.text = str(GameManager.coin)
+	energy_label.text = "%d/%d" % [GameManager.energy, GameManager.total_energy]
 
 func _on_menu_button_pressed() -> void:
 	get_tree().paused = false

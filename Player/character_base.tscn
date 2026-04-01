@@ -20,6 +20,7 @@
 [ext_resource type="Shader" uid="uid://dx4pcaue3d7yi" path="res://Assets/VFXs/Shaders/ToonFire.gdshader" id="18_nrw4a"]
 [ext_resource type="PackedScene" uid="uid://bpw0l6brw5dil" path="res://Player/Components/shield_component.tscn" id="19_nrw4a"]
 [ext_resource type="PackedScene" uid="uid://t1rqww6tmua6" path="res://Assets/WorldBuiding/Dungeon/Dungeon_Legacy/shield_common.gltf.glb" id="20_nwp1g"]
+[ext_resource type="PackedScene" uid="uid://diboqyhxre7em" path="res://Player/Components/ability_component.tscn" id="21_4hgro"]
 
 [sub_resource type="Animation" id="Animation_jur0o"]
 length = 0.001
@@ -425,6 +426,8 @@ transform = Transform3D(0.49999994, 0, 0.86602545, 0, 1, 0, -0.86602545, 0, 0.49
 
 [node name="shield_common_gltf3" parent="ShieldComponent" unique_id=431019321 instance=ExtResource("20_nwp1g")]
 transform = Transform3D(0.7071069, 0, -0.70710665, 0, 1, 0, 0.70710665, 0, 0.7071069, -0.46323842, 0.7, 0.3572835)
+
+[node name="AbilityComponent" parent="." unique_id=2078391884 instance=ExtResource("21_4hgro")]
 
 [connection signal="timeout" from="StateMachine/SitIdle/SitTimer" to="StateMachine/SitIdle" method="_on_sit_timer_timeout"]
 [connection signal="area_entered" from="HurtBox" to="." method="_on_hurt_box_area_entered"]
