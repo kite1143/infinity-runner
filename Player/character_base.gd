@@ -65,6 +65,10 @@ func _on_hurt_box_body_entered(body: Node3D) -> void:
 	if body.is_in_group('Enemy') or body.is_in_group('Obstacle'):
 		if not is_alive:
 			return
+		
+		if shield_component.is_active:
+			return
+		
 		state_machine.change_state('Death')
 		is_alive = false
 
@@ -72,6 +76,10 @@ func _on_hurt_box_area_entered(area: Area3D) -> void:
 	if area.is_in_group('Enemy') or area.is_in_group('Obstacle'):
 		if not is_alive:
 			return
+		
+		if shield_component.is_active:
+			return
+		
 		state_machine.change_state('Death')
 		is_alive = false
 

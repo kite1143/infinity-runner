@@ -138,9 +138,6 @@ shader_parameter/_scale = 1.0
 rings = 48
 cap_top = false
 
-[sub_resource type="BoxShape3D" id="BoxShape3D_4hgro"]
-size = Vector3(2, 2, 1)
-
 [node name="CharacterBase" type="CharacterBody3D" unique_id=437658251 groups=["Player"]]
 collision_layer = 2
 collision_mask = 9
@@ -420,13 +417,14 @@ mesh = SubResource("CylinderMesh_4hgro")
 [node name="ShieldComponent" parent="." unique_id=1338661970 instance=ExtResource("19_nrw4a")]
 visible = false
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="ShieldComponent" unique_id=620827737]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.5, -1)
-shape = SubResource("BoxShape3D_4hgro")
-debug_color = Color(0.8214866, 0.0017554248, 0.9645836, 0.41960785)
-
 [node name="shield_common_gltf" parent="ShieldComponent" unique_id=2124203305 instance=ExtResource("20_nwp1g")]
-transform = Transform3D(-2, 0, -1.7484555e-07, 0, 2, 0, 1.7484555e-07, 0, -2, 0, 0.7, -0.5)
+transform = Transform3D(-1, 0, -1.509958e-07, 0, 1, 0, 1.509958e-07, 0, -1, 0, 0.7, -0.5)
+
+[node name="shield_common_gltf2" parent="ShieldComponent" unique_id=1744485790 instance=ExtResource("20_nwp1g")]
+transform = Transform3D(0.49999994, 0, 0.86602545, 0, 1, 0, -0.86602545, 0, 0.49999994, 0.44269896, 0.7, 0.28962678)
+
+[node name="shield_common_gltf3" parent="ShieldComponent" unique_id=431019321 instance=ExtResource("20_nwp1g")]
+transform = Transform3D(0.7071069, 0, -0.70710665, 0, 1, 0, 0.70710665, 0, 0.7071069, -0.46323842, 0.7, 0.3572835)
 
 [connection signal="timeout" from="StateMachine/SitIdle/SitTimer" to="StateMachine/SitIdle" method="_on_sit_timer_timeout"]
 [connection signal="area_entered" from="HurtBox" to="." method="_on_hurt_box_area_entered"]
