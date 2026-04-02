@@ -356,6 +356,7 @@ size_flags_vertical = 4
 [node name="KnightCard" parent="UI/ShopUI/ShopContainer" unique_id=1380669235 node_paths=PackedStringArray("model_link") instance=ExtResource("22_t7leq")]
 visible = false
 layout_mode = 2
+id = "knight"
 char_name = "Knig"
 skill_detail = "Coin Magnet"
 model_link = NodePath("../../../../KnightDecorShop")
@@ -363,6 +364,7 @@ model_link = NodePath("../../../../KnightDecorShop")
 [node name="BarbarianCard" parent="UI/ShopUI/ShopContainer" unique_id=74179962 node_paths=PackedStringArray("model_link") instance=ExtResource("22_t7leq")]
 visible = false
 layout_mode = 2
+id = "barbarian"
 char_name = "Barian"
 base_speed = 30.0
 skill_detail = "Higher Jump"
@@ -371,6 +373,7 @@ model_link = NodePath("../../../../BarbarianDecorShop")
 [node name="MageCard" parent="UI/ShopUI/ShopContainer" unique_id=25268001 node_paths=PackedStringArray("model_link") instance=ExtResource("22_t7leq")]
 visible = false
 layout_mode = 2
+id = "mage"
 char_name = "Meg"
 base_speed = 25.0
 skill_detail = "Flying"
@@ -378,4 +381,5 @@ model_link = NodePath("../../../../MageDecorShop")
 
 [connection signal="pressed" from="UI/ShopUI/MarginContainer/MenuButton" to="." method="_on_menu_button_pressed"]
 [connection signal="pressed" from="UI/ShopUI/MarginContainer/HBoxContainer/LeftButton" to="." method="_on_left_button_pressed"]
+[connection signal="pressed" from="UI/ShopUI/MarginContainer/HBoxContainer/ChooseButton" to="." method="_on_choose_button_pressed"]
 [connection signal="pressed" from="UI/ShopUI/MarginContainer/HBoxContainer/RightButton" to="." method="_on_right_button_pressed"]

@@ -1,8 +1,21 @@
 extends Node3D
 
-@onready var player: Player = get_tree().get_first_node_in_group('Player')
+var player: Player
+@onready var spawn_pos: Marker3D = $PlayerSpawn
+@onready var chunk_generator: ChunkGenerator = $ChunkGenerator
 
-func _physics_process(delta: float) -> void:
+func _ready() -> void:
+	player = (DataManager.list_characters[
+		DataManager.choosen_character
+	][0] as PackedScene).instantiate()
+	
+	add_child(player)
+	player.global_position = spawn_pos.global_position
+	player.global_scale(Vector3(1.5, 1.5, 1.5))
+	
+	chunk_generator.first_generation()
+
+func _physics_process(_delta: float) -> void:
 	GameManager.score = -player.global_position.z + 2*GameManager.coin
 	var distance: float = -player.global_position.z
 	if distance > 72*10:

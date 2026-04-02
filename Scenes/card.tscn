@@ -95,7 +95,7 @@ horizontal_alignment = 1
 vertical_alignment = 1
 autowrap_mode = 3
 
-[node name="ChooseButton" type="TextureButton" parent="VBoxContainer" unique_id=1214187999]
+[node name="BuyButton" type="TextureButton" parent="VBoxContainer" unique_id=1214187999]
 self_modulate = Color(0.9656448, 0.93612957, 0.63058084, 1)
 custom_minimum_size = Vector2(480, 160)
 layout_mode = 2
@@ -106,7 +106,7 @@ texture_pressed = SubResource("AtlasTexture_s5hdj")
 texture_disabled = SubResource("AtlasTexture_5hixt")
 stretch_mode = 5
 
-[node name="PriceLabel" type="Label" parent="VBoxContainer/ChooseButton" unique_id=403183278]
+[node name="PriceLabel" type="Label" parent="VBoxContainer/BuyButton" unique_id=403183278]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -117,3 +117,5 @@ text = "1000"
 label_settings = SubResource("LabelSettings_t7leq")
 horizontal_alignment = 1
 vertical_alignment = 1
+
+[connection signal="pressed" from="VBoxContainer/BuyButton" to="." method="_on_buy_button_pressed"]

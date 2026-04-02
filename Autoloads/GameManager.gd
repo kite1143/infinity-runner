@@ -9,7 +9,6 @@ var coin: int = 0
 var energy:int = 0:
 	set(value):
 		energy = min(value, total_energy)
-
 var time_scale: float = 1.0
 var total_energy: int = 5
 
