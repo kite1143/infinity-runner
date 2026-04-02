@@ -35,9 +35,6 @@ environment = SubResource("Environment_nemkc")
 [node name="CharacterKnight" parent="." unique_id=864124633 instance=ExtResource("1_7l7g0")]
 transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, 0.5206311, 1.0000038, 33.499744)
 
-[node name="Camera3D" type="Camera3D" parent="CharacterKnight" unique_id=1371118197]
-transform = Transform3D(1, 0, 0, 0, 0.8936928, 0.4486796, 0, -0.4486796, 0.8936928, 0, 5.6413355, 4.4067626)
-
 [node name="Chunk_02" parent="." unique_id=177310566 instance=ExtResource("15_6ro0x")]
 
 [node name="Coin" parent="." unique_id=2055043096 instance=ExtResource("10_sgtyu")]
@@ -73,7 +70,7 @@ transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, 4.395611, 2, 28.497185)
 [node name="Energy9" parent="." unique_id=500792623 instance=ExtResource("11_slq2w")]
 transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, 4.395611, 2, 10.91869)
 
-[node name="Chunk_01" parent="." unique_id=494493538 instance=ExtResource("12_ickic")]
+[node name="Chunk_01" parent="." unique_id=1050275784 instance=ExtResource("12_ickic")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -72)
 
 [node name="Magnet" parent="." unique_id=1502154215 instance=ExtResource("13_dxfox")]

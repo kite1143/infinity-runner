@@ -32,7 +32,7 @@ collision_mask = 0
 [node name="CollisionShape3D" type="CollisionShape3D" parent="arrow/HitBox" unique_id=2109971156]
 shape = SubResource("BoxShape3D_r1w02")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="." unique_id=2088238583 groups=["Obstacle"]]
+[node name="StaticBody3D" type="Area3D" parent="." unique_id=729548746 groups=["Obstacle"]]
 collision_layer = 8
 collision_mask = 0
 

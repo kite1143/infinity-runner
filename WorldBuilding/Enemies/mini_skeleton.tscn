@@ -1889,7 +1889,7 @@ bone_idx = 22
 libraries/ = SubResource("AnimationLibrary_tl0dk")
 autoplay = &"Idle_B"
 
-[node name="StaticBody3D" type="StaticBody3D" parent="." unique_id=387720482 groups=["Enemy"]]
+[node name="StaticBody3D" type="Area3D" parent="." unique_id=1303885908 groups=["Enemy"]]
 collision_layer = 4
 collision_mask = 0
 

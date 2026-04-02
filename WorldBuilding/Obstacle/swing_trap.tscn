@@ -17,10 +17,10 @@ script = ExtResource("1_v4dfq")
 [node name="wall_open_scaffold2" parent="." unique_id=1399060473 instance=ExtResource("1_047c0")]
 transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0, 0)
 
-[node name="wall_open_scaffold" parent="wall_open_scaffold2" index="0" unique_id=23801739]
+[node name="wall_open_scaffold" parent="wall_open_scaffold2" index="0" unique_id=1885609972]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.07724249, -0.035845757, 0.020845413)
 
-[node name="StaticBody3D" type="StaticBody3D" parent="wall_open_scaffold2/wall_open_scaffold" index="0" unique_id=425576354 groups=["Obstacle"]]
+[node name="StaticBody3D" type="Area3D" parent="wall_open_scaffold2/wall_open_scaffold" index="0" unique_id=1765460729 groups=["Obstacle"]]
 collision_layer = 8
 collision_mask = 0
 
@@ -45,7 +45,7 @@ transform = Transform3D(-2, 1.7484555e-07, 0, -1.7484555e-07, -2, 0, 0, 0, 2, 0,
 [node name="barrier2" parent="wall_open_scaffold2/Pivot/axeDouble_rare_gltf" unique_id=467501665 instance=ExtResource("3_nqubn")]
 transform = Transform3D(-1.0927847e-08, 0.125, 0, -0.25, -5.4639235e-09, 0, 0, 0, 0.25, -0.07500002, -0.125, 0)
 
-[node name="StaticBody3D" type="StaticBody3D" parent="wall_open_scaffold2/Pivot/axeDouble_rare_gltf" unique_id=1070887335 groups=["Obstacle"]]
+[node name="StaticBody3D" type="Area3D" parent="wall_open_scaffold2/Pivot/axeDouble_rare_gltf" unique_id=582443086 groups=["Obstacle"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.45, 0)
 collision_layer = 8
 collision_mask = 0

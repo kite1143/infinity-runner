@@ -17,7 +17,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.05, 1.7, -0.2)
 [node name="trap" parent="." unique_id=1163334165 instance=ExtResource("2_cdnp7")]
 transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 4.7, 0.465, 2.1)
 
-[node name="StaticBody3D" type="StaticBody3D" parent="." unique_id=873860656 groups=["Obstacle"]]
+[node name="StaticBody3D" type="Area3D" parent="." unique_id=730848064 groups=["Obstacle"]]
 collision_layer = 8
 collision_mask = 0
 

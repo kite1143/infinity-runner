@@ -6,8 +6,6 @@ class_name Player
 @export var base_jump_force: float = 15.0
 
 @onready var state_machine: StateMachine = $StateMachine
-@onready var ray_cast_left: RayCast3D = $RayCastLeft
-@onready var ray_cast_right: RayCast3D = $RayCastRight
 @onready var boost_potion_component: BoostComponent = $BoostPotionComponent
 @onready var shield_component: ShieldComponent = $ShieldComponent
 
@@ -24,7 +22,7 @@ func _ready() -> void:
 	boost_potion_component.end_boost.connect(end_physic_boost)
 
 func _process(delta: float) -> void:
-	speed = base_speed * boost_number
+	speed = base_speed
 	jump_force = base_jump_force * boost_number
 
 func _physics_process(delta: float) -> void:
@@ -41,13 +39,9 @@ func movement() -> void:
 		return
 	
 	if Input.is_action_just_pressed('dash_left') and target_lane_x > -lane_size:
-		if ray_cast_left.is_colliding():
-			return
 		target_lane_x -= lane_size
 		start_dash_tween()
 	elif Input.is_action_just_pressed('dash_right') and target_lane_x < lane_size:
-		if ray_cast_right.is_colliding():
-			return
 		target_lane_x += lane_size
 		start_dash_tween()
 
@@ -85,7 +79,6 @@ func _on_hurt_box_area_entered(area: Area3D) -> void:
 
 func start_physic_boost() -> void:
 	boost_number = boost_potion_component.boost_number
-	speed = base_speed * boost_number
 	jump_force = base_jump_force * boost_number
 	velocity.z = -speed
 	boost_potion_component.show()

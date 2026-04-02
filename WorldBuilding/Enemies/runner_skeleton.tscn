@@ -2133,13 +2133,13 @@ bone_name = "handslot.l"
 bone_idx = 13
 
 [node name="shield_rare_gltf" parent="Skeleton_Warrior/Rig_Medium/Skeleton3D/BoneAttachment3D" unique_id=1199573008 instance=ExtResource("2_5otf6")]
-transform = Transform3D(0.12907623, -0.68983597, -1.3256943, 0.21424451, 1.3254265, -0.6688371, 1.4789996, -0.13179444, 0.21258308, -0.30201727, 0.032248616, -0.24326895)
+transform = Transform3D(0.12907623, -0.68983597, -1.3256943, 0.21424448, 1.3254265, -0.6688371, 1.4789995, -0.13179444, 0.21258308, -0.30201727, 0.032248616, -0.24326895)
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Skeleton_Warrior" unique_id=344394953]
 libraries/ = SubResource("AnimationLibrary_w4jx5")
 autoplay = &"Idle_B"
 
-[node name="StaticBody3D" type="StaticBody3D" parent="." unique_id=1390823165 groups=["Enemy"]]
+[node name="StaticBody3D" type="Area3D" parent="." unique_id=652939281 groups=["Enemy"]]
 collision_layer = 4
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" unique_id=293445396]

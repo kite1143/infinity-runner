@@ -49,6 +49,6 @@ list_chunks = Array[PackedScene]([ExtResource("3_c78sm"), ExtResource("4_i47ox")
 transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, 0, 0.9999999, 0)
 
 [node name="Camera3D" type="Camera3D" parent="CharacterKnight" unique_id=1927915211]
-transform = Transform3D(0.6666666, 0, 0, 0, 0.5911685, 0.30816257, 0, -0.30816257, 0.5911685, 0, 4.405103, 2.6999938)
+transform = Transform3D(0.6666667, 0, 0, 0, 0.5911686, 0.3081626, 0, -0.3081626, 0.5911686, 0, 4.405103, 2.6999938)
 
 [node name="GameplayUI" parent="." unique_id=545819349 instance=ExtResource("14_i47ox")]

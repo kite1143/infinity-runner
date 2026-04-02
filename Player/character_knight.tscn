@@ -334,8 +334,11 @@ mesh = SubResource("ArrayMesh_u177h")
 skin = SubResource("Skin_4kbdq")
 skeleton = NodePath("..")
 
-[node name="AbilityComponent" parent="." index="10" unique_id=2078391884]
+[node name="AbilityComponent" parent="." index="8" unique_id=2078391884]
 magnet_ability = true
 shield_ability = true
+
+[node name="PlayerCamera" parent="." index="9" unique_id=328200371]
+transform = Transform3D(1, 0, 0, 0, 0.9781476, 0.20791169, 0, -0.20791169, 0.9781476, 0, 4, 3)
 
 [editable path="MagnetAbilityComponent/magnet"]

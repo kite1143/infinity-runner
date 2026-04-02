@@ -13,11 +13,15 @@ script = ExtResource("1_bo5oh")
 [node name="hammerbig_001" parent="." unique_id=1684369872 instance=ExtResource("1_iy4rp")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.83, 0, 0.95)
 
-[node name="StaticBody3D" type="StaticBody3D" parent="hammerbig_001" unique_id=722017148 groups=["Obstacle"]]
+[node name="StaticBody3D" type="Area3D" parent="hammerbig_001" unique_id=603743109 groups=["Obstacle"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.83, 0, 0.19)
 collision_layer = 8
 collision_mask = 0
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="hammerbig_001/StaticBody3D" unique_id=658890506]
 transform = Transform3D(-4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0, 1, 0, 0.11695114, -0.020058393)
+shape = SubResource("CylinderShape3D_bo5oh")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="hammerbig_001/StaticBody3D" unique_id=874365502]
+transform = Transform3D(-4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0, 1, 0, 0.11695114, -1.1289693)
 shape = SubResource("CylinderShape3D_bo5oh")
