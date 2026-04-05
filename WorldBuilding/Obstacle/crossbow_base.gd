@@ -6,11 +6,9 @@ extends Node3D
 
 func _ready() -> void:
 	if trigger_area:
-		trigger_area.body_entered.connect(trigger_crossbow)
+		trigger_area.area_entered.connect(trigger_crossbow)
 
-func trigger_crossbow(body: Player) -> void:
-	if body is not Player:
-		return
+func trigger_crossbow(_area: Area3D) -> void:
 	if not arrow.is_active:
 		arrow_shoot_player.play()
 		arrow.is_active = true

@@ -10,6 +10,7 @@
 [ext_resource type="PackedScene" uid="uid://b3s28pce81bii" path="res://WorldBuilding/Chunks/chunk_01.tscn" id="12_ickic"]
 [ext_resource type="PackedScene" uid="uid://vu3aeg1th81w" path="res://WorldBuilding/Collectable/magnet.tscn" id="13_dxfox"]
 [ext_resource type="PackedScene" uid="uid://du3in3omxbym6" path="res://WorldBuilding/Chunks/chunk_06.tscn" id="13_ev63e"]
+[ext_resource type="PackedScene" uid="uid://bly7b488qqpmm" path="res://WorldBuilding/Others/stair.tscn" id="14_ev63e"]
 [ext_resource type="PackedScene" uid="uid://b3al6bgj8vx8c" path="res://WorldBuilding/Chunks/chunk_02.tscn" id="15_6ro0x"]
 [ext_resource type="PackedScene" uid="uid://dvtp15ykdomwb" path="res://WorldBuilding/Collectable/shield_buff.tscn" id="15_a0osc"]
 [ext_resource type="PackedScene" uid="uid://5on33m4llp21" path="res://Scenes/gameplay_ui.tscn" id="16_pqur3"]
@@ -37,7 +38,8 @@ shadow_enabled = true
 environment = SubResource("Environment_nemkc")
 
 [node name="CharacterKnight" parent="." unique_id=864124633 instance=ExtResource("1_7l7g0")]
-transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, 0.5206311, 1.0000038, 33.499744)
+transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, 0, 1, 33.5)
+collision_mask = 9
 
 [node name="Chunk_02" parent="." unique_id=177310566 instance=ExtResource("15_6ro0x")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -72, 0, -227)
@@ -99,3 +101,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -72)
 
 [node name="Chunk_06" parent="." unique_id=730329657 instance=ExtResource("13_ev63e")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -144)
+
+[node name="Stair" parent="." unique_id=822857029 instance=ExtResource("14_ev63e")]
+transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, 0, 1, 0)

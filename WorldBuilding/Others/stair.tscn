@@ -5,16 +5,33 @@
 [sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_q05n7"]
 points = PackedVector3Array(-1.3, 0, -3, 1.3, 0, -3, -1.3, 4.5, -3, 1.3, 4.5, -3, -1.3, 0, 3, 1.3, 0, 3)
 
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_6ybwk"]
+points = PackedVector3Array(0, 0, -2, 0.5, 0, -2, 0, 4, -2, 0.5, 4, -2, 0, 0, 2, 0.5, 0, 2)
+
 [node name="Stair" type="Node3D" unique_id=822857029]
 
 [node name="Stair" parent="." unique_id=1556069698 instance=ExtResource("1_6ybwk")]
 
-[node name="StaticBody3D" type="StaticBody3D" parent="Stair" unique_id=1726869558 groups=["Obstacle"]]
+[node name="StaticBody3D" type="StaticBody3D" parent="Stair" unique_id=1726869558]
 collision_layer = 9
 collision_mask = 0
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Stair/StaticBody3D" unique_id=703291446]
 shape = SubResource("ConvexPolygonShape3D_q05n7")
+debug_color = Color(0.940861, 0.24519998, 0, 0.41960785)
+
+[node name="Area3D" type="Area3D" parent="." unique_id=1613010324 groups=["Obstacle"]]
+collision_layer = 8
+collision_mask = 2
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D" unique_id=1433830936]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.35, 0, 0)
+shape = SubResource("ConvexPolygonShape3D_6ybwk")
+debug_color = Color(0.940861, 0.24519998, 0, 0.41960785)
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="Area3D" unique_id=933630474]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.8, 0, 0)
+shape = SubResource("ConvexPolygonShape3D_6ybwk")
 debug_color = Color(0.940861, 0.24519998, 0, 0.41960785)
 
 [editable path="Stair"]

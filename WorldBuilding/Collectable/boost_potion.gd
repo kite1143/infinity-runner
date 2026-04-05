@@ -2,9 +2,7 @@ extends Area3D
 
 @onready var collect_sound: AudioStreamPlayer3D = $CollectSound
 
-func _on_body_entered(body: CharacterBody3D) -> void:
-	if body is not Player:
-		return
+func _on_area_entered(_area: Area3D) -> void:
 	self.hide()
 	collect_sound.play()
 	GameManager.potion_active.emit()

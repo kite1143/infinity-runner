@@ -23,4 +23,4 @@ stream = ExtResource("3_gc6r6")
 max_distance = 20.0
 bus = &"Sfx"
 
-[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="area_entered" from="." to="." method="_on_area_entered"]

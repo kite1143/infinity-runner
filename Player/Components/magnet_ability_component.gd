@@ -1,7 +1,12 @@
 extends Area3D
 
 @export var player: Player
+
+@export var blink_threshold: float = 3.0
+@export var blink_speed: float = 8.0
+
 @onready var duration_timer: Timer = $DurationTimer
+
 var is_active: bool = false
 
 func _ready() -> void:
@@ -16,6 +21,13 @@ func _on_area_entered(area: Coin) -> void:
 		return
 	
 	area.is_magneted = true
+
+func _process(_delta: float) -> void:
+	if is_active and not duration_timer.is_stopped():
+		if duration_timer.time_left <= blink_threshold:
+			self.visible = int(duration_timer.time_left * blink_speed) % 2 == 0
+		else:
+			self.visible = true
 
 func trigger() -> void:
 	self.show()

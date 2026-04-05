@@ -4,6 +4,7 @@ class_name Player
 @export var lane_size : float = 4.0
 @export var base_speed: float = 10.0
 @export var base_jump_force: float = 25.0
+@export var center_point: Node3D
 
 @onready var state_machine: StateMachine = $StateMachine
 @onready var boost_potion_component: BoostComponent = $BoostPotionComponent
