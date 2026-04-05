@@ -3,6 +3,7 @@
 [ext_resource type="Script" uid="uid://ceuyfbkoy7ras" path="res://WorldBuilding/Enemies/mini_skeleton.gd" id="1_hq04u"]
 [ext_resource type="PackedScene" uid="uid://b34mtooqfc5js" path="res://Assets/Enemy/characters/gltf/Skeleton_Minion.glb" id="1_xr4b4"]
 [ext_resource type="PackedScene" uid="uid://08cei0mg7bbt" path="res://Assets/WorldBuiding/Dungeon/Dungeon_Legacy/sword_uncommon.gltf.glb" id="2_hq04u"]
+[ext_resource type="AudioStream" uid="uid://pvhcpg6jient" path="res://Assets/Sfx and Music/SkeletonFootStepSound.wav" id="4_mcikv"]
 
 [sub_resource type="Animation" id="Animation_xr4b4"]
 resource_name = "Idle_B"
@@ -1896,5 +1897,10 @@ collision_mask = 0
 [node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" unique_id=2059476657]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
 shape = SubResource("CapsuleShape3D_hq04u")
+
+[node name="WalkingSoundPlayer" type="AudioStreamPlayer3D" parent="." unique_id=1612743523]
+stream = ExtResource("4_mcikv")
+max_distance = 25.0
+bus = &"Sfx"
 
 [editable path="Skeleton_Minion"]

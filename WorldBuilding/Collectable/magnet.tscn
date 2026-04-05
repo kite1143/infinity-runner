@@ -3,6 +3,7 @@
 [ext_resource type="Script" uid="uid://bvnk0214r5dx8" path="res://WorldBuilding/Collectable/magnet.gd" id="1_o8h1x"]
 [ext_resource type="PackedScene" uid="uid://b5tuxd15vagcw" path="res://Assets/Tools/FBX/magnet.fbx" id="2_o8h1x"]
 [ext_resource type="Texture2D" uid="uid://ruhracoum7vt" path="res://Assets/Tools/FBX/props_base_color.png" id="3_v3wsh"]
+[ext_resource type="AudioStream" uid="uid://cs4r3ct433pv4" path="res://Assets/Sfx and Music/PowerupCollectSound.wav" id="4_v3wsh"]
 
 [sub_resource type="SphereShape3D" id="SphereShape3D_dwswx"]
 radius = 1.0
@@ -36,6 +37,12 @@ material_override = SubResource("StandardMaterial3D_wq5rh")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=230047325]
 mesh = SubResource("SphereMesh_f2l4a")
+
+[node name="CollectSound" type="AudioStreamPlayer3D" parent="." unique_id=1217477847]
+stream = ExtResource("4_v3wsh")
+volume_db = -10.0
+max_distance = 10.0
+bus = &"Sfx"
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
 

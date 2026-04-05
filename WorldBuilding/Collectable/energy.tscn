@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://btyj05vsgv3iv" path="res://WorldBuilding/Collectable/energy.gd" id="1_f7r7o"]
 [ext_resource type="PackedScene" uid="uid://drxgwapyr3gah" path="res://Assets/WorldBuiding/PlatformerPacks/Energy/power_blue.gltf" id="1_noro2"]
+[ext_resource type="AudioStream" uid="uid://cab77ytmv1mmx" path="res://Assets/Sfx and Music/EnergyCollectSound.wav" id="3_gc6r6"]
 
 [sub_resource type="SphereShape3D" id="SphereShape3D_dwswx"]
 radius = 1.0
@@ -16,5 +17,10 @@ script = ExtResource("1_f7r7o")
 shape = SubResource("SphereShape3D_dwswx")
 
 [node name="power_blue2" parent="." unique_id=561252709 instance=ExtResource("1_noro2")]
+
+[node name="EnergySoundPlayer" type="AudioStreamPlayer3D" parent="." unique_id=1858605817]
+stream = ExtResource("3_gc6r6")
+max_distance = 20.0
+bus = &"Sfx"
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]

@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://bimintvwqxnjg" path="res://WorldBuilding/Collectable/shield_buff.gd" id="1_yp86u"]
 [ext_resource type="PackedScene" uid="uid://t1rqww6tmua6" path="res://Assets/WorldBuiding/Dungeon/Dungeon_Legacy/shield_common.gltf.glb" id="2_uilkh"]
+[ext_resource type="AudioStream" uid="uid://cs4r3ct433pv4" path="res://Assets/Sfx and Music/PowerupCollectSound.wav" id="3_ttspw"]
 
 [sub_resource type="SphereShape3D" id="SphereShape3D_dwswx"]
 radius = 1.0
@@ -29,5 +30,11 @@ mesh = SubResource("SphereMesh_f2l4a")
 
 [node name="shield_common_gltf" parent="." unique_id=2124203305 instance=ExtResource("2_uilkh")]
 transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0, 0)
+
+[node name="CollectSound" type="AudioStreamPlayer3D" parent="." unique_id=1445020021]
+stream = ExtResource("3_ttspw")
+volume_db = -10.0
+max_distance = 10.0
+bus = &"Sfx"
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]

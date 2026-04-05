@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://bu37ybmp7adcc"
+path="res://.godot/imported/RunSound2.wav-f602f21a1d9da13a25dcfd416d3c1b21.sample"
+
+[deps]
+
+source_file="res://Assets/Sfx and Music/RunSound2.wav"
+dest_files=["res://.godot/imported/RunSound2.wav-f602f21a1d9da13a25dcfd416d3c1b21.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

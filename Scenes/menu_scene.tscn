@@ -13,6 +13,8 @@
 [ext_resource type="ArrayMesh" uid="uid://byvrrqcvvo1qn" path="res://Assets/WorldBuiding/Village/Props/Tree_Trunk_2.obj" id="12_uif6n"]
 [ext_resource type="ArrayMesh" uid="uid://c2mstvdwk07si" path="res://Assets/WorldBuiding/Village/Props/Fireplace.obj" id="13_pid27"]
 [ext_resource type="ArrayMesh" uid="uid://de4h76cqtq3mc" path="res://Assets/WorldBuiding/Village/Props/Building_2_Wall_Off_1.obj" id="14_d0hrc"]
+[ext_resource type="AudioStream" uid="uid://ccgluoq15eboa" path="res://Assets/Sfx and Music/BoilingSound.wav" id="15_fjvx8"]
+[ext_resource type="AudioStream" uid="uid://curnvoqc0hnuw" path="res://Assets/Sfx and Music/FireSFX.ogg" id="16_07sbp"]
 [ext_resource type="ArrayMesh" uid="uid://bt26656rc83oi" path="res://Assets/WorldBuiding/Village/Props/Rock_Formation.obj" id="18_64u68"]
 [ext_resource type="PackedScene" uid="uid://crb7b2ap5nl0i" path="res://Assets/VFXs/Scenes/3d_fire.tscn" id="18_prghj"]
 [ext_resource type="PackedScene" uid="uid://dv76wpsudwmtf" path="res://WorldBuilding/Decors/knight_decor.tscn" id="18_sgj32"]
@@ -238,6 +240,20 @@ mesh = ExtResource("14_d0hrc")
 [node name="3DFire" parent="Decorations" unique_id=754537937 instance=ExtResource("18_prghj")]
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 0.4, 0, -1, 0, -4.371139e-08, -16.0465, 0.123194575, 10.51483)
 
+[node name="BoilSound" type="AudioStreamPlayer3D" parent="Decorations/3DFire" unique_id=289452230]
+stream = ExtResource("15_fjvx8")
+volume_db = -10.0
+autoplay = true
+max_distance = 25.0
+bus = &"Sfx"
+
+[node name="FireSound" type="AudioStreamPlayer3D" parent="Decorations/3DFire" unique_id=318970139]
+stream = ExtResource("16_07sbp")
+volume_db = 80.0
+autoplay = true
+max_distance = 25.0
+bus = &"Sfx"
+
 [node name="plateFull_gltf" parent="Decorations" unique_id=105702357 instance=ExtResource("19_a4858")]
 transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -11.046085, 1.1117817, 9.315217)
 
@@ -254,6 +270,8 @@ mesh = ExtResource("18_64u68")
 
 [node name="Camera3D" type="Camera3D" parent="." unique_id=2015052531]
 transform = Transform3D(-0.6320473, -0.3172031, 0.707035, 0.010738826, 0.9087129, 0.41728345, -0.77485543, 0.2713356, -0.57094306, -7.7341795, 8.235145, 3.6573315)
+
+[node name="AudioListener3D" type="AudioListener3D" parent="Camera3D" unique_id=314802151]
 
 [node name="OmniLight3D" type="OmniLight3D" parent="." unique_id=597747884]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16.10133, 3.6560953, 10.5594015)

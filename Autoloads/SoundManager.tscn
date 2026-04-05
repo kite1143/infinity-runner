@@ -1,0 +1,32 @@
+[gd_scene format=3 uid="uid://147ojchanmlg"]
+
+[ext_resource type="Script" uid="uid://0xax6aocl3uh" path="res://Autoloads/SoundManager.gd" id="1_8h2xu"]
+[ext_resource type="AudioStream" uid="uid://q1yi0ga8cmul" path="res://Assets/Sfx and Music/ButtonSound.wav" id="2_kac3y"]
+[ext_resource type="AudioStream" uid="uid://gyowhgpxwoyk" path="res://Assets/Sfx and Music/MenuMusic.ogg" id="3_y57hk"]
+[ext_resource type="AudioStream" uid="uid://cm6yovtaa2f1y" path="res://Assets/Sfx and Music/GameplaySound.ogg" id="4_8mrei"]
+[ext_resource type="AudioStream" uid="uid://c4kb1cu5qe6sw" path="res://Assets/Sfx and Music/GameplaySound2.ogg" id="5_m7sua"]
+
+[node name="SoundManager" type="Node" unique_id=1552010504]
+script = ExtResource("1_8h2xu")
+
+[node name="ButtonSoundPlayer" type="AudioStreamPlayer" parent="." unique_id=1633293962]
+stream = ExtResource("2_kac3y")
+volume_db = 10.0
+bus = &"Sfx"
+
+[node name="MenuMusicPlayer" type="AudioStreamPlayer" parent="." unique_id=1963451392]
+stream = ExtResource("3_y57hk")
+volume_db = -5.0
+bus = &"Music"
+
+[node name="GameplayMusic" type="Node" parent="." unique_id=873941615]
+
+[node name="GameplayMusicPlayer1" type="AudioStreamPlayer" parent="GameplayMusic" unique_id=1540838097]
+stream = ExtResource("4_8mrei")
+volume_db = -5.0
+bus = &"Music"
+
+[node name="GameplayMusicPlayer2" type="AudioStreamPlayer" parent="GameplayMusic" unique_id=1583601554]
+stream = ExtResource("5_m7sua")
+volume_db = -5.0
+bus = &"Music"

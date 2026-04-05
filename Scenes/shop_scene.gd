@@ -19,9 +19,11 @@ func _process(_delta: float) -> void:
 
 func _on_left_button_pressed() -> void:
 	change_to_another_card(1)
+	SoundManager.play_button_sound()
 
 func _on_right_button_pressed() -> void:
 	change_to_another_card(-1)
+	SoundManager.play_button_sound()
 
 func change_to_another_card(index_in: int) -> void:
 	current_index = (current_index + index_in) % total_cards
@@ -37,8 +39,10 @@ func change_to_another_card(index_in: int) -> void:
 
 func _on_menu_button_pressed() -> void:
 	SceneTransition.change_to_menu_scene()
+	SoundManager.play_button_sound()
 
 func _on_choose_button_pressed() -> void:
+	SoundManager.play_button_sound()
 	var char_id = card_to_open.id
 	if DataManager.list_characters[char_id][1] == false:
 		return

@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://jpa51210up0d" path="res://WorldBuilding/Collectable/coin.gd" id="1_bj2ke"]
 [ext_resource type="PackedScene" uid="uid://402l8yyuefni" path="res://Assets/WorldBuiding/PlatformerPacks/Coin/Coin_A.gltf" id="1_dwswx"]
+[ext_resource type="AudioStream" uid="uid://be57s221euv2u" path="res://Assets/Sfx and Music/CoinPickupSound.wav" id="3_fhffq"]
 
 [sub_resource type="SphereShape3D" id="SphereShape3D_dwswx"]
 radius = 1.0
@@ -16,5 +17,12 @@ script = ExtResource("1_bj2ke")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=955074448]
 shape = SubResource("SphereShape3D_dwswx")
+
+[node name="CollectSound" type="AudioStreamPlayer3D" parent="." unique_id=1333731529]
+stream = ExtResource("3_fhffq")
+volume_db = -10.0
+pitch_scale = 2.0
+max_distance = 20.0
+bus = &"Sfx"
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]

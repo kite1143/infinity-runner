@@ -5,6 +5,7 @@ var player: Player
 @onready var chunk_generator: ChunkGenerator = $ChunkGenerator
 
 func _ready() -> void:
+	SoundManager.play_gameplay_music()
 	player = (DataManager.list_characters[
 		DataManager.choosen_character
 	][0] as PackedScene).instantiate()

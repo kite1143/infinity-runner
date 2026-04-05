@@ -3,6 +3,7 @@
 [ext_resource type="Script" uid="uid://b4ohvx0aao7rq" path="res://WorldBuilding/Collectable/boost_potion.gd" id="1_kbgu3"]
 [ext_resource type="PackedScene" uid="uid://df5r7r8h8lwrh" path="res://Assets/Tools/FBX/bottlePotionMana.fbx" id="2_huqgn"]
 [ext_resource type="Texture2D" uid="uid://ruhracoum7vt" path="res://Assets/Tools/FBX/props_base_color.png" id="3_8pvr3"]
+[ext_resource type="AudioStream" uid="uid://cs4r3ct433pv4" path="res://Assets/Sfx and Music/PowerupCollectSound.wav" id="4_huqgn"]
 
 [sub_resource type="SphereShape3D" id="SphereShape3D_dwswx"]
 radius = 1.0
@@ -42,6 +43,12 @@ material_override = SubResource("StandardMaterial3D_7vtyr")
 
 [node name="bottle" parent="bottlePotionMana/bottlePotionMana" parent_id_path=PackedInt32Array(924435150, 1807261539) index="2" unique_id=1201547024]
 material_override = SubResource("StandardMaterial3D_7vtyr")
+
+[node name="CollectSound" type="AudioStreamPlayer3D" parent="." unique_id=584747459]
+stream = ExtResource("4_huqgn")
+volume_db = -10.0
+max_distance = 10.0
+bus = &"Sfx"
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
 

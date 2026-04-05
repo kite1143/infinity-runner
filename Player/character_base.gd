@@ -21,7 +21,7 @@ func _ready() -> void:
 	boost_potion_component.start_boost.connect(start_physic_boost)
 	boost_potion_component.end_boost.connect(end_physic_boost)
 
-func _process(delta: float) -> void:
+func _process(_delta: float) -> void:
 	speed = base_speed
 	jump_force = base_jump_force * boost_number
 

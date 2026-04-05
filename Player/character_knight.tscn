@@ -338,7 +338,4 @@ skeleton = NodePath("..")
 magnet_ability = true
 shield_ability = true
 
-[node name="PlayerCamera" parent="." index="9" unique_id=328200371]
-transform = Transform3D(1, 0, 0, 0, 0.9781476, 0.20791169, 0, -0.20791169, 0.9781476, 0, 4, 3)
-
 [editable path="MagnetAbilityComponent/magnet"]

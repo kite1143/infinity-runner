@@ -10,15 +10,20 @@ func _ready() -> void:
 
 func _on_reset_button_pressed() -> void:
 	GameManager.start_new_game()
+	SoundManager.play_button_sound()
 
 func _on_menu_button_pressed() -> void:
 	SceneTransition.change_to_menu_scene()
+	SoundManager.play_button_sound()
 
 func _on_continue_button_pressed() -> void:
 	watch_ad_container.show()
+	SoundManager.play_button_sound()
 
 func _on_cancel_button_pressed() -> void:
 	watch_ad_container.hide()
+	SoundManager.play_button_sound()
 
 func _on_accept_button_pressed() -> void:
 	GameManager.continue_game()
+	SoundManager.play_button_sound()

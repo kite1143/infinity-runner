@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://d0i0pmyenvxvi"
+path="res://.godot/imported/DashSound.wav-297cb2977f925bd1fe7c6177aaa4d9c4.sample"
+
+[deps]
+
+source_file="res://Assets/Sfx and Music/DashSound.wav"
+dest_files=["res://.godot/imported/DashSound.wav-297cb2977f925bd1fe7c6177aaa4d9c4.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

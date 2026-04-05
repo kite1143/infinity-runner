@@ -21,6 +21,7 @@ SceneManager="*uid://j20v4cg7v8m1"
 SceneTransition="*uid://biyqq2dfrpicg"
 GameManager="*uid://bwvbs6c10suct"
 DataManager="*uid://gfc1dwjmqljh"
+SoundManager="*uid://147ojchanmlg"
 
 [debug]
 

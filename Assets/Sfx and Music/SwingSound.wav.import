@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://btoaipctwu47k"
+path="res://.godot/imported/SwingSound.wav-efed1591528c019e0a6c75621776f84d.sample"
+
+[deps]
+
+source_file="res://Assets/Sfx and Music/SwingSound.wav"
+dest_files=["res://.godot/imported/SwingSound.wav-efed1591528c019e0a6c75621776f84d.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2
