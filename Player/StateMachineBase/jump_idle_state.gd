@@ -2,11 +2,14 @@ extends State
 class_name JumpIdleState
 
 @export var run_state: RunState
-@export var sit_down_state: SitDownState
+@export var sit_state: SitIdleState
+@onready var jump_land_sound_player: AudioStreamPlayer = $JumpLandSoundPlayer
+@onready var jump_sound_player: AudioStreamPlayer = $JumpSoundPlayer
 
 var is_going_to_sit: bool = false
 
 func enter() -> void:
+	jump_sound_player.play()
 	is_going_to_sit = false
 	state_machine.character_base.velocity.y = state_machine.character_base.jump_force
 	state_machine.animation_player.play(
@@ -17,11 +20,12 @@ func update(_delta: float) -> void:
 	if state_machine.character_base.velocity.y == 0:
 		if not state_machine.character_base.is_alive:
 			return
+		jump_land_sound_player.play()
 		
 		if not is_going_to_sit:
 			state_machine.change_state(run_state.name)
 		else:
-			state_machine.change_state(sit_down_state.name)
+			state_machine.change_state(sit_state.name)
 
 func handle_input(_event: InputEvent) -> void:
 	if Input.is_action_just_pressed('sit'):

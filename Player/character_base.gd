@@ -3,11 +3,12 @@ class_name Player
 
 @export var lane_size : float = 4.0
 @export var base_speed: float = 10.0
-@export var base_jump_force: float = 15.0
+@export var base_jump_force: float = 25.0
 
 @onready var state_machine: StateMachine = $StateMachine
 @onready var boost_potion_component: BoostComponent = $BoostPotionComponent
 @onready var shield_component: ShieldComponent = $ShieldComponent
+@onready var dash_sound_player: AudioStreamPlayer = $DashSoundPlayer
 
 var target_lane_x: float = 0.0
 var is_alive: bool = true
@@ -28,7 +29,7 @@ func _process(_delta: float) -> void:
 func _physics_process(delta: float) -> void:
 	# Add the gravity.
 	if not is_on_floor():
-		velocity += get_gravity() * 3 * delta
+		velocity += get_gravity() * 5 * delta
 	movement()
 	
 	if is_alive:
@@ -46,6 +47,7 @@ func movement() -> void:
 		start_dash_tween()
 
 func start_dash_tween() -> void:
+	dash_sound_player.play()
 	var tween: Tween = create_tween()
 	tween.tween_property(
 		self,

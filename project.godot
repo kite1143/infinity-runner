@@ -23,10 +23,6 @@ GameManager="*uid://bwvbs6c10suct"
 DataManager="*uid://gfc1dwjmqljh"
 SoundManager="*uid://147ojchanmlg"
 
-[debug]
-
-settings/stdout/print_fps=true
-
 [display]
 
 window/size/viewport_width=1080

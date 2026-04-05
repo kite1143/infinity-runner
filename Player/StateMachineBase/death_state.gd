@@ -1,7 +1,10 @@
 extends State
 class_name DeathState
 
+@onready var collide_sound_player: AudioStreamPlayer = $CollideSoundPlayer
+
 func enter() -> void:
+	collide_sound_player.play()
 	state_machine.animation_player.play(
 		'player_animations/Death_A'
 	)

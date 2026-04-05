@@ -2,6 +2,7 @@ extends State
 class_name SitDownState
 
 @export var sit_idle_state: SitIdleState
+@export var sit_up_state: SitUpState
 
 func enter() -> void:
 	state_machine.animation_player.play(

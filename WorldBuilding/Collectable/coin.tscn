@@ -20,7 +20,6 @@ shape = SubResource("SphereShape3D_dwswx")
 
 [node name="CollectSound" type="AudioStreamPlayer3D" parent="." unique_id=1333731529]
 stream = ExtResource("3_fhffq")
-volume_db = -10.0
 pitch_scale = 2.0
 max_distance = 20.0
 bus = &"Sfx"
