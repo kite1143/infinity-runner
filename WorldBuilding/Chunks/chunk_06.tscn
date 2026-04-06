@@ -33,6 +33,7 @@
 [ext_resource type="ArrayMesh" uid="uid://b5gmurmb3mhfj" path="res://Assets/WorldBuiding/Village/Props/Flag_Totem.obj" id="31_sr1w6"]
 [ext_resource type="PackedScene" uid="uid://bc26eoey4hjak" path="res://WorldBuilding/Collectable/energy.tscn" id="32_gfh4d"]
 [ext_resource type="PackedScene" uid="uid://bapcwmxjrwf6h" path="res://WorldBuilding/Collectable/powerups.tscn" id="33_x2626"]
+[ext_resource type="Script" uid="uid://b0xi5srw26y2g" path="res://WorldBuilding/Others/deactive_powerup_area.gd" id="34_w7xnu"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_6g2mq"]
 albedo_texture = ExtResource("5_x2r7t")
@@ -142,6 +143,9 @@ albedo_texture = ExtResource("12_ndoo2")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_tjpvw"]
 albedo_texture = ExtResource("12_ndoo2")
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_x2r7t"]
+size = Vector3(11.990234, 1, 68)
 
 [node name="Chunk_06" type="Node3D" unique_id=177310566]
 
@@ -627,3 +631,15 @@ transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, 0, 2, 29)
 
 [node name="Powerups" parent="Collections" unique_id=298143017 instance=ExtResource("33_x2626")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 2.5, -11)
+
+[node name="DeactivePowerupArea" type="Area3D" parent="." unique_id=1036506366]
+collision_layer = 0
+collision_mask = 2
+script = ExtResource("34_w7xnu")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="DeactivePowerupArea" unique_id=429343167]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -4, 0)
+shape = SubResource("BoxShape3D_x2r7t")
+debug_color = Color(0.87194496, 0.0004803449, 0.84640783, 0.41960785)
+
+[connection signal="area_entered" from="DeactivePowerupArea" to="DeactivePowerupArea" method="_on_area_entered"]

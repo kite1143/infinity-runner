@@ -32,6 +32,7 @@
 [ext_resource type="PackedScene" uid="uid://d4apnappeitwk" path="res://WorldBuilding/Collectable/coin.tscn" id="30_n2xfk"]
 [ext_resource type="PackedScene" uid="uid://bc26eoey4hjak" path="res://WorldBuilding/Collectable/energy.tscn" id="31_suftu"]
 [ext_resource type="PackedScene" uid="uid://bapcwmxjrwf6h" path="res://WorldBuilding/Collectable/powerups.tscn" id="32_s6wev"]
+[ext_resource type="Script" uid="uid://b0xi5srw26y2g" path="res://WorldBuilding/Others/deactive_powerup_area.gd" id="33_kwy0e"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_6g2mq"]
 size = Vector3(3.9970703, 4.1641846, 2.0458984)
@@ -60,6 +61,9 @@ size = Vector2(20, 72)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_n2xfk"]
 size = Vector3(12, 2, 72)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_s725g"]
+size = Vector3(11.990234, 1, 68)
 
 [node name="Chunk_05" type="Node3D" unique_id=177310566]
 
@@ -618,3 +622,15 @@ transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, 4, 2, 31)
 
 [node name="Powerups" parent="Collections" unique_id=298143017 instance=ExtResource("32_s6wev")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 2.5, 31)
+
+[node name="DeactivePowerupArea" type="Area3D" parent="." unique_id=311849092]
+collision_layer = 0
+collision_mask = 2
+script = ExtResource("33_kwy0e")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="DeactivePowerupArea" unique_id=1454950085]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -4, 0)
+shape = SubResource("BoxShape3D_s725g")
+debug_color = Color(0.87194496, 0.0004803449, 0.84640783, 0.41960785)
+
+[connection signal="area_entered" from="DeactivePowerupArea" to="DeactivePowerupArea" method="_on_area_entered"]

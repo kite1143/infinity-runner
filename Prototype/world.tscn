@@ -84,7 +84,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -98, 0, -72)
 transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, -3.5860143, 2.4999995, -8)
 
 [node name="ShieldBuff" parent="." unique_id=761536639 instance=ExtResource("15_a0osc")]
-transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, 4, 2.5, 16)
+transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, 4, 2.5, -21)
 
 [node name="GameplayUI" parent="." unique_id=545819349 instance=ExtResource("16_pqur3")]
 
@@ -95,12 +95,12 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 2.4999998, 23)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -95, 0, 0)
 
 [node name="Chunk_05" parent="." unique_id=1588488242 instance=ExtResource("11_ickic")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -72)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -76, 0, -72)
 
 [node name="PlainChunk" parent="." unique_id=1065648645 instance=ExtResource("12_dxfox")]
 
 [node name="Chunk_06" parent="." unique_id=730329657 instance=ExtResource("13_ev63e")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -144)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -72)
 
 [node name="Stair" parent="." unique_id=822857029 instance=ExtResource("14_ev63e")]
 transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, 0, 1, 0)

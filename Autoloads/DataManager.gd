@@ -9,3 +9,9 @@ var list_characters: Dictionary = {
 
 var choosen_character: String = 'knight'
 var total_coin: int = 10000
+
+var sound_list_volume = {
+	'Master': 1.0,
+	'Music': 1.0,
+	'Sfx': 1.0
+}

@@ -385,7 +385,7 @@ debug_color = Color(0.5056636, 0.4260699, 1, 0.41960785)
 [node name="magnet" parent="MagnetAbilityComponent" unique_id=2132515282 instance=ExtResource("14_5xxrg")]
 transform = Transform3D(0.5, 0, 0, 0, -2.1855694e-08, 0.5, 0, -0.5, -2.1855694e-08, 0, 3, 0.1)
 
-[node name="magnet" parent="MagnetAbilityComponent/magnet" index="0" unique_id=25101585]
+[node name="magnet" parent="MagnetAbilityComponent/magnet" index="0" unique_id=881398968]
 material_override = SubResource("StandardMaterial3D_c3pyg")
 
 [node name="BoostPotionComponent" parent="." unique_id=879080522 instance=ExtResource("16_c3pyg")]

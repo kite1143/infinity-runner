@@ -4,6 +4,7 @@
 [ext_resource type="Script" uid="uid://6qr3yo47gw15" path="res://Scenes/menu_ui.gd" id="1_jjnuu"]
 [ext_resource type="Texture2D" uid="uid://ci2elvk3l2kuh" path="res://Assets/UI/Setting menu.png" id="2_bh1w4"]
 [ext_resource type="FontFile" uid="uid://lqfb54ubtaap" path="res://Assets/UI/Font/pixelFont-7-8x14-sproutLands.ttf" id="3_rfjxj"]
+[ext_resource type="Script" uid="uid://dd68hrc273wwg" path="res://Scenes/volume_slider_controller.gd" id="5_amrxi"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_gaeo4"]
 atlas = ExtResource("1_gaeo4")
@@ -279,6 +280,10 @@ theme_override_icons/tick = SubResource("DPITexture_mpbuw")
 theme_override_styles/slider = SubResource("StyleBoxFlat_bh1w4")
 theme_override_styles/grabber_area = SubResource("StyleBoxFlat_rfjxj")
 theme_override_styles/grabber_area_highlight = SubResource("StyleBoxFlat_jjnuu")
+max_value = 1.0
+step = 0.1
+script = ExtResource("5_amrxi")
+bus_name = "Master"
 
 [node name="Label2" type="Label" parent="MarginContainer/SettingWindow/Panel/VBoxContainer" unique_id=1955669618]
 layout_mode = 2
@@ -296,6 +301,10 @@ theme_override_icons/tick = SubResource("DPITexture_mpbuw")
 theme_override_styles/slider = SubResource("StyleBoxFlat_bh1w4")
 theme_override_styles/grabber_area = SubResource("StyleBoxFlat_rfjxj")
 theme_override_styles/grabber_area_highlight = SubResource("StyleBoxFlat_jjnuu")
+max_value = 1.0
+step = 0.1
+script = ExtResource("5_amrxi")
+bus_name = "Music"
 
 [node name="Label3" type="Label" parent="MarginContainer/SettingWindow/Panel/VBoxContainer" unique_id=721360570]
 layout_mode = 2
@@ -313,6 +322,10 @@ theme_override_icons/tick = SubResource("DPITexture_mpbuw")
 theme_override_styles/slider = SubResource("StyleBoxFlat_bh1w4")
 theme_override_styles/grabber_area = SubResource("StyleBoxFlat_rfjxj")
 theme_override_styles/grabber_area_highlight = SubResource("StyleBoxFlat_jjnuu")
+max_value = 1.0
+step = 0.1
+script = ExtResource("5_amrxi")
+bus_name = "Sfx"
 
 [node name="GuideWindow" type="Control" parent="MarginContainer" unique_id=568533469]
 visible = false

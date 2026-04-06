@@ -10,6 +10,7 @@ var is_active: bool = false
 
 func _ready() -> void:
 	GameManager.shield_active.connect(trigger)
+	GameManager.shield_deactive.connect(deactive)
 
 func _process(_delta: float) -> void:
 	if is_active and not duration_timer.is_stopped():
