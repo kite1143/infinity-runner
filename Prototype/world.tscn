@@ -3,15 +3,10 @@
 [ext_resource type="PackedScene" uid="uid://beyrwfqtusi46" path="res://Player/character_knight.tscn" id="1_7l7g0"]
 [ext_resource type="PackedScene" uid="uid://bapcwmxjrwf6h" path="res://WorldBuilding/Collectable/powerups.tscn" id="9_3ayjs"]
 [ext_resource type="PackedScene" uid="uid://d4apnappeitwk" path="res://WorldBuilding/Collectable/coin.tscn" id="10_sgtyu"]
-[ext_resource type="PackedScene" uid="uid://c2sqkiqn805dw" path="res://WorldBuilding/Chunks/chunk_04.tscn" id="10_slq2w"]
-[ext_resource type="PackedScene" uid="uid://c8r83ip5elxgm" path="res://WorldBuilding/Chunks/chunk_05.tscn" id="11_ickic"]
-[ext_resource type="PackedScene" uid="uid://bc26eoey4hjak" path="res://WorldBuilding/Collectable/energy.tscn" id="11_slq2w"]
 [ext_resource type="PackedScene" uid="uid://ctxvy82y0uok0" path="res://WorldBuilding/plain_chunk.tscn" id="12_dxfox"]
-[ext_resource type="PackedScene" uid="uid://b3s28pce81bii" path="res://WorldBuilding/Chunks/chunk_01.tscn" id="12_ickic"]
 [ext_resource type="PackedScene" uid="uid://vu3aeg1th81w" path="res://WorldBuilding/Collectable/magnet.tscn" id="13_dxfox"]
 [ext_resource type="PackedScene" uid="uid://du3in3omxbym6" path="res://WorldBuilding/Chunks/chunk_06.tscn" id="13_ev63e"]
 [ext_resource type="PackedScene" uid="uid://bly7b488qqpmm" path="res://WorldBuilding/Others/stair.tscn" id="14_ev63e"]
-[ext_resource type="PackedScene" uid="uid://b3al6bgj8vx8c" path="res://WorldBuilding/Chunks/chunk_02.tscn" id="15_6ro0x"]
 [ext_resource type="PackedScene" uid="uid://dvtp15ykdomwb" path="res://WorldBuilding/Collectable/shield_buff.tscn" id="15_a0osc"]
 [ext_resource type="PackedScene" uid="uid://5on33m4llp21" path="res://Scenes/gameplay_ui.tscn" id="16_pqur3"]
 
@@ -41,44 +36,11 @@ environment = SubResource("Environment_nemkc")
 transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, 0, 1, 33.5)
 collision_mask = 9
 
-[node name="Chunk_02" parent="." unique_id=177310566 instance=ExtResource("15_6ro0x")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -72, 0, -227)
-
-[node name="Energy" parent="Chunk_02" unique_id=1747299952 instance=ExtResource("11_slq2w")]
-transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, 4.395611, 2, 13)
-
-[node name="Energy2" parent="Chunk_02" unique_id=1106700542 instance=ExtResource("11_slq2w")]
-transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, 4.395611, 2, 11)
-
-[node name="Energy3" parent="Chunk_02" unique_id=1046154957 instance=ExtResource("11_slq2w")]
-transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, 4.395611, 2, 9.138992)
-
-[node name="Energy4" parent="Chunk_02" unique_id=112292991 instance=ExtResource("11_slq2w")]
-transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, 4.395611, 2, 6.2545166)
-
-[node name="Energy5" parent="Chunk_02" unique_id=1130870263 instance=ExtResource("11_slq2w")]
-transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, 4.395611, 2, 4.28891)
-
-[node name="Energy6" parent="Chunk_02" unique_id=1679724312 instance=ExtResource("11_slq2w")]
-transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, 4.395611, 2, 15.349838)
-
-[node name="Energy7" parent="Chunk_02" unique_id=1592992790 instance=ExtResource("11_slq2w")]
-transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, 4.395611, 2, 17.349838)
-
-[node name="Energy8" parent="Chunk_02" unique_id=1839908192 instance=ExtResource("11_slq2w")]
-transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, 4.395611, 2, 19.497192)
-
-[node name="Energy9" parent="Chunk_02" unique_id=500792623 instance=ExtResource("11_slq2w")]
-transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, 4.395611, 2, 1.9186859)
-
 [node name="Coin" parent="." unique_id=2055043096 instance=ExtResource("10_sgtyu")]
 transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, -3.522164, 2.0980403, 14.960545)
 
 [node name="Coin3" parent="." unique_id=1621384673 instance=ExtResource("10_sgtyu")]
 transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, -3.522164, 2.0980403, 17.960545)
-
-[node name="Chunk_01" parent="." unique_id=1050275784 instance=ExtResource("12_ickic")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -98, 0, -72)
 
 [node name="Magnet" parent="." unique_id=1502154215 instance=ExtResource("13_dxfox")]
 transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, -3.5860143, 2.4999995, -8)
@@ -90,12 +52,6 @@ transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, 4, 2.5, -21)
 
 [node name="Powerups" parent="." unique_id=298143017 instance=ExtResource("9_3ayjs")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 2.4999998, 23)
-
-[node name="Chunk_04" parent="." unique_id=720377310 instance=ExtResource("10_slq2w")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -95, 0, 0)
-
-[node name="Chunk_05" parent="." unique_id=1588488242 instance=ExtResource("11_ickic")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -76, 0, -72)
 
 [node name="PlainChunk" parent="." unique_id=1065648645 instance=ExtResource("12_dxfox")]
 
