@@ -10,6 +10,7 @@ class_name Player
 @onready var boost_potion_component: BoostComponent = $BoostPotionComponent
 @onready var shield_component: ShieldComponent = $ShieldComponent
 @onready var dash_sound_player: AudioStreamPlayer = $DashSoundPlayer
+@onready var swipe_detection: SwipeDetection = $SwipeDetection
 
 var target_lane_x: float = 0.0
 var is_alive: bool = true
@@ -22,6 +23,8 @@ func _ready() -> void:
 	jump_force = base_jump_force
 	boost_potion_component.start_boost.connect(start_physic_boost)
 	boost_potion_component.end_boost.connect(end_physic_boost)
+	swipe_detection.swipe_left.connect(move_left)
+	swipe_detection.swipe_right.connect(move_right)
 
 func _process(_delta: float) -> void:
 	speed = base_speed
@@ -40,14 +43,26 @@ func movement() -> void:
 	if not is_alive:
 		return
 	
-	if Input.is_action_just_pressed('dash_left') and target_lane_x > -lane_size:
-		target_lane_x -= lane_size
-		start_dash_tween()
-	elif Input.is_action_just_pressed('dash_right') and target_lane_x < lane_size:
-		target_lane_x += lane_size
-		start_dash_tween()
+	if Input.is_action_just_pressed('dash_left'):
+		move_left()
+	elif Input.is_action_just_pressed('dash_right'):
+		move_right()
+
+func move_left() -> void:
+	if not target_lane_x > -lane_size:
+		return
+	target_lane_x -= lane_size
+	start_dash_tween()
+
+func move_right() -> void:
+	if not target_lane_x < lane_size:
+		return
+	target_lane_x += lane_size
+	start_dash_tween()
 
 func start_dash_tween() -> void:
+	if not is_alive:
+		return
 	dash_sound_player.play()
 	var tween: Tween = create_tween()
 	tween.tween_property(
@@ -65,9 +80,9 @@ func _on_hurt_box_body_entered(body: Node3D) -> void:
 		
 		if shield_component.is_active:
 			return
-		
 		state_machine.change_state('Death')
-		is_alive = false
+		
+		
 
 func _on_hurt_box_area_entered(area: Area3D) -> void:
 	if area.is_in_group('Enemy') or area.is_in_group('Obstacle'):
@@ -76,7 +91,6 @@ func _on_hurt_box_area_entered(area: Area3D) -> void:
 		
 		if shield_component.is_active:
 			return
-		
 		state_machine.change_state('Death')
 		is_alive = false
 

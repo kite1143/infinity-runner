@@ -3,6 +3,7 @@ class_name JumpIdleState
 
 @export var run_state: RunState
 @export var sit_state: SitIdleState
+@export var swipe_detection: SwipeDetection
 @onready var jump_land_sound_player: AudioStreamPlayer = $JumpLandSoundPlayer
 @onready var jump_sound_player: AudioStreamPlayer = $JumpSoundPlayer
 
@@ -15,6 +16,8 @@ func enter() -> void:
 	state_machine.animation_player.play(
 		'player_animations/Jump_Idle'
 	)
+	if swipe_detection:
+		swipe_detection.swipe_down.connect(going_to_sit)
 
 func update(_delta: float) -> void:
 	if state_machine.character_base.velocity.y == 0:
@@ -29,5 +32,12 @@ func update(_delta: float) -> void:
 
 func handle_input(_event: InputEvent) -> void:
 	if Input.is_action_just_pressed('sit'):
-		is_going_to_sit = true
-		state_machine.character_base.velocity.y = -30
+		going_to_sit()
+
+func going_to_sit() -> void:
+	is_going_to_sit = true
+	state_machine.character_base.velocity.y = -30
+
+func exit() -> void:
+	if swipe_detection:
+		swipe_detection.swipe_down.disconnect(going_to_sit)

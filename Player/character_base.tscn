@@ -22,6 +22,7 @@
 [ext_resource type="PackedScene" uid="uid://t1rqww6tmua6" path="res://Assets/WorldBuiding/Dungeon/Dungeon_Legacy/shield_common.gltf.glb" id="20_nwp1g"]
 [ext_resource type="PackedScene" uid="uid://diboqyhxre7em" path="res://Player/Components/ability_component.tscn" id="21_4hgro"]
 [ext_resource type="AudioStream" uid="uid://d0i0pmyenvxvi" path="res://Assets/Sfx and Music/DashSound.wav" id="21_uymuq"]
+[ext_resource type="PackedScene" uid="uid://bggtnp753vh0k" path="res://Player/swipe_detection.tscn" id="23_i4g5j"]
 
 [sub_resource type="Animation" id="Animation_jur0o"]
 length = 0.001
@@ -319,10 +320,11 @@ character_base = NodePath("..")
 script = ExtResource("4_gxcfu")
 run_state = NodePath("../Run")
 
-[node name="Run" type="Node" parent="StateMachine" unique_id=542133267 node_paths=PackedStringArray("jump_state", "sit_state")]
+[node name="Run" type="Node" parent="StateMachine" unique_id=542133267 node_paths=PackedStringArray("jump_state", "sit_state", "swipe_detection")]
 script = ExtResource("5_gxcfu")
 jump_state = NodePath("../JumpIdle")
 sit_state = NodePath("../SitIdle")
+swipe_detection = NodePath("../../SwipeDetection")
 
 [node name="RunSoundPlayer" type="AudioStreamPlayer" parent="StateMachine/Run" unique_id=635985196]
 stream = ExtResource("6_b7q2a")
@@ -330,10 +332,11 @@ volume_db = -5.0
 pitch_scale = 1.7
 bus = &"Sfx"
 
-[node name="JumpIdle" type="Node" parent="StateMachine" unique_id=1640733172 node_paths=PackedStringArray("run_state", "sit_state")]
+[node name="JumpIdle" type="Node" parent="StateMachine" unique_id=1640733172 node_paths=PackedStringArray("run_state", "sit_state", "swipe_detection")]
 script = ExtResource("9_c3pyg")
 run_state = NodePath("../Run")
 sit_state = NodePath("../SitIdle")
+swipe_detection = NodePath("../../SwipeDetection")
 
 [node name="JumpLandSoundPlayer" type="AudioStreamPlayer" parent="StateMachine/JumpIdle" unique_id=1108169096]
 stream = ExtResource("8_nrw4a")
@@ -345,10 +348,11 @@ bus = &"Sfx"
 stream = ExtResource("9_nwp1g")
 bus = &"Sfx"
 
-[node name="SitIdle" type="Node" parent="StateMachine" unique_id=553453632 node_paths=PackedStringArray("jump_state", "run_state")]
+[node name="SitIdle" type="Node" parent="StateMachine" unique_id=553453632 node_paths=PackedStringArray("jump_state", "run_state", "swipe_detection")]
 script = ExtResource("12_nrw4a")
 jump_state = NodePath("../JumpIdle")
 run_state = NodePath("../Run")
+swipe_detection = NodePath("../../SwipeDetection")
 
 [node name="SitTimer" type="Timer" parent="StateMachine/SitIdle" unique_id=1140386436]
 wait_time = 0.7
@@ -385,7 +389,7 @@ debug_color = Color(0.5056636, 0.4260699, 1, 0.41960785)
 [node name="magnet" parent="MagnetAbilityComponent" unique_id=2132515282 instance=ExtResource("14_5xxrg")]
 transform = Transform3D(0.5, 0, 0, 0, -2.1855694e-08, 0.5, 0, -0.5, -2.1855694e-08, 0, 3, 0.1)
 
-[node name="magnet" parent="MagnetAbilityComponent/magnet" index="0" unique_id=881398968]
+[node name="magnet" parent="MagnetAbilityComponent/magnet" index="0" unique_id=25101585]
 material_override = SubResource("StandardMaterial3D_c3pyg")
 
 [node name="BoostPotionComponent" parent="." unique_id=879080522 instance=ExtResource("16_c3pyg")]
@@ -426,6 +430,9 @@ bus = &"Sfx"
 
 [node name="CenterPoint" type="Node3D" parent="." unique_id=1251626318]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+
+[node name="SwipeDetection" parent="." unique_id=221929422 instance=ExtResource("23_i4g5j")]
+unique_name_in_owner = true
 
 [connection signal="timeout" from="StateMachine/SitIdle/SitTimer" to="StateMachine/SitIdle" method="_on_sit_timer_timeout"]
 [connection signal="area_entered" from="HurtBox" to="." method="_on_hurt_box_area_entered"]
