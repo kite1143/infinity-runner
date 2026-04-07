@@ -23,6 +23,7 @@
 [ext_resource type="PackedScene" uid="uid://diboqyhxre7em" path="res://Player/Components/ability_component.tscn" id="21_4hgro"]
 [ext_resource type="AudioStream" uid="uid://d0i0pmyenvxvi" path="res://Assets/Sfx and Music/DashSound.wav" id="21_uymuq"]
 [ext_resource type="PackedScene" uid="uid://bggtnp753vh0k" path="res://Player/swipe_detection.tscn" id="23_i4g5j"]
+[ext_resource type="FontFile" uid="uid://dpkf7he6alh7n" path="res://Assets/UI/Font/Kenney Future Narrow.ttf" id="24_tc1cq"]
 
 [sub_resource type="Animation" id="Animation_jur0o"]
 length = 0.001
@@ -128,6 +129,10 @@ shader_parameter/_scale = 1.0
 [sub_resource type="CylinderMesh" id="CylinderMesh_4hgro"]
 rings = 48
 cap_top = false
+
+[sub_resource type="LabelSettings" id="LabelSettings_gvlsk"]
+font = ExtResource("24_tc1cq")
+font_size = 72
 
 [node name="CharacterBase" type="CharacterBody3D" unique_id=437658251 node_paths=PackedStringArray("center_point") groups=["Player"]]
 collision_layer = 2
@@ -316,9 +321,10 @@ initial_state = NodePath("Idle")
 animation_player = NodePath("../AnimationPlayer")
 character_base = NodePath("..")
 
-[node name="Idle" type="Node" parent="StateMachine" unique_id=122528139 node_paths=PackedStringArray("run_state")]
+[node name="Idle" type="Node" parent="StateMachine" unique_id=122528139 node_paths=PackedStringArray("run_state", "guide_window")]
 script = ExtResource("4_gxcfu")
 run_state = NodePath("../Run")
+guide_window = NodePath("../../GuideWindow")
 
 [node name="Run" type="Node" parent="StateMachine" unique_id=542133267 node_paths=PackedStringArray("jump_state", "sit_state", "swipe_detection")]
 script = ExtResource("5_gxcfu")
@@ -389,7 +395,7 @@ debug_color = Color(0.5056636, 0.4260699, 1, 0.41960785)
 [node name="magnet" parent="MagnetAbilityComponent" unique_id=2132515282 instance=ExtResource("14_5xxrg")]
 transform = Transform3D(0.5, 0, 0, 0, -2.1855694e-08, 0.5, 0, -0.5, -2.1855694e-08, 0, 3, 0.1)
 
-[node name="magnet" parent="MagnetAbilityComponent/magnet" index="0" unique_id=25101585]
+[node name="magnet" parent="MagnetAbilityComponent/magnet" index="0" unique_id=881398968]
 material_override = SubResource("StandardMaterial3D_c3pyg")
 
 [node name="BoostPotionComponent" parent="." unique_id=879080522 instance=ExtResource("16_c3pyg")]
@@ -433,6 +439,33 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
 
 [node name="SwipeDetection" parent="." unique_id=221929422 instance=ExtResource("23_i4g5j")]
 unique_name_in_owner = true
+
+[node name="GuideWindow" type="Panel" parent="." unique_id=977421541]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="GuideWindow" unique_id=1244674597]
+custom_minimum_size = Vector2(500, 500)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -11.5
+offset_right = 20.0
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "Touch the screen to start the game"
+label_settings = SubResource("LabelSettings_gvlsk")
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
 
 [connection signal="timeout" from="StateMachine/SitIdle/SitTimer" to="StateMachine/SitIdle" method="_on_sit_timer_timeout"]
 [connection signal="area_entered" from="HurtBox" to="." method="_on_hurt_box_area_entered"]

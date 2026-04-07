@@ -14,6 +14,7 @@ class_name Player
 
 var target_lane_x: float = 0.0
 var is_alive: bool = true
+var is_active: bool = false
 var boost_number: float = 1.0
 var speed: float
 var jump_force: float
@@ -41,6 +42,9 @@ func _physics_process(delta: float) -> void:
 
 func movement() -> void:
 	if not is_alive:
+		return
+	
+	if not is_active:
 		return
 	
 	if Input.is_action_just_pressed('dash_left'):
