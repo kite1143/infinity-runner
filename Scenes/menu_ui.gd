@@ -2,9 +2,11 @@ extends CanvasLayer
 
 @onready var setting_window: Control = $MarginContainer/SettingWindow
 @onready var guide_window: Control = $MarginContainer/GuideWindow
+@onready var high_score_label: Label = $MarginContainer/HighScoreLabel
 
 func _ready() -> void:
 	SoundManager.play_menu_music()
+	high_score_label.text = "%.2f" % DataManager.highscore
 
 func _on_setting_button_pressed() -> void:
 	setting_window.visible = true

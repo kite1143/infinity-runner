@@ -9,12 +9,14 @@ func _ready() -> void:
 	coin_label.text = 'X%d' % GameManager.coin
 
 func _on_reset_button_pressed() -> void:
-	GameManager.start_new_game()
+	update_score_and_coin()
 	SoundManager.play_button_sound()
+	GameManager.start_new_game()
 
 func _on_menu_button_pressed() -> void:
-	SceneTransition.change_to_menu_scene()
+	update_score_and_coin()
 	SoundManager.play_button_sound()
+	SceneTransition.change_to_menu_scene()
 
 func _on_continue_button_pressed() -> void:
 	watch_ad_container.show()
@@ -27,3 +29,10 @@ func _on_cancel_button_pressed() -> void:
 func _on_accept_button_pressed() -> void:
 	GameManager.continue_game()
 	SoundManager.play_button_sound()
+
+func update_score_and_coin() -> void:
+	if GameManager.score > DataManager.highscore:
+		DataManager.highscore = GameManager.score
+	DataManager.total_coin += GameManager.coin
+	DataManager.save_data()
+	

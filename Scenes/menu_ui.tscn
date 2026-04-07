@@ -5,6 +5,7 @@
 [ext_resource type="Texture2D" uid="uid://ci2elvk3l2kuh" path="res://Assets/UI/Setting menu.png" id="2_bh1w4"]
 [ext_resource type="FontFile" uid="uid://lqfb54ubtaap" path="res://Assets/UI/Font/pixelFont-7-8x14-sproutLands.ttf" id="3_rfjxj"]
 [ext_resource type="Script" uid="uid://dd68hrc273wwg" path="res://Scenes/volume_slider_controller.gd" id="5_amrxi"]
+[ext_resource type="FontFile" uid="uid://dpkf7he6alh7n" path="res://Assets/UI/Font/Kenney Future Narrow.ttf" id="6_jg0i6"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_gaeo4"]
 atlas = ExtResource("1_gaeo4")
@@ -130,6 +131,12 @@ font = ExtResource("3_rfjxj")
 font_size = 56
 font_color = Color(0, 0, 0, 1)
 
+[sub_resource type="LabelSettings" id="LabelSettings_q32wx"]
+font = ExtResource("6_jg0i6")
+font_size = 80
+outline_size = 32
+outline_color = Color(0.16565639, 0.16565642, 0.16565639, 1)
+
 [node name="MenuUI" type="CanvasLayer" unique_id=1489769155]
 script = ExtResource("1_jjnuu")
 
@@ -139,10 +146,10 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-theme_override_constants/margin_left = 20
-theme_override_constants/margin_top = 20
-theme_override_constants/margin_right = 20
-theme_override_constants/margin_bottom = 20
+theme_override_constants/margin_left = 40
+theme_override_constants/margin_top = 40
+theme_override_constants/margin_right = 40
+theme_override_constants/margin_bottom = 40
 
 [node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer" unique_id=598030245]
 layout_mode = 2
@@ -417,6 +424,14 @@ CHARACTERS:
 "
 label_settings = SubResource("LabelSettings_rfjxj")
 autowrap_mode = 3
+
+[node name="HighScoreLabel" type="Label" parent="MarginContainer" unique_id=78911281]
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+text = "HIGHSCORE
+0000000000"
+label_settings = SubResource("LabelSettings_q32wx")
 
 [connection signal="pressed" from="MarginContainer/VBoxContainer/SettingButton" to="." method="_on_setting_button_pressed"]
 [connection signal="pressed" from="MarginContainer/VBoxContainer/RuleButton" to="." method="_on_rule_button_pressed"]
