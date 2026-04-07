@@ -23,6 +23,7 @@
 [ext_resource type="PackedScene" uid="uid://3b3p5s6wic47" path="res://Scenes/card.tscn" id="22_t7leq"]
 [ext_resource type="Texture2D" uid="uid://chpb1k7tnabth" path="res://Assets/UI/UI Settings Buttons.png" id="23_a76bd"]
 [ext_resource type="FontFile" uid="uid://lqfb54ubtaap" path="res://Assets/UI/Font/pixelFont-7-8x14-sproutLands.ttf" id="24_n6on3"]
+[ext_resource type="FontFile" uid="uid://dpkf7he6alh7n" path="res://Assets/UI/Font/Kenney Future Narrow.ttf" id="24_vjrrt"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_64u68"]
 sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
@@ -94,6 +95,33 @@ region = Rect2(832, 128, 32, 32)
 [sub_resource type="AtlasTexture" id="AtlasTexture_5hixt"]
 atlas = ExtResource("21_c6m55")
 region = Rect2(864, 128, 32, 32)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ap6to"]
+bg_color = Color(0.2051174, 0.20511746, 0.20511732, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_5xoqt"]
+font = ExtResource("24_vjrrt")
+font_size = 72
+
+[sub_resource type="LabelSettings" id="LabelSettings_e6jxx"]
+font = ExtResource("24_vjrrt")
+font_size = 48
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_awiif"]
+atlas = ExtResource("21_c6m55")
+region = Rect2(832, 64, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_s40r2"]
+atlas = ExtResource("21_c6m55")
+region = Rect2(864, 64, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_l3rg1"]
+atlas = ExtResource("21_c6m55")
+region = Rect2(832, 96, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lruh3"]
+atlas = ExtResource("21_c6m55")
+region = Rect2(864, 96, 32, 32)
 
 [node name="ShopScene" type="Node3D" unique_id=177310566]
 script = ExtResource("1_qstkq")
@@ -331,7 +359,7 @@ text = "20000"
 label_settings = SubResource("LabelSettings_s5hdj")
 vertical_alignment = 1
 
-[node name="TextureButton" type="TextureButton" parent="UI/ShopUI/MarginContainer/HBoxContainer2" unique_id=713274612]
+[node name="GainCoinButton" type="TextureButton" parent="UI/ShopUI/MarginContainer/HBoxContainer2" unique_id=713274612]
 custom_minimum_size = Vector2(120, 120)
 layout_mode = 2
 texture_normal = SubResource("AtlasTexture_s5hdj")
@@ -358,7 +386,8 @@ visible = false
 layout_mode = 2
 id = "knight"
 char_name = "Knig"
-skill_detail = "Coin Magnet"
+skill_detail = "Shield + Magnet"
+price_to_buy = 0
 model_link = NodePath("../../../../KnightDecorShop")
 
 [node name="BarbarianCard" parent="UI/ShopUI/ShopContainer" unique_id=74179962 node_paths=PackedStringArray("model_link") instance=ExtResource("22_t7leq")]
@@ -367,7 +396,8 @@ layout_mode = 2
 id = "barbarian"
 char_name = "Barian"
 base_speed = 30.0
-skill_detail = "Higher Jump"
+skill_detail = "Jump + Shield"
+price_to_buy = 10000
 model_link = NodePath("../../../../BarbarianDecorShop")
 
 [node name="MageCard" parent="UI/ShopUI/ShopContainer" unique_id=25268001 node_paths=PackedStringArray("model_link") instance=ExtResource("22_t7leq")]
@@ -376,10 +406,80 @@ layout_mode = 2
 id = "mage"
 char_name = "Meg"
 base_speed = 25.0
-skill_detail = "Flying"
+skill_detail = "Jump + Shield + Magnet"
+price_to_buy = 20000
 model_link = NodePath("../../../../MageDecorShop")
+
+[node name="ReviveContainer" type="PanelContainer" parent="UI" unique_id=484338069]
+visible = false
+custom_minimum_size = Vector2(700, 700)
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_ap6to")
+
+[node name="MarginContainer" type="MarginContainer" parent="UI/ReviveContainer" unique_id=759352696]
+layout_mode = 2
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 20
+theme_override_constants/margin_right = 20
+theme_override_constants/margin_bottom = 20
+
+[node name="VBoxContainer" type="VBoxContainer" parent="UI/ReviveContainer/MarginContainer" unique_id=497978013]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="UI/ReviveContainer/MarginContainer/VBoxContainer" unique_id=1681007425]
+custom_minimum_size = Vector2(600, 150)
+layout_mode = 2
+size_flags_vertical = 0
+text = "WANT MORE COINs?"
+label_settings = SubResource("LabelSettings_5xoqt")
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="Label2" type="Label" parent="UI/ReviveContainer/MarginContainer/VBoxContainer" unique_id=112270263]
+custom_minimum_size = Vector2(600, 250)
+layout_mode = 2
+size_flags_vertical = 0
+text = "watch ad to gain 250 coins"
+label_settings = SubResource("LabelSettings_e6jxx")
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="ButtonContainer" type="HBoxContainer" parent="UI/ReviveContainer/MarginContainer/VBoxContainer" unique_id=591177439]
+layout_mode = 2
+alignment = 1
+
+[node name="AcceptButton" type="TextureButton" parent="UI/ReviveContainer/MarginContainer/VBoxContainer/ButtonContainer" unique_id=283595047]
+custom_minimum_size = Vector2(240, 240)
+layout_mode = 2
+size_flags_horizontal = 8
+size_flags_vertical = 0
+texture_normal = SubResource("AtlasTexture_awiif")
+texture_pressed = SubResource("AtlasTexture_s40r2")
+stretch_mode = 5
+
+[node name="CancelButton" type="TextureButton" parent="UI/ReviveContainer/MarginContainer/VBoxContainer/ButtonContainer" unique_id=1916456862]
+custom_minimum_size = Vector2(240, 240)
+layout_mode = 2
+size_flags_horizontal = 8
+size_flags_vertical = 0
+texture_normal = SubResource("AtlasTexture_l3rg1")
+texture_pressed = SubResource("AtlasTexture_lruh3")
+stretch_mode = 5
 
 [connection signal="pressed" from="UI/ShopUI/MarginContainer/MenuButton" to="." method="_on_menu_button_pressed"]
 [connection signal="pressed" from="UI/ShopUI/MarginContainer/HBoxContainer/LeftButton" to="." method="_on_left_button_pressed"]
 [connection signal="pressed" from="UI/ShopUI/MarginContainer/HBoxContainer/ChooseButton" to="." method="_on_choose_button_pressed"]
 [connection signal="pressed" from="UI/ShopUI/MarginContainer/HBoxContainer/RightButton" to="." method="_on_right_button_pressed"]
+[connection signal="pressed" from="UI/ShopUI/MarginContainer/HBoxContainer2/GainCoinButton" to="." method="_on_gain_coin_button_pressed"]

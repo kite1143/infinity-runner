@@ -222,7 +222,7 @@ texture_normal = SubResource("AtlasTexture_ffyd2")
 texture_pressed = SubResource("AtlasTexture_xvnf3")
 stretch_mode = 5
 
-[node name="WatchAdContainer" type="PanelContainer" parent="." unique_id=1695469822]
+[node name="ReviveContainer" type="PanelContainer" parent="." unique_id=1695469822]
 visible = false
 custom_minimum_size = Vector2(700, 700)
 layout_mode = 1
@@ -239,17 +239,17 @@ grow_horizontal = 2
 grow_vertical = 2
 theme_override_styles/panel = SubResource("StyleBoxFlat_7b3ir")
 
-[node name="MarginContainer" type="MarginContainer" parent="WatchAdContainer" unique_id=433664260]
+[node name="MarginContainer" type="MarginContainer" parent="ReviveContainer" unique_id=433664260]
 layout_mode = 2
 theme_override_constants/margin_left = 20
 theme_override_constants/margin_top = 20
 theme_override_constants/margin_right = 20
 theme_override_constants/margin_bottom = 20
 
-[node name="VBoxContainer" type="VBoxContainer" parent="WatchAdContainer/MarginContainer" unique_id=129088147]
+[node name="VBoxContainer" type="VBoxContainer" parent="ReviveContainer/MarginContainer" unique_id=129088147]
 layout_mode = 2
 
-[node name="Label" type="Label" parent="WatchAdContainer/MarginContainer/VBoxContainer" unique_id=1531110801]
+[node name="Label" type="Label" parent="ReviveContainer/MarginContainer/VBoxContainer" unique_id=1531110801]
 custom_minimum_size = Vector2(600, 150)
 layout_mode = 2
 size_flags_vertical = 0
@@ -259,21 +259,21 @@ horizontal_alignment = 1
 vertical_alignment = 1
 autowrap_mode = 2
 
-[node name="Label2" type="Label" parent="WatchAdContainer/MarginContainer/VBoxContainer" unique_id=1286698061]
+[node name="Label2" type="Label" parent="ReviveContainer/MarginContainer/VBoxContainer" unique_id=1286698061]
 custom_minimum_size = Vector2(600, 250)
 layout_mode = 2
 size_flags_vertical = 0
-text = "WATCH AN AD TO KEEP CONTINUE YOUR RUN"
+text = "USE 500 coins to continue the run"
 label_settings = SubResource("LabelSettings_x65ps")
 horizontal_alignment = 1
 vertical_alignment = 1
 autowrap_mode = 2
 
-[node name="ButtonContainer" type="HBoxContainer" parent="WatchAdContainer/MarginContainer/VBoxContainer" unique_id=212178489]
+[node name="ButtonContainer" type="HBoxContainer" parent="ReviveContainer/MarginContainer/VBoxContainer" unique_id=212178489]
 layout_mode = 2
 alignment = 1
 
-[node name="AcceptButton" type="TextureButton" parent="WatchAdContainer/MarginContainer/VBoxContainer/ButtonContainer" unique_id=1500860993]
+[node name="AcceptButton" type="TextureButton" parent="ReviveContainer/MarginContainer/VBoxContainer/ButtonContainer" unique_id=1500860993]
 custom_minimum_size = Vector2(240, 240)
 layout_mode = 2
 size_flags_horizontal = 8
@@ -282,7 +282,7 @@ texture_normal = SubResource("AtlasTexture_hn5gh")
 texture_pressed = SubResource("AtlasTexture_paeui")
 stretch_mode = 5
 
-[node name="CancelButton" type="TextureButton" parent="WatchAdContainer/MarginContainer/VBoxContainer/ButtonContainer" unique_id=1520324570]
+[node name="CancelButton" type="TextureButton" parent="ReviveContainer/MarginContainer/VBoxContainer/ButtonContainer" unique_id=1520324570]
 custom_minimum_size = Vector2(240, 240)
 layout_mode = 2
 size_flags_horizontal = 8
@@ -291,8 +291,46 @@ texture_normal = SubResource("AtlasTexture_s337m")
 texture_pressed = SubResource("AtlasTexture_4eov7")
 stretch_mode = 5
 
+[node name="NotEnoughCoinAlert" type="PanelContainer" parent="." unique_id=2122895148]
+visible = false
+custom_minimum_size = Vector2(700, 200)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_7b3ir")
+
+[node name="MarginContainer" type="MarginContainer" parent="NotEnoughCoinAlert" unique_id=1195712994]
+layout_mode = 2
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 20
+theme_override_constants/margin_right = 20
+theme_override_constants/margin_bottom = 20
+
+[node name="Label2" type="Label" parent="NotEnoughCoinAlert/MarginContainer" unique_id=2012365689]
+custom_minimum_size = Vector2(600, 250)
+layout_mode = 2
+size_flags_vertical = 0
+text = "You don't have enough coins to continue the run"
+label_settings = SubResource("LabelSettings_x65ps")
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="AlertTimer" type="Timer" parent="NotEnoughCoinAlert" unique_id=1191468683]
+one_shot = true
+
 [connection signal="pressed" from="Panel/TextureRect/VBoxContainer/HBoxContainer/ContinueButton" to="." method="_on_continue_button_pressed"]
 [connection signal="pressed" from="Panel/TextureRect/VBoxContainer/HBoxContainer/ResetButton" to="." method="_on_reset_button_pressed"]
 [connection signal="pressed" from="Panel/TextureRect/VBoxContainer/HBoxContainer/MenuButton" to="." method="_on_menu_button_pressed"]
-[connection signal="pressed" from="WatchAdContainer/MarginContainer/VBoxContainer/ButtonContainer/AcceptButton" to="." method="_on_accept_button_pressed"]
-[connection signal="pressed" from="WatchAdContainer/MarginContainer/VBoxContainer/ButtonContainer/CancelButton" to="." method="_on_cancel_button_pressed"]
+[connection signal="pressed" from="ReviveContainer/MarginContainer/VBoxContainer/ButtonContainer/AcceptButton" to="." method="_on_accept_button_pressed"]
+[connection signal="pressed" from="ReviveContainer/MarginContainer/VBoxContainer/ButtonContainer/CancelButton" to="." method="_on_cancel_button_pressed"]
+[connection signal="timeout" from="NotEnoughCoinAlert/AlertTimer" to="." method="_on_alert_timer_timeout"]

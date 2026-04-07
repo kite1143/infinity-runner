@@ -223,24 +223,11 @@ _surfaces = [{
 blend_shape_mode = 0
 
 [node name="CharacterBarbarian" unique_id=437658251 instance=ExtResource("1_scnks")]
+base_speed = 17.0
+base_jump_force = 26.5
 
 [node name="Skeleton3D" parent="Rig_Medium" parent_id_path=PackedInt32Array(1654820303) index="0" unique_id=213799451]
-bones/0/rotation = Quaternion(-2.1855692e-08, 1.19209275e-07, -2.6054013e-15, 1)
-bones/1/position = Vector3(-2.3665827e-30, 0.39206383, 0)
-bones/3/rotation = Quaternion(0.046398327, 7.3445454e-09, 0.004016135, 0.99891496)
-bones/4/rotation = Quaternion(-0.55467397, -0.19844332, -0.7347353, 0.33633485)
-bones/5/rotation = Quaternion(1.5616221e-08, -5.368076e-08, -0.2991362, 0.9542105)
-bones/7/rotation = Quaternion(-0.22725628, -0.25134227, -0.14045879, 0.93029726)
-bones/9/rotation = Quaternion(0.06722662, -0.0439186, 0.04702597, 0.9956607)
-bones/10/rotation = Quaternion(-0.62623674, 0.12887885, 0.6789402, 0.3609129)
-bones/11/rotation = Quaternion(2.1515959e-08, 6.94378e-08, 0.30524188, 0.9522749)
-bones/13/rotation = Quaternion(-0.16609937, 0.2390854, -0.07152497, 0.9540091)
-bones/15/rotation = Quaternion(0.9937152, 0.08371454, 0.073503815, 0.010918884)
-bones/16/rotation = Quaternion(0.19560306, 6.306384e-08, -1.335173e-07, 0.98068327)
-bones/17/rotation = Quaternion(-0.5175643, -0.20949675, 0.043654956, 0.82845193)
-bones/19/rotation = Quaternion(0.9973222, -0.029457362, 0.03152927, 0.059048567)
-bones/20/rotation = Quaternion(0.27400866, -6.330819e-08, 1.8998514e-07, 0.9617273)
-bones/21/rotation = Quaternion(-0.55903965, 0.11451283, -0.008627577, 0.8211498)
+bones/0/rotation = Quaternion(0, 1.19209275e-07, 0, 1)
 
 [node name="Barbarian_ArmLeft" type="MeshInstance3D" parent="Rig_Medium/Skeleton3D" index="0" unique_id=1090878798]
 mesh = SubResource("ArrayMesh_cuo1o")
@@ -276,3 +263,9 @@ skeleton = NodePath("..")
 mesh = SubResource("ArrayMesh_00v6n")
 skin = SubResource("Skin_vc2pj")
 skeleton = NodePath("..")
+
+[node name="AbilityComponent" parent="." index="8" unique_id=2078391884]
+shield_ability = true
+potion_boost_ability = true
+
+[editable path="MagnetAbilityComponent/magnet"]

@@ -20,7 +20,7 @@ func start_new_game() -> void:
 func reset_vars() -> void:
 	score = 0
 	coin = 0
-	energy = 5
+	energy = 0
 	time_scale = 1.0
 
 func continue_game() -> void:

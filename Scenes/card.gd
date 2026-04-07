@@ -23,7 +23,8 @@ func _ready() -> void:
 	buy_button.visible = not DataManager.list_characters[id][1]
 
 func _on_buy_button_pressed() -> void:
-	if DataManager.total_coin > price_to_buy:
+	if DataManager.total_coin >= price_to_buy:
 		DataManager.total_coin -= price_to_buy
 		DataManager.list_characters[id][1] = true
 		buy_button.visible = false
+		DataManager.save_data()

@@ -48,3 +48,8 @@ func _on_choose_button_pressed() -> void:
 		return
 	DataManager.choosen_character = card_to_open.id
 	change_to_another_card(0)
+	DataManager.save_data()
+
+
+func _on_gain_coin_button_pressed() -> void:
+	pass # Replace with function body.

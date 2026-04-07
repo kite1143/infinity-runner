@@ -44,7 +44,7 @@ albedo_texture = ExtResource("2_3o0ng")
 albedo_texture = ExtResource("2_3o0ng")
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_81d54"]
-size = Vector3(3.1577148, 7.574768, 11.893555)
+size = Vector3(3.1577148, 20, 11.893555)
 
 [node name="Chunk_09" type="Node3D" unique_id=177310566]
 
@@ -603,6 +603,7 @@ collision_layer = 0
 collision_mask = 2
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Obstacles/SkeletonTrigger" unique_id=362309484]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 6.212616, 0)
 shape = SubResource("BoxShape3D_81d54")
 debug_color = Color(0.9729381, 0, 0.44087246, 0.41960785)
 
@@ -612,6 +613,7 @@ collision_layer = 0
 collision_mask = 2
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Obstacles/SkeletonTrigger2" unique_id=1501038321]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 6, 0)
 shape = SubResource("BoxShape3D_81d54")
 debug_color = Color(0.9729381, 0, 0.44087246, 0.41960785)
 

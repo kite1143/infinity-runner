@@ -10,7 +10,7 @@ var list_characters: Dictionary = {
 }
 
 var choosen_character: String = 'knight'
-var total_coin: int = 10000
+var total_coin: int = 0
 
 #[bus_name, volume]
 var sound_list_volume = {

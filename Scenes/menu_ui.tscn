@@ -348,7 +348,7 @@ grow_horizontal = 2
 grow_vertical = 2
 
 [node name="TextureRect" type="TextureRect" parent="MarginContainer/GuideWindow/Panel" unique_id=1437678188]
-custom_minimum_size = Vector2(1200, 1200)
+custom_minimum_size = Vector2(1000, 1500)
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -362,7 +362,6 @@ offset_bottom = 20.0
 grow_horizontal = 2
 grow_vertical = 2
 texture = SubResource("AtlasTexture_fdnyd")
-stretch_mode = 5
 
 [node name="TurnOffGuideButton" type="TextureButton" parent="MarginContainer/GuideWindow/Panel/TextureRect" unique_id=2045027710]
 custom_minimum_size = Vector2(240, 240)
@@ -390,9 +389,9 @@ anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
 offset_left = -193.0
-offset_top = 160.0
+offset_top = 200.0
 offset_right = 193.0
-offset_bottom = 235.0
+offset_bottom = 275.0
 grow_horizontal = 2
 text = "GUIDE"
 label_settings = SubResource("LabelSettings_018j1")
@@ -412,13 +411,17 @@ offset_bottom = 258.5
 grow_horizontal = 2
 grow_vertical = 2
 text = "CHANGE LANE: 
-- LEFT and RIGHT
+- SWIPE LEFT and RIGHT
+
 JUMP: 
-- UP
+- SWIPE UP
+
 SLIDE:
--DOWN
+- SWIPE DOWN
+
 SCORE:
 - DISTANCE + SCORE * 2
+
 CHARACTERS:
 - COLLECT COIN TO BUY
 "

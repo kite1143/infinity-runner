@@ -243,6 +243,7 @@ _surfaces = [{
 blend_shape_mode = 0
 
 [node name="CharacterMage" unique_id=437658251 instance=ExtResource("1_ni5kx")]
+base_jump_force = 27.0
 
 [node name="Mage_ArmLeft" type="MeshInstance3D" parent="Rig_Medium/Skeleton3D" parent_id_path=PackedInt32Array(213799451) index="0" unique_id=1868900897]
 mesh = SubResource("ArrayMesh_x063c")
@@ -283,3 +284,10 @@ skeleton = NodePath("..")
 mesh = SubResource("ArrayMesh_txqyg")
 skin = SubResource("Skin_53qis")
 skeleton = NodePath("..")
+
+[node name="AbilityComponent" parent="." index="8" unique_id=2078391884]
+magnet_ability = true
+shield_ability = true
+potion_boost_ability = true
+
+[editable path="MagnetAbilityComponent/magnet"]
