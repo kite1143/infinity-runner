@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://bayvalgubbeqv"
 path.s3tc="res://.godot/imported/Mage_mage_texture.png-baa29906c146597f6c06a2ed3d10179e.s3tc.ctex"
+path.etc2="res://.godot/imported/Mage_mage_texture.png-baa29906c146597f6c06a2ed3d10179e.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +16,7 @@ generator_parameters={
 [deps]
 
 source_file="res://Assets/Player/gltf/Mage_mage_texture.png"
-dest_files=["res://.godot/imported/Mage_mage_texture.png-baa29906c146597f6c06a2ed3d10179e.s3tc.ctex"]
+dest_files=["res://.godot/imported/Mage_mage_texture.png-baa29906c146597f6c06a2ed3d10179e.s3tc.ctex", "res://.godot/imported/Mage_mage_texture.png-baa29906c146597f6c06a2ed3d10179e.etc2.ctex"]
 
 [params]
 

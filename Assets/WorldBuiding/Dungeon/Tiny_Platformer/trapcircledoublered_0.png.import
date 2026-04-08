@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://do1xxo104jqxq"
 path.s3tc="res://.godot/imported/trapcircledoublered_0.png-5395c2ce17521e356aab8b44680f2674.s3tc.ctex"
+path.etc2="res://.godot/imported/trapcircledoublered_0.png-5395c2ce17521e356aab8b44680f2674.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://Assets/WorldBuiding/Dungeon/Tiny_Platformer/trapcircledoublered_0.png"
-dest_files=["res://.godot/imported/trapcircledoublered_0.png-5395c2ce17521e356aab8b44680f2674.s3tc.ctex"]
+dest_files=["res://.godot/imported/trapcircledoublered_0.png-5395c2ce17521e356aab8b44680f2674.s3tc.ctex", "res://.godot/imported/trapcircledoublered_0.png-5395c2ce17521e356aab8b44680f2674.etc2.ctex"]
 
 [params]
 

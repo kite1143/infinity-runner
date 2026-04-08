@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://ds7vh85b6t01u"
 path.s3tc="res://.godot/imported/platfrombigblue_0.png-8068c2682823c926335196f12f3682b0.s3tc.ctex"
+path.etc2="res://.godot/imported/platfrombigblue_0.png-8068c2682823c926335196f12f3682b0.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://Assets/WorldBuiding/Dungeon/Tiny_Platformer/platfrombigblue_0.png"
-dest_files=["res://.godot/imported/platfrombigblue_0.png-8068c2682823c926335196f12f3682b0.s3tc.ctex"]
+dest_files=["res://.godot/imported/platfrombigblue_0.png-8068c2682823c926335196f12f3682b0.s3tc.ctex", "res://.godot/imported/platfrombigblue_0.png-8068c2682823c926335196f12f3682b0.etc2.ctex"]
 
 [params]
 

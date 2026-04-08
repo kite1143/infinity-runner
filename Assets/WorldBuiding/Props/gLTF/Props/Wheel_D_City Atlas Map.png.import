@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://bim6dmvl1ar75"
 path.s3tc="res://.godot/imported/Wheel_D_City Atlas Map.png-ba0cc55f0fe8af3bab3fefc34d47fae6.s3tc.ctex"
+path.etc2="res://.godot/imported/Wheel_D_City Atlas Map.png-ba0cc55f0fe8af3bab3fefc34d47fae6.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +16,7 @@ generator_parameters={
 [deps]
 
 source_file="res://Assets/WorldBuiding/Props/gLTF/Props/Wheel_D_City Atlas Map.png"
-dest_files=["res://.godot/imported/Wheel_D_City Atlas Map.png-ba0cc55f0fe8af3bab3fefc34d47fae6.s3tc.ctex"]
+dest_files=["res://.godot/imported/Wheel_D_City Atlas Map.png-ba0cc55f0fe8af3bab3fefc34d47fae6.s3tc.ctex", "res://.godot/imported/Wheel_D_City Atlas Map.png-ba0cc55f0fe8af3bab3fefc34d47fae6.etc2.ctex"]
 
 [params]
 

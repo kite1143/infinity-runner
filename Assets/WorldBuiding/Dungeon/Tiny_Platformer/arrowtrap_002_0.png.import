@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://imqk46v1f5d1"
 path.s3tc="res://.godot/imported/arrowtrap_002_0.png-9cc4b32d5f96215bee94fe0bd2d0ec46.s3tc.ctex"
+path.etc2="res://.godot/imported/arrowtrap_002_0.png-9cc4b32d5f96215bee94fe0bd2d0ec46.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://Assets/WorldBuiding/Dungeon/Tiny_Platformer/arrowtrap_002_0.png"
-dest_files=["res://.godot/imported/arrowtrap_002_0.png-9cc4b32d5f96215bee94fe0bd2d0ec46.s3tc.ctex"]
+dest_files=["res://.godot/imported/arrowtrap_002_0.png-9cc4b32d5f96215bee94fe0bd2d0ec46.s3tc.ctex", "res://.godot/imported/arrowtrap_002_0.png-9cc4b32d5f96215bee94fe0bd2d0ec46.etc2.ctex"]
 
 [params]
 

@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://2un00rk75bkp"
 path.s3tc="res://.godot/imported/weapons_shop_0.png-fd1e0761ea1f939b38fc1380cc695489.s3tc.ctex"
+path.etc2="res://.godot/imported/weapons_shop_0.png-fd1e0761ea1f939b38fc1380cc695489.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +16,7 @@ generator_parameters={
 [deps]
 
 source_file="res://Assets/WorldBuiding/Village/Medieval_Pack/glb_export/weapons_shop_0.png"
-dest_files=["res://.godot/imported/weapons_shop_0.png-fd1e0761ea1f939b38fc1380cc695489.s3tc.ctex"]
+dest_files=["res://.godot/imported/weapons_shop_0.png-fd1e0761ea1f939b38fc1380cc695489.s3tc.ctex", "res://.godot/imported/weapons_shop_0.png-fd1e0761ea1f939b38fc1380cc695489.etc2.ctex"]
 
 [params]
 

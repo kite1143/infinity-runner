@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://c0n7u2xbsgq3v"
 path.s3tc="res://.godot/imported/Stool_C_City Atlas Map.png-cfd3aa6e859f237a15faebc8a928454d.s3tc.ctex"
+path.etc2="res://.godot/imported/Stool_C_City Atlas Map.png-cfd3aa6e859f237a15faebc8a928454d.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +16,7 @@ generator_parameters={
 [deps]
 
 source_file="res://Assets/WorldBuiding/Props/gLTF/Props/Stool_C_City Atlas Map.png"
-dest_files=["res://.godot/imported/Stool_C_City Atlas Map.png-cfd3aa6e859f237a15faebc8a928454d.s3tc.ctex"]
+dest_files=["res://.godot/imported/Stool_C_City Atlas Map.png-cfd3aa6e859f237a15faebc8a928454d.s3tc.ctex", "res://.godot/imported/Stool_C_City Atlas Map.png-cfd3aa6e859f237a15faebc8a928454d.etc2.ctex"]
 
 [params]
 

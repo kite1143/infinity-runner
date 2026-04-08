@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://dpcih4w2mcsem"
 path.s3tc="res://.godot/imported/FirePlace_1_2_F_City Atlas Map.png-1731ed0a9c12890dc95aae6680269562.s3tc.ctex"
+path.etc2="res://.godot/imported/FirePlace_1_2_F_City Atlas Map.png-1731ed0a9c12890dc95aae6680269562.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +16,7 @@ generator_parameters={
 [deps]
 
 source_file="res://Assets/WorldBuiding/Props/gLTF/Props/FirePlace_1_2_F_City Atlas Map.png"
-dest_files=["res://.godot/imported/FirePlace_1_2_F_City Atlas Map.png-1731ed0a9c12890dc95aae6680269562.s3tc.ctex"]
+dest_files=["res://.godot/imported/FirePlace_1_2_F_City Atlas Map.png-1731ed0a9c12890dc95aae6680269562.s3tc.ctex", "res://.godot/imported/FirePlace_1_2_F_City Atlas Map.png-1731ed0a9c12890dc95aae6680269562.etc2.ctex"]
 
 [params]
 

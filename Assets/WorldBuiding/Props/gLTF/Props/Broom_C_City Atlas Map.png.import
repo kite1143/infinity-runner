@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://b1y2c6xy6x4ee"
 path.s3tc="res://.godot/imported/Broom_C_City Atlas Map.png-920e71665a20a139b2f1cba3e85f437e.s3tc.ctex"
+path.etc2="res://.godot/imported/Broom_C_City Atlas Map.png-920e71665a20a139b2f1cba3e85f437e.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +16,7 @@ generator_parameters={
 [deps]
 
 source_file="res://Assets/WorldBuiding/Props/gLTF/Props/Broom_C_City Atlas Map.png"
-dest_files=["res://.godot/imported/Broom_C_City Atlas Map.png-920e71665a20a139b2f1cba3e85f437e.s3tc.ctex"]
+dest_files=["res://.godot/imported/Broom_C_City Atlas Map.png-920e71665a20a139b2f1cba3e85f437e.s3tc.ctex", "res://.godot/imported/Broom_C_City Atlas Map.png-920e71665a20a139b2f1cba3e85f437e.etc2.ctex"]
 
 [params]
 

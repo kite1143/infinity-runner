@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://cgg4cle7gstie"
 path.s3tc="res://.godot/imported/platformcirclevertical_002_0.png-f100e3dbb0ad48ea72e46223e820740d.s3tc.ctex"
+path.etc2="res://.godot/imported/platformcirclevertical_002_0.png-f100e3dbb0ad48ea72e46223e820740d.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://Assets/WorldBuiding/Dungeon/Tiny_Platformer/platformcirclevertical_002_0.png"
-dest_files=["res://.godot/imported/platformcirclevertical_002_0.png-f100e3dbb0ad48ea72e46223e820740d.s3tc.ctex"]
+dest_files=["res://.godot/imported/platformcirclevertical_002_0.png-f100e3dbb0ad48ea72e46223e820740d.s3tc.ctex", "res://.godot/imported/platformcirclevertical_002_0.png-f100e3dbb0ad48ea72e46223e820740d.etc2.ctex"]
 
 [params]
 

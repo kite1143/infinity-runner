@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://wvounpw3ota8"
 path.s3tc="res://.godot/imported/Skeleton_Mage_skeleton_texture.png-59930fab40e3d3b1c4754e5d06704e2a.s3tc.ctex"
+path.etc2="res://.godot/imported/Skeleton_Mage_skeleton_texture.png-59930fab40e3d3b1c4754e5d06704e2a.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +16,7 @@ generator_parameters={
 [deps]
 
 source_file="res://Assets/Enemy/characters/gltf/Skeleton_Mage_skeleton_texture.png"
-dest_files=["res://.godot/imported/Skeleton_Mage_skeleton_texture.png-59930fab40e3d3b1c4754e5d06704e2a.s3tc.ctex"]
+dest_files=["res://.godot/imported/Skeleton_Mage_skeleton_texture.png-59930fab40e3d3b1c4754e5d06704e2a.s3tc.ctex", "res://.godot/imported/Skeleton_Mage_skeleton_texture.png-59930fab40e3d3b1c4754e5d06704e2a.etc2.ctex"]
 
 [params]
 

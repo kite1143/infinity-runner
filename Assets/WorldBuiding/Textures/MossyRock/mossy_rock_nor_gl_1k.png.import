@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://cw3xdopao3qac"
 path.s3tc="res://.godot/imported/mossy_rock_nor_gl_1k.png-bbb60ae79db7ef55a4b949fb84a39c7b.s3tc.ctex"
+path.etc2="res://.godot/imported/mossy_rock_nor_gl_1k.png-bbb60ae79db7ef55a4b949fb84a39c7b.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://Assets/WorldBuiding/Textures/MossyRock/mossy_rock_nor_gl_1k.png"
-dest_files=["res://.godot/imported/mossy_rock_nor_gl_1k.png-bbb60ae79db7ef55a4b949fb84a39c7b.s3tc.ctex"]
+dest_files=["res://.godot/imported/mossy_rock_nor_gl_1k.png-bbb60ae79db7ef55a4b949fb84a39c7b.s3tc.ctex", "res://.godot/imported/mossy_rock_nor_gl_1k.png-bbb60ae79db7ef55a4b949fb84a39c7b.etc2.ctex"]
 
 [params]
 

@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://bkxoyjmels7a1"
 path.s3tc="res://.godot/imported/trapball_0.png-945684e42bb7180682d9f71bdc008fa4.s3tc.ctex"
+path.etc2="res://.godot/imported/trapball_0.png-945684e42bb7180682d9f71bdc008fa4.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +16,7 @@ generator_parameters={
 [deps]
 
 source_file="res://Assets/WorldBuiding/Dungeon/Tiny_Platformer/trapball_0.png"
-dest_files=["res://.godot/imported/trapball_0.png-945684e42bb7180682d9f71bdc008fa4.s3tc.ctex"]
+dest_files=["res://.godot/imported/trapball_0.png-945684e42bb7180682d9f71bdc008fa4.s3tc.ctex", "res://.godot/imported/trapball_0.png-945684e42bb7180682d9f71bdc008fa4.etc2.ctex"]
 
 [params]
 

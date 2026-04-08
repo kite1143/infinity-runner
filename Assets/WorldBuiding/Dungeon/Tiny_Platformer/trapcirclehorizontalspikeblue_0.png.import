@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://w0tv41epp1rq"
 path.s3tc="res://.godot/imported/trapcirclehorizontalspikeblue_0.png-edd8b5fbe0cd694f9a76a210de3ea667.s3tc.ctex"
+path.etc2="res://.godot/imported/trapcirclehorizontalspikeblue_0.png-edd8b5fbe0cd694f9a76a210de3ea667.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +16,7 @@ generator_parameters={
 [deps]
 
 source_file="res://Assets/WorldBuiding/Dungeon/Tiny_Platformer/trapcirclehorizontalspikeblue_0.png"
-dest_files=["res://.godot/imported/trapcirclehorizontalspikeblue_0.png-edd8b5fbe0cd694f9a76a210de3ea667.s3tc.ctex"]
+dest_files=["res://.godot/imported/trapcirclehorizontalspikeblue_0.png-edd8b5fbe0cd694f9a76a210de3ea667.s3tc.ctex", "res://.godot/imported/trapcirclehorizontalspikeblue_0.png-edd8b5fbe0cd694f9a76a210de3ea667.etc2.ctex"]
 
 [params]
 

@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://b8juujpqwdykd"
 path.s3tc="res://.godot/imported/Bucket_1_B_City Atlas Map.png-e386b4c2a03a35044a226875860fa96f.s3tc.ctex"
+path.etc2="res://.godot/imported/Bucket_1_B_City Atlas Map.png-e386b4c2a03a35044a226875860fa96f.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://Assets/WorldBuiding/Props/gLTF/Props/Bucket_1_B_City Atlas Map.png"
-dest_files=["res://.godot/imported/Bucket_1_B_City Atlas Map.png-e386b4c2a03a35044a226875860fa96f.s3tc.ctex"]
+dest_files=["res://.godot/imported/Bucket_1_B_City Atlas Map.png-e386b4c2a03a35044a226875860fa96f.s3tc.ctex", "res://.godot/imported/Bucket_1_B_City Atlas Map.png-e386b4c2a03a35044a226875860fa96f.etc2.ctex"]
 
 [params]
 

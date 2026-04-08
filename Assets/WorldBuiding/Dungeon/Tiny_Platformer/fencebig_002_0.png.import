@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://dfehuhs8sxfmt"
 path.s3tc="res://.godot/imported/fencebig_002_0.png-81536804acdcd12b96d49b7b8ec1f8b2.s3tc.ctex"
+path.etc2="res://.godot/imported/fencebig_002_0.png-81536804acdcd12b96d49b7b8ec1f8b2.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +16,7 @@ generator_parameters={
 [deps]
 
 source_file="res://Assets/WorldBuiding/Dungeon/Tiny_Platformer/fencebig_002_0.png"
-dest_files=["res://.godot/imported/fencebig_002_0.png-81536804acdcd12b96d49b7b8ec1f8b2.s3tc.ctex"]
+dest_files=["res://.godot/imported/fencebig_002_0.png-81536804acdcd12b96d49b7b8ec1f8b2.s3tc.ctex", "res://.godot/imported/fencebig_002_0.png-81536804acdcd12b96d49b7b8ec1f8b2.etc2.ctex"]
 
 [params]
 

@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://jspt0omjqh8c"
 path.s3tc="res://.godot/imported/Laundry_A_City Atlas Map.png-c4ded87958710025cf72ddab2c92d6b3.s3tc.ctex"
+path.etc2="res://.godot/imported/Laundry_A_City Atlas Map.png-c4ded87958710025cf72ddab2c92d6b3.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +16,7 @@ generator_parameters={
 [deps]
 
 source_file="res://Assets/WorldBuiding/Props/gLTF/Props/Laundry_A_City Atlas Map.png"
-dest_files=["res://.godot/imported/Laundry_A_City Atlas Map.png-c4ded87958710025cf72ddab2c92d6b3.s3tc.ctex"]
+dest_files=["res://.godot/imported/Laundry_A_City Atlas Map.png-c4ded87958710025cf72ddab2c92d6b3.s3tc.ctex", "res://.godot/imported/Laundry_A_City Atlas Map.png-c4ded87958710025cf72ddab2c92d6b3.etc2.ctex"]
 
 [params]
 

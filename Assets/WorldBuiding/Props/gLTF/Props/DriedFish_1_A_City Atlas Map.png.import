@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://bfira1bqy2lyq"
 path.s3tc="res://.godot/imported/DriedFish_1_A_City Atlas Map.png-15be0d6a06a40138d65e190b2a52a956.s3tc.ctex"
+path.etc2="res://.godot/imported/DriedFish_1_A_City Atlas Map.png-15be0d6a06a40138d65e190b2a52a956.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://Assets/WorldBuiding/Props/gLTF/Props/DriedFish_1_A_City Atlas Map.png"
-dest_files=["res://.godot/imported/DriedFish_1_A_City Atlas Map.png-15be0d6a06a40138d65e190b2a52a956.s3tc.ctex"]
+dest_files=["res://.godot/imported/DriedFish_1_A_City Atlas Map.png-15be0d6a06a40138d65e190b2a52a956.s3tc.ctex", "res://.godot/imported/DriedFish_1_A_City Atlas Map.png-15be0d6a06a40138d65e190b2a52a956.etc2.ctex"]
 
 [params]
 

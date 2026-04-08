@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://ruhracoum7vt"
 path.s3tc="res://.godot/imported/props_base_color.png-0d2ee5ba740867ea2dea512f7176d2f3.s3tc.ctex"
+path.etc2="res://.godot/imported/props_base_color.png-0d2ee5ba740867ea2dea512f7176d2f3.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://Assets/Tools/FBX/props_base_color.png"
-dest_files=["res://.godot/imported/props_base_color.png-0d2ee5ba740867ea2dea512f7176d2f3.s3tc.ctex"]
+dest_files=["res://.godot/imported/props_base_color.png-0d2ee5ba740867ea2dea512f7176d2f3.s3tc.ctex", "res://.godot/imported/props_base_color.png-0d2ee5ba740867ea2dea512f7176d2f3.etc2.ctex"]
 
 [params]
 

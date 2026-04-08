@@ -24,6 +24,7 @@
 [ext_resource type="Texture2D" uid="uid://chpb1k7tnabth" path="res://Assets/UI/UI Settings Buttons.png" id="23_a76bd"]
 [ext_resource type="FontFile" uid="uid://lqfb54ubtaap" path="res://Assets/UI/Font/pixelFont-7-8x14-sproutLands.ttf" id="24_n6on3"]
 [ext_resource type="FontFile" uid="uid://dpkf7he6alh7n" path="res://Assets/UI/Font/Kenney Future Narrow.ttf" id="24_vjrrt"]
+[ext_resource type="Script" uid="uid://dpveaf43o6hes" path="res://addons/AdmobPlugin/Admob.gd" id="25_ap6to"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_64u68"]
 sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
@@ -410,7 +411,7 @@ skill_detail = "Jump + Shield + Magnet"
 price_to_buy = 20000
 model_link = NodePath("../../../../MageDecorShop")
 
-[node name="ReviveContainer" type="PanelContainer" parent="UI" unique_id=484338069]
+[node name="MorecoinContainer" type="PanelContainer" parent="UI" unique_id=484338069]
 visible = false
 custom_minimum_size = Vector2(700, 700)
 anchors_preset = 8
@@ -426,17 +427,17 @@ grow_horizontal = 2
 grow_vertical = 2
 theme_override_styles/panel = SubResource("StyleBoxFlat_ap6to")
 
-[node name="MarginContainer" type="MarginContainer" parent="UI/ReviveContainer" unique_id=759352696]
+[node name="MarginContainer" type="MarginContainer" parent="UI/MorecoinContainer" unique_id=759352696]
 layout_mode = 2
 theme_override_constants/margin_left = 20
 theme_override_constants/margin_top = 20
 theme_override_constants/margin_right = 20
 theme_override_constants/margin_bottom = 20
 
-[node name="VBoxContainer" type="VBoxContainer" parent="UI/ReviveContainer/MarginContainer" unique_id=497978013]
+[node name="VBoxContainer" type="VBoxContainer" parent="UI/MorecoinContainer/MarginContainer" unique_id=497978013]
 layout_mode = 2
 
-[node name="Label" type="Label" parent="UI/ReviveContainer/MarginContainer/VBoxContainer" unique_id=1681007425]
+[node name="Label" type="Label" parent="UI/MorecoinContainer/MarginContainer/VBoxContainer" unique_id=1681007425]
 custom_minimum_size = Vector2(600, 150)
 layout_mode = 2
 size_flags_vertical = 0
@@ -446,7 +447,7 @@ horizontal_alignment = 1
 vertical_alignment = 1
 autowrap_mode = 2
 
-[node name="Label2" type="Label" parent="UI/ReviveContainer/MarginContainer/VBoxContainer" unique_id=112270263]
+[node name="Label2" type="Label" parent="UI/MorecoinContainer/MarginContainer/VBoxContainer" unique_id=112270263]
 custom_minimum_size = Vector2(600, 250)
 layout_mode = 2
 size_flags_vertical = 0
@@ -456,11 +457,11 @@ horizontal_alignment = 1
 vertical_alignment = 1
 autowrap_mode = 2
 
-[node name="ButtonContainer" type="HBoxContainer" parent="UI/ReviveContainer/MarginContainer/VBoxContainer" unique_id=591177439]
+[node name="ButtonContainer" type="HBoxContainer" parent="UI/MorecoinContainer/MarginContainer/VBoxContainer" unique_id=591177439]
 layout_mode = 2
 alignment = 1
 
-[node name="AcceptButton" type="TextureButton" parent="UI/ReviveContainer/MarginContainer/VBoxContainer/ButtonContainer" unique_id=283595047]
+[node name="AcceptButton" type="TextureButton" parent="UI/MorecoinContainer/MarginContainer/VBoxContainer/ButtonContainer" unique_id=283595047]
 custom_minimum_size = Vector2(240, 240)
 layout_mode = 2
 size_flags_horizontal = 8
@@ -469,7 +470,7 @@ texture_normal = SubResource("AtlasTexture_awiif")
 texture_pressed = SubResource("AtlasTexture_s40r2")
 stretch_mode = 5
 
-[node name="CancelButton" type="TextureButton" parent="UI/ReviveContainer/MarginContainer/VBoxContainer/ButtonContainer" unique_id=1916456862]
+[node name="CancelButton" type="TextureButton" parent="UI/MorecoinContainer/MarginContainer/VBoxContainer/ButtonContainer" unique_id=1916456862]
 custom_minimum_size = Vector2(240, 240)
 layout_mode = 2
 size_flags_horizontal = 8
@@ -478,8 +479,17 @@ texture_normal = SubResource("AtlasTexture_l3rg1")
 texture_pressed = SubResource("AtlasTexture_lruh3")
 stretch_mode = 5
 
+[node name="Admob" type="Node" parent="." unique_id=689346124]
+script = ExtResource("25_ap6to")
+android_debug_application_id = "ca-app-pub-3940256099942544~3347511713"
+metadata/_custom_type_script = "uid://dpveaf43o6hes"
+
 [connection signal="pressed" from="UI/ShopUI/MarginContainer/MenuButton" to="." method="_on_menu_button_pressed"]
 [connection signal="pressed" from="UI/ShopUI/MarginContainer/HBoxContainer/LeftButton" to="." method="_on_left_button_pressed"]
 [connection signal="pressed" from="UI/ShopUI/MarginContainer/HBoxContainer/ChooseButton" to="." method="_on_choose_button_pressed"]
 [connection signal="pressed" from="UI/ShopUI/MarginContainer/HBoxContainer/RightButton" to="." method="_on_right_button_pressed"]
 [connection signal="pressed" from="UI/ShopUI/MarginContainer/HBoxContainer2/GainCoinButton" to="." method="_on_gain_coin_button_pressed"]
+[connection signal="pressed" from="UI/MorecoinContainer/MarginContainer/VBoxContainer/ButtonContainer/AcceptButton" to="." method="_on_accept_button_pressed"]
+[connection signal="pressed" from="UI/MorecoinContainer/MarginContainer/VBoxContainer/ButtonContainer/CancelButton" to="." method="_on_cancel_button_pressed"]
+[connection signal="initialization_completed" from="Admob" to="." method="_on_admob_initialization_completed"]
+[connection signal="rewarded_ad_user_earned_reward" from="Admob" to="." method="_on_admob_rewarded_ad_user_earned_reward"]

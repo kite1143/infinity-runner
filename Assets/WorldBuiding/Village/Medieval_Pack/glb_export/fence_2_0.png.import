@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://b880waqjjr6h8"
 path.s3tc="res://.godot/imported/fence_2_0.png-8a8c78ff7e0d28d2e44f369cf6d0c942.s3tc.ctex"
+path.etc2="res://.godot/imported/fence_2_0.png-8a8c78ff7e0d28d2e44f369cf6d0c942.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +16,7 @@ generator_parameters={
 [deps]
 
 source_file="res://Assets/WorldBuiding/Village/Medieval_Pack/glb_export/fence_2_0.png"
-dest_files=["res://.godot/imported/fence_2_0.png-8a8c78ff7e0d28d2e44f369cf6d0c942.s3tc.ctex"]
+dest_files=["res://.godot/imported/fence_2_0.png-8a8c78ff7e0d28d2e44f369cf6d0c942.s3tc.ctex", "res://.godot/imported/fence_2_0.png-8a8c78ff7e0d28d2e44f369cf6d0c942.etc2.ctex"]
 
 [params]
 

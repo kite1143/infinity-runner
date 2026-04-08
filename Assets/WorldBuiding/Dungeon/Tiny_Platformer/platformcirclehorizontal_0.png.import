@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://3qo7unperyul"
 path.s3tc="res://.godot/imported/platformcirclehorizontal_0.png-12a728abc18842195e99b71316317637.s3tc.ctex"
+path.etc2="res://.godot/imported/platformcirclehorizontal_0.png-12a728abc18842195e99b71316317637.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +16,7 @@ generator_parameters={
 [deps]
 
 source_file="res://Assets/WorldBuiding/Dungeon/Tiny_Platformer/platformcirclehorizontal_0.png"
-dest_files=["res://.godot/imported/platformcirclehorizontal_0.png-12a728abc18842195e99b71316317637.s3tc.ctex"]
+dest_files=["res://.godot/imported/platformcirclehorizontal_0.png-12a728abc18842195e99b71316317637.s3tc.ctex", "res://.godot/imported/platformcirclehorizontal_0.png-12a728abc18842195e99b71316317637.etc2.ctex"]
 
 [params]
 

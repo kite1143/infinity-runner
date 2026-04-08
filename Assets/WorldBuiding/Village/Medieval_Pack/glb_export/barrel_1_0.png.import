@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://dnq8a1eg8637v"
 path.s3tc="res://.godot/imported/barrel_1_0.png-fe12ab8803044f8ca54693807b1f5e1e.s3tc.ctex"
+path.etc2="res://.godot/imported/barrel_1_0.png-fe12ab8803044f8ca54693807b1f5e1e.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +16,7 @@ generator_parameters={
 [deps]
 
 source_file="res://Assets/WorldBuiding/Village/Medieval_Pack/glb_export/barrel_1_0.png"
-dest_files=["res://.godot/imported/barrel_1_0.png-fe12ab8803044f8ca54693807b1f5e1e.s3tc.ctex"]
+dest_files=["res://.godot/imported/barrel_1_0.png-fe12ab8803044f8ca54693807b1f5e1e.s3tc.ctex", "res://.godot/imported/barrel_1_0.png-fe12ab8803044f8ca54693807b1f5e1e.etc2.ctex"]
 
 [params]
 

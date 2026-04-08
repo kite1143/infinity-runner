@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://d1bs7b4q1lm3s"
 path.s3tc="res://.godot/imported/trapcirclespikedoublegreen_0.png-c24942f3ddd86ea5425e3edde1f1fc62.s3tc.ctex"
+path.etc2="res://.godot/imported/trapcirclespikedoublegreen_0.png-c24942f3ddd86ea5425e3edde1f1fc62.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +16,7 @@ generator_parameters={
 [deps]
 
 source_file="res://Assets/WorldBuiding/Dungeon/Tiny_Platformer/trapcirclespikedoublegreen_0.png"
-dest_files=["res://.godot/imported/trapcirclespikedoublegreen_0.png-c24942f3ddd86ea5425e3edde1f1fc62.s3tc.ctex"]
+dest_files=["res://.godot/imported/trapcirclespikedoublegreen_0.png-c24942f3ddd86ea5425e3edde1f1fc62.s3tc.ctex", "res://.godot/imported/trapcirclespikedoublegreen_0.png-c24942f3ddd86ea5425e3edde1f1fc62.etc2.ctex"]
 
 [params]
 

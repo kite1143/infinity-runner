@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://uuqnm47absdv"
 path.s3tc="res://.godot/imported/Manequin_1_A_City Atlas Map.png-b79cbf9b2b745a267654b6d44185aa32.s3tc.ctex"
+path.etc2="res://.godot/imported/Manequin_1_A_City Atlas Map.png-b79cbf9b2b745a267654b6d44185aa32.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://Assets/WorldBuiding/Props/gLTF/Props/Manequin_1_A_City Atlas Map.png"
-dest_files=["res://.godot/imported/Manequin_1_A_City Atlas Map.png-b79cbf9b2b745a267654b6d44185aa32.s3tc.ctex"]
+dest_files=["res://.godot/imported/Manequin_1_A_City Atlas Map.png-b79cbf9b2b745a267654b6d44185aa32.s3tc.ctex", "res://.godot/imported/Manequin_1_A_City Atlas Map.png-b79cbf9b2b745a267654b6d44185aa32.etc2.ctex"]
 
 [params]
 

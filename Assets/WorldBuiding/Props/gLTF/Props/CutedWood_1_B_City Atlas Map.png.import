@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://dcr8ps3rnxrsb"
 path.s3tc="res://.godot/imported/CutedWood_1_B_City Atlas Map.png-9a46d8e09f235a61163aff62da6f456b.s3tc.ctex"
+path.etc2="res://.godot/imported/CutedWood_1_B_City Atlas Map.png-9a46d8e09f235a61163aff62da6f456b.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +16,7 @@ generator_parameters={
 [deps]
 
 source_file="res://Assets/WorldBuiding/Props/gLTF/Props/CutedWood_1_B_City Atlas Map.png"
-dest_files=["res://.godot/imported/CutedWood_1_B_City Atlas Map.png-9a46d8e09f235a61163aff62da6f456b.s3tc.ctex"]
+dest_files=["res://.godot/imported/CutedWood_1_B_City Atlas Map.png-9a46d8e09f235a61163aff62da6f456b.s3tc.ctex", "res://.godot/imported/CutedWood_1_B_City Atlas Map.png-9a46d8e09f235a61163aff62da6f456b.etc2.ctex"]
 
 [params]
 

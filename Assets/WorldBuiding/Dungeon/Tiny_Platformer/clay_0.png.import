@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://d2fh7l8ovqef5"
 path.s3tc="res://.godot/imported/clay_0.png-b04443f3e4d294eda2d55698d5e41482.s3tc.ctex"
+path.etc2="res://.godot/imported/clay_0.png-b04443f3e4d294eda2d55698d5e41482.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://Assets/WorldBuiding/Dungeon/Tiny_Platformer/clay_0.png"
-dest_files=["res://.godot/imported/clay_0.png-b04443f3e4d294eda2d55698d5e41482.s3tc.ctex"]
+dest_files=["res://.godot/imported/clay_0.png-b04443f3e4d294eda2d55698d5e41482.s3tc.ctex", "res://.godot/imported/clay_0.png-b04443f3e4d294eda2d55698d5e41482.etc2.ctex"]
 
 [params]
 

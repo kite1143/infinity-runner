@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://wtv0oqhm5ivw"
 path.s3tc="res://.godot/imported/claybig_0.png-3291219a61ff94683f8725f438c67783.s3tc.ctex"
+path.etc2="res://.godot/imported/claybig_0.png-3291219a61ff94683f8725f438c67783.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +16,7 @@ generator_parameters={
 [deps]
 
 source_file="res://Assets/WorldBuiding/Dungeon/Tiny_Platformer/claybig_0.png"
-dest_files=["res://.godot/imported/claybig_0.png-3291219a61ff94683f8725f438c67783.s3tc.ctex"]
+dest_files=["res://.godot/imported/claybig_0.png-3291219a61ff94683f8725f438c67783.s3tc.ctex", "res://.godot/imported/claybig_0.png-3291219a61ff94683f8725f438c67783.etc2.ctex"]
 
 [params]
 

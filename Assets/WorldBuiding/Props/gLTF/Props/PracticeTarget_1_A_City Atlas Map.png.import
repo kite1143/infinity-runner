@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://dh8kff2ndqrb0"
 path.s3tc="res://.godot/imported/PracticeTarget_1_A_City Atlas Map.png-dbaf3e20b9b5da9c0261929b603b6ffb.s3tc.ctex"
+path.etc2="res://.godot/imported/PracticeTarget_1_A_City Atlas Map.png-dbaf3e20b9b5da9c0261929b603b6ffb.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +16,7 @@ generator_parameters={
 [deps]
 
 source_file="res://Assets/WorldBuiding/Props/gLTF/Props/PracticeTarget_1_A_City Atlas Map.png"
-dest_files=["res://.godot/imported/PracticeTarget_1_A_City Atlas Map.png-dbaf3e20b9b5da9c0261929b603b6ffb.s3tc.ctex"]
+dest_files=["res://.godot/imported/PracticeTarget_1_A_City Atlas Map.png-dbaf3e20b9b5da9c0261929b603b6ffb.s3tc.ctex", "res://.godot/imported/PracticeTarget_1_A_City Atlas Map.png-dbaf3e20b9b5da9c0261929b603b6ffb.etc2.ctex"]
 
 [params]
 

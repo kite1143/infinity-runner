@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://dhropfxmqgolf"
 path.s3tc="res://.godot/imported/Hammer_1_B_City Atlas Map.png-f8a556d2384d7fa93fac0e1a6685fa42.s3tc.ctex"
+path.etc2="res://.godot/imported/Hammer_1_B_City Atlas Map.png-f8a556d2384d7fa93fac0e1a6685fa42.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +16,7 @@ generator_parameters={
 [deps]
 
 source_file="res://Assets/WorldBuiding/Props/gLTF/Props/Hammer_1_B_City Atlas Map.png"
-dest_files=["res://.godot/imported/Hammer_1_B_City Atlas Map.png-f8a556d2384d7fa93fac0e1a6685fa42.s3tc.ctex"]
+dest_files=["res://.godot/imported/Hammer_1_B_City Atlas Map.png-f8a556d2384d7fa93fac0e1a6685fa42.s3tc.ctex", "res://.godot/imported/Hammer_1_B_City Atlas Map.png-f8a556d2384d7fa93fac0e1a6685fa42.etc2.ctex"]
 
 [params]
 

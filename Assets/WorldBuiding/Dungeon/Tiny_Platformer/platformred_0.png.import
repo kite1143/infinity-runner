@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://cpwag2yv0ddyc"
 path.s3tc="res://.godot/imported/platformred_0.png-7540de1901c36c480bf489dd71d73ef3.s3tc.ctex"
+path.etc2="res://.godot/imported/platformred_0.png-7540de1901c36c480bf489dd71d73ef3.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +16,7 @@ generator_parameters={
 [deps]
 
 source_file="res://Assets/WorldBuiding/Dungeon/Tiny_Platformer/platformred_0.png"
-dest_files=["res://.godot/imported/platformred_0.png-7540de1901c36c480bf489dd71d73ef3.s3tc.ctex"]
+dest_files=["res://.godot/imported/platformred_0.png-7540de1901c36c480bf489dd71d73ef3.s3tc.ctex", "res://.godot/imported/platformred_0.png-7540de1901c36c480bf489dd71d73ef3.etc2.ctex"]
 
 [params]
 

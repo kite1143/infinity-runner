@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://tg41i7n782y2"
 path.s3tc="res://.godot/imported/.png-eac7012679bf03cd00ab9a55ba308817.s3tc.ctex"
+path.etc2="res://.godot/imported/.png-eac7012679bf03cd00ab9a55ba308817.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://Assets/WorldBuiding/Village/Medieval_Pack/textures/.png"
-dest_files=["res://.godot/imported/.png-eac7012679bf03cd00ab9a55ba308817.s3tc.ctex"]
+dest_files=["res://.godot/imported/.png-eac7012679bf03cd00ab9a55ba308817.s3tc.ctex", "res://.godot/imported/.png-eac7012679bf03cd00ab9a55ba308817.etc2.ctex"]
 
 [params]
 

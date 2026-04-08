@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://bkhb2tfmqvhfg"
 path.s3tc="res://.godot/imported/SkinHang_A_City Atlas Map.png-b952e9b8bd218eec2d4d3bf0448461ef.s3tc.ctex"
+path.etc2="res://.godot/imported/SkinHang_A_City Atlas Map.png-b952e9b8bd218eec2d4d3bf0448461ef.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +16,7 @@ generator_parameters={
 [deps]
 
 source_file="res://Assets/WorldBuiding/Props/gLTF/Props/SkinHang_A_City Atlas Map.png"
-dest_files=["res://.godot/imported/SkinHang_A_City Atlas Map.png-b952e9b8bd218eec2d4d3bf0448461ef.s3tc.ctex"]
+dest_files=["res://.godot/imported/SkinHang_A_City Atlas Map.png-b952e9b8bd218eec2d4d3bf0448461ef.s3tc.ctex", "res://.godot/imported/SkinHang_A_City Atlas Map.png-b952e9b8bd218eec2d4d3bf0448461ef.etc2.ctex"]
 
 [params]
 

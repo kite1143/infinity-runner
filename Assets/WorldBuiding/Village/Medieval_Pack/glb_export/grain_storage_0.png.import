@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://bbns1gnnxg3bq"
 path.s3tc="res://.godot/imported/grain_storage_0.png-6aac429c88aa64d85e4af392296acfc6.s3tc.ctex"
+path.etc2="res://.godot/imported/grain_storage_0.png-6aac429c88aa64d85e4af392296acfc6.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +16,7 @@ generator_parameters={
 [deps]
 
 source_file="res://Assets/WorldBuiding/Village/Medieval_Pack/glb_export/grain_storage_0.png"
-dest_files=["res://.godot/imported/grain_storage_0.png-6aac429c88aa64d85e4af392296acfc6.s3tc.ctex"]
+dest_files=["res://.godot/imported/grain_storage_0.png-6aac429c88aa64d85e4af392296acfc6.s3tc.ctex", "res://.godot/imported/grain_storage_0.png-6aac429c88aa64d85e4af392296acfc6.etc2.ctex"]
 
 [params]
 

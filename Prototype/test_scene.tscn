@@ -1,0 +1,29 @@
+[gd_scene format=3 uid="uid://lcdi6cwridcs"]
+
+[ext_resource type="Script" uid="uid://ddpckv5d5bmq5" path="res://Prototype/test_scene.gd" id="1_ao7jo"]
+[ext_resource type="Script" uid="uid://dpveaf43o6hes" path="res://addons/AdmobPlugin/Admob.gd" id="2_ao7jo"]
+
+[node name="TestScene" type="Node2D" unique_id=959870025]
+script = ExtResource("1_ao7jo")
+
+[node name="Button" type="Button" parent="." unique_id=465608283]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 441.0
+offset_top = 1001.0
+offset_right = 657.0
+offset_bottom = 1032.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "REWARD WHEN WATCH AD"
+
+[node name="Admob" type="Node" parent="." unique_id=1029603641]
+script = ExtResource("2_ao7jo")
+android_debug_application_id = "ca-app-pub-3940256099942544~3347511713"
+metadata/_custom_type_script = "uid://dpveaf43o6hes"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
+[connection signal="initialization_completed" from="Admob" to="." method="_on_admob_initialization_completed"]

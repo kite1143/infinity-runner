@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://bjk57e3n3ohtv"
 path.s3tc="res://.godot/imported/Rope_1_A_City Atlas Map.png-708f95ce0d2848deabc8031b640639bc.s3tc.ctex"
+path.etc2="res://.godot/imported/Rope_1_A_City Atlas Map.png-708f95ce0d2848deabc8031b640639bc.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +16,7 @@ generator_parameters={
 [deps]
 
 source_file="res://Assets/WorldBuiding/Props/gLTF/Props/Rope_1_A_City Atlas Map.png"
-dest_files=["res://.godot/imported/Rope_1_A_City Atlas Map.png-708f95ce0d2848deabc8031b640639bc.s3tc.ctex"]
+dest_files=["res://.godot/imported/Rope_1_A_City Atlas Map.png-708f95ce0d2848deabc8031b640639bc.s3tc.ctex", "res://.godot/imported/Rope_1_A_City Atlas Map.png-708f95ce0d2848deabc8031b640639bc.etc2.ctex"]
 
 [params]
 

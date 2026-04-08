@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://c3vhnl61bak36"
 path.s3tc="res://.godot/imported/ColorPalette2.png-eb69ad9ef307ae09b0496940934cd4dd.s3tc.ctex"
+path.etc2="res://.godot/imported/ColorPalette2.png-eb69ad9ef307ae09b0496940934cd4dd.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://Assets/WorldBuiding/Village/Medieval_Pack/ColorPalette2.png"
-dest_files=["res://.godot/imported/ColorPalette2.png-eb69ad9ef307ae09b0496940934cd4dd.s3tc.ctex"]
+dest_files=["res://.godot/imported/ColorPalette2.png-eb69ad9ef307ae09b0496940934cd4dd.s3tc.ctex", "res://.godot/imported/ColorPalette2.png-eb69ad9ef307ae09b0496940934cd4dd.etc2.ctex"]
 
 [params]
 

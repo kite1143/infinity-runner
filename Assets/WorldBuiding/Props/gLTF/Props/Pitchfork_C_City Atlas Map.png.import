@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://c7mpl114111k"
 path.s3tc="res://.godot/imported/Pitchfork_C_City Atlas Map.png-211744cf544a221ce13ed5984c4c14ac.s3tc.ctex"
+path.etc2="res://.godot/imported/Pitchfork_C_City Atlas Map.png-211744cf544a221ce13ed5984c4c14ac.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +16,7 @@ generator_parameters={
 [deps]
 
 source_file="res://Assets/WorldBuiding/Props/gLTF/Props/Pitchfork_C_City Atlas Map.png"
-dest_files=["res://.godot/imported/Pitchfork_C_City Atlas Map.png-211744cf544a221ce13ed5984c4c14ac.s3tc.ctex"]
+dest_files=["res://.godot/imported/Pitchfork_C_City Atlas Map.png-211744cf544a221ce13ed5984c4c14ac.s3tc.ctex", "res://.godot/imported/Pitchfork_C_City Atlas Map.png-211744cf544a221ce13ed5984c4c14ac.etc2.ctex"]
 
 [params]
 

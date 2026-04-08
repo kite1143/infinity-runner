@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://c6med40u5c5a7"
 path.s3tc="res://.godot/imported/Nail_D_City Atlas Map.png-4de4a6492767a4e5ca5626afa787b955.s3tc.ctex"
+path.etc2="res://.godot/imported/Nail_D_City Atlas Map.png-4de4a6492767a4e5ca5626afa787b955.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +16,7 @@ generator_parameters={
 [deps]
 
 source_file="res://Assets/WorldBuiding/Props/gLTF/Props/Nail_D_City Atlas Map.png"
-dest_files=["res://.godot/imported/Nail_D_City Atlas Map.png-4de4a6492767a4e5ca5626afa787b955.s3tc.ctex"]
+dest_files=["res://.godot/imported/Nail_D_City Atlas Map.png-4de4a6492767a4e5ca5626afa787b955.s3tc.ctex", "res://.godot/imported/Nail_D_City Atlas Map.png-4de4a6492767a4e5ca5626afa787b955.etc2.ctex"]
 
 [params]
 

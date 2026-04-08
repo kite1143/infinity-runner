@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://bf7ra4gmji68x"
 path.s3tc="res://.godot/imported/platform3faceshorizontal_001_0.png-b207d362d090538842fbbd0f7943b9aa.s3tc.ctex"
+path.etc2="res://.godot/imported/platform3faceshorizontal_001_0.png-b207d362d090538842fbbd0f7943b9aa.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://Assets/WorldBuiding/Dungeon/Tiny_Platformer/platform3faceshorizontal_001_0.png"
-dest_files=["res://.godot/imported/platform3faceshorizontal_001_0.png-b207d362d090538842fbbd0f7943b9aa.s3tc.ctex"]
+dest_files=["res://.godot/imported/platform3faceshorizontal_001_0.png-b207d362d090538842fbbd0f7943b9aa.s3tc.ctex", "res://.godot/imported/platform3faceshorizontal_001_0.png-b207d362d090538842fbbd0f7943b9aa.etc2.ctex"]
 
 [params]
 

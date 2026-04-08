@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://cfhj23lt6jy03"
 path.s3tc="res://.godot/imported/Ivory_A_City Atlas Map.png-0e549eefa7d4c81fa124c8b29b1980d7.s3tc.ctex"
+path.etc2="res://.godot/imported/Ivory_A_City Atlas Map.png-0e549eefa7d4c81fa124c8b29b1980d7.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +16,7 @@ generator_parameters={
 [deps]
 
 source_file="res://Assets/WorldBuiding/Props/gLTF/Props/Ivory_A_City Atlas Map.png"
-dest_files=["res://.godot/imported/Ivory_A_City Atlas Map.png-0e549eefa7d4c81fa124c8b29b1980d7.s3tc.ctex"]
+dest_files=["res://.godot/imported/Ivory_A_City Atlas Map.png-0e549eefa7d4c81fa124c8b29b1980d7.s3tc.ctex", "res://.godot/imported/Ivory_A_City Atlas Map.png-0e549eefa7d4c81fa124c8b29b1980d7.etc2.ctex"]
 
 [params]
 

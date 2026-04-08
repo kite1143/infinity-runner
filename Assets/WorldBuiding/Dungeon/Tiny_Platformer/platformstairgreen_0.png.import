@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://b2edufj0i8two"
 path.s3tc="res://.godot/imported/platformstairgreen_0.png-c37b08a03717249a1415cd07f8d78ae1.s3tc.ctex"
+path.etc2="res://.godot/imported/platformstairgreen_0.png-c37b08a03717249a1415cd07f8d78ae1.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://Assets/WorldBuiding/Dungeon/Tiny_Platformer/platformstairgreen_0.png"
-dest_files=["res://.godot/imported/platformstairgreen_0.png-c37b08a03717249a1415cd07f8d78ae1.s3tc.ctex"]
+dest_files=["res://.godot/imported/platformstairgreen_0.png-c37b08a03717249a1415cd07f8d78ae1.s3tc.ctex", "res://.godot/imported/platformstairgreen_0.png-c37b08a03717249a1415cd07f8d78ae1.etc2.ctex"]
 
 [params]
 

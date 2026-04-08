@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://xliqp0dgawal"
 path.s3tc="res://.godot/imported/hammer_001_0.png-a0645a01c0403eadd17c3e6c6b265c36.s3tc.ctex"
+path.etc2="res://.godot/imported/hammer_001_0.png-a0645a01c0403eadd17c3e6c6b265c36.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://Assets/WorldBuiding/Dungeon/Tiny_Platformer/hammer_001_0.png"
-dest_files=["res://.godot/imported/hammer_001_0.png-a0645a01c0403eadd17c3e6c6b265c36.s3tc.ctex"]
+dest_files=["res://.godot/imported/hammer_001_0.png-a0645a01c0403eadd17c3e6c6b265c36.s3tc.ctex", "res://.godot/imported/hammer_001_0.png-a0645a01c0403eadd17c3e6c6b265c36.etc2.ctex"]
 
 [params]
 

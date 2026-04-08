@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://dgnh5w6sx2cpc"
 path.s3tc="res://.godot/imported/prototypebits_texture.png-651f110421a74bc6ab5890ea93c4e432.s3tc.ctex"
+path.etc2="res://.godot/imported/prototypebits_texture.png-651f110421a74bc6ab5890ea93c4e432.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://Assets/WorldBuiding/PlatformerPacks/Coin/prototypebits_texture.png"
-dest_files=["res://.godot/imported/prototypebits_texture.png-651f110421a74bc6ab5890ea93c4e432.s3tc.ctex"]
+dest_files=["res://.godot/imported/prototypebits_texture.png-651f110421a74bc6ab5890ea93c4e432.s3tc.ctex", "res://.godot/imported/prototypebits_texture.png-651f110421a74bc6ab5890ea93c4e432.etc2.ctex"]
 
 [params]
 

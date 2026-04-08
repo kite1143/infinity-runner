@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://bolqpiy5qtbfl"
 path.s3tc="res://.godot/imported/ball_002_0.png-85e3ec486d0b7e34545447ebb50058df.s3tc.ctex"
+path.etc2="res://.godot/imported/ball_002_0.png-85e3ec486d0b7e34545447ebb50058df.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://Assets/WorldBuiding/Dungeon/Tiny_Platformer/ball_002_0.png"
-dest_files=["res://.godot/imported/ball_002_0.png-85e3ec486d0b7e34545447ebb50058df.s3tc.ctex"]
+dest_files=["res://.godot/imported/ball_002_0.png-85e3ec486d0b7e34545447ebb50058df.s3tc.ctex", "res://.godot/imported/ball_002_0.png-85e3ec486d0b7e34545447ebb50058df.etc2.ctex"]
 
 [params]
 

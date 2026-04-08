@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://dpw2tvpgdguak"
 path.s3tc="res://.godot/imported/FishingRod_C_City Atlas Map.png-c0c69354b0ea6b6c387ec1a9ffcb6121.s3tc.ctex"
+path.etc2="res://.godot/imported/FishingRod_C_City Atlas Map.png-c0c69354b0ea6b6c387ec1a9ffcb6121.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +16,7 @@ generator_parameters={
 [deps]
 
 source_file="res://Assets/WorldBuiding/Props/gLTF/Props/FishingRod_C_City Atlas Map.png"
-dest_files=["res://.godot/imported/FishingRod_C_City Atlas Map.png-c0c69354b0ea6b6c387ec1a9ffcb6121.s3tc.ctex"]
+dest_files=["res://.godot/imported/FishingRod_C_City Atlas Map.png-c0c69354b0ea6b6c387ec1a9ffcb6121.s3tc.ctex", "res://.godot/imported/FishingRod_C_City Atlas Map.png-c0c69354b0ea6b6c387ec1a9ffcb6121.etc2.ctex"]
 
 [params]
 
