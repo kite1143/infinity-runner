@@ -10,6 +10,9 @@ func _input(event: InputEvent) -> void:
 	if event is InputEventMouseButton:
 		if event.button_index == MOUSE_BUTTON_LEFT and event.is_pressed() and event.is_double_click():
 			trigger_ability()
+	
+	if event.is_action_pressed("use_ability"):
+		trigger_ability()
 
 func trigger_ability() -> void:
 	if not GameManager.energy == GameManager.total_energy:

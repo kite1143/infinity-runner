@@ -424,7 +424,9 @@ SCORE:
 
 CHARACTERS:
 - COLLECT COIN TO BUY
-"
+
+USE ABILITY:
+- DOUBLE TAP TO SCREEN"
 label_settings = SubResource("LabelSettings_rfjxj")
 autowrap_mode = 3
 
