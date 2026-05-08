@@ -25,11 +25,11 @@ func change_to_shop_scene() -> void:
 func change_to_game_play() -> void:
 	SceneManager.change_scene(
 		main_game_path,
-		{ "pattern": "scribbles", "pattern_leave": "squares" }
+		{ "pattern": "curtains", "pattern_leave": "squares" }
 	)
 
 func change_to_result_scene() -> void:
 	SceneManager.change_scene(
 		result_scene_path,
-		{ "pattern": "scribbles", "pattern_leave": "squares" }
+		{ "pattern": "curtains", "pattern_leave": "squares" }
 	)
