@@ -1,0 +1,33 @@
+[gd_scene format=3 uid="uid://c846rgm5a0oe7"]
+
+[ext_resource type="Script" uid="uid://biyqq2dfrpicg" path="res://Autoloads/SceneTransition.gd" id="1_x7fyy"]
+
+[node name="SceneTransition" type="Node" unique_id=1030333363]
+script = ExtResource("1_x7fyy")
+
+[node name="BlurBackground" type="ColorRect" parent="." unique_id=1468925134]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.03137255, 0.03137255, 0.03137255, 0.54901963)
+
+[node name="LoadingLabel" type="RichTextLabel" parent="BlurBackground" unique_id=1149911692]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -592.5
+offset_top = -40.5
+offset_right = 592.5
+offset_bottom = 40.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/normal_font_size = 64
+bbcode_enabled = true
+text = "[wave]LOADING...[/wave]"
+horizontal_alignment = 1
+vertical_alignment = 1

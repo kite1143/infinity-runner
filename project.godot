@@ -18,10 +18,10 @@ config/icon="uid://bsx4hfwkoxwb"
 [autoload]
 
 SceneManager="*uid://j20v4cg7v8m1"
-SceneTransition="*uid://biyqq2dfrpicg"
 GameManager="*uid://bwvbs6c10suct"
 DataManager="*uid://gfc1dwjmqljh"
 SoundManager="*uid://147ojchanmlg"
+SceneTransition="*uid://c846rgm5a0oe7"
 
 [display]
 

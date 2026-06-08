@@ -8,9 +8,9 @@ func _ready() -> void:
 	value_changed.connect(_on_value_changed)
 	value = DataManager.sound_list_volume[bus_name]
 
-func _on_value_changed(value: float) -> void:
+func _on_value_changed(_value: float) -> void:
 	AudioServer.set_bus_volume_db(
 		bus_index,
-		linear_to_db(value)
+		linear_to_db(_value)
 	)
-	DataManager.sound_list_volume[bus_name] = value
+	DataManager.sound_list_volume[bus_name] = _value

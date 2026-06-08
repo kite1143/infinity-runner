@@ -1,5 +1,5 @@
 extends Node3D
-
+@warning_ignore_start("unused_signal")
 
 var current_index : int = 0
 var total_cards : int = 0
