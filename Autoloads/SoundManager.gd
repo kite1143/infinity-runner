@@ -10,7 +10,6 @@ func play_button_sound() -> void:
 func play_menu_music() -> void:
 	for music_player: AudioStreamPlayer in gameplay_music.get_children():
 		music_player.stop()
-	
 	menu_music_player.play()
 
 func play_gameplay_music() -> void:
