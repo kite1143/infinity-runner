@@ -30,7 +30,6 @@ func _notification(what: int) -> void:
 
 
 func save_data() -> void:
-	# 1. Extract only the boolean (bought_or_not) from list_characters
 	var characters_save_state: Dictionary = {}
 	for key in list_characters:
 		characters_save_state[key] = list_characters[key][1]
@@ -60,7 +59,6 @@ func load_data() -> void:
 		var json_string := file.get_as_text()
 		file.close()
 		
-		# 3. Parse the JSON string back into a dictionary
 		var json := JSON.new()
 		var error := json.parse(json_string)
 		
