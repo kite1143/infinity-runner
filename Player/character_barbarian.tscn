@@ -226,7 +226,10 @@ blend_shape_mode = 0
 base_speed = 17.0
 base_jump_force = 26.5
 
-[node name="Skeleton3D" parent="Rig_Medium" parent_id_path=PackedInt32Array(1654820303) index="0" unique_id=213799451]
+[node name="Rig_Medium" parent="." index="0" unique_id=1654820303]
+transform = Transform3D(-1, 0, -1.509958e-07, 0, 1, 0, 1.509958e-07, 0, -1, 0, 0, 0)
+
+[node name="Skeleton3D" parent="Rig_Medium" index="0" unique_id=213799451]
 bones/0/rotation = Quaternion(0, 1.19209275e-07, 0, 1)
 
 [node name="Barbarian_ArmLeft" type="MeshInstance3D" parent="Rig_Medium/Skeleton3D" index="0" unique_id=1090878798]
