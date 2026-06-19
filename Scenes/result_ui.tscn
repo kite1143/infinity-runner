@@ -55,6 +55,14 @@ region = Rect2(768, 64, 32, 32)
 atlas = ExtResource("7_ae7ov")
 region = Rect2(800, 64, 32, 32)
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_43pom"]
+atlas = ExtResource("6_1mfw7")
+region = Rect2(0, 80, 32, 32)
+
+[sub_resource type="LabelSettings" id="LabelSettings_a4ytp"]
+font = ExtResource("3_hfe11")
+font_size = 64
+
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7b3ir"]
 bg_color = Color(0.2051174, 0.20511746, 0.20511732, 1)
 
@@ -81,14 +89,6 @@ region = Rect2(832, 96, 32, 32)
 [sub_resource type="AtlasTexture" id="AtlasTexture_4eov7"]
 atlas = ExtResource("7_ae7ov")
 region = Rect2(864, 96, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_43pom"]
-atlas = ExtResource("6_1mfw7")
-region = Rect2(0, 80, 32, 32)
-
-[sub_resource type="LabelSettings" id="LabelSettings_a4ytp"]
-font = ExtResource("3_hfe11")
-font_size = 64
 
 [node name="ResultUI" type="Control" unique_id=206804457]
 layout_mode = 3
@@ -230,6 +230,35 @@ texture_normal = SubResource("AtlasTexture_ffyd2")
 texture_pressed = SubResource("AtlasTexture_xvnf3")
 stretch_mode = 5
 
+[node name="CoinToContinue" type="Control" parent="." unique_id=847226584]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="CoinTexture" type="TextureRect" parent="CoinToContinue" unique_id=1673746366]
+layout_mode = 0
+offset_left = 89.0
+offset_top = 1129.0
+offset_right = 329.0
+offset_bottom = 1369.0
+scale = Vector2(0.5, 0.5)
+texture = SubResource("AtlasTexture_43pom")
+expand_mode = 2
+stretch_mode = 5
+
+[node name="CoinLabel" type="Label" parent="CoinToContinue" unique_id=692204338]
+custom_minimum_size = Vector2(240, 240)
+layout_mode = 0
+offset_left = 137.0
+offset_top = 1092.0
+offset_right = 377.0
+offset_bottom = 1332.0
+text = "500
+"
+label_settings = SubResource("LabelSettings_a4ytp")
+horizontal_alignment = 1
+vertical_alignment = 1
+
 [node name="ReviveContainer" type="PanelContainer" parent="." unique_id=1695469822]
 visible = false
 custom_minimum_size = Vector2(700, 700)
@@ -335,35 +364,6 @@ autowrap_mode = 2
 
 [node name="AlertTimer" type="Timer" parent="NotEnoughCoinAlert" unique_id=1191468683]
 one_shot = true
-
-[node name="CoinToContinue" type="Control" parent="." unique_id=847226584]
-anchors_preset = 0
-offset_right = 40.0
-offset_bottom = 40.0
-
-[node name="CoinTexture" type="TextureRect" parent="CoinToContinue" unique_id=1673746366]
-layout_mode = 0
-offset_left = 89.0
-offset_top = 1129.0
-offset_right = 329.0
-offset_bottom = 1369.0
-scale = Vector2(0.5, 0.5)
-texture = SubResource("AtlasTexture_43pom")
-expand_mode = 2
-stretch_mode = 5
-
-[node name="CoinLabel" type="Label" parent="CoinToContinue" unique_id=692204338]
-custom_minimum_size = Vector2(240, 240)
-layout_mode = 0
-offset_left = 137.0
-offset_top = 1092.0
-offset_right = 377.0
-offset_bottom = 1332.0
-text = "500
-"
-label_settings = SubResource("LabelSettings_a4ytp")
-horizontal_alignment = 1
-vertical_alignment = 1
 
 [connection signal="pressed" from="Panel/TextureRect/VBoxContainer/HBoxContainer/ContinueButton" to="." method="_on_continue_button_pressed"]
 [connection signal="pressed" from="Panel/TextureRect/VBoxContainer/HBoxContainer/ResetButton" to="." method="_on_reset_button_pressed"]

@@ -15,11 +15,6 @@
 [ext_resource type="PackedScene" uid="uid://4ugxefdufgfo" path="res://WorldBuilding/Chunks/chunk_10.tscn" id="12_vvhy6"]
 [ext_resource type="PackedScene" uid="uid://5on33m4llp21" path="res://Scenes/gameplay_ui.tscn" id="14_i47ox"]
 
-[sub_resource type="Curve" id="Curve_i47ox"]
-_limits = [1.0, 1.4, 0.0, 2880.0]
-_data = [Vector2(0, 1), 0.0, 0.0, 0, 0, Vector2(720, 1.2), 0.0, 0.0, 0, 0, Vector2(1440, 1.3), 0.0, 0.0, 0, 0, Vector2(2880, 1.4), 0.0, 0.0, 0, 0]
-point_count = 4
-
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_pu3va"]
 sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
 ground_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
@@ -35,7 +30,6 @@ glow_enabled = true
 
 [node name="MainGame" type="Node3D" unique_id=2046238683]
 script = ExtResource("1_sftma")
-difficult_curve = SubResource("Curve_i47ox")
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=941775768]
 environment = SubResource("Environment_6j5ir")

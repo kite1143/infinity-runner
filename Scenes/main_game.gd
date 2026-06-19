@@ -4,7 +4,7 @@ var player: Player
 @onready var spawn_pos: Marker3D = $PlayerSpawn
 @onready var chunk_generator: ChunkGenerator = $ChunkGenerator
 
-@export var difficult_curve: Curve
+@export var difficulty_curve: Curve
 
 func _ready() -> void:
 	SoundManager.play_gameplay_music()
@@ -21,4 +21,4 @@ func _ready() -> void:
 func _physics_process(_delta: float) -> void:
 	GameManager.score = -player.global_position.z + 2*GameManager.coin
 	var distance: float = -player.global_position.z
-	Engine.time_scale = difficult_curve.sample(distance)
+	Engine.time_scale = difficulty_curve.sample(distance)
