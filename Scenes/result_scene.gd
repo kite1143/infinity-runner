@@ -36,6 +36,7 @@ func _on_cancel_button_pressed() -> void:
 func _on_accept_button_pressed() -> void:
 	DataManager.total_coin -= 500
 	GameManager.continue_game()
+	GameManager.new_run = false
 	SoundManager.play_button_sound()
 
 func update_score_and_coin() -> void:

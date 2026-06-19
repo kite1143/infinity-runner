@@ -13,6 +13,7 @@ var energy:int = 0:
 		energy = min(value, total_energy)
 var time_scale: float = 1.0
 var total_energy: int = 5
+var new_run: bool = true
 
 func start_new_game() -> void:
 	reset_vars()
@@ -23,6 +24,8 @@ func reset_vars() -> void:
 	coin = 0
 	energy = 0
 	time_scale = 1.0
+	new_run = true
+	
 
 func continue_game() -> void:
 	SceneTransition.change_to_game_play()
